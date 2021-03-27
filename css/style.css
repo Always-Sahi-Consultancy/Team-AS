@@ -1,0 +1,135 @@
+
+.menu
+{
+    color:#FFFBFD;
+}
+
+#nav
+{
+    color:white;
+}
+
+#nav-content
+{
+    color:white;
+}
+
+.animated_icon
+{
+    height:20px;
+    width:30px;
+    position:realtive;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition:0.5s ease-in-out;
+    -o-transition:0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.animated_icon span
+{
+    display:block;
+    background:#FFFBFD;
+    width:100%;
+    height:2px;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition:0.25s ease-in-out;
+    -o-transition:0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    position:absoulte;
+    left:0;
+    opacity:1;
+    border-radius:9px;
+}
+
+.animated_icon span:nth-child(1)
+{
+    top:0px;
+}
+
+.animated_icon span:nth-child(2), .animated_icon span:nth-child(3)
+{
+    top:10px;
+}
+
+.animated-icon span:nth-child(4)
+{
+    top:20px;
+}
+
+.animated_icon.open span:nth-child(2)
+{
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.animated_icon.open span:nth-child(3)
+{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: roate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.animated_icon.open span:nth-child(1)
+{
+    top:11px;
+    width:0%;
+    left:50%;
+}
+
+.animated_icon span:nth-child(4)
+{
+    top:11px;
+    width:0%;
+    left:50%;
+}
+
+a :active :hover :visited
+{
+    text-decoration:none;
+    color:blanchedalmond;
+}
+
+a 
+{
+    color:blanchedalmond;
+}
+
+.header
+{
+    background:url("../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg");
+    height:100%;
+    background-size:cover;
+}
+
+.logo
+{
+    width:25%;
+    height:auto;
+    margin:15% 0 0 15%;
+}
+
+footer
+{
+    background:#2B303A;
+}
+
+footer .data
+{
+    color:inherit;
+}
+
+footer .data
+{
+    color:#3777FF;
+}
