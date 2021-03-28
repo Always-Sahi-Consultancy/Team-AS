@@ -8,10 +8,11 @@
     <meta name="viewport" content="width:screen-size initial-scale:1.0">
     <title>Always Sahi Technologies</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/menu.js"></script>
 </head>
 <body>
     <div>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md nav-bar fixed-top nav_bar">
         <div class="container-fluid">
           <div class="navbar-header">
             <span class="navbar-brand menu">
@@ -25,18 +26,18 @@
             </button>
           <div class="collapse navbar-collapse justify-content-end" id="nav-content">
           <ul class="navbar-nav">
-            <li class="navbar-expan-md"><a href="#" class="nav-link">Home</a></li>
-            <li class="navbar-expand-md"><a href="#" class="nav-link">Blog</a></li>
-            <li class="dropdown  nav-item navbar-expand-md">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services
+            <li class="navbar-expan-md content"><a href="#" class="nav-link content">Home</a></li>
+            <li class="navbar-expand-md content"><a href="#" class="nav-link content">Blog</a></li>
+            <li class="dropdown  nav-item navbar-expand-md content">
+              <a href="#" class="nav-link dropdown-toggle content" data-toggle="dropdown">Services
             </a>
-              <div class="dropdown-menu navbar-expand-md">
-                <a href="" class="dropdown-item navbar-expand-md">Web Development</a>
-                <a href="" class="dropdown-item navbar-expand-md">App Development</a>
+              <div class="dropdown-menu navbar-expand-md content">
+                <a href="" class="dropdown-item navbar-expand-md content">Web Development</a>
+                <a href="" class="dropdown-item navbar-expand-md content">App Development</a>
               </div>
             </li>
-            <li class="navbar-expand-md"><a href="#" class="nav-link navbar-expand-md">Vaccanies</a></li>
-            <li class="navbar-expand-md"><a href="#" class="nav-link navbar-expand-md">Contact Us</a></li>
+            <li class="navbar-expand-md content"><a href="#" class="nav-link navbar-expand-md content">Vaccanies</a></li>
+            <li class="navbar-expand-md content"><a href="#" class="nav-link navbar-expand-md content">Contact Us</a></li>
           </ul>
           </div>
         </div>
@@ -44,9 +45,18 @@
     </div>
 
     <div class="header">
-        <div>
-            <img src="image/Background Less.png" class="logo">
+        <div class="row">
+            <span class="col-sm-1 col-md-1"></span>
+            <img src="image/Background Less.png" class="logo col-sm-10 col-md-4">
         </div>
+        <div class="row">
+          <span class="col-md-1"></span>
+          <span class="col-md-4" id="company">Always Sahi Technologies Pvt Ltd</span>
+        </div>
+    </div>
+
+    <div class="service">
+      <div class=""><h1>Our Sevices</h1></div>      
     </div>
 
     <footer id="footer-main" class="text-center text-white">
