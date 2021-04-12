@@ -1,30 +1,9 @@
-
-body{
-    overflow-x:hidden;
-}
-
-.menu
+/*home*/
+#company
 {
-    color:#FFFBFD;
-    font-size:large;
-}
-
-.content
-{
-    color:#FFFBFD;
-    font-size:large;
-    background:none;
-    border:none;
-}
-
-#nav
-{
-    color:white;
-}
-
-#nav-content
-{
-    color:white;
+    font-size:30px;
+    color:blanchedalmond;
+    border-radius:0;
 }
 
 .animated_icon
@@ -61,11 +40,6 @@ body{
     opacity:1;
     border-radius:9px;
     margin:1px;
-}
-
-.as
-{
-    background:#FFFDBF;
 }
 
 .animated_icon span:nth-child(1)
@@ -115,94 +89,376 @@ body{
     opacity:0;
 }
 
-.nav_bar
-{
-    background:none;
-    top:0;
-    height:auto;
-}
-
-a :active :hover :visited
+a :link 
 {
     text-decoration:none;
-    color:blanchedalmond;
+    color:white;
 }
 
 a 
 {
-    color:blanchedalmond;
+    color:white;
 }
 
-.header
+#menubtn
 {
-    background:url("../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg");
+    display:none;
+}
+
+#nav
+{
+    color:white;
+
+}
+
+#header
+{
+    background:black;
+    padding:0;
+}
+
+#header_back
+{
+    background:black;
+}
+
+#nav_social
+{
+    /* float:right; */
+    position:fixed;
+    top:30%;
+    right:2vw;
+    z-index:1;
+}
+
+.nav_icon
+{
+    height:3vw;
+    width:3vw;
+    margin:5px;
+}
+
+#facebook
+{
+    background:url("../image/icon/001-facebook.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#instagram
+{
+    background:url("../image/icon/003-instagram.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#twitter
+{
+    background:url("../image/icon/05-twitter.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#telegram
+{
+    background:url("../image/icon/003-telegram.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#linkedin
+{
+    background:url("../image/icon/linkedin.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#youtube
+{
+    background:url("../image/icon/youtube.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#facebook:hover
+{
+    background:url("../image/icon/facebook\(2\).png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#instagram:hover
+{
+    background:url("../image/icon/007-instagram-1.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#twitter:hover
+{
+    background:url("../image/icon/002-twitter.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#telegram:hover
+{
+    background:url("../image/icon/002-telegram-1.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#linkedin:hover
+{
+    background:url("../image/icon/linkedinb.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#youtube:hover
+{
+    background:url("../image/icon/003-youtube.png");
+    background-size:cover;
+    transition:0.5;
+}
+
+#logo
+{
+    width:60%;
+    height:auto;
+    padding:22% 10% 2% 10%; 
+}
+
+#home
+{
+    background-image:url("../image/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
     height:100%;
+}
+
+.name
+{
+    color:white;
+    text-align:center;
+    width:60%;
+
+}
+
+@media screen and (max-width:900px)
+{
+    .name
+    {
+        width:100%;
+    } 
+
+    .nav_icon
+    {
+        width:5vw;
+        height:5vw;
+    }
+
+    #nav_social
+    {
+        position:fixed;
+        right:0px;
+    }
+
+    #menubtn
+    {
+        display:block;
+    }
+
+}
+
+#menu
+{
+    border-color:white;
+}
+
+.ASE
+{
+    padding:0 10%;
+}
+
+.ASE h1
+{
+    color:white;
+    padding: 3% 0;
+}
+
+.course
+{
+    text-align:center;
+    transition:all 1;
+}
+
+.course:hover
+{
+    transition:all 1.2;
+}
+
+.course_bg
+{
+    background:grey;
+    text-align:justify;
+}
+
+.course_img
+{
+    height:auto;
+    width:auto;
+}
+
+#button_p
+{
+    text-align:center;
+    padding:10px;
+}
+
+#know_more
+{
+    background:radial-gradient(lightblue,grey);
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:25vw;
+}
+
+#know_more:hover
+{
+    background:linear-gradient(grey,black);
+    transition:100ms ease-in-out;
+}
+
+.AST
+{
+    padding:0 10%;
+}
+
+.AST h1
+{
+    color:white;
+    padding: 3% 0 0 0;
+}
+
+.web_img
+{
+    background:url("../image/pexels-lukas-574071.jpg");
+    background-size:cover;
+    height:20vw;
+    margin:1vw;
+    text-align:center;
+}
+
+.app_img
+{
+    background:url("../image/pexels-freestocksorg-892757.jpg");
+    background-size:cover;
+    height:20vw;
+    margin:1vw;
+    text-align:center;
+}
+
+.AST h2
+{
+    color:white;
+}
+
+#about
+{
+    width:100%;
+    background:black;
+    text-align:center;
+    color:white;
+}
+
+#about_data
+{
+    text-align:justify;
+}
+
+#about_head
+{
+    color:white;
+}
+
+#vision_data
+{
+    text-align:justify;
+    position:relative;
+}
+
+#mission_data
+{
+    text-align:justify;
+    position:relative;
+}
+
+#vision_img
+{
+    width:100%;
+    height:auto;
     background-size:cover;
 }
 
-.logo
+#mission_img
 {
-    width:90%;
+    width:100%;
     height:auto;
-    margin: 15% 0 0 0;
+    background-size:cover;
 }
 
-#company
+body
 {
-    font-size:x-large;
-    color:#FFFBDF;
+    overflow-x:hidden;
+    background:black;
+}
+
+#founder_heading
+{
+    text-align:center;
+}
+
+#atharv
+{
+    overflow:hidden;
     text-align:center;
 }
 
 
-@media screen and (max-width:800px)
+#mandeep
 {
-    .logo
-    {
-        margin: 15% 0 0 5%;
-    }
+    overflow:hidden;
+    text-align:center;
 }
 
-footer
+.founders_image
 {
-    background:#2B303A;
+    width:100%;
+    height:auto;
 }
 
-footer .data
-{
-    color:inherit;
-}
-
-footer .data
-{
-    color:#3777FF;
-}
-#card1{background-color: red;
-            /* height: 40rem;} */
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-
-}
-#card2{background-color: rgb(238, 225, 225);
-    /* height: 40rem;} */
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-
-}
-#card3{background-color: rgb(0, 102, 255);
-    /* height: 40rem;} */
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-
-}
-
-@media(min-width:600px){
-.card-deck{
+#footer-main{
+    background-image: url("../image/shapelined-K9QHL52rE2k-unsplash.jpg");
+    background-color: black;
     position: relative;
-    top:-7vw;
+    padding-top: 20px;
+    
+    
+    width: 100%;
+    height: auto;
+ 
 }
-#heading-ourservices{
-    display: none;
+#headlinef{
+    color: white;
 }
+#asmark{
+    color: white;
 }
 
+#dial-icon{
+
+}
+#email{
+    color: white    ;
+}
