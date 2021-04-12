@@ -9,7 +9,6 @@ body{
     background-color:#155F6C;
     font-size: 10px;
     margin: 0;  
-    border: 0;
 }
 #navb{
     padding-right: 50px;
@@ -20,7 +19,7 @@ a{
 }
 #as_logo{
     width: 200px;
-    height: auto;
+    height: auto;   
 }
 #nav2{
     color: black;
@@ -39,6 +38,7 @@ a{
   background-color: black;
   color: white;
 }
+
 .ham{
     border: 1px solid black;
 }
