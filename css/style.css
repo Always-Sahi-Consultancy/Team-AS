@@ -261,7 +261,7 @@ a
     #nav_social
     {
         position:fixed;
-        right:0px;
+        right:-5px;
     }
 
     #menubtn
@@ -345,23 +345,31 @@ a
 {
     background:url("../image/pexels-lukas-574071.jpg");
     background-size:cover;
-    height:20vw;
     margin:1vw;
     text-align:center;
+    min-height:250px;
 }
 
 .app_img
 {
     background:url("../image/pexels-freestocksorg-892757.jpg");
     background-size:cover;
-    height:20vw;
     margin:1vw;
     text-align:center;
+    min-height:250px;
 }
 
 .AST h2
 {
     color:white;
+    position:absolute;
+    bottom:10px;
+    left:20%;
+}
+
+#abouta
+{
+    padding:30px;
 }
 
 #about
@@ -419,36 +427,77 @@ body
     text-align:center;
 }
 
+#founder_heading h1
+{
+    color:#FFFBFD;
+}
+
 #atharv
 {
     overflow:hidden;
-    text-align:center;
+    text-align:justify;
 }
-
 
 #mandeep
 {
     overflow:hidden;
-    text-align:center;
+    text-align:justify;
 }
 
 .founders_image
 {
     width:100%;
     height:auto;
+    border-radius:5px;
+}
+
+.arrow
+{
+    width:3vw;
+    height:auto;
+    z-index:1;
+    position:relative;
+    left:45%;
+}
+
+.atharv_info
+{
+    color:#FFFBFD;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+    display:none;
+}
+
+.mandeep_info
+{
+    color:#FFFBFD;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+    display:none;
+}
+
+.a_atharv
+{
+    position:relative;
+    top:-25px;
+}
+
+.a_mandeep
+{
+    position:relative;
+    top:-25px;
 }
 
 #footer-main{
-    background-image: url("../image/shapelined-K9QHL52rE2k-unsplash.jpg");
+    background:url("../image/christian-holzinger-CUY_YHhCFl4-unsplash.jpg");
+    background-blend-mode:darken;
     background-color: black;
     position: relative;
     padding-top: 20px;
-    
-    
     width: 100%;
     height: auto;
- 
 }
+
 #headlinef{
     color: white;
 }
@@ -461,4 +510,24 @@ body
 }
 #email{
     color: white    ;
+}
+
+.footer-twitter-col
+{
+    height:350px;
+    overflow:scroll;
+    overflow-x:hidden;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.footer-twitter
+{
+    overflow-x:hidden;
+    overflow:hidden;
+}
+
+.footer-twitter-col::-webkit-scrollbar
+{
+    display:none;
 }

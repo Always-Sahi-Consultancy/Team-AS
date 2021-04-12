@@ -8,6 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="js/menu.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <meta name="viewport" content="width:screen-size initial-scale:1.0">
 </head>
 <body>
@@ -25,17 +26,17 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="nav">
           <ul class="navbar-nav">
-            <li class="navbar-expan-md"><a href="#" class="nav-link">Home</a></li>
-            <li class="navbar-expand-md"><a href="#" class="nav-link">About</a></li>
+            <li class="navbar-expan-md"><a href="#home" class="nav-link">Home</a></li>
+            <li class="navbar-expand-md"><a href="#abouta" class="nav-link">About</a></li>
             <li class="dropdown  nav-item navbar-expand-md">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Verticals
+              <a href="#ASE" class="nav-link dropdown-toggle" data-toggle="dropdown">Verticals
             </a>
               <div class="dropdown-menu navbar-expand-md">
-                <a href="" class="dropdown-item navbar-expand-md">Educators</a>
-                <a href="" class="dropdown-item navbar-expand-md">Tehnologies</a>
+                <a href="#ASE" class="dropdown-item navbar-expand-md">Educators</a>
+                <a href="#AST" class="dropdown-item navbar-expand-md">Tehnologies</a>
               </div>
             </li>
-            <li class="navbar-expand-md"><a href="#" class="nav-link navbar-expand-md">Contact Us</a></li>
+            <li class="navbar-expand-md"><a href="#footer-main" class="nav-link navbar-expand-md">Contact Us</a></li>
           </ul>
           </div>
         </div>
@@ -77,7 +78,7 @@
         </div>
     </div>
 
-<div class="ASE">
+<div class="ASE" id="ASE">
   <h1>Always Sahi Educators</h1>
   <div class="card-deck">
     <div class="card bg-primary course">
@@ -98,7 +99,7 @@
   </div>
 </div>
 
-<div class="AST">
+<div class="AST" id="AST">
   <h1>Always Sahi Technologies</h1>
   <div class="row justify-content-center">
     <div class="col-md-5 web_img">
@@ -114,8 +115,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-1"></div>
-      <div class="col-md-10">
+    <div class="col-md-1 col-sm-1"></div>
+      <div class="col-md-10 col-sm-10">
           <div class="carousel slide" id="slider1">
               <ol class="carousel-indicators">
                   <li data-slide-to="0" data-target="#slider1" class="active"> </li>
@@ -162,6 +163,7 @@
   </div>
   </div>
 
+  <div id="abouta">
     <div id="about" class="row">
       <div class="col-lg-1"></div>
       <div class="col-lg-6">
@@ -179,7 +181,7 @@
           <img src="image/vision-2372177_1920.jpg" id="vision_img">
         </div>
         <div class="col-sm-10 col-lg-10">
-          <h4 calss="container-fluid" id="vision_data">To provide Best, Quality based and reasonable, quick solutions to our clients in all the Sectors we open with. </h4>
+          <h4 class="container-fluid" id="vision_data">To provide Best, Quality based and reasonable, quick solutions to our clients in all the Sectors we open with. </h4>
         </div>
       </div>
 
@@ -194,26 +196,33 @@
       </div>
     </div>
     </div>
+    </div>
 
     <div id="founder_heading">
       <h1>Founders Message</h1>
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-4" id="atharv">
+      <div class="col-md-4 col-sm-10" id="atharv">
         <img src="image/atharv.jpg" class="founders_image">
-        <h5>With the Aim towards “Atma Nirbhar Bharat”, we “Always Sahi Solutions Private Limited”
+        <div class="a_atharv">
+          <img src="image/up-arrow.png" class="arrow">
+        </div>
+        <div class="atharv_info">With the Aim towards “Atma Nirbhar Bharat”, we “Always Sahi Solutions Private Limited”
           stepped in bringing you our best solutions in the field of “Education, IT Solutions &amp;
           Publications” which will be launched in the form of our Vertical Services one by one. We
           work with the moto “Best Solutions Wahi, Jaha ho Always Sahi”, and stick to the same of
           providing best solutions for reasonable rates and with a user friendly model. Our Company is
           relevantly new, but has higher goals to achieve, for which our enthusiastic team is working
-          day and night to bring out the best for our Clients, Investors and for our Extended Family.</h5>
+          day and night to bring out the best for our Clients, Investors and for our Extended Family.</div>
       </div>
-      <div class="col-md-2"></div>
-      <div class="col-md-4" id="mandeep">
+      <div class="col-md-2 col-sm-1"></div>
+      <div class="col-md-4 col-sm-10" id="mandeep">
         <img src="image/atharv.jpg" class="founders_image">
-        <h5>Always Sahi was founded with the dream of serving our Nation in sectors like Education, IT
+        <div class="a_mandeep">
+          <img src="image/up-arrow.png" class="arrow">
+        </div>
+        <div class="mandeep_info">Always Sahi was founded with the dream of serving our Nation in sectors like Education, IT
           Solutions, and Publications.
           
           We started Founders with a single, simple goal:
@@ -226,7 +235,7 @@
           the same excitement since the establishment of the company.
           As the Founder of Always Sahi, I see our success target as quality at all times and also
           innovative perspective. I would like to express my thanks to everyone who kept sharing this
-          passion with us.</h5>
+          passion with us.</div>
       </div>
     </div>
 
@@ -266,7 +275,7 @@
           <!--Grid row-->
           <div class="row">
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 id="headlinef" class="text-uppercase">CONTACT_US</h5>
 
               <ul class="list-unstyled mb-0">
@@ -282,68 +291,20 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 id="headlinef" class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 id="headlinef" class="text-uppercase">INSTAGRam</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
+              <iframe></iframe>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 id="headlinef" class="text-uppercase">twitter</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <div class="footer-twitter-col">
+              <a class="twitter-timeline footer-twitter" href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw">Tweets by always_sahi</a>
+              </div>
+              <a href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @always_sahi</a>
+              <a href="https://twitter.com/intent/tweet?screen_name=always_sahi&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @always_sahi</a>
             </div>
-            <!--Grid column-->
-          </div>
           <!--Grid row-->
         </section>
         <!-- Section: Links -->
