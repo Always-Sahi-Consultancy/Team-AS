@@ -27,25 +27,27 @@
 
           <!--header-->
           <nav class="navbar" id="nav2">
-            <div class="container-fluid col-md-offset-1 col-md-10">
-              <div class="navbar-header col-md-3">
-                <button type="button" id="hamm" class="navbar-toggle ham" data-toggle="collapse" data-target="#myNavbar">
-                  <div id="nav-ham">
-                    <span id="cross" class="icon-bar"></span>
-                    <span id="cross" class="icon-bar"></span>
-                    <span id="cross" class="icon-bar"></span>       
-                  </div>
-                  <div id="nav-close" class="hidden">
-                    <span class="glyphicon glyphicon-remove"></span> 
-                  </div>                 
-                  </button>
-                  <div class="row">
-                    <div class="col-md-1"><img src="img/Background Less.png" class="a_logo"></div>
-                    <div class="col-md-offset-4 col-md-3"><img src="img/Educators .png" id="as_logo"></div>
+            <nav class="navbar" id="nav2">
+              <div class="col-md-1"><img src="img/Background Less.png" class="a_logo"></div>
+              <div class="col-md-1"><img src="img/Educators .png" id="as_logo"></div>
+              <div class="container-fluid col-md-10">
+                <div>
+                <div class="navbar-header col-md-4">
+                  <button type="button" id="hamm" class="navbar-toggle ham" data-toggle="collapse" data-target="#myNavbar">
+                    <div id="nav-ham">
+                      <span id="cross" class="icon-bar"></span>
+                      <span id="cross" class="icon-bar"></span>
+                      <span id="cross" class="icon-bar"></span>       
                     </div>
-              </div>
+                    <div id="nav-close" class="hidden">
+                      <span class="glyphicon glyphicon-remove"></span> 
+                    </div>                 
+                    </button>
+                    </div>
+                </div>
+                <div class="row">
               
-              <div class="nav02 col-md-0ffset-2 collapse navbar-collapse" id="myNavbar">
+              <div class="nav02 col-md-12 collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right"> 
                 <li class="active">
                   <a href="index.html" class="nav2 ">Courses</a>
@@ -219,7 +221,13 @@
             </div>
           </footer>
 
-    <script>
+  <script type="text/javascript">
+      $(function() {
+        $('#hamm').click(function() {
+      $('#nav-ham').toggleClass('hidden');
+      $('#nav-close').toggleClass('hidden');  
+    });
+  });
   function show(){
     var x = document.getElementById("courseSyllabus");
     if (x.style.display === "none") {
