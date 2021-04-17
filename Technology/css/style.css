@@ -165,7 +165,12 @@ a
 
 footer
 {
-    background:#2B303A;
+    background:url("../image/christian-holzinger-CUY_YHhCFl4-unsplash.jpg");
+    background-blend-mode:darken;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
 }
 
 footer .data
@@ -206,3 +211,22 @@ text-align: center;
 }
 }
 
+.footer-twitter-col
+{
+    height:350px;
+    overflow:scroll;
+    overflow-x:hidden;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.footer-twitter
+{
+    overflow-x:hidden;
+    overflow:hidden;
+}
+
+.footer-twitter-col::-webkit-scrollbar
+{
+    display:none;
+}

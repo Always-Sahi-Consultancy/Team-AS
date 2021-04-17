@@ -136,6 +136,13 @@ a
     height:3vw;
     width:3vw;
     margin:5px;
+    transition:all 0.2s ease-in;
+    transform:scale(1);
+}
+
+.nav_icon:hover
+{
+    transform:scale(1.1);
 }
 
 #facebook
@@ -235,6 +242,7 @@ a
     background-repeat: no-repeat;
     background-size:cover;
     height:100%;
+    scroll-margin-top:60px;
 }
 
 .name
@@ -279,6 +287,7 @@ a
 .ASE
 {
     padding:0 10%;
+    scroll-margin-top:50px;
 }
 
 .ASE h1
@@ -333,6 +342,7 @@ a
 .AST
 {
     padding:0 10%;
+    scroll-margin-top:50px;
 }
 
 .AST h1
@@ -348,6 +358,13 @@ a
     margin:1vw;
     text-align:center;
     min-height:250px;
+    transform:scale(1);
+    transition:all 0.5s ease-in;
+}
+
+.web_img:hover
+{
+    transform:scale(1.1);
 }
 
 .app_img
@@ -357,6 +374,13 @@ a
     margin:1vw;
     text-align:center;
     min-height:250px;
+    transform:scale(1);
+    transition:all 0.5s ease-in;
+}
+
+.app_img:hover
+{
+    transform:scale(1.1);
 }
 
 .AST h2
@@ -367,9 +391,21 @@ a
     left:20%;
 }
 
+.csr
+{
+    padding:1em 0;
+}
+
+.csr h1
+{
+    text-align:center;
+    color:#FFFBFD;
+}
+
 #abouta
 {
     padding:30px;
+    scroll-margin-top:50px;
 }
 
 #about
@@ -436,26 +472,38 @@ body
 {
     overflow:hidden;
     text-align:justify;
+    background:url("../image/atharv.jpg");
+    background-size:cover;
+    height:500px;
+    border-radius:5px;
+    margin:5px;
 }
 
 #mandeep
 {
     overflow:hidden;
     text-align:justify;
+    background:url("../image/photo6327978894807903277.jpg");
+    background-size:cover;
+    height:500px;
+    border-radius:5px;
+    margin:5px;
 }
-
+/* 
 .founders_image
 {
     width:100%;
-    height:auto;
+    max-height:500px;
+    min-height:500px;
     border-radius:5px;
+    z-index:-1;
 }
-
+ */
 .arrow
 {
-    width:3vw;
+    width:50px;
     height:auto;
-    z-index:1;
+    z-index:2;
     position:relative;
     left:45%;
 }
@@ -464,28 +512,40 @@ body
 {
     color:#FFFBFD;
     border-radius:5px;
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.8);
     display:none;
+    position:relative;
+    /* top:-500px; */
+    z-index:1;
+    overflow:hidden;
+    padding:2em;
+    margin:1em;
 }
 
 .mandeep_info
 {
     color:#FFFBFD;
     border-radius:5px;
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.8);
     display:none;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    padding:2em;
+    height:auto;
+    margin: 0.5em 0 0 0;
 }
 
 .a_atharv
 {
     position:relative;
-    top:-25px;
+    bottom:-450px;
 }
 
 .a_mandeep
 {
     position:relative;
-    top:-25px;
+    bottom:-450px;
 }
 
 #footer-main{
@@ -504,10 +564,10 @@ body
 #asmark{
     color: white;
 }
-
+/* 
 #dial-icon{
 
-}
+} */
 #email{
     color: white    ;
 }
