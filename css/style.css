@@ -572,6 +572,12 @@ body
     color: white    ;
 }
 
+.footer-instagram
+{
+    height:300px;
+    width:auto;
+}
+
 .footer-twitter-col
 {
     height:350px;

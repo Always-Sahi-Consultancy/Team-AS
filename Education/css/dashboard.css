@@ -1,0 +1,82 @@
+.menu
+{
+    width:300px;
+    float:left;
+    height:100%;
+    color:grey;
+    background:#00041A;
+    font-size:2rem;
+    position:fixed;
+    left:0px;
+    padding:1vw;
+}
+
+.titles
+{
+    z-index:1;
+    float:right;
+    width:75%;
+    font-size:2em;
+    color:#010101;
+}
+
+.courses
+{
+    background:oldlace;
+    height:300px;
+    width:300px;
+    border: 5px solid black;
+    margin:10px;
+}
+
+.course
+{
+    float:right;
+    width:80%;
+}
+
+a
+{
+    text-decoration:none;
+    color:whitesmoke;
+}
+
+.btn span
+{
+    height:6px;
+    width:30px;
+    background:whitesmoke;
+}
+
+.display-image
+{
+    width:80%;
+    height:600px;
+    background:url("../img/romain-dancre-doplSDELX7E-unsplash.jpg");
+    background-size:cover;
+    float:right;
+}
+
+.content
+{
+    float:right;
+}
+
+.profile
+{
+    width:100px;
+    height:100px;
+    max-height:100px;
+    background:olive;
+    border-radius:100px;
+}
+
+.profile-name
+{
+    font-size:larger;
+}
+
+.profile-data
+{
+    text-align:center;
+}
