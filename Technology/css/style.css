@@ -133,11 +133,23 @@ a
     color:blanchedalmond;
 }
 
+.brand-logo
+{
+    height:auto;
+    width:50px;
+}
+
 .header
 {
     background:url("../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg");
     height:100%;
     background-size:cover;
+}
+
+.header h1
+{
+    color:#FFFFFF;
+    padding: 15% 0 0 0;
 }
 
 .logo
@@ -182,6 +194,26 @@ footer .data
 {
     color:#3777FF;
 }
+
+.footer-data
+{
+    text-align:left;
+}
+
+.contact
+{
+    height:50px;
+    background:olive;
+    border-radius:25px;
+    width:50px;
+    display:inline-flex;
+}
+
+.footer-left
+{
+    float:left;
+}
+
 #card1{background-color: red;
             /* height: 40rem;} */
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -25,11 +25,13 @@ $(document).ready(function(){
             $(".nav_bar").css("background", "#FFFBDF");
             $('.menu').css('color', '#2B303A');
             $('.content').css('color', '#2B303A');
+            $('.brand-logo').css('display','block');
         }
         else{
             $(".nav_bar").css("background", "none");
             $('.menu').css('color', '#FFFDBF');
             $('.content').css('color', '#FFFBDF');
+            $('.brand-logo').css('display','none');
         }
     })
 });

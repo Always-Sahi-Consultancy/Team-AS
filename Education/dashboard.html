@@ -6,33 +6,53 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="css/dashboard.css" rel="stylesheet">
+    <script src="js/dashboard.js"></script>
 </head>
 <body>
     <div>
         <!-- Nav bar-->
     </div>
-    <div class="menu">
-        <div class="btn"><span></span><span></span><span></span><span></span></div>
+    <div class="navbar navbar-expand-md fixed-left menu">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated_icon">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </button>
         <div class="profile-data">
             <img src="image/profile.png" class="profile">
             <div id="prodile-name">Name</div>
         </div>
-        <a href="profile.html"><div>Profile</div></a>
-        <a href="#course"><div>My Courses</div></a>
-        <a href="#rec"><div>Recommendation</div></a>
-        <a href="#carpath"><div>Career Path</div></a>
+        <!-- <div class="animated_icon" onclick=""><span></span><span></span><span></span><span></span></div>-->
+        <div class="collapse navbar-collapse" id="#menu">
+            <ul type="none">
+        <a href="profile.html"><li class="navbar-expand-md">Profile</li></a>
+        <a href="#course"><li class="navbar-expand-md">My Courses</li></a>
+        <a href="#rec"><li class="navbar-expand-md">Recommendation</li></a>
+        <a href="#carpath"><li class="navbar-expand-md">Career Path</li></a>
+            </ul>
+        </div>
     </div>
     <div class="content">
         <div class="display-image"></div>
         <div id="course" class="titles">My Learning</div>
+        <div class="">
         <div class="row container-fluid course">
             <div class="col-md-4 col-sm-4 courses"></div>
             <div class="col-md-4 col-sm-4 courses"></div>
             <div class="col-md-4 col-sm-4 courses"></div>
             <div class="col-md-4 col-sm-4 courses"></div>
         </div>
+        </div>
         <div class="titles">Recommendation</div>
-        <div id=rec class="row container-fluid course">
+        <div id="rec" class="row container-fluid course">
+            <div class="col-md-3 col-sm-4 courses"></div>
+            <div class="col-md-3 col-sm-4 courses"></div>
+            <div class="col-md-3 col-sm4 courses"></div>
+            <div class="col-md-3 col-sm-4 courses"></div>
+            <a herf="" class="show-more col-sm-12"><button>Show More</button></a>
+        </div>
+        <div class="titles">Career Path</div>
+        <div id="rec" class="row container-fluid course">
             <div class="col-md-3 col-sm-4 courses"></div>
             <div class="col-md-3 col-sm-4 courses"></div>
             <div class="col-md-3 col-sm4 courses"></div>
