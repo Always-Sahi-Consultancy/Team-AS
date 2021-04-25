@@ -1,6 +1,7 @@
 
 body{
     overflow-x:hidden;
+    background:none;
 }
 
 .menu
@@ -170,6 +171,10 @@ a
 {
     width:30px;
     height:30px;
+    position:fixed;
+    top:3em;
+    right:0em;
+    z-index:3;
 }
 
 .tww
@@ -179,6 +184,7 @@ a
     text-align:center;
     width:80%;
     min-height:80%;
+    color:black;
 }
 
 .front-end-icon
@@ -189,13 +195,13 @@ a
 
 .front-end
 {
-    margin:50px;
-    display:inline;
+    margin:1em 0;
+    display:block;
 }
 
 .database
 {
-    margin:100px 0;
+    margin:1em 0;
     display:none;
 }
 
@@ -207,7 +213,7 @@ a
 
 .back-end
 {
-    margin:100px 0;
+    margin:1em 0;
     display:none;
 }
 
@@ -220,41 +226,99 @@ a
 .icon
 {
     margin:2em;
+    width:120px;
 }
 
 .fields
 {
     font-size:larger;
     transition:all .5ms ease;
-    border:2px solid white;
+    color:black;
 }
 
 .fields:hover
 {
-    color:orangered;
-    border-bottom:2px solid orangered;
+    color:red;
     cursor:pointer;
 }
 
 .frontend
 {
-    color:black;
+    border-bottom:2px solid white;
+    min-width:min-content;
+}
+
+.frontend:hover
+{
+    border-bottom:2px solid red;
 }
 
 .database-title
 {
-    color:black;
+    border-bottom:2px solid white;
+    min-width:min-content;
+}
+
+.database-title:hover
+{
+    border-bottom:2px solid red;
 }
 
 .backend
 {
-    color:black;
+    border-bottom:2px solid white;
+    min-width:min-content;
+}
+
+.backend:hover
+{
+    border-bottom:2px solid red;
 }
 
 .services
 {
     max-height:fit-content;
     width:100px;
+    display:inline-block;
+    margin: 3em;
+}
+
+.tww h1
+{
+    padding:1em 0 0 0;
+}
+
+.tab
+{
+    border-bottom:1px solid #aaaaaa;
+}
+
+.customer-info
+{
+    width:60%;
+    padding: 10% 0 0 10%;
+}
+
+.customer button
+{
+    background:red;
+    color:white;
+    height:3em;
+    width:10em;
+    border-radius:5em;
+    transition:all 0.5s ease;
+}
+
+.customer
+{
+    height:100%;
+    width:100%;
+    color:black;
+}
+
+.customer button:hover
+{
+    transform:scale(1.01);
 }
 
 @media screen and (max-width:800px)
@@ -268,6 +332,12 @@ a
     .header h1
     {
         margin:10%;
+    }
+
+    .night
+    {
+        right:1em;
+        top:3em;
     }
 }
 

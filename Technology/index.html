@@ -7,8 +7,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <meta name="viewport" content="width:screen-size initial-scale:1.0">
     <title>Always Sahi Technologies</title>
-    <link href="css/style.css" rel="stylesheet">
     <script src="js/menu.js"></script>
+    <link href="css/style.css" rel="stylesheet">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
             </button>
           <div class="collapse navbar-collapse justify-content-end" id="nav-content">
           <ul class="navbar-nav">
-            <li class="navbar-expan-md content"><a href="#" class="nav-link content">Home</a></li>
+            <!-- <li class="navbar-expan-md content"><a href="#" class="nav-link content">Home</a></li> -->
             <li class="dropdown  nav-item navbar-expand-md content">
               <a href="#" class="nav-link dropdown-toggle content" data-toggle="dropdown">Services
             </a>
@@ -41,10 +41,11 @@
             <li class="navbar-expand-md content"><a href="#" class="nav-link navbar-expand-md content">Contact Us</a></li>
           </ul>
           </div>
-          <div><img src="image/moon.png" class="night justify-content-end"></div>
         </div>
       </nav>
     </div>
+
+    <div><img src="image/moon.png" class="night"></div>
 
     <div class="header">
         <div class="row">
@@ -104,35 +105,48 @@
      -->
     
      <div class="tww">
-       <h1>Technologies we work with </h1>
+       <h1><b>Technologies we work with</b></h1>
        <div>
-         <div class="row justify-content-center">
-           <div class="fields active col-2 frontend">Front End</div>
-           <div class="fields col-2 database-title">Database</div>
-           <div class="fields col-2 backend">Back End</div>
+         <div class="row justify-content-center tab">
+           <div class="fields active col-2 frontend"><b>Front End</b></div>
+           <div class="fields col-2 database-title"><b>Database</b></div>
+           <div class="fields col-2 backend"><b>Back End</b></div>
           </div>
-          <div class="front-end container-fluid">
-            <div class="services container-fluid"><img src="image/TWW/Front-End/004-atom.png" class="front-end-icon icon">React JS</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/001-typescript.png" class="front-end-icon icon">TypeScript</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/icons8-vue-js-100.png" class="front-end-icon icon">Vue</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/002-html5.png" class="front-end-icon icon">HTML5</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/003-css-3.png" class="front-end-icon icon"> CSS3</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/icons8-sass-100.png" class="front-end-icon icon">Sass</div>
-            <div class="services container-fluid"><img src="image/TWW/Front-End/tailwind-css.png" class="front-end-icon icon">Tailwind CSS</div>
+          <div class="front-end">
+            <span class="services"><img src="image/TWW/Front-End/004-atom.png" class="front-end-icon icon"><div class="text-center">React JS</div></span>
+            <span class="services"><img src="image/TWW/Front-End/001-typescript.png" class="front-end-icon icon"><div class="text-center">TypeScript</div></span>
+            <span class="services"><img src="image/TWW/Front-End/icons8-vue-js-100.png" class="front-end-icon icon"><div class="text-center">Vue</div></span>
+            <span class="services"><img src="image/TWW/Front-End/002-html5.png" class="front-end-icon icon"><div class="text-center">HTML5</div></span>
+            <span class="services"><img src="image/TWW/Front-End/003-css-3.png" class="front-end-icon icon"><div class="text-center">CSS3</div></span>
+            <span class="services"><img src="image/TWW/Front-End/icons8-sass-100.png" class="front-end-icon icon"><div class="text-center">Sass</div></span>
+            <span class="services"><img src="image/TWW/Front-End/tailwind-css.png" class="front-end-icon icon"><div class="text-center">Tailwind CSS</div></span>
           </div>
           <div class="database">
-            <span><img src="image/TWW/Database/icons8-mongodb-100.png" class="database-icon icon">MongoDB</span>
-            <span><img src="image/TWW/Database/icons8-mysql-logo-100.png" class="database-icon icon">MySQL</span>
-            <span><img src="image/TWW/Database/icons8-google-firebase-console-100.png icon" class="database-icon">Firebase</span>
-            <span><img src="image/TWW/Database/icons8-postgresql-100.png" class="database-icon icon">PostgreSQL</span>
+            <span class="services"><img src="image/TWW/Database/icons8-mongodb-100.png" class="database-icon icon"><div class="text-center">MongoDB</div></span>
+            <span class="services"><img src="image/TWW/Database/icons8-mysql-logo-100.png" class="database-icon icon"><div class="text-center">MySQL</div></span>
+            <span class="services"><img src="image/TWW/Database/icons8-firebase-480.png" class="database-icon"><div class="text-center">Firebase</div></span>
+            <span class="services"><img src="image/TWW/Database/icons8-postgresql-100.png" class="database-icon icon"><div class="text-center">PostgreSQL</div></span>
           </div>
           <div class="back-end">
-            <span><img src="image/TWW/Back-End/icons8-nodejs-100.png" class="back-end-icon icon">Node JS/Express</span>
-            <span><img src="image/TWW/Back-End/icons8-php-logo-100.png" class="back-end-icon icon">PHP</span>
-            <span><img src="image/TWW/Back-End/microsoft-dotnet.png" class="back-end-icon icon"> .Net</span>
+            <span class="services"><img src="image/TWW/Back-End/icons8-nodejs-100.png" class="back-end-icon icon"><div class="text-center">Node JS/Express</div></span>
+            <span class="services"><img src="image/TWW/Back-End/icons8-php-logo-100.png" class="back-end-icon icon"><div class="text-center">PHP</div></span>
+            <span class="services"><img src="image/TWW/Back-End/microsoft-dotnet.png" class="back-end-icon icon"><div class="text-center">.Net</div></span>
           </div>
         </div>
       </div>
+
+      <div class="customer">
+        <div class="customer-info">
+          <p>Gauranteed Customer Satisfaction</p>
+          <h1><b>We Promise. We deliver.</b></h1>
+          <p><b>Have an idea?</b> Work with us and see how it goes.We promise to go the extra mile for every project that we take onboard.</p>
+          <button>Contact Us</button>
+        </div>
+        <div>
+          <img src="">
+        </div>
+      </div>
+      
 
     <footer id="footer-main" class="text-center text-white">
         <!-- Grid container -->
@@ -233,9 +247,13 @@
         <!-- Grid container -->
   
         <!-- Copyright -->
-        <div id="asmark" class="text-center p-3">
-  
-          &copy 2021 | Always sahi solutions private limited | all rights reserved
+        <div id="asmark" class="p-3">
+          <div class="text-left footer-left">
+          &copy 2021 Always Sahi Solutions Private Limited. All rights reserved.
+          </div>
+          <div class="text-right">
+            Terms & Conditions | Privacy Policy 
+          </div>
         </div>
   
         <div class=""></div>
