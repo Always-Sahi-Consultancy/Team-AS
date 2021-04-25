@@ -428,3 +428,21 @@ text-align: center;
 {
     display:none;
 }
+
+.welcome{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.icons{
+    width: auto;
+    height: auto;
+    transition:width 2s, height 2s;
+}
+.icons:hover{
+    width:20%;
+    height: 30%;
+}
+.service{
+    background-color: #F5F9FF;
+    padding: 50px;
+}
