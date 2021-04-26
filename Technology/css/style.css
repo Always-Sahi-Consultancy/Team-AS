@@ -140,6 +140,12 @@ a
     width:50px;
 }
 
+.name
+{
+    color:white;
+    display:none;
+}
+
 .header
 {
     background:url("../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg");
@@ -233,46 +239,50 @@ a
 {
     font-size:larger;
     transition:all .5ms ease;
-    color:black;
 }
 
 .fields:hover
 {
-    color:red;
     cursor:pointer;
 }
 
 .frontend
 {
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
     min-width:min-content;
+    color:red;
 }
 
 .frontend:hover
 {
-    border-bottom:2px solid red;
+    border-bottom:1px solid red;
+    color:red;
 }
 
 .database-title
 {
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
     min-width:min-content;
+    color:black;
 }
 
 .database-title:hover
 {
-    border-bottom:2px solid red;
+    border-bottom:1px solid red;
+    color:red;
 }
 
 .backend
 {
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
     min-width:min-content;
+    color:black;
 }
 
 .backend:hover
 {
-    border-bottom:2px solid red;
+    border-bottom:1px solid red;
+    color:red;
 }
 
 .services
@@ -297,6 +307,7 @@ a
 {
     width:60%;
     padding: 10% 0 0 10%;
+    float:left;
 }
 
 .customer button
@@ -323,8 +334,9 @@ a
 
 .satisfaction
 {
-    width:100%;
+    width:35%;
     height:auto;
+    float:left;
 }
 
 @media screen and (max-width:800px)
@@ -429,7 +441,9 @@ footer .data
 .welcome{
     margin-top: 50px;
     margin-bottom: 50px;
+    color:black;
 }
+
 .icons{
     width: auto;
     height: auto;
