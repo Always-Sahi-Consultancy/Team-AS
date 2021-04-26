@@ -153,14 +153,47 @@
       </div>
 
 
-      <div><center>
+      <div class="welcome"><center>
         <h1><strong>Some shots from our recent Projects</strong></h1>
-      </center>
+     </center>
     </div>
-    <div class="slideshow-container">
-      <iframe class="responsive-iframe" src="https://www.w3schools.com/howto/howto_css_responsive_iframes.asp" height="200px" width="200px"></iframe>
-    </div>
+    <center>
+      <div class="slideshow-container col-md-8 col-sm-10">
 
+        <div class="mySlides fade">
+          
+          <iframe src="http://bondsocially.org/" height="500px" width="100%" title="Ourprojects"></iframe>
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <iframe src="http://bondsocially.org/" height="500px" width="100%" title="Ourprojects"></iframe>
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <iframe src="http://bondsocially.org/" height="500px" width="100%" title="Ourprojects"></iframe>
+        
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      
+    
+     
+  </center>
+
+  
       <div class="customer">
         <div class="customer-info">
           <p>Gauranteed Customer Satisfaction</p>
@@ -285,6 +318,37 @@
         <div class=""></div>
         <!-- Copyright -->
       </footer>
+      <script>
+       var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1
+  }    
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
 </body>
 </html>
