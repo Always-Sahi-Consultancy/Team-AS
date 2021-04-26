@@ -447,18 +447,31 @@ footer .data
 .icons{
     width: auto;
     height: auto;
-    transition:width 2s, height 2s;
+}
+@keyframes tops{
+    from{
+        transform: scaleY(0);
+        bottom: 0px;};
+    to{
+        transform: scaleY(10px);
+        bottom: 10px;}
+}
+@-webkit-keyframes tops{
+    from{bottom: 0px;}
+    to{bottom: 10px;}
 }
 .icons:hover{
     width:20%;
     height: 30%;
+    animation-name: tops;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: tops;
 }
 .service{
     
     padding: 50px;
 }
-
-
 
 .slideshow-container {
   max-width: 1000px;
@@ -523,8 +536,12 @@ footer .data
 }
 
 @keyframes fade {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    from {
+        transform: scale(0.75);
+        opacity: 0;}
+    to {
+        transform: scale(1);
+        opacity: 1;}
  }
 
 
