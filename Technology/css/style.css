@@ -458,8 +458,7 @@ footer .data
     padding: 50px;
 }
 
-.mySlides {display: none}
-iframe {vertical-align: middle;}
+
 
 .slideshow-container {
   max-width: 1000px;
@@ -513,25 +512,26 @@ iframe {vertical-align: middle;}
   background-color: #717171;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+.mySlides {
+    display: block;
+    width: 100%;
+    height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-    
+iframe{
+    overflow: hidden;
+}   
 
