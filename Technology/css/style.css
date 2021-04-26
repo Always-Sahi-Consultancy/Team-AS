@@ -157,7 +157,7 @@ a
 {
     width:90%;
     height:auto;
-    margin: 15% 0 0 0;
+    margin: 30% 0 0 10%;
 }
 
 #company
@@ -321,6 +321,12 @@ a
     transform:scale(1.01);
 }
 
+.satisfaction
+{
+    width:100%;
+    height:auto;
+}
+
 @media screen and (max-width:800px)
 {
     .logo
@@ -338,6 +344,11 @@ a
     {
         right:1em;
         top:3em;
+    }
+
+    #company
+    {
+        display:none;
     }
 }
 
@@ -380,33 +391,19 @@ footer .data
     float:left;
 }
 
-#card1{background-color: red;
-            /* height: 40rem;} */
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-
-}
-#card2{background-color: rgb(238, 225, 225);
-    /* height: 40rem;} */
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-
-}
-#card3{background-color: rgb(0, 102, 255);
-    /* height: 40rem;} */
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-
+.footer-contact button
+{
+    background:red;
+    color:white;
+    height:3em;
+    width:10em;
+    border-radius:5em;
+    transition:all 0.5s ease;
 }
 
-@media(min-width:600px){
-.card-deck{
-    position: relative;
-    top:-7vw;
-}
-#heading-ourservices{
-    display: none;
-}
+.footer-contact button:hover
+{
+    transform:scale(1.01);
 }
 
 .footer-twitter-col
