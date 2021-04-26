@@ -141,6 +141,9 @@ $(document).ready(function(){
             $('.customer').css('color','white');
             night_data.src="image/sun.png";
             $('.welcome').css('color','white');
+            $('.service').css('color','white');
+            $('.prev').css('color','white');
+            $('.next').css('color','white');
             state2=2;
         }
         else if(state2==2)
@@ -156,7 +159,10 @@ $(document).ready(function(){
             $('.tww').css('color','black');
             $('.customer').css('color','black');
             night_data.src="image/moon.png";
-            $('.welcome').css('color','white');
+            $('.welcome').css('color','black');
+            $('.service').css('color','black');
+            $('.prev').css('color','black');
+            $('.next').css('color','black');
             state2=1;
         }
     });
