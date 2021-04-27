@@ -1,4 +1,3 @@
-
 var slideIndex = 1;
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -39,6 +38,8 @@ $(document).ready(function(){
         $('.menu').css('color', '#2B303A');
         $('.content').css('color', '#2B303A');
         $('.as').css('background', '#2B303A');
+        $('.name').css('display','block');
+        $('.name').css('color','black');
         state=0;
         }
         else if(state!=1 && scroll>60)
@@ -47,6 +48,8 @@ $(document).ready(function(){
             $('.menu').css('color', '#2B303A');
             $('.content').css('color', '#2B303A');
             $('.as').css('background', '#2B303A');
+            $('.name').css('display','block');
+            $('.name').css('color','black');
             state=1;            
         }
         else
@@ -55,44 +58,59 @@ $(document).ready(function(){
             $('.menu').css('color', 'white');
             $('.content').css('color', 'white');
             $('.as').css('background', 'white');
+            $('.name').css('display','block');
+            $('.name').css('color','white');
             state=1;
         }
     });
 
-    $(window).scroll(function(){
-        scroll=$(window).scrollTop();
-        var window_width=$(window).innerWidth();
-        if(scroll<=60 && state==0)
-        {
-            $(".nav_bar").css("background", "white");
-            $('.menu').css('color', '#2B303A');
-            $('.content').css('color', '#2B303A');
-            $('.brand-logo').css('display','block');
-            $('.animated_icon span').css('background','black');
-            $('.name').css('display','block');
-        }
-        else if(scroll>60){
-            $(".nav_bar").css("background", "white");
-            $('.menu').css('color', '#2B303A');
-            $('.content').css('color', '#2B303A');
-            $('.brand-logo').css('display','block');
-            $('.animated_icon span').css('background','black');
-            $('.name').css('display','block');
-        }
-        else{
-            $(".nav_bar").css("background", "none");
-            $('.menu').css('color', 'white');
-            $('.content').css('color', 'white');
-            if(window_width>768){
-                $('.brand-logo').css('display','none');
-                $('.name').css('display','none');
-            }
-            $('.animated_icon span').css('background','white');
-        }
-    });
+function backend()
+{
+    $('.front-end').css('display','none');
+    $('.database').css('display','none');
+    $('.back-end').css('display','block');
+    $('.frontend').css('border_bottom','white');
+    $('.database-title').css('border_bottom','white');
+    $('.backend').css('border_bottom','red');
+    if(state2==2)
+    {
+        $('.frontend').css('color','white');
+        $('.backend').css('color','red');
+        $('.database-title').css('color','white');
+    }
+    else
+    {
+        $('.frontend').css('color','black');
+        $('.database-title').css('color','black');
+        $('.backend').css('color','red');
+    }
+};
 
-    $('.database-title').on('click',function(){
-        $('.front-end').css('display','none');
+function frontend()
+{
+    $('.front-end').css('display','block');
+    $('.database').css('display','none');
+    $('.back-end').css('display','none');
+    $('.database-title').css('border_bottom','white');
+    $('.backend').css('border_bottom','white');
+    $('.frontend').css('border_bottom','red');
+    if(state2==2)
+    {
+       $('.backend').css('color','white');
+       $('.frontend').css('color','red');
+       $('.database-title').css('color','white');
+    }
+    else
+    {
+        $('.database-title').css('color','black');
+        $('.backend').css('color','black');
+        $('.frontend').css('color','red');
+    }
+}
+
+function database_title()
+{
+    $('.front-end').css('display','none');
         $('.database').css('display','block');
         $('.back-end').css('display','none');
         $('.frontend').css('border_bottom','white');
@@ -110,57 +128,57 @@ $(document).ready(function(){
             $('.backend').css('color','black');
             $('.database-title').css('color','red');
         }
+}
+    $(window).scroll(function(){
+        scroll=$(window).scrollTop();
+        var window_width=$(window).innerWidth();
+        if(scroll<=60 && state==0)
+        {
+            $(".nav_bar").css("background", "white");
+            $('.menu').css('color', '#2B303A');
+            $('.content').css('color', '#2B303A');
+            $('.brand-logo').css('display','block');
+            $('.animated_icon span').css('background','black');
+            $('.name').css('display','block');
+            $('.name').css('color','white');
+        }
+        else if(scroll>60){
+            $(".nav_bar").css("background", "white");
+            $('.menu').css('color', '#2B303A');
+            $('.content').css('color', '#2B303A');
+            $('.brand-logo').css('display','block');
+            $('.animated_icon span').css('background','black');
+            $('.name').css('display','block');
+            $('.name').css('color','black');
+        }
+        else{
+            $(".nav_bar").css("background", "none");
+            $('.menu').css('color', 'white');
+            $('.content').css('color', 'white');
+            if(window_width>768){
+                $('.brand-logo').css('display','none');
+                $('.name').css('display','none');
+                $('.name').css('color','white');
+            }
+            $('.animated_icon span').css('background','white');
+        }
     });
 
-    $('.frontend').on('click',function(){
-        $('.front-end').css('display','block');
-        $('.database').css('display','none');
-        $('.back-end').css('display','none');
-        $('.database-title').css('border_bottom','white');
-        $('.backend').css('border_bottom','white');
-        $('.frontend').css('border_bottom','red');
-        if(state2==2)
-        {
-           $('.backend').css('color','white');
-           $('.frontend').css('color','red');
-           $('.database-title').css('color','white');
-        }
-        else
-        {
-            $('.database-title').css('color','black');
-            $('.backend').css('color','black');
-            $('.frontend').css('color','red');
-        }
-    });
+    $('.database-title').on('click',database_title);
 
-    $('.backend').on('click',function(){
-        $('.front-end').css('display','none');
-        $('.database').css('display','none');
-        $('.back-end').css('display','block');
-        $('.frontend').css('border_bottom','white');
-        $('.database-title').css('border_bottom','white');
-        $('.backend').css('border_bottom','red');
-        if(state2==2)
-        {
-            $('.frontend').css('color','white');
-            $('.backend').css('color','red');
-            $('.database-title').css('color','white');
-        }
-        else
-        {
-            $('.frontend').css('color','black');
-            $('.database-title').css('color','black');
-            $('.backend').css('color','red');
-        }
-    });
+    $('.frontend').on('click',frontend);
+
+    $('.backend').on('click',backend);
 
     $('.night').on('click',function(){
         var night_data=document.getElementById('night');
-        
+        var header_data=document.getElementById('home');        
         if(state2==1)
         {
             $('body').css('background','black');
-            $('.header').css('background','../image/patrick-fore-HVFYFns30-I-unsplash.jpg');
+            // $('.header').css('background-image',"url('../image/patrick-fore-HVFYFns30-I-unsplash.jpg')");
+            // header_data.url="url('../image/patrick-fore-HVFYFns30-I-unsplash.jpg')";
+            header_data.style.backgroundImage="url(image/patrick-fore-HVFYFns30-I-unsplash.jpg)";
             $('.front-end').css('color','white');
             $('.database').css('color','white');
             $('.back-end').css('color','white');
@@ -175,11 +193,14 @@ $(document).ready(function(){
             $('.prev').css('color','white');
             $('.next').css('color','white');
             state2=2;
+            frontend();
         }
         else if(state2==2)
         {
             $('body').css('background','white');
-            $('.header').css('background','../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg');
+            // $('.header').css('background-image',"url('../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg')");
+            // header_data.url="url('../image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg')";
+            header_data.style.backgroundImage="url(image/zhengtao-tang-ltpQwpxObs8-unsplash.jpg)";
             $('.front-end').css('color','black');
             $('.database').css('color','black');
             $('.back-end').css('color','black');
@@ -194,15 +215,11 @@ $(document).ready(function(){
             $('.prev').css('color','black');
             $('.next').css('color','black');
             state2=1;
+            frontend();
         }
     });
-
     
     showSlides(slideIndex);
-
-    
-    
-
 });
 
 window.addEventListener('prev', plusSlides);
