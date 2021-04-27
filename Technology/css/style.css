@@ -390,6 +390,18 @@ a
     }
 }
 
+.ways
+{
+    height:auto;
+    width:50%;
+}
+
+#cardmain
+{
+    margin:2em;
+    margin:auto;
+}
+
 footer
 {
     background-image:url("../image/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
@@ -419,8 +431,6 @@ footer .data
 .contact
 {
     height:50px;
-    background:olive;
-    border-radius:25px;
     width:50px;
     display:inline-flex;
 }
