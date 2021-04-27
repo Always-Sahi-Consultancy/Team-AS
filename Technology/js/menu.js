@@ -190,6 +190,7 @@ function database_title()
             night_data.src="image/sun.png";
             $('.welcome').css('color','white');
             $('.service').css('color','white');
+            $('.arrow').css('border-color','white');
             $('.prev').css('color','white');
             $('.next').css('color','white');
             state2=2;
@@ -212,6 +213,7 @@ function database_title()
             night_data.src="image/moon.png";
             $('.welcome').css('color','black');
             $('.service').css('color','black');
+            $('.arrow').css('border-color','black');
             $('.prev').css('color','black');
             $('.next').css('color','black');
             state2=1;
