@@ -468,36 +468,22 @@ footer .data
 
 .welcome{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     color:black;
 }
 
 .icons{
+    margin-top: 20px;
     width: auto;
     height: auto;
+    position: relative;
+    transition: bottom 2s;    
 }
-@keyframes tops{
-    from{
-        transform: scaleY(0);
-        bottom: 0px;};
-    to{
-        transform: scaleY(10px);
-        bottom: 10px;}
-}
-@-webkit-keyframes tops{
-    from{bottom: 0px;}
-    to{bottom: 10px;}
-}
+
 .icons:hover{
-    width:20%;
-    height: 30%;
-    animation-name: tops;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: tops;
+    bottom: 20px;
 }
 .service{
-    
     padding: 50px;
 }
 
@@ -579,5 +565,6 @@ footer .data
 }
 iframe{
     overflow: hidden;
-}   
+}
+
 
