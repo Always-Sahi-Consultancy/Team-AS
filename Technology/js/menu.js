@@ -189,6 +189,7 @@ function database_title()
             $('.customer').css('color','white');
             night_data.src="image/sun.png";
             $('.welcome').css('color','white');
+            $('.welcome2').css('color','white');
             $('.service').css('color','white');
             $('.arrow').css('border-color','white');
             $('.prev').css('color','white');
@@ -212,8 +213,10 @@ function database_title()
             $('.customer').css('color','black');
             night_data.src="image/moon.png";
             $('.welcome').css('color','black');
+            $('.welcome2').css('color','black');
             $('.service').css('color','black');
             $('.arrow').css('border-color','black');
+            $('.arrow:hover').css('border-color','grey');
             $('.prev').css('color','black');
             $('.next').css('color','black');
             state2=1;
