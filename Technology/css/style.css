@@ -182,8 +182,8 @@ a
     width:30px;
     height:30px;
     position:fixed;
-    top:4em;
-    right:0em;
+    top:60px;
+    right:30px;
     z-index:3;
 }
 
@@ -292,9 +292,9 @@ a
 .services
 {
     max-height:fit-content;
-    width:100px;
+    width:80px;
     display:inline-block;
-    margin: 3em;
+    margin:30px;
 }
 
 .tww h1
@@ -369,6 +369,9 @@ a
     #company
     {
         display:none;
+        float:left;
+        position:relative;
+        left:-20px;
     }
 
     .name
@@ -435,6 +438,8 @@ footer .data
     height:50px;
     width:50px;
     display:inline-flex;
+    position:relative;
+    left:-20px;
 }
 
 .footer-left
