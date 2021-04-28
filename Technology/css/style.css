@@ -184,6 +184,11 @@ a :link
     text-align:center;
 }
 
+/* #service.activate
+{
+    color:#f13c31;
+} */
+
 #webdev
 {
     color:black;
@@ -203,6 +208,16 @@ a :link
 {
     color:#f13c31;
 }
+
+/* #webdev.activate
+{
+    color:#f13c31;
+}
+
+#comson.activate
+{
+    color:#f13c31;
+} */
 
 .drop-down
 {
