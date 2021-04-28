@@ -163,8 +163,8 @@ function database_title()
                 $('.name').css('color','white');
             }
             $('.animated_icon span').css('background','white');
-            $('#webdev').css('color','blue');
-            $('#comson').css('color','blue');
+            $('#webdev').css('color','black');
+            $('#comson').css('color','black');
         }
     });
 

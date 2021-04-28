@@ -180,12 +180,17 @@ a :link
 
 #webdev
 {
-    color:blue;
+    color:black;
 }
 
 #comson
 {
-    color:blue;
+    color:black;
+}
+
+.drop-down
+{
+    background:#FFFBDF;
 }
 
 #home
@@ -343,7 +348,7 @@ a :link
 
 .customer
 {
-    height:fit-content;
+    height:60%;
     width:100%;
     color:black;
     margin: 10px;
