@@ -133,6 +133,11 @@ a
     color:blanchedalmond;
 }
 
+a :link
+{
+    color:blanchedalmond;
+}
+
 .brand-logo
 {
     height:auto;
@@ -170,6 +175,16 @@ a
     font-size:xx-large;
     color:#FFFBDF;
     text-align:center;
+}
+
+#webdev
+{
+    color:black;
+}
+
+#comson
+{
+    color:black;
 }
 
 #home
@@ -327,9 +342,10 @@ a
 
 .customer
 {
-    height:100%;
+    height:fit-content;
     width:100%;
     color:black;
+    margin: 10px;
 }
 
 .customer button:hover
@@ -339,7 +355,7 @@ a
 
 .satisfaction
 {
-    width:35%;
+    width:40%;
     height:auto;
     float:right;
     padding:1%;
@@ -418,6 +434,7 @@ footer
     padding-top: 20px;
     width: 100%;
     height: auto;
+    overflow:hidden;
 }
 
 footer .data
@@ -484,6 +501,42 @@ footer .data
 {
     display:none;
 }
+
+.as-footer
+{
+    float:left;
+    text-align:left;
+    width:80%;
+}
+
+.terms_condition-footer
+{
+    float:left;
+    text-align:right;
+    width:20%;
+}
+
+.new
+{
+    display:inline-flex;
+}
+
+@media screen and (max-width:800px)
+{
+
+    .as-footer
+    {
+        text-align:center;
+        width:100%;
+    }
+
+    .terms_condition-footer
+    {
+        text-align:center;
+        width:100%;
+    }
+}
+
 .welcome{
     margin-top: 30px;
     margin-bottom:10px;
