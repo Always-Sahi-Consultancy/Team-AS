@@ -405,6 +405,8 @@ a
 {
     margin:2em;
     margin:auto;
+    text-decoration: none;
+    
 }
 
 footer
@@ -608,6 +610,7 @@ iframe{
 }
 .card-deck{
     padding-top: 2em;
+    
 }
 #builds{
     color: black;
@@ -625,3 +628,9 @@ iframe{
 .secondimg{
     display: none;
 }
+.card{
+    border: none;
+    background-color: white;
+    
+}
+

@@ -200,6 +200,9 @@ function database_title()
             $('.simplify').css('background','black');
             $('.simplify-data').css('color','white');
             $('.letschat').css('color','white');
+            $('.listwesimp').css('color','white');
+            $('.card').css('background-color','black');
+            $('.headwesimp').css('color','white');
             state2=2;
             frontend();
         }
@@ -228,6 +231,11 @@ function database_title()
             $('.simplify').css('background','white');
             $('.simplify-data').css('color','black');
             $('.letschat').css('color','black');
+            $('.listwesimp').css('color','black');
+            $('.card').css('background-color','white');
+            $('.headwesimp').css('color','black');
+
+ 
             state2=1;
             frontend();
         }
