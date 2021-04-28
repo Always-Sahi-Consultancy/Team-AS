@@ -610,9 +610,11 @@ iframe{
 }
 
 .firstimg{
-    display: none;
+    display: block;
+    height: 6em;
+    width: 6em;
     
 }
 .secondimg{
-    display: block;
+    display: none;
 }
