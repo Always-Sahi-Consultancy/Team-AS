@@ -157,12 +157,14 @@ function database_title()
             $(".nav_bar").css("background", "none");
             $('.menu').css('color', 'white');
             $('.content').css('color', 'white');
-            if(window_width>768){
+            if(window_width>800){
                 $('.brand-logo').css('display','none');
                 $('.name').css('display','none');
                 $('.name').css('color','white');
             }
             $('.animated_icon span').css('background','white');
+            $('#webdev').css('color','black');
+            $('#comson').css('color','black');
         }
     });
 
@@ -246,5 +248,12 @@ function database_title()
     showSlides(slideIndex);
 });
 
+function service(n)
+{
+    $('.contact').css('color','black');
+}
+
 window.addEventListener('prev', plusSlides);
 window.addEventListener('next',plusSlides);
+
+window.addEventListener('service',)

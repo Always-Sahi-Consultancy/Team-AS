@@ -133,6 +133,11 @@ a
     color:blanchedalmond;
 }
 
+a :link
+{
+    color:blanchedalmond;
+}
+
 .brand-logo
 {
     height:auto;
@@ -156,6 +161,7 @@ a
 {
     color:#FFFFFF;
     padding: 15% 0 0 0;
+    font-family: 'Jost', sans-serif;
 }
 
 .logo
@@ -167,9 +173,24 @@ a
 
 #company
 {
-    font-size:x-large;
+    font-size:xx-large;
     color:#FFFBDF;
     text-align:center;
+}
+
+#webdev
+{
+    color:black;
+}
+
+#comson
+{
+    color:black;
+}
+
+.drop-down
+{
+    background:#FFFBDF;
 }
 
 #home
@@ -334,9 +355,10 @@ a
 }
 .customer
 {
-    height:100%;
+    height:60%;
     width:100%;
     color:black;
+    margin: 10px;
 }
 
 .customer button:hover
@@ -346,7 +368,7 @@ a
 
 .satisfaction
 {
-    width:35%;
+    width:40%;
     height:auto;
     float:right;
     padding:1%;
@@ -427,6 +449,7 @@ footer
     padding-top: 20px;
     width: 100%;
     height: auto;
+    overflow:hidden;
 }
 
 footer .data
@@ -495,6 +518,42 @@ footer .data
 {
     display:none;
 }
+
+.as-footer
+{
+    float:left;
+    text-align:left;
+    width:80%;
+}
+
+.terms_condition-footer
+{
+    float:left;
+    text-align:right;
+    width:20%;
+}
+
+.new
+{
+    display:inline-flex;
+}
+
+@media screen and (max-width:800px)
+{
+
+    .as-footer
+    {
+        text-align:center;
+        width:100%;
+    }
+
+    .terms_condition-footer
+    {
+        text-align:center;
+        width:100%;
+    }
+}
+
 .welcome{
     margin-top: 30px;
     margin-bottom:10px;
