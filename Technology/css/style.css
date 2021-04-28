@@ -182,8 +182,8 @@ a
     width:30px;
     height:30px;
     position:fixed;
-    top:60px;
-    right:30px;
+    top:4em;
+    right:0em;
     z-index:3;
 }
 
@@ -292,9 +292,9 @@ a
 .services
 {
     max-height:fit-content;
-    width:80px;
+    width:100px;
     display:inline-block;
-    margin:30px;
+    margin: 3em;
 }
 
 .tww h1
@@ -360,11 +360,11 @@ a
         margin:10%;
     }
 
-    /* .night
+    .night
     {
-        right:20px;
-        top:50px;
-    } */
+        right:1em;
+        top:3em;
+    }
 
     #company
     {
@@ -394,8 +394,6 @@ a
 {
     height:auto;
     width:50%;
-    position:realtive;
-    top:-30px;
 }
 
 #cardmain
@@ -435,9 +433,6 @@ footer .data
     height:50px;
     width:50px;
     display:inline-flex;
-    float:left;
-    position:relative;
-    left:-20px;
 }
 
 .footer-left
@@ -599,22 +594,6 @@ iframe{
 }
 .slideshow-container{
     margin-bottom: 30px;
-}
-
-.simplify
-{
-    color:black;
-    background:white;
-}
-
-.simplify-data
-{
-    color:black;
-}
-
-.letschat
-{
-    color:black;
 }
 
 .listwesimp{
