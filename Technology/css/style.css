@@ -634,3 +634,10 @@ iframe{
     
 }
 
+.linkletschat{
+    color: black;
+    text-decoration: none;
+}
+.linkletschat:hover{
+    text-decoration: none;
+}

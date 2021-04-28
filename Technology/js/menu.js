@@ -203,6 +203,7 @@ function database_title()
             $('.listwesimp').css('color','white');
             $('.card').css('background-color','black');
             $('.headwesimp').css('color','white');
+            $('.linkletschat').css('color','white');
             state2=2;
             frontend();
         }
@@ -234,6 +235,7 @@ function database_title()
             $('.listwesimp').css('color','black');
             $('.card').css('background-color','white');
             $('.headwesimp').css('color','black');
+            $('.linkletschat').css('color','black');
 
  
             state2=1;
