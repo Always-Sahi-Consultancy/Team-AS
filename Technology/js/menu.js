@@ -195,7 +195,11 @@ function database_title()
             $('.service').css('color','white');
             $('.arrow').css('border-color','white');
             $('.prev').css('color','white');
-            $('.next').css('color','white');;
+            $('.next').css('color','white');
+            $('.simplify').css('color','white');
+            $('.simplify').css('background','black');
+            $('.simplify-data').css('color','white');
+            $('.letschat').css('color','white');
             state2=2;
             frontend();
         }
@@ -220,7 +224,10 @@ function database_title()
             $('.arrow').css('border-color','black');
             $('.prev').css('color','black');
             $('.next').css('color','black');
-
+            $('.simplify').css('color','black');
+            $('.simplify').css('background','white');
+            $('.simplify-data').css('color','black');
+            $('.letschat').css('color','black');
             state2=1;
             frontend();
         }

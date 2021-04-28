@@ -394,6 +394,8 @@ a
 {
     height:auto;
     width:50%;
+    position:realtive;
+    top:-30px;
 }
 
 #cardmain
@@ -597,6 +599,22 @@ iframe{
 }
 .slideshow-container{
     margin-bottom: 30px;
+}
+
+.simplify
+{
+    color:black;
+    background:white;
+}
+
+.simplify-data
+{
+    color:black;
+}
+
+.letschat
+{
+    color:black;
 }
 
 .listwesimp{
