@@ -12,9 +12,15 @@ body{
 .content
 {
     color:#FFFBFD;
-    font-size:large;
+    font-size:large bold;
     background:none;
     border:none;
+    transition: all 0.5ms;
+}
+
+.content:hover
+{
+    color:#f13c31;
 }
 
 #nav
@@ -186,6 +192,16 @@ a :link
 #comson
 {
     color:black;
+}
+
+#webdev:hover
+{
+    color:#f13c31;
+}
+
+#comson:hover
+{
+    color:#f13c31;
 }
 
 .drop-down
@@ -404,6 +420,31 @@ a :link
     .satisfaction
     {
         top:100px;
+    }
+
+    .ways{
+        height: 2.5em;
+    width:50%;
+    position:relative;
+    top:-30px;
+    
+
+    } 
+    .deck1{ 
+        padding-top: 2em;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:inherit;
+        width:100%;
+        flex: 1;
+        
+        }
+    .linkletschat{
+        font-size: inherit;
+    }
+    
+    #sm{
+        font-size:small;
     }
 }
 
