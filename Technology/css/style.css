@@ -552,7 +552,7 @@ footer .data
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  border: black 1px;
+  border: rgb(87, 85, 85) solid 1px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

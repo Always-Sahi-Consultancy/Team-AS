@@ -193,7 +193,7 @@ function database_title()
             $('.service').css('color','white');
             $('.arrow').css('border-color','white');
             $('.prev').css('color','white');
-            $('.next').css('color','white');
+            $('.next').css('color','white');;
             state2=2;
             frontend();
         }
@@ -216,9 +216,9 @@ function database_title()
             $('.welcome2').css('color','black');
             $('.service').css('color','black');
             $('.arrow').css('border-color','black');
-            $('.arrow:hover').css('border-color','grey');
             $('.prev').css('color','black');
             $('.next').css('color','black');
+
             state2=1;
             frontend();
         }
