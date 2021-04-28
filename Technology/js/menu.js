@@ -40,6 +40,7 @@ $(document).ready(function(){
         $('.as').css('background', '#2B303A');
         $('.name').css('display','block');
         $('.name').css('color','black');
+
         state=0;
         }
         else if(state!=1 && scroll>60)
@@ -50,6 +51,7 @@ $(document).ready(function(){
             $('.as').css('background', '#2B303A');
             $('.name').css('display','block');
             $('.name').css('color','black');
+            
             state=1;            
         }
         else

@@ -599,3 +599,23 @@ iframe{
     margin-bottom: 30px;
 }
 
+.listwesimp{
+    padding-top: 4em;
+}
+.card-deck{
+    padding-top: 2em;
+}
+#builds{
+    color: black;
+}
+.listwesimp{
+    color:black;
+}
+
+.firstimg{
+    display: none;
+    
+}
+.secondimg{
+    display: block;
+}
