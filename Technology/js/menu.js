@@ -134,6 +134,8 @@ function database_title()
     $(window).scroll(function(){
         scroll=$(window).scrollTop();
         var window_width=$(window).innerWidth();
+        // var web=(documnet).getElementById('webdev');
+        // var com=(document).getElementById('comson');
         if(scroll<=60 && state==0)
         {
             $(".nav_bar").css("background", "white");
@@ -165,6 +167,7 @@ function database_title()
             $('.animated_icon span').css('background','white');
             $('#webdev').css('color','black');
             $('#comson').css('color','black');
+            // web.style.color
         }
     });
 
@@ -253,7 +256,18 @@ function service(n)
     $('.contact').css('color','black');
 }
 
+// function focus_header(a)
+// {
+//     document.getElementById(a).style.color="#f13c31";
+// }
+
+// function blur_header(a)
+// {
+//     doocument.getElementById(a).style.color="white";
+// }
+
 window.addEventListener('prev', plusSlides);
 window.addEventListener('next',plusSlides);
 
-window.addEventListener('service',)
+// window.onfocus('service',focus_header);
+// window.onblur('service',blur_header);
