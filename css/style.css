@@ -1,7 +1,7 @@
 /*home*/
 #company
 {
-    font-size:30px;
+    font-size:x-large;
     color:blanchedalmond;
     border-radius:0;
 }
@@ -120,6 +120,12 @@ a
 #header_back
 {
     background:black;
+}
+
+#header-logo
+{
+    height:inherit;
+    width:50px;
 }
 
 #nav_social
@@ -299,12 +305,13 @@ a
 .course
 {
     text-align:center;
-    transition:all 1;
+    transition:all .5s;
+    transform:scale(1);
 }
 
 .course:hover
 {
-    transition:all 1.2;
+    transform:scale(1.1);
 }
 
 .course_bg
@@ -327,16 +334,15 @@ a
 
 #know_more
 {
-    background:radial-gradient(lightblue,grey);
+    background:linear-gradient(lightblue,blue);
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius:25vw;
+    border-radius:25px;
 }
 
 #know_more:hover
 {
-    background:linear-gradient(grey,black);
-    transition:100ms ease-in-out;
+    background:linear-gradient(darkblue,navy);
 }
 
 .AST
@@ -468,7 +474,7 @@ body
     color:#FFFBFD;
 }
 
-#atharv
+/* #atharv
 {
     overflow:hidden;
     text-align:justify;
@@ -477,9 +483,9 @@ body
     height:500px;
     border-radius:5px;
     margin:5px;
-}
+} */
 
-#mandeep
+/* #mandeep
 {
     overflow:hidden;
     text-align:justify;
@@ -488,7 +494,7 @@ body
     height:500px;
     border-radius:5px;
     margin:5px;
-}
+} */
 /* 
 .founders_image
 {
@@ -499,30 +505,30 @@ body
     z-index:-1;
 }
  */
-.arrow
+/* .arrow
 {
     width:50px;
     height:auto;
     z-index:2;
     position:relative;
     left:45%;
-}
+} */
 
-.atharv_info
+/* .atharv_info
 {
     color:#FFFBFD;
     border-radius:5px;
     background:rgba(0,0,0,0.8);
     display:none;
-    position:relative;
+    position:relative; */
     /* top:-500px; */
-    z-index:1;
+    /* z-index:1;
     overflow:hidden;
     padding:2em;
     margin:1em;
-}
+} */
 
-.mandeep_info
+/* .mandeep_info
 {
     color:#FFFBFD;
     border-radius:5px;
@@ -534,8 +540,8 @@ body
     padding:2em;
     height:auto;
     margin: 0.5em 0 0 0;
-}
-
+} */
+/* 
 .a_atharv
 {
     position:relative;
@@ -546,8 +552,84 @@ body
 {
     position:relative;
     bottom:-450px;
+} */
+
+#atharv-info
+{
+    position:absolute;
+    top:-100%;
+    transition:all .5s ease;
+    padding: 5%;
+    background:#3777FF;
+    width:90%;
+    left:22px;
+    border-radius:10px;
 }
 
+#mandeep-info
+{
+    position:absolute;
+    top:-100%;
+    transition:all .5s ease;
+    padding:5%;
+    background:#3777FF;
+    width:90%;
+    left:22px;
+}
+
+#atharv-image
+{
+    background:url("../image/atharv.jpg");
+    height:500px;
+    width:100%;
+    background-size:cover;
+    border-radius:10px;
+}
+
+#mandeep-image
+{
+    background:url("../image/photo6327978894807903277.jpg");
+    height:500px;
+    width:100%;
+    background-size:cover;
+    border-radius:10px;
+}
+
+#atharv
+{
+    overflow:hidden;
+    transition: .5s ease-in;
+    /* padding: 0 0 0 10px; */
+}
+
+#mandeep
+{
+    overflow:hidden;
+    transition: .5s ease-in;
+    /* padding:0 0 0 10px; */
+}
+/* 
+@keyframes fade-in
+{
+    from{
+        top:-100%;
+    }
+
+    to
+    {
+        top:0;
+    }
+} */
+
+#atharv:hover #atharv-info{
+    top:10%;
+}
+
+#mandeep:hover #mandeep-info{
+    top:10%;
+}
+
+/* 
 #footer-main{
     background:url("../image/christian-holzinger-CUY_YHhCFl4-unsplash.jpg");
     background-blend-mode:darken;
@@ -568,7 +650,7 @@ body
 #dial-icon{
 
 } */
-#email{
+/* #email{
     color: white    ;
 }
 
@@ -596,4 +678,114 @@ body
 .footer-twitter-col::-webkit-scrollbar
 {
     display:none;
+} */
+
+
+footer
+{
+    background-image:url("../image/lou-brassard-vuNTWzg4zdo-unsplash.jpg");
+    background-size:cover;
+    background-blend-mode:darken;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+
+footer .data
+{
+    color:inherit;
+}
+
+footer .data
+{
+    color:#3777FF;
+}
+
+.footer-data
+{
+    text-align:left;
+}
+
+.contact
+{
+    height:50px;
+    width:50px;
+    display:inline-flex;
+    position:relative;
+    left:-20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer-left
+{
+    float:left;
+}
+
+.footer-contact button
+{
+    background:red;
+    color:white;
+    height:3em;
+    width:10em;
+    border-radius:5em;
+    transition:all 0.5s ease;
+    border-color:red;
+}
+
+.footer-contact button:hover
+{
+    transform:scale(1.01);
+}
+
+.footer-twitter-col
+{
+    height:350px;
+    overflow:scroll;
+    overflow-x:hidden;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.footer-twitter
+{
+    overflow-x:hidden;
+    overflow:hidden;
+}
+
+.footer-twitter-col::-webkit-scrollbar
+{
+    display:none;
+}
+
+.as-footer
+{
+    float:left;
+    text-align:left;
+    width:80%;
+}
+
+.terms_condition-footer
+{
+    float:left;
+    text-align:right;
+    width:20%;
+}
+
+@media screen and (max-width:800px)
+{
+
+    .as-footer
+    {
+        text-align:center;
+        width:100%;
+    }
+
+    .terms_condition-footer
+    {
+        text-align:center;
+        width:100%;
+    }
 }

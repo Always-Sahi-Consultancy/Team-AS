@@ -16,11 +16,14 @@
     <nav class="navbar navbar-expand-md fixed-top" id="header">
         <div class="container-fluid">
           <div class="navbar-header">
+            <span class="navbar-brand">
+              <a href="index.html"><img src="image/Background Less.png" id="header-logo"></a>
+            </span>
             <span class="navbar-brand" id="company">
               Always Sahi Solutions Pvt Ltd
             </span>
           </div>
-          <button class="navbar-toggler display-menu" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler display-menu justify-content-end" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated_icon">
                 <span></span><span></span><span></span><span></span>
             </div>
@@ -33,8 +36,8 @@
               <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Verticals
             </a>
               <div class="dropdown-menu navbar-expand-md">
-                <a href="#ASE" class="dropdown-item navbar-expand-md">Educators</a>
-                <a href="#AST" class="dropdown-item navbar-expand-md">Tehnologies</a>
+                <a href="Education/index.html" class="dropdown-item navbar-expand-md">Educators</a>
+                <a href="Technology/index.html" class="dropdown-item navbar-expand-md">Technology</a>
               </div>
             </li>
             <li class="navbar-expand-md"><a href="#footer-main" class="nav-link navbar-expand-md">Contact Us</a></li>
@@ -65,6 +68,10 @@
             <!-- <img src="image/icon/002-whatsapp.png" alt="whatsapp" class="nav_icon" id="whatsapp"> -->
           </div>
           </a>
+
+          <a href="https://t.me/alwayssahi " target="_blank">
+            <div class="nav_icon" id="telegram"></div>
+          </a>
       </nav>
 
     <div id="home">
@@ -82,18 +89,18 @@
 <div class="ASE" id="ASE">
   <h1>Always Sahi Educators</h1>
   <div class="card-deck">
-    <div class="card bg-primary course">
+    <a href="Education/index.html" target="_self" class="card bg-primary course">
       <img src="image/courses/photo6253609878220286986.jpg" class="card-img-top course_img">
-    </div>
-    <div class="card bg-secondary course">
+    </a>
+    <a href="Education/index.html" target="_self" class="card bg-secondary course">
       <img src="image/courses/photo6253609878220286987.jpg" class="card-img-top course_img">
-    </div>
-    <div class="card bg-primary course">
+    </a>
+    <a href="Education/index.html" target="_self" class="card bg-primary course">
       <img src="image/courses/photo6253609878220286988.jpg" class="card-img-top course_img">
-    </div>
-    <div class="card bg-secondary course">
+    </a>
+    <a href="Education/index.html" target="_self" class="card bg-secondary course">
       <img src="image/courses/photo6253609878220286989.jpg" class="card-img-top course_img">
-    </div>
+    </a>
   </div>
   <div id="button_p">
     <a href="Education/index.html" target="_self"><button type="button" id="know_more">Get Our Courses</button></a>
@@ -103,14 +110,18 @@
 <div class="AST" id="AST">
   <h1>Our Technical Solutions</h1>
   <div class="row justify-content-center">
-    <div class="col-md-5 web_img">
+    <a href="Technology/index.html" target="_self" class="col-md-5">
+    <div class="web_img">
       <!-- <img src="image/pexels-freestocksorg-892757.jpg" class="web_img"> -->
       <h2>Web Development</h2>
     </div>
-    <div class="col-md-5 app_img">
+    </a>
+    <a href="Technology/index.html" target="_self" class="col-md-5">
+    <div class="app_img">
       <!-- <img src="image/pexels-lukas-574071.jpg" class="app_img"> -->
       <h2>App Development</h2>
     </div>
+    </a>
   </div>
 </div>
 
@@ -204,24 +215,20 @@
       <h1>Founders Message</h1>
     </div>
     <div class="row">
-      <div class="col-md-1 col-sm-2"></div>
-      <div class="col-md-4 col-sm-8" id="atharv">
-        <!-- <img src="image/atharv.jpg" class="founders_image"> -->
-        <div class="atharv_info">With the Aim towards “Atma Nirbhar Bharat”, we “Always Sahi Solutions Private Limited”
+      <div class="col-md-1"></div>
+      <div class="col-md-4" id="atharv">
+        <div id="atharv-info">With the Aim towards “Atma Nirbhar Bharat”, we “Always Sahi Solutions Private Limited”
           stepped in bringing you our best solutions in the field of “Education, IT Solutions &amp;
           Publications” which will be launched in the form of our Vertical Services one by one. We
           work with the moto “Best Solutions Wahi, Jaha ho Always Sahi”, and stick to the same of
           providing best solutions for reasonable rates and with a user friendly model. Our Company is
           relevantly new, but has higher goals to achieve, for which our enthusiastic team is working
           day and night to bring out the best for our Clients, Investors and for our Extended Family.</div>
-        <div class="a_atharv">
-          <img src="image/up-arrow.png" class="arrow">
-        </div>
-        </div>
-      <div class="col-md-2 col-sm-2"></div>
-      <div class="col-md-4 col-sm-8" id="mandeep">
-        <!-- <img src="image/photo6327978894807903277.jpg" class="founders_image"> -->
-        <div class="mandeep_info">Always Sahi was founded with the dream of serving our Nation in sectors like Education, IT
+        <div id="atharv-image"></div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-4" id="mandeep">
+        <div id="mandeep-info">Always Sahi was founded with the dream of serving our Nation in sectors like Education, IT
           Solutions, and Publications.
           
           We started Founders with a single, simple goal:
@@ -235,79 +242,57 @@
           As the Founder of Always Sahi, I see our success target as quality at all times and also
           innovative perspective. I would like to express my thanks to everyone who kept sharing this
           passion with us.</div>
-          <div class="a_mandeep">
-            <img src="image/up-arrow.png" class="arrow">
-          </div>
+        <div id="mandeep-image"></div>
       </div>
     </div>
 
-    <footer id="footer-main" class="bg-dark text-center text-white">
+    <footer id="footer-main" class="text-center text-white">
       <!-- Grid container -->
 
       <div class="container p-4">
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
-        <section class="">
-          <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input type="email" id="form5Example2" class="form-control" />
-                  <label class="form-label" id="email" for="form5Example2">Email address</label>
-                </div>
-              </div>
-
-
-              <div class="col-auto">
-
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
-
-            </div>
-
-          </form>
-        </section>
-        <!-- Section: Links -->
         <section class="">
           <!--Grid row-->
           <div class="row">
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 id="headlinef" class="text-uppercase">CONTACT_US</h5>
+            <div class="col-lg-6 col-md-6 mb  -4 mb-md-0 footer-contact">
+              <h2 class="footer-data">Like what you see?<br> 
+              Let’s start a conversation.
+              </h2> 
+              
+              <br><br>
 
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="https://wa.me/qr/QVP2G3VKQRGYG1" class="text-white">whats-App</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white"> <img src="" id="dial-icon">7875036016</a>
-                </li>
+              <!-- <button class="footer-left">Get in Touch</button> -->
+              <p class="footer-left">
+              Mail Us : <a href="mailto:alwayssahi@gmail.com">alwayssahi@gmail.com</a><br>
+              WhatsApp Us : <a href="">+91 8857086790</a>
+              </p>
 
-              </ul>
-            </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 id="headlinef" class="text-uppercase">INSTAGRam</h5>
-              <!--<iframe src="https://www.linkedin.com/company/always-sahi-solutions-private-limited/?viewAsMember=true"></iframe>-->
-              <div class="elfsight-app-9007df46-dba2-41f2-8009-067cc880d257"></div>
-            </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <div class="footer-twitter-col">
-              <a class="twitter-timeline footer-twitter" href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw">Tweets by always_sahi</a>
+              <br><br><br>
+               <!-- <div class="footer-left"> -->
+                <span class="footer-left">Contact Us at:</span>
+              <br>
+              <ol class="footer-left">
+                <li class="contact"><a href="mailto:alwayssahi@gmail.com" class="contact"><img src="image/001-gmail.png"></a></li>
+                <li class="contact"><a href="tel:+91 8857086790" class="contact"><img src="image/002-phone.png"></a></li>
+                <li class="contact"><a href="https://t.me/alwayssahi" class="contact"><img src="image/002-telegram-1.png"></a></li>
+                <li class="contact"><a href="https://wa.me/message/UNWKYDPU2SZEN1" class="contact"><img src="image/006-whatsapp-1.png"></a></li>
+              </ol>
               </div>
-              <a href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @always_sahi</a>
-              <a href="https://twitter.com/intent/tweet?screen_name=always_sahi&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @always_sahi</a>
-            </div>
+                            
+            <div class="col-lg-2"></div>
+            <br>
+            <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="footer-twitter-col">
+                <a class="twitter-timeline footer-twitter" href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw">Tweets by always_sahi</a>
+                </div>
+                <a href="https://twitter.com/always_sahi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @always_sahi</a>
+                <a href="https://twitter.com/intent/tweet?screen_name=always_sahi&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @always_sahi</a>
+              </div>
+            <!--Grid column-->
+          </div>
           <!--Grid row-->
         </section>
         <!-- Section: Links -->
@@ -315,9 +300,13 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div id="asmark" class="text-center p-3">
-
-        @2021 | Always sahi solutions private limited | all rights reserved
+      <div class="asmark">
+        <div class="as-footer">
+        &copy 2021 Always Sahi Solutions Private Limited. All rights reserved.
+        </div>
+        <div class="terms_condition-footer">
+          Terms & Conditions | Privacy Policy 
+        </div>
       </div>
 
       <div class=""></div>
