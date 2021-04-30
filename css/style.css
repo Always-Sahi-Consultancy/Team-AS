@@ -474,86 +474,6 @@ body
     color:#FFFBFD;
 }
 
-/* #atharv
-{
-    overflow:hidden;
-    text-align:justify;
-    background:url("../image/atharv.jpg");
-    background-size:cover;
-    height:500px;
-    border-radius:5px;
-    margin:5px;
-} */
-
-/* #mandeep
-{
-    overflow:hidden;
-    text-align:justify;
-    background:url("../image/photo6327978894807903277.jpg");
-    background-size:cover;
-    height:500px;
-    border-radius:5px;
-    margin:5px;
-} */
-/* 
-.founders_image
-{
-    width:100%;
-    max-height:500px;
-    min-height:500px;
-    border-radius:5px;
-    z-index:-1;
-}
- */
-/* .arrow
-{
-    width:50px;
-    height:auto;
-    z-index:2;
-    position:relative;
-    left:45%;
-} */
-
-/* .atharv_info
-{
-    color:#FFFBFD;
-    border-radius:5px;
-    background:rgba(0,0,0,0.8);
-    display:none;
-    position:relative; */
-    /* top:-500px; */
-    /* z-index:1;
-    overflow:hidden;
-    padding:2em;
-    margin:1em;
-} */
-
-/* .mandeep_info
-{
-    color:#FFFBFD;
-    border-radius:5px;
-    background:rgba(0,0,0,0.8);
-    display:none;
-    position:relative;
-    z-index:1;
-    overflow:hidden;
-    padding:2em;
-    height:auto;
-    margin: 0.5em 0 0 0;
-} */
-/* 
-.a_atharv
-{
-    position:relative;
-    bottom:-450px;
-}
-
-.a_mandeep
-{
-    position:relative;
-    bottom:-450px;
-} */
-
 #atharv-info
 {
     position:absolute;
@@ -564,6 +484,7 @@ body
     width:90%;
     left:22px;
     border-radius:10px;
+    font-size:medium;
 }
 
 #mandeep-info
@@ -575,6 +496,8 @@ body
     background:#3777FF;
     width:90%;
     left:22px;
+    border-radius:10px;
+    font-size:medium;
 }
 
 #atharv-image
@@ -599,27 +522,19 @@ body
 {
     overflow:hidden;
     transition: .5s ease-in;
-    /* padding: 0 0 0 10px; */
+    text-align:center;
+    font-size:larger;
+    color:aliceblue;
 }
 
 #mandeep
 {
     overflow:hidden;
     transition: .5s ease-in;
-    /* padding:0 0 0 10px; */
+    text-align:center;
+    font-size:larger;
+    color:aliceblue;
 }
-/* 
-@keyframes fade-in
-{
-    from{
-        top:-100%;
-    }
-
-    to
-    {
-        top:0;
-    }
-} */
 
 #atharv:hover #atharv-info{
     top:10%;
@@ -628,58 +543,6 @@ body
 #mandeep:hover #mandeep-info{
     top:10%;
 }
-
-/* 
-#footer-main{
-    background:url("../image/christian-holzinger-CUY_YHhCFl4-unsplash.jpg");
-    background-blend-mode:darken;
-    background-color: black;
-    position: relative;
-    padding-top: 20px;
-    width: 100%;
-    height: auto;
-}
-
-#headlinef{
-    color: white;
-}
-#asmark{
-    color: white;
-}
-/* 
-#dial-icon{
-
-} */
-/* #email{
-    color: white    ;
-}
-
-.footer-instagram
-{
-    height:300px;
-    width:auto;
-}
-
-.footer-twitter-col
-{
-    height:350px;
-    overflow:scroll;
-    overflow-x:hidden;
-    -ms-overflow-style:none;
-    scrollbar-width:none;
-}
-
-.footer-twitter
-{
-    overflow-x:hidden;
-    overflow:hidden;
-}
-
-.footer-twitter-col::-webkit-scrollbar
-{
-    display:none;
-} */
-
 
 footer
 {
