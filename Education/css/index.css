@@ -55,6 +55,9 @@ a{
     text-align:center;
 }
 
+.course:hover{
+    transform: translate(7px,16px);
+}
 footer{
     display: block;
     width: 100%;

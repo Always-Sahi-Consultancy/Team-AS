@@ -29,7 +29,7 @@
             <div class="container-fluid col-md-12">
              <div class="col-md-3">
               <div class="col-md-1"><a href="index.html"><img src="img/Background Less.png" class="a_logo"></a></div>
-              <div class="col-md-offset-4 col-md-1"><img src="img/Educators .png" id="as_logo"></div>
+              <div class="col-md-offset-4 col-md-1"><a href="index.html"><img src="img/Educators .png" id="as_logo"></a></div>
              </div>
                 
                   <div class="navbar-header ">
@@ -51,25 +51,25 @@
                         <a href="#Oc" class="nav2">Courses</a>
                       </li>
 
-                      <li class="dropdown"><a href="#" class="nav2">About</a>
+                      <li class="dropdown"><a href="#learn" class="nav2">About</a>
                       </li>
 
                       <!--<li>
                         <a href="#" class="nav2"><span class="glyphicon glyphicon-download-alt"></span>&nbsp Downloads</a>
                       </li>-->
 
-                      <li><a href="Vacancies.html"class="nav2 dropdown-toggle" data-toggle="dropdown">Join Us<span class="caret"></span></a>
+                      <li><a href="Vacancies.html"class="nav2">Join Us<!--<span class="caret"></span></a>
                           <ul class="dropdown-menu">
                               <li><a href="#">Associates</a></li>
                               <li><a href="#">Independent Training Consultant</a></li>
-                            </ul>
+                            </ul>--></a>
                       </li>
 
-                      <li><a href="Vacancies.html"class="nav2 dropdown-toggle" data-toggle="dropdown">Collaborate<span class="caret"></span></a>
+                      <li><a href="Vacancies.html"class="nav2 ">Collaborate<!--<span class="caret"></span></a>
                           <ul class="dropdown-menu">
                               <li><a href="#">College Training Program</a></li>
                               <li><a href="#">Corporates Training Program</a></li>
-                            </ul>
+                            </ul>--></a>
                       </li>
                       <li><a href="Vacancies.html"class="nav2">Franchise</a></li>
                       <li><a href="#footer"class="nav2"><span class="glyphicon glyphicon-user"></span>&nbsp Contact</a></li>
@@ -126,14 +126,14 @@
             <!--more courses button-->
             <center>
               <div class="row ">
-                <button onclick="show()" name="moreCourses" id="moreC" class="button btn btn-primary">MORE COURSES</button>
+                <button onclick=show() name="moreCourses" id="moreC" class="button btn-primary">MORE COURSES</button>
               </div>
             </center>
           </div>
 
           <!--learning at as educators-->
           <center>
-            <div>
+            <div id="learn">
               <div class="row learning">
                     <h1>Learning at AS Educators</h1>
               </div>
@@ -198,12 +198,7 @@
     </body>
     
     <script type="text/javascript">
-      $(function() {
-       $('#hamm').click(function() {
-      $('#nav-ham').toggleClass('hidden');
-      $('#nav-close').toggleClass('hidden');  
-    });
-  });
+      
     
     function show() {
       var x = document.getElementById("hiddenCourses");
@@ -213,8 +208,14 @@
         document.getElementById("moreC").innerHTML = "SHOW LESS";
       } else {
         x.style.display = "none";
-        document.getElementById("moreC").innerHTML = "SHOW COURSES";
+        document.getElementById("moreC").innerHTML = "MORE COURSES";
       }
     }
+    $(function() {
+       $('#hamm').click(function() {
+      $('#nav-ham').toggleClass('hidden');
+      $('#nav-close').toggleClass('hidden');  
+    });
+  });
       </script>       
 </html>

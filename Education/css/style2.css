@@ -62,6 +62,7 @@ a{
     
 }
 .courses{
+    width: 80%;
     text-align:center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -80,7 +81,8 @@ a{
     font-size: 50px;
 }
 .about-courses{
-    text-align: left;
+    text-align:justify;
+    padding-top: 5px;
     font-size: 20px;
     padding-bottom: 20px;
 }
@@ -90,17 +92,17 @@ table,th{
 }
 .duration{
  
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
 .element{
-    padding: 7px 100px 10px 7px;
+    padding: 5px 60px 8px 7px;
     font-size: 18px;
     text-decoration: none;
 }
 input[type=text], select, textarea, button{
     width: 70%;
-    padding: 10px;
+    padding: 5px;
     margin: 5px 20px;
     display: inline-block;
     border: 1px solid black;
@@ -116,7 +118,7 @@ button:hover {
   }
 input[type=tel]{
     width: 70%;
-    padding: 10px;
+    padding: 5px;
     margin: 5px 20px;
     display: inline-block;
     border: 1px solid black;
@@ -128,7 +130,7 @@ input[type=tel]{
 }
 input[type=email]{
     width: 70%;
-    padding: 10px;
+    padding: 5px;
     margin: 5px 20px;
     display: inline-block;
     border: 1px solid black;
@@ -143,12 +145,12 @@ input[type=email]{
     box-sizing: border-box;
     border-radius: 20px;
     padding: 10px 0px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     animation: move 3s infinite;
 }
 .about1{
     border: 1px solid black;
-    width: 70%;
+    width: 82%;
     padding: 50px 30px 50px 35px;
     font-size: 20px;
     padding-bottom: 50px;
@@ -166,6 +168,10 @@ input[type=email]{
 @keyframes move {
     25% {box-shadow: 20px 17px 10px gray;}
 }
+.button{
+    font-size: 25px;
+    width: 70%;
+}
 footer{
     display: block;
     width: 100%;
@@ -179,7 +185,7 @@ footer{
     list-style-type: none;
 }
 #icons{
-    width:50px;
+    width:20%;
     height: auto;
     float: left;
     padding: 50px;
@@ -188,13 +194,13 @@ footer{
     color:white;
     background-color: rgb(10, 9, 9);       
 }
-#ViewButton{
-    box-shadow: 5px 10px 20px rgb(146, 145, 145) inset;
-    padding-bottom: 15px;
-}
 #syl{
     margin-top: 40px;
     margin-bottom: 20px;
+    text-align: justify;
+}
+.align{
+    text-align:start;
 }
 #submit{
     box-shadow: 5px 10px 20px rgb(146, 145, 145) inset;
@@ -211,4 +217,6 @@ footer{
 .learning{
     width: 100%;
 }
-
+#hiddenCourses{
+    display: none;
+}
