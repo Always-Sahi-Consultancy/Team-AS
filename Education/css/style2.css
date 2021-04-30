@@ -1,6 +1,7 @@
 
 body{
     overflow-x: hidden;
+    width: 100%;
 
 }
 #nav1{
@@ -33,14 +34,19 @@ a{
 }
 .nav02{
     padding-top: 35px;
+    margin-right: 20px;
 }
 .icon-bar{
   background-color: black;
   color: white;
 }
-
 .ham{
     border: 1px solid black;
+    width: 46px;
+    margin-right: 70px;
+}
+.ham:hover{
+    background-color: rgb(110, 107, 107);
 }
 .line{
     border-top: 1px solid #080808;
@@ -202,5 +208,7 @@ footer{
     display: none;
     visibility: hidden;
 }
-
+.learning{
+    width: 100%;
+}
 

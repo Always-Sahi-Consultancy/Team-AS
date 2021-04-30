@@ -1,0 +1,19 @@
+.vacancies
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body
+{
+    background-color:black;
+}
+
+@media screen and (max-width:800px)
+{
+    img{
+        height: auto;
+        width: 100%;
+        padding-top: 5em;
+    }
+}
