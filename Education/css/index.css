@@ -54,7 +54,12 @@ a{
 .courses{
     text-align:center;
 }
-
+#Oc{
+    font-family: 'Jost',sans-serif;
+}
+h1, h3{
+    font-family: 'Jost',sans-serif;
+}
 .course:hover{
     transform: translate(7px,16px);
 }
@@ -63,20 +68,26 @@ footer{
     width: 100%;
     background-color: black;
     color: white;
-    overflow: hidden;
-    padding: 5%;
-    margin: 0;
-    right: 0;
+    padding: 2%;
+    margin-right: 0;
+}
+.foot{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #contact{
     list-style-type: none;
 }
 #icons{
-    width:50px;
+    width:15%;
     height: auto;
     float: left;
-    padding: 50px;
+}
+.icons{
+    width: auto;
+    height: 90px;
+    padding-top: 20px;
 }
 #know{
     color:white;

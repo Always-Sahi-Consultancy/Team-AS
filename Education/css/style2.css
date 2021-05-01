@@ -2,7 +2,6 @@
 body{
     overflow-x: hidden;
     width: 100%;
-
 }
 #nav1{
     color:white;
@@ -76,9 +75,14 @@ a{
     padding-bottom: 20px;
     animation: move 3s infinite;
 }
+h2{
+    
+    font-family: 'Jost',sans-serif;
+}
 .tally{
     text-align: left;
     font-size: 50px;
+    font-family: 'Jost',sans-serif;
 }
 .about-courses{
     text-align:justify;
@@ -179,16 +183,25 @@ footer{
     color: white;
     overflow: hidden;
     padding: 2%;
-    margin: 0;
+}
+.foot{
+    margin-right: 0;
+    margin-left: 0;
 }
 #contact{
     list-style-type: none;
 }
 #icons{
-    width:20%;
+    width:15%;
     height: auto;
     float: left;
-    padding: 50px;
+}
+.icons{
+    width: auto;
+    height: 90px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #know{
     color:white;
@@ -216,7 +229,4 @@ footer{
 }
 .learning{
     width: 100%;
-}
-#hiddenCourses{
-    display: none;
 }
