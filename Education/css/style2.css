@@ -172,8 +172,9 @@ input[type="email"] {
   }
 }
 .button {
+  padding: 10px;
   font-size: 25px;
-  width: 70%;
+  width: auto;
 }
 footer {
   display: block;
