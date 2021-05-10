@@ -155,5 +155,100 @@ h3 {
   /*visibility: hidden;*/
 }
 footer {
+  background-image: url("../img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  position: relative;
+  padding-top: 20px;
   width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#foot{
+  background-image: url("../img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+}
+
+footer .data {
+  color: inherit;
+}
+
+footer .data {
+  color: #3777ff;
+}
+
+.footer-data {
+  text-align: left;
+}
+
+.contact {
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  position: relative;
+  left: -20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-contact button {
+  background: red;
+  color: white;
+  height: 3em;
+  width: 10em;
+  border-radius: 5em;
+  transition: all 0.5s ease;
+  border-color: red;
+}
+
+.footer-contact button:hover {
+  transform: scale(1.01);
+}
+
+.footer-twitter-col {
+  height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.footer-twitter {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.footer-twitter-col::-webkit-scrollbar {
+  display: none;
+}
+
+.as-footer {
+  float: left;
+  text-align: left;
+  width: 80%;
+}
+
+.terms_condition-footer {
+  float: left;
+  text-align: right;
+  width: 20%;
+}
+
+.new {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 800px) {
+  .as-footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  .terms_condition-footer {
+    text-align: center;
+    width: 100%;
+  }
 }
