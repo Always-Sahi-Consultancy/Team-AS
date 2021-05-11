@@ -63,18 +63,6 @@ h3 {
 .course:hover {
   transform: translate(7px, 16px);
 }
-footer {
-  display: block;
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 2%;
-  margin-right: 0;
-}
-.foot {
-  margin-right: 0;
-  margin-left: 0;
-}
 
 #contact {
   list-style-type: none;
@@ -163,6 +151,7 @@ footer {
   width: 100%;
   height: auto;
   overflow: hidden;
+  color: white;
 }
 #foot{
   background-image: url("../img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
