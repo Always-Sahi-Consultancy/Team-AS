@@ -408,7 +408,8 @@ body {
   top: -100%;
   transition: all 0.5s ease;
   padding: 5%;
-  background: #3777ff;
+  background: #0c0c0c;
+  opacity: 80%;
   width: 90%;
   left: 22px;
   border-radius: 10px;
@@ -420,7 +421,9 @@ body {
   top: -100%;
   transition: all 0.5s ease;
   padding: 5%;
-  background: #3777ff;
+  /* background: #3777ff; */
+  background: black;
+  opacity: 80%;
   width: 90%;
   left: 22px;
   border-radius: 10px;
@@ -556,5 +559,18 @@ footer .data {
   .terms_condition-footer {
     text-align: center;
     width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+
+  #ourvission{
+    margin-top: 2em;
+  }
+  #aboutus{
+    margin-left: 13em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 50%;
   }
 }
