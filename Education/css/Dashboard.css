@@ -1,0 +1,133 @@
+#as_logo
+{
+    height:40px;
+    width:50px;
+}
+
+.font_color
+{
+    color:white;
+    font-size:larger;
+}
+
+.pro_link
+{
+    padding:0 0.2em;
+    transition:all 0.5s;
+}
+
+.pro_link a
+{
+    color:whitesmoke;
+}
+
+.pro_link:hover
+{
+    border-bottom:0.1em;
+}
+
+#pro_links
+{
+    color:antiquewhite;
+}
+
+.pro_links
+{
+    background:#121212;
+}
+
+.ham_tog
+{
+    display:block;
+    height:30px;
+    width:30px;
+}
+
+.ham_tog span
+{
+    width:100%;
+    height:10px;
+    background:whitesmoke;
+}
+
+.ham_tog span:nth-child(1)
+{
+    position:relative;
+    top:10px;
+}
+
+.ham_tog span:nth-child(2)
+{
+    position:relative;
+    top:20px;
+}
+
+.ham_tog span:nth-child(3)
+{
+    position:relative;
+    top:30px;
+}
+
+.nav_top
+{
+    position:absolute;
+    top:0%;
+    width:100%;
+    height:50px;
+    z-index:10;
+    background:#121212;
+    opacity:100%;
+}
+
+@media screen and (max-width:900px)
+{
+    #profile
+    {
+        display:none;
+    }
+}
+
+.nav_left
+{
+    width:20%;
+    height:100%;
+    background:#121212;
+    opacity:100%;
+    z-index:-10;
+    float:left;
+}
+
+.content
+{
+    width:80%;
+    background:grey;
+    float:left;
+    overflow:scroll;
+}
+
+.contents
+{
+    position:relative;
+    top:10%;
+}
+
+.contents div a
+{
+    font-size:larger;
+    color:whitesmoke;
+    padding: 0 1em;
+    text-decoration:none;
+}
+
+.content-image
+{
+    padding:0.2em;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.body-content
+{
+    display:block;
+}
