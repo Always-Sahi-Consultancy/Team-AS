@@ -79,14 +79,6 @@
     opacity:100%;
 }
 
-@media screen and (max-width:900px)
-{
-    #profile
-    {
-        display:none;
-    }
-}
-
 .nav_left
 {
     width:20%;
@@ -102,7 +94,9 @@
     width:80%;
     background:grey;
     float:left;
-    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    height:100%;
 }
 
 .contents
@@ -130,4 +124,32 @@
 .body-content
 {
     display:block;
+}
+
+.add-nav
+{
+    display:none;
+}
+
+@media screen and (max-width:900px)
+{
+    #profile
+    {
+        display:none;
+    }
+
+    .nav_left
+    {
+        display:none;
+    }
+
+    .add-nav
+    {
+        display:block;
+    }
+
+    .content
+    {
+        width:100%;
+    }
 }
