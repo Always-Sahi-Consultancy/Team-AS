@@ -1,78 +1,56 @@
+<!--DOCTYPE html-->
 <html lang="en">
-
 <head>
-    <title></title>
-    <meta charset="utf-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="css/dashboard.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Always Sahi Fevicon.png">
-    <script src="js/dashboard.js"></script>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="css/Dashboard.css" rel="stylesheet">
 </head>
-
 <body>
-    <div>
-        <!-- Nav bar-->
-    </div>
-    <div class="navbar navbar-expand-md fixed-left menu">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <div class="animated_icon">
-                <span></span><span></span><span></span><span></span>
-            </div>
+    <nav class="navbar navbar-expand-md font_color nav_top">
+        <img src="img/Background Less.png" class="navbar-nav justify-content-start navbar-brand" id="as_logo">
+        
+        <button class="navbar-toggler ham_tog" type="button" data-toggle="collapse" data-target="#pro_links">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
         </button>
-        <div class="profile-data">
-            <img src="image/profile.png" class="profile">
-            <div id="prodile-name">Name</div>
-        </div>
-        <!-- <div class="animated_icon" onclick=""><span></span><span></span><span></span><span></span></div>-->
-        <div class="collapse navbar-collapse" id="#menu">
-            <ul type="none">
-                <a href="profile.html">
-                    <li class="navbar-expand-md">Profile</li>
-                </a>
-                <a href="#course">
-                    <li class="navbar-expand-md">My Courses</li>
-                </a>
-                <a href="#rec">
-                    <li class="navbar-expand-md">Recommendation</li>
-                </a>
-                <a href="#carpath">
-                    <li class="navbar-expand-md">Career Path</li>
-                </a>
+
+        <div class="justify-content-center collapse navbar-collapse" id="pro_links">
+            <ul class="navbar-nav pro_links">
+                <li class="nav-item pro_link"><a href="" class="nav-link">PROFILE</a></li>
+                <li class="nav-item pro_link"><a href="" class="nav-link">CERTIFICATES</a></li>
+                <li class="nav-item pro_link"><a href="" class="nav-link">MY COURSES</a></li>
+                <li class="nav-item pro_link add-nav"><a href="" class="nav-link">CATALOG</a></li>
+                <li class="nav-item pro_link add-nav"><a href="" class="nav-link">WISHLIST</a></li>
             </ul>
         </div>
-    </div>
-    <div class="content">
-        <div class="display-image"></div>
-        <div id="course" class="titles">My Learning</div>
-        <div class="">
-            <div class="row container-fluid course">
-                <div class="col-md-4 col-sm-4 courses"></div>
-                <div class="col-md-4 col-sm-4 courses"></div>
-                <div class="col-md-4 col-sm-4 courses"></div>
-                <div class="col-md-4 col-sm-4 courses"></div>
-            </div>
-        </div>
-        <div class="titles">Recommendation</div>
-        <div id="rec" class="row container-fluid course">
-            <div class="col-md-3 col-sm-4 courses"></div>
-            <div class="col-md-3 col-sm-4 courses"></div>
-            <div class="col-md-3 col-sm4 courses"></div>
-            <div class="col-md-3 col-sm-4 courses"></div>
-            <a herf="" class="show-more col-sm-12"><button>Show More</button></a>
-        </div>
-        <div class="titles">Career Path</div>
-        <div id="rec" class="row container-fluid course">
-            <div class="col-md-3 col-sm-4 courses"></div>
-            <div class="col-md-3 col-sm-4 courses"></div>
-            <div class="col-md-3 col-sm4 courses"></div>
-            <div class="col-md-3 col-sm-4 courses"></div>
-        </div>
-    </div>
-</body>
 
+        <div class="justify-content-end" id="profile">
+            <div><img src="">Name</div>
+        </div>
+    </nav>
+
+    <div class="body-content">
+    <div class="nav_left">
+        <div>
+            <img src="" class="">
+        </div>
+        <div class="contents">
+            <div><a href="">My Learning</a></div>
+            <div><a href="">Catalog</a></div>
+            <div><a href="">Profile</a></div>
+            <div><a href="">Wishlist</a></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="img/As Educators .png" class="content-image">
+    </div>
+    </div>
+
+</body>
 </html>

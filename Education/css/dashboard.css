@@ -1,209 +1,155 @@
-.menu {
-  width: 300px;
-  float: left;
-  height: 100%;
-  color: grey;
-  background: #00041a;
-  font-size: 2rem;
-  position: fixed;
-  left: 0px;
-  padding: 1vw;
-}
-
-.titles {
-  z-index: 1;
-  float: right;
-  width: 75%;
-  font-size: 2em;
-  color: #010101;
-}
-
-.courses {
-  background: oldlace;
-  height: 16em;
-  width: 16em;
-  border: 5px solid black;
-  margin: 10px;
-}
-
-.course {
-  float: right;
-  width: 80%;
-}
-
-a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-/* .btn
+#as_logo
 {
-    background:blue;
-    height:50px;
+    height:40px;
     width:50px;
-    position:relative;
-    float:right;
 }
 
-.btn span
+.font_color
 {
-    height:5px;
+    color:white;
+    font-size:larger;
+}
+
+.pro_link
+{
+    padding:0 0.2em;
+    transition:all 0.5s;
+}
+
+.pro_link a
+{
+    color:whitesmoke;
+}
+
+.pro_link:hover
+{
+    border-bottom:0.1em;
+}
+
+#pro_links
+{
+    color:antiquewhite;
+}
+
+.pro_links
+{
+    background:#121212;
+}
+
+.ham_tog
+{
+    display:block;
+    height:30px;
+    width:30px;
+}
+
+.ham_tog span
+{
     width:100%;
+    height:10px;
     background:whitesmoke;
+}
+
+.ham_tog span:nth-child(1)
+{
+    position:relative;
+    top:10px;
+}
+
+.ham_tog span:nth-child(2)
+{
+    position:relative;
+    top:20px;
+}
+
+.ham_tog span:nth-child(3)
+{
+    position:relative;
+    top:30px;
+}
+
+.nav_top
+{
     position:absolute;
+    top:0%;
+    width:100%;
+    height:50px;
+    z-index:10;
+    background:#121212;
+    opacity:100%;
 }
 
-.btn span:nth-child(1)
+.nav_left
 {
-    top:20%;
+    width:20%;
+    height:100%;
+    background:#121212;
+    opacity:100%;
+    z-index:-10;
+    float:left;
 }
 
-.btn span:nth-child(2)
+.content
 {
-    top:50%;
+    width:80%;
+    background:grey;
+    float:left;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    height:100%;
 }
 
-.btn span:nth-child(3)
+.contents
 {
-    top:50%;
+    position:relative;
+    top:10%;
 }
 
-.btn span:nth-child(4)
+.contents div a
 {
-    top:80%;
-} */
-
-.animated_icon {
-  height: 20px;
-  width: 30px;
-  position: realtive;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    font-size:larger;
+    color:whitesmoke;
+    padding: 0 1em;
+    text-decoration:none;
 }
 
-.animated_icon span {
-  display: block;
-  background: #fffbfd;
-  width: 100%;
-  height: 3px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-  position: absoulte;
-  left: 0;
-  opacity: 1;
-  border-radius: 9px;
-  margin: 1px;
+.content-image
+{
+    padding:0.2em;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
 }
 
-.animated_icon span:nth-child(1) {
-  top: 0px;
+.body-content
+{
+    display:block;
 }
 
-.animated_icon span:nth-child(2),
-.animated_icon span:nth-child(3) {
-  top: 10px;
+.add-nav
+{
+    display:none;
 }
 
-.animated-icon span:nth-child(4) {
-  top: 20px;
-}
+@media screen and (max-width:900px)
+{
+    #profile
+    {
+        display:none;
+    }
 
-.animated_icon.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+    .nav_left
+    {
+        display:none;
+    }
 
-.animated_icon.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: roate(-45deg);
-  transform: rotate(-45deg);
-}
+    .add-nav
+    {
+        display:block;
+    }
 
-.animated_icon.open span:nth-child(1) {
-  top: 10px;
-  width: 0%;
-  left: 50%;
-  opacity: 0;
-}
-
-.animated_icon.open span:nth-child(4) {
-  top: 10px;
-  width: 0%;
-  left: 50%;
-  opacity: 0;
-}
-
-.display-image {
-  width: 80%;
-  height: 600px;
-  background: url("../img/romain-dancre-doplSDELX7E-unsplash.jpg");
-  background-size: cover;
-  float: right;
-}
-
-.content {
-  float: right;
-}
-
-.profile {
-  width: 100px;
-  height: 100px;
-  max-height: 100px;
-  background: olive;
-  border-radius: 100px;
-}
-
-.profile-name {
-  font-size: larger;
-}
-
-.profile-data {
-  text-align: center;
-}
-
-.show-more {
-  text-decoration: none;
-  color: black;
-}
-
-.showmore {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100;
-}
-
-#rec {
-  scroll-margin-top: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    width: 100%;
-    height: 140px;
-    position: static;
-  }
-
-  .display-image {
-    width: 100%;
-    position: static;
-  }
-
-  .course {
-    width: 100%;
-  }
+    .content
+    {
+        width:100%;
+    }
 }
