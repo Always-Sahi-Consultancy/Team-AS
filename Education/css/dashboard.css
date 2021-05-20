@@ -121,7 +121,7 @@ body{
 .content-image
 {
     width:100%;
-    height: 350px;
+    height: 400px;
 }
 .tabs{
     padding: 20px 0;
@@ -161,4 +161,7 @@ body{
 }
 .nav-item a:hover{
     border-bottom: 3px solid whitesmoke;
+}
+.new{
+    display: block;
 }

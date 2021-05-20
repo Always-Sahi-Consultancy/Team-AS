@@ -21,7 +21,7 @@
 
         <div class="justify-content-center collapse navbar-collapse" id="pro_links">
             <ul class="navbar-nav pro_links">
-                <li class="nav-item pro_link" ><a href="" class="nav-link">PROFILE</a></li>
+                <li class="nav-item pro_link"><a href="" onclick="profile()" class="nav-link">PROFILE</a></li>
                 <li class="nav-item pro_link"><a href="" class="nav-link">CERTIFICATES</a></li>
                 <li class="nav-item pro_link"><a href="" class="nav-link">MY COURSES</a></li>
                 <li class="nav-item pro_link add-nav"><a href="" class="nav-link">CATALOG</a></li>
@@ -34,23 +34,26 @@
         </div>
     </nav>
 
-    <div class="body-content" id="nav">
-    <div class="nav_left">
-        <div>
-            <img src="img/pexels-stephan-seeber-1261728.jpg" class="nav-img">
+    <div class="body-content" >
+        <div class="nav_left"id="nav">
+            <div>
+                <img src="img/pexels-stephan-seeber-1261728.jpg" class="nav-img">
+            </div>
+            <div class="contents">
+                <div class="tabs"><a href="">My Learning</a></div>
+                <div class="tabs"><a href="">Catalog</a></div>
+                <div class="tabs"><a href="">Profile</a></div>
+                <div class="tabs"><a href="">Wishlist</a></div>
+            </div>
         </div>
-        <div class="contents">
-            <div class="tabs"><a href="">My Learning</a></div>
-            <div class="tabs"><a href="">Catalog</a></div>
-            <div class="tabs"><a href="">Profile</a></div>
-            <div class="tabs"><a href="">Wishlist</a></div>
+
+        <div class="content" id="content">
+            <img src="img/pexels-marko-obrvan-306344.jpg" class="content-image"> 
         </div>
     </div>
 
-    <div class="content" id="content">
-        <img src="img/pexels-marko-obrvan-306344.jpg" class="content-image">
-    </div>
-    </div>
+    
 
 </body>
+<script src="js/dashboard.js"></script>
 </html>
