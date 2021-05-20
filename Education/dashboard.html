@@ -21,7 +21,7 @@
 
         <div class="justify-content-center collapse navbar-collapse" id="pro_links">
             <ul class="navbar-nav pro_links">
-                <li class="nav-item pro_link"><a href="" onclick="profile()" class="nav-link">PROFILE</a></li>
+                <li class="nav-item pro_link active"><a href="" onclick="profile()" class="nav-link">PROFILE</a></li>
                 <li class="nav-item pro_link"><a href="" class="nav-link">CERTIFICATES</a></li>
                 <li class="nav-item pro_link"><a href="" class="nav-link">MY COURSES</a></li>
                 <li class="nav-item pro_link add-nav"><a href="" class="nav-link">CATALOG</a></li>
@@ -45,10 +45,35 @@
                 <div class="tabs"><a href="">Profile</a></div>
                 <div class="tabs"><a href="">Wishlist</a></div>
             </div>
+            <div class="content" id="content">
+                <img src="img/pexels-marko-obrvan-306344.jpg" class="content-image">
+            </div>
         </div>
-
+        
+<!--Profile and tabs layout-->
         <div class="content" id="content">
-            <img src="img/pexels-marko-obrvan-306344.jpg" class="content-image"> 
+            <img src="img/pexels-marko-obrvan-306344.jpg" class="content-image">
+            <!--profile contents-->
+            <div class="profile-content row">
+                <div class="about-me col-md-5">
+                    <h2 id="about-me">About me</h2>
+                    <div class="text"><i>Add information about yourself</i></div>
+                    <div class="edit_profile"><h3>Edit Profile</h3></div>
+                </div>
+                <div class="courses-enrolled col-md-5">
+                    <h2 id="about-me">Courses Enrolled</h2>
+                    <div class="text"><i>Know about the courses enrolled</i></div>
+                    <div class="edit_profile"><h3>Know More</h3></div>
+                </div>
+            </div>
+
+            <!--certificates-->
+            <div class="certificates row">
+                <div class="earned col-md-4"><img src="img/badge.png" class="icons"> Earned</div>
+                <div class="completed col-md-4"><img src="img/study.png" class="icons"> Completed</div>
+                <div class="remaining col-md-4"><img src="img/sandclock.png" class="icons">Courses remaining</div>
+            </div>
+            
         </div>
     </div>
 

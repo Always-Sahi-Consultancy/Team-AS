@@ -82,7 +82,7 @@ body{
 }
 
 .nav_left
-{
+{   position: relative;
     width:20%;
     height:100%;
     background:#121212;
@@ -95,9 +95,9 @@ body{
     height: 250px;
 }
 .content
-{
-    width:80%;
-    background:rgb(41, 40, 40);
+{  
+    width:100%;
+    background:rgb(14, 13, 13);
     float:left;
     overflow-x:hidden;
     overflow-y:scroll;
@@ -181,3 +181,57 @@ body{
     top: -300px;
     left: 40%;
 } */
+.profile-content{
+    padding: 0px 50px;
+    justify-content: center;
+}
+.courses-enrolled{
+    margin:40px 20px 40px 20px;
+    height: 250px;
+    background-color: rgb(26, 45, 78);
+    padding: 35px 30px 40px 30px;
+    border-radius: 40px;
+}
+.about-me{
+    margin:40px 20px 40px 20px ;
+    height: 250px;
+    background-color: rgb(26, 45, 78);
+    padding: 35px 30px 40px 30px;
+    border-radius: 40px;
+}
+#about-me{
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 5px 0px 10px 0px;
+}
+.text{
+    color: rgb(77, 73, 73);
+    margin:20px 0px 30px 0px;
+}
+h3{
+    color: rgb(131, 52, 204);
+    font-weight: 300;
+    width: auto;
+    text-align: center;
+    padding: 10px 10px ;
+}
+.edit_profile{
+    border: 3px solid rgb(131, 52, 204);
+    width: 200px;
+    border-radius: 20px 2em 20px 2em;
+}
+.certificates{
+    margin-bottom: 40px;
+    justify-content: center;
+    background-color: white;
+    color: rgb(32, 30, 30);
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0px;
+    box-shadow: 5px 10px 20px rgb(168, 166, 166) ;
+}
+.icons{
+    width: auto;
+    height: 40px;
+}
