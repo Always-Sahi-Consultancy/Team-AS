@@ -9,7 +9,9 @@
     color:white;
     font-size:larger;
 }
-
+body{
+    overflow:hidden;
+}
 .pro_link
 {
     padding:0 0.2em;
@@ -88,11 +90,14 @@
     z-index:-10;
     float:left;
 }
-
+.nav-img{
+    width: 100%;
+    height: 250px;
+}
 .content
 {
     width:80%;
-    background:grey;
+    background:rgb(41, 40, 40);
     float:left;
     overflow-x:hidden;
     overflow-y:scroll;
@@ -115,10 +120,11 @@
 
 .content-image
 {
-    padding:0.2em;
-    width:80%;
-    margin-left:10%;
-    margin-right:10%;
+    width:100%;
+    height: 350px;
+}
+.tabs{
+    padding: 20px 0;
 }
 
 .body-content
@@ -152,4 +158,7 @@
     {
         width:100%;
     }
+}
+.nav-item a:hover{
+    border-bottom: 3px solid whitesmoke;
 }
