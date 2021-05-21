@@ -1,5 +1,5 @@
 function profile(){
-  var x=document.getElementById("nav") 
+  var x=document.getElementById("mpage") 
   var y = document.getElementById("content")
   
   y.style.display = "block";
