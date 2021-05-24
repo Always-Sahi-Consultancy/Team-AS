@@ -46,8 +46,8 @@ body
     color:var(--gray-100);
     background:var(--gray-600);
     border-radius:50px;
-    display:inline-flex;
-    text-align:center;
+    display:inline;
+    /* text-align:center; */
     position:relative;
     padding:2%;
     height:fit-content;
@@ -71,12 +71,12 @@ body
 {
     from
     {
-        left:0%;
+        left:0px;
     }
 
     to
     {
-        left:10%;
+        left:30px;
     }
 }
 
@@ -84,17 +84,17 @@ body
 {
     from
     {
-        right:0%;
+        right:0px;
     }
     to
     {
-        right:10%;
+        right:30px;
     }
 }
 
 .box-size-left
 {
-    left:10%;
+    left:30px;
     animation-name:live-left;
     animation-duration:1s;
     float:left;
@@ -102,7 +102,7 @@ body
 
 .box-size-right
 {
-    right:10%;
+    right:30px;
     animation-name:live-right;
     animation-duration:1s;
     float:right;
