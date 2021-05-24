@@ -203,7 +203,7 @@ body
 .box-size
 {
     width:40%;
-    min-width:500px;
+    min-width:8rem;
     min-height:250px;
     color:var(--gray-100);
     background:var(--gray-600);
@@ -217,9 +217,9 @@ body
 
 .on-demand
 {
-    display:inline;
-    align-content:center;
-    margin:auto;
+    display:block;
+    position:static;
+    min-height:300px;
 }
 
 .on-demand-title
@@ -233,12 +233,12 @@ body
 {
     from
     {
-        left:0px;
+        left:1rem;
     }
 
     to
     {
-        left:30px;
+        left:5rem;
     }
 }
 
@@ -246,17 +246,17 @@ body
 {
     from
     {
-        right:0px;
+        right:1rem;
     }
     to
     {
-        right:30px;
+        right:5rem;
     }
 }
 
 .box-size-left
 {
-    left:30px;
+    left:5rem;
     animation-name:live-left;
     animation-duration:1s;
     float:left;
@@ -264,7 +264,7 @@ body
 
 .box-size-right
 {
-    right:30px;
+    right:5rem;
     animation-name:live-right;
     animation-duration:1s;
     float:right;
@@ -273,4 +273,88 @@ body
 .on-demand-details
 {
     font-size:small;
+}
+
+.workshop
+{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.workshop h2
+{
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.workshop-section
+{
+    width:240px;
+    height:240px;
+    background:var(--teal-300);
+    display:inline-flex;
+    margin:10px 5px;
+    border-radius:10px;
+}
+
+@keyframes workshop-inner-animation
+{
+    from
+    {
+        width:50%;
+        height:50%;
+        top:25%;
+        left:25%;
+    }
+    to
+    {
+        width:99%;
+        height:99%;
+        top:1%;
+        left:1%;
+    }
+}
+
+@keyframes workshop-section-reverse
+{
+    from
+    {
+        width:100%;
+        height:100%;
+        top:0%;
+        left:0%;
+        background:var(--teal-200);
+    }
+    to
+    {
+        width:50%;
+        height:50%;
+        top:25%;
+        left:25%;
+        background:none;
+    }
+}
+
+.workshop-section-inner
+{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+    top:25%;
+    left:25%;
+    animation-name:workshop-service-reverse;
+    animation-duration:2s;
+}
+
+.workshop-section-inner:hover
+{
+    background:var(--teal-200);
+    animation-name:workshop-inner-animation;
+    animation-duration:0.5s;
+    overflow:hidden;
+    top:0%;
+    left:0%;
+    animation-fill-mode:forwards;
 }
