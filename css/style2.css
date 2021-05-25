@@ -275,6 +275,48 @@ body
     font-size:small;
 }
 
+@media screen and (max-width:900px)
+{
+    .box-size
+    {
+        width:80%;
+    }
+
+    @keyframes live-left
+    {
+        from
+        {
+            left:1rem;
+        }
+        to
+        {
+            left:2rem;
+        }
+    }
+
+    @keyframes live-right
+    {
+        from
+        {
+            right:1rem;
+        }
+        to
+        {
+            right:1rem;
+        }
+    }
+
+    .box-size-left
+    {
+        left:2rem;
+    }
+
+    .box-size-right
+    {
+        right:2rem;
+    }
+}
+
 .workshop
 {
     margin-left:10%;
