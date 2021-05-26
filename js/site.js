@@ -1,12 +1,10 @@
 function headerSidelay(){
     var ham_icon=document.getElementById("ham_icon");
     ham_icon.classList.toggle("change");
-    var sidelay=document.getElementById("sidelay");
-    if(sidelay.width=="100%"){
-        sidelay.style.width="0%";
-    }
-    if(sidelay.width=="0%"){
-        sidelay.style.width="100%";
-    }
-    
 }
+// document.getElementById("ham_icon").addEventListener("click",headerSidelay);
+$(document).ready(function(){
+    $('#ham_icon').click(function(){
+        $('#sidelay').toggleClass("Sidelay sidelay_full");
+    });
+})
