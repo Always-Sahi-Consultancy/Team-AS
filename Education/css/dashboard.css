@@ -284,3 +284,6 @@ h3{
     margin: 40px;
     box-shadow: 5px 10px 20px rgb(168, 166, 166) ;
 }
+#content{
+    display: none;
+}
