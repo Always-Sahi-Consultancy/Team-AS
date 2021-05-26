@@ -48,6 +48,7 @@ body
     position:fixed;
     z-index:1000;
     background-color:var(--white);
+    top:0;
 }
 .head .head_nav{
     padding:20px 20px;
@@ -231,6 +232,7 @@ body
     display:block;
     position:static;
     min-height:300px;
+    margin-top:90px;
 }
 
 .on-demand-title
