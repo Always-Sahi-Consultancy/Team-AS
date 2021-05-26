@@ -134,6 +134,11 @@ body
     padding:15px 20px;
     cursor:pointer;
 }
+@media only screen and (min-width:1321px){
+    #sidelay{
+        display:none;
+    }
+}
 @media only screen and (max-width:1320px){
     #ham_icon{
         display:block;
@@ -191,6 +196,9 @@ body
     display: block;
     transition: 0.3s;
 }
+#sidelay .first a:hover{
+    color:var(--blue-100);
+}
 #sidelay .second{
     display:flex;
     /* border:1px solid green; */
@@ -200,6 +208,7 @@ body
 }
 #sidelay .second a{
     width:50%;
+    max-width: 400px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     color:var(--grey-100);
@@ -208,6 +217,16 @@ body
     justify-content:center;
     align-items:center;
     transition: 0.3s;
+}
+#sidelay .second a:first-child:hover{
+    color:var(--blue-100);
+}
+#sidelay .second a:last-child{
+    background:var(--blue-100);
+    border-radius:30px;
+    color:var(--white);
+    font-weight:500;
+
 }
 /* Header Section Ends */
 /*Live now*/
