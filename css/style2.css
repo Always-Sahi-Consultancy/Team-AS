@@ -45,6 +45,9 @@ body
 /* Header Section Starts */
 .head{
     width:100%;
+    position:fixed;
+    z-index:1000;
+    background-color:var(--white);
 }
 .head .head_nav{
     padding:20px 20px;
@@ -130,7 +133,7 @@ body
     padding:15px 20px;
     cursor:pointer;
 }
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1320px){
     #ham_icon{
         display:block;
     }
@@ -329,6 +332,7 @@ body
 {
     margin-left:10%;
     margin-right:10%;
+   
 }
 
 .workshop h2
