@@ -73,7 +73,7 @@ body
 }
 .company .Com_name{
     margin-bottom:0px;
-    width:150px;
+    width:140px;
     text-align:center;
     font-size:1.2rem;
     color:var(--gray-100);
@@ -90,7 +90,7 @@ body
     display:flex;
 }
 .nav_first li{
-    font-size:1.2rem;
+    font-size:1.1rem;
     cursor:pointer;
     display:flex;
     justify-content: center;
@@ -103,7 +103,7 @@ body
     padding-left:4vw;
 }
 .nav_second li{
-    font-size:1.2rem;
+    font-size:1.1rem;
     cursor:pointer;
     display:flex;
     color:var(--blue-100);
