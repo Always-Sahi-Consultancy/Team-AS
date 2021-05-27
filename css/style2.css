@@ -332,6 +332,8 @@ body
 .on-demand-details
 {
     font-size:small;
+    /* position:absolute; */
+    /* left:60%; */
 }
 
 .intro-button
@@ -404,6 +406,27 @@ body
     }
 }
 
+.on-demand-image
+{
+    height:80%;
+    width:50%;
+    position:absolute;
+    bottom:-10%;
+    border-radius:50%;
+}
+
+#on-demand-first
+{
+    position:absolute;
+    left:10%;
+}
+
+#on-demand-second
+{
+    position:absolute;
+    right:90%;
+}
+
 .workshop
 {
     margin-left:10%;
@@ -449,7 +472,8 @@ body
     left:0;
     right:0;
     z-index:-1;
-    background:rgb(253, 253, 84);
+    background:rgb(250, 250, 250);
+    /* rgb(253, 253, 84); */
     border-radius:50%;
     transform:scale(0);
     transition:0.8s ease-out;
@@ -457,6 +481,31 @@ body
 }
 .workshop-section:hover:before{
     transform:scale(2);
+}
+
+.workshop-section:hover .workshop-image
+{
+    top:20%;
+}
+
+.workshop-section:hover .workshop-text
+{
+    top:80%;
+}
+
+.workshop-text
+{
+    position:absolute;
+    transition:0.5s;
+}
+
+.workshop-image
+{
+    position:absolute;
+    top:-100%;
+    transition:0.5s;
+    height:50%;
+    width:50%;
 }
 
 @keyframes workshop-inner-animation
@@ -571,4 +620,18 @@ body
     {
         width:100%;
     }
+}
+
+.as-wani-image
+{
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.as-wani-title
+{
+    color:var(--off-white-300);
+    position:absolute;
+    bottom:-10%;
 }
