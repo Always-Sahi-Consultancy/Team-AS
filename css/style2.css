@@ -427,6 +427,18 @@ body
     right:90%;
 }
 
+.csr
+{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.csr-image
+{
+    width:100%;
+    height:80%;
+}
+
 .workshop
 {
     margin-left:10%;
