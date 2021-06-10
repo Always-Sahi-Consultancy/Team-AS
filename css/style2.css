@@ -439,11 +439,11 @@ body
     height:80%;
 }
 
-.workshop
+/* .workshop
 {
     margin-left:10%;
     width:80%;
-}
+} */
 
 #workshop
 {
@@ -646,4 +646,74 @@ body
     color:var(--off-white-300);
     position:absolute;
     bottom:-10%;
+}
+
+.image-container
+{
+    z-index:3;
+    position:relative;
+    top:80%;
+    margin-left:6%;
+    background:aqua;
+}
+
+.workshop-text
+{
+    padding:10%;
+    color:black;
+    position:static;
+    z-index:2;
+    height:fit-content;
+    width:400px;
+    position:relative;
+}
+
+.workshop-container
+{
+    height:350px;
+    width:400px;
+    background:#2EC4B6;
+    display:inline-flex;
+    z-index:-2;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:80px;
+    transition-duration:0.5s;
+    border-radius:30px;
+}
+
+.workshop-image
+{
+    height:350px;
+    width:350px;
+    border-radius:30px;
+}
+
+.workshop
+{
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:center;
+    width:90%;
+    left:5%;
+}
+
+#writeup-1
+{
+    top:0%;
+}
+
+#writeup-2
+{
+    top:0%;
+}
+
+#writeup-3
+{
+    top:0%;
+}
+
+.workshop-container:hover
+{
+    background:aqua;
 }
