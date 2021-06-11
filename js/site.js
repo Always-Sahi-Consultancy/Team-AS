@@ -1,5 +1,5 @@
 function headerSidelay(){
-    var ham_icon=document.getElementById("ham_icon");classList.toggle("change");
+    var ham_icon=document.getElementById("ham_icon").classList.toggle("change");
 }
 // document.getElementById("ham_icon").addEventListener("click",headerSidelay);
 $(document).ready(function(){
@@ -31,4 +31,42 @@ function workshop(n)
     }
 }
 
-window.addEventListener(onclick);
+window.addEventListener(onclick,workshop);
+
+
+$(document).ready(function () {
+    // console.log("hi");
+    $(window).scroll(function () {
+      var positiontop = $(document).scrollTop();
+    //   console.log(positiontop);
+      if ((positiontop > 308) && (positiontop < 320)) {
+        function animateValue(obj, start, end, duration) {
+          let startTimestamp = null;
+          const step = (time) => {
+            if (!startTimestamp) {
+              startTimestamp = time;
+            }
+            const progress = Math.min((time - startTimestamp) / duration, 1);
+            obj.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            }
+            else {
+              obj.innerHTML = Math.floor(progress * (end - start) + start) + "+";
+            }
+          };
+
+          window.requestAnimationFrame(step);
+        }
+
+        const obj1 = document.getElementById("stat-box1");
+        const obj2 = document.getElementById("stat-box2");
+        const obj3 = document.getElementById("stat-box3");
+        const obj4 = document.getElementById("stat-box4");
+        animateValue(obj1, 0, 35, 2000);
+        animateValue(obj2, 0, 350, 2000);
+        animateValue(obj3, 0, 21, 1500);
+        animateValue(obj4, 0, 15, 1500);
+      }
+    })
+  })

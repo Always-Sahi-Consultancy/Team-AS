@@ -171,14 +171,14 @@ body
         transition:0.4s ease-in-out;
     }
     .change .top{
-        transform:rotate(-45deg) translate(-6px ,6px);
+        transform:rotate(315deg) translate(-6px ,6px);
         /* transform:rotate(-45deg) translate(-6px,6px); */
     }
     .change .middle{
         display:none;
     }
     .change .bottom{
-        transform:rotate(45deg);
+        transform:rotate(-315deg);
     }
 }
 .Sidelay{
@@ -433,11 +433,14 @@ body
 
 .about
 {
+    text-align:center;
     width:80%;
     margin-left:10%;
     justify-content:center;
 }
-
+.about-info{
+    margin-top:30px;
+}
 .about-sections
 {
     width:45%;
@@ -699,7 +702,13 @@ body
     margin-left:6%;
     background:aqua;
 }
-
+.workshop-section-containers{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap:3rem;
+}
 .workshop-text
 {
     padding:10%;
@@ -724,6 +733,7 @@ body
     margin-top:80px;
     transition-duration:0.5s;
     border-radius:30px;
+
 }
 
 .workshop-image
@@ -764,3 +774,76 @@ body
 {
     background:aqua;
 }
+
+@media only screen and (max-width:1200px){
+    .workshop-section-containers{
+        grid-template-columns:auto auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .workshop-section-containers{
+        grid-template-columns:auto;
+    }
+}
+
+/* Achievement Sectioin Starts */
+.achievement{
+    text-align: center;
+    margin-top:100px;
+}
+.stats{
+    padding:40px 10px;
+    height:fit-content;
+    width:100%;
+    margin-top:50px;
+    background:rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
+.stat{
+    color:white;
+    /* background-color:red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    font-size:1.8rem;
+}
+.stat_name{
+    color:white;
+    margin-top:10px;
+    width:150px;
+    text-align: center;
+    font-size:1.8rem;
+    line-height: 2rem;
+}
+.lorem{
+    font-size:25px;
+    color:rgb(224, 219, 219);
+}
+.stat1,.stat2,.stat3,.stat4{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size:1.8rem;
+    /* background-color:green; */
+    min-width:300px;
+}
+@media only screen and (max-width:1200px){
+    .stats{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .stats{
+        grid-template-columns: auto;
+    }
+    .stat2,.stat3,.stat4{
+        margin-top:50px;
+    }
+}
+/* Achievement Sectioin Ends */
