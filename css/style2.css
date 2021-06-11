@@ -41,6 +41,10 @@ body
     --red-200: #ff613d;
     --green-100: #0fbd69;
     --green-200: #33d989;
+
+    --white-color:#FDFFFC;
+    --blue-color:#011627;
+    --aqua-color:#2EC4B6;
 }
 
 /*@font-face
@@ -81,9 +85,9 @@ body
 }
 .company .Com_name{
     margin-bottom:0px;
-    width:140px;
+    width:150px;
     text-align:center;
-    font-size:1.4rem;
+    font-size:1.3rem;
     color:var(--gray-100);
 }
 .company .Com_name .always{
@@ -249,14 +253,14 @@ body
     width:40%;
     height:300px;
     position:relative;
-    top:30%;
+    top:25%;
 }
 
 .box-size
 {
     width:40%;
     min-width:8rem;
-    min-height:250px;
+    min-height:400px;
     color:var(--gray-100);
     background:var(--gray-600);
     border-radius:50px;
@@ -374,7 +378,7 @@ body
         }
         to
         {
-            right:1rem;
+            right:2rem;
         }
     }
 
@@ -425,6 +429,45 @@ body
 {
     position:absolute;
     right:90%;
+}
+
+.about
+{
+    width:80%;
+    margin-left:10%;
+    justify-content:center;
+}
+
+.about-sections
+{
+    width:45%;
+    display:inline-block;
+}
+
+.about-image
+{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:-100px;
+}
+
+#about-image
+{
+    animation-name:live-left;
+    animation-duration:0.5s;
+}
+
+#about-text
+{
+    animation-name:live-right;
+    animation-duration:0.5s;
+}
+
+.about-text
+{
+    position:relative;
+    top:30%;
 }
 
 .csr
@@ -671,7 +714,8 @@ body
 .workshop-container
 {
     height:350px;
-    width:400px;
+    width:25vw;
+    min-width:400px;
     background:#2EC4B6;
     display:inline-flex;
     z-index:-2;
@@ -684,9 +728,12 @@ body
 
 .workshop-image
 {
-    height:350px;
-    width:350px;
+    height:auto;
+    width:25vw;
+    min-width:350px;
     border-radius:30px;
+    background:var(--white-color);
+    border:2px solid var(--aqua-color);
 }
 
 .workshop
