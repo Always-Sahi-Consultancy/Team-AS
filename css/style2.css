@@ -276,13 +276,13 @@ body
 {
     position:relative;
     /* min-height:680px; */
-    top:10px;
+    top:10vh;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-top:0;
     /* padding:30px; */
-    margin-bottom:100px;
+    /* margin-bottom:100px; */
 
 }
 .box-size-desc{

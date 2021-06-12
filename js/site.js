@@ -70,8 +70,10 @@ function workshopSize()
   }
 };
 
-workshopSize();
-
+$(document).ready(function()
+{
+  workshopSize();
+});
 
 $(document).ready(function () {
     // console.log("hi");
