@@ -14,9 +14,11 @@ function workshop(n)
 {
     var section="section-"+n;
     var writeup="writeup-"+n;
+    var titles="t"+n;
     var section=document.getElementById(section);
     var writeup=document.getElementById(writeup);
     var wos=screen.width;
+    var titles=document.getElementById(titles);
     if(workshops[n]==1)
     {
         if(wos>1000){  
@@ -27,6 +29,7 @@ function workshop(n)
           section.style.height="300px";
         }
         writeup.style.top="0%";
+        titles.style.bottom="-30%";
         workshops[n]=0;
     }
     else
@@ -40,7 +43,8 @@ function workshop(n)
         {
           section.style.height="400px";
         }
-        writeup.style.top="45%";
+        writeup.style.top="46%";
+        titles.style.bottom="-50%";
         workshops[n]=1;
     }
 }
