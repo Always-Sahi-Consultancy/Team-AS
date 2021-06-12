@@ -496,16 +496,16 @@ body
 
 .about-image
 {
-    width:100%;
+    width:60%;
     height:auto;
-    position:relative;
-    top:-100px;
 }
 
 #about-image
 {
     animation-name:live-left;
     animation-duration:0.5s;
+    position:relative;
+    top:-100px;
 }
 
 #about-text
@@ -518,6 +518,9 @@ body
 {
     position:relative;
     top:30%;
+    font-weight:bold;
+    font-size:1.2rem;
+    text-align:justify;
 }
 
 .csr
@@ -751,10 +754,8 @@ body
 }
 .workshop-section-containers{
     display:inline;
-    grid-template-columns: auto auto auto;
     justify-content: center;
     align-items: center;
-    column-gap:3rem;
 }
 
 .workshop-text
@@ -770,25 +771,22 @@ body
 
 .workshop-container
 {
-    height:350px;
-    width:25vw;
-    min-width:400px;
+    height:25vw;
+    width:30vw;
     background:#2EC4B6;
     display:inline-flex;
     z-index:-2;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:1vw;
+    margin-right:1vw;
     margin-top:80px;
     transition-duration:0.5s;
     border-radius:30px;
-
 }
 
 .workshop-image
 {
     height:auto;
-    width:25vw;
-    min-width:350px;
+    width:26vw;
     border-radius:30px;
     background:var(--white-color);
     border:2px solid var(--aqua-color);
@@ -796,11 +794,9 @@ body
 
 .workshop
 {
-    margin-left:auto;
-    margin-right:auto;
     justify-content:center;
-    width:90%;
-    left:5%;
+    width:100%;
+    align-items:center;
 }
 
 #writeup-1
@@ -816,6 +812,21 @@ body
 #writeup-3
 {
     top:0%;
+}
+
+@media screen and (max-width:1000px)
+{
+    .workshop-container
+    {
+        height:300px;
+        width:350px;
+    }
+
+    .workshop-image
+    {
+        height:300px;
+        width:300px;
+    }
 }
 
 .workshop-container:hover
