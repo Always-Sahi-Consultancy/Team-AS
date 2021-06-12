@@ -911,12 +911,10 @@ body
 /* Join Us Starts*/
 .join_us{
     position: relative;
-    margin-top: 250px;
-    margin-bottom: 250px;
 }
 .card1{
-    position: absolute;
-    top: 230%;
+    position: relative;
+    top: 60%;
     left: 20%;
     transform: translate(-50%,-50%);
     width: 300px;
@@ -924,10 +922,11 @@ body
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.1s;
+    margin-bottom: 20px;
 }
  .card2{
-    position: absolute;
-    top: 230%;
+    position: relative;
+    top: 60%;
     left: 80%;
     transform: translate(-50%,-50%);
     width: 300px;
@@ -935,11 +934,12 @@ body
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.1s;
+    margin-bottom: 20px;
 }
 
 .card{
-    position: absolute;
-    top: 230%;
+    position: relative;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 300px;
@@ -947,6 +947,7 @@ body
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.1s;
+    margin-bottom: 20px;
 }
 
 .card1 .front,
@@ -1038,7 +1039,7 @@ body
      left: -50%;
      width: 100%;
      height: 100%;
-     background: rgba(255,255,255,0.1)
+     background: rgba(90, 90, 90, 0.1);
  }
  .deto span{
      font-family: Georgia, serif;
