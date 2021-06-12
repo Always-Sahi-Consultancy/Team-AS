@@ -17,19 +17,23 @@ function workshop(n)
     var titles="t"+n;
     var section=document.getElementById(section);
     var writeup=document.getElementById(writeup);
-    var wos=screen.width;
+    var wos=$(window).width();
+    // var wos=screen.width;
     var titles=document.getElementById(titles);
     if(workshops[n]==1)
     {
         if(wos>1000){  
+          writeup.style.width="380px";
           section.style.height="25vw";
         }
         else
         {
+          titles.style.bottom="-10%";
           section.style.height="300px";
         }
         writeup.style.top="0%";
-        titles.style.bottom="-30%";
+        
+        writeup.style.width="300px";
         workshops[n]=0;
     }
     else
@@ -37,14 +41,17 @@ function workshop(n)
         // $(writeup).attr("top","90%");
         if(wos>1000)
         {
+          writeup.style.width="380px";
           section.style.height="35vw";
         }
         else
         {
+          titles.style.bottom="-10%";
           section.style.height="400px";
         }
         writeup.style.top="46%";
         titles.style.bottom="-50%";
+        
         workshops[n]=1;
     }
 }
