@@ -274,12 +274,39 @@ body
 
 .on-demand
 {
-    display:block;
     position:relative;
-    min-height:680px;
+    /* min-height:680px; */
     top:100px;
-}
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+    /* padding:30px; */
+    margin-bottom:100px;
 
+}
+.box-size-desc{
+    color:black;
+    text-align: center;
+    font-size:2rem; 
+    margin-top:10px; 
+}
+.fancy-text{
+    color:black;
+    opacity:0;
+    display:inline-block;
+    transform:translateY(-100px);
+    transition:1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    /* transition:1s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    width:15px;
+    text-align: center;
+    font-weight: 500;
+}
+.fade{
+    opacity:1;
+    transform: translateY(0px);
+}
 .on-demand-title
 {
     font-size:2em;
@@ -291,12 +318,12 @@ body
 {
     from
     {
-        left:1rem;
+        left:-5rem;
     }
 
     to
     {
-        left:5rem;
+        left:0rem;
     }
 }
 
@@ -304,25 +331,34 @@ body
 {
     from
     {
-        right:1rem;
+        right:-5rem;
     }
     to
     {
-        right:5rem;
+        right:0rem;
     }
 }
 
 .box-size-left
 {
-    left:5rem;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content: center;
+    left:0rem;
     animation-name:live-left;
     animation-duration:1s;
-    float:left;
+    text-align: center;
+    width:40%;
 }
-
+.box-size-desc{
+    font-size:1.5rem;
+    color:rgb(102, 101, 101);
+}
 .box-size-right
 {
-    right:5rem;
+    width:40%;
+    right:0rem;
     animation-name:live-right;
     animation-duration:1s;
     float:right;
@@ -332,7 +368,9 @@ body
 {
     animation-delay:0.1s;
 }
-
+.on-demand{
+   
+}
 .on-demand-details
 {
     font-size:small;
@@ -342,12 +380,20 @@ body
 
 .intro-button
 {
+    margin-top:30px;
+    border:none;
     background:var(--blue-100);
     color:var(--white);
     height:50px;
     border-radius:25px;
     border-color:var(--blue-100);
-    padding:10px;
+    padding:10px 20px;
+    transform:scale(1);
+    transition:0.5s ease-in-out;
+}
+.intro-button:hover{
+    transform:scale(1.1);
+    box-shadow:0px 0px 10px black;
 }
 
 @media screen and (max-width:900px)
@@ -433,6 +479,7 @@ body
 
 .about
 {
+    margin-top:100px;
     text-align:center;
     width:80%;
     margin-left:10%;

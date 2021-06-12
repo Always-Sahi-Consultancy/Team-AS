@@ -70,3 +70,31 @@ $(document).ready(function () {
       }
     })
   })
+
+  // Typing Effect Starts
+const text=document.querySelector(".box-size-desc");
+const strText=text.textContent;
+const splitText=strText.split("");
+console.log(splitText);
+text.textContent="";
+for(let i=0;i<splitText.length;i++){
+    text.innerHTML += "<span class='fancy-text'>" + splitText[i] + "</span>";
+}
+
+let char=0;
+let Timer=setInterval(onTick,50);
+
+function onTick(){
+    const span=document.querySelectorAll(".fancy-text")[char];
+    span.classList.add('fade');
+    char++;
+    if(char===splitText.length){
+        complete();
+        return; 
+    }
+}
+function complete(){
+    clearInterval(Timer);
+    timer=null;
+}
+  // Typing Effect Ends
