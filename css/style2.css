@@ -299,7 +299,7 @@ body
     transition:1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     /* transition:1s cubic-bezier(0.165, 0.84, 0.44, 1); */
     /* transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
-    /* width:15px; */
+    width:15px;
     text-align: center;
     font-weight: 500;
 }
@@ -479,20 +479,15 @@ body
 
 .about
 {
-    margin-top:150px;
+    margin-top:100px;
     text-align:center;
     width:80%;
     margin-left:10%;
     justify-content:center;
 }
 .about-info{
-    display:flex;
-    margin-top:80px;
+    margin-top:30px;
 }
-@media only screen and (max-width:1200px){
-    
-}
-
 .about-sections
 {
     width:45%;
@@ -510,7 +505,7 @@ body
     animation-name:live-left;
     animation-duration:0.5s;
     position:relative;
-    top:-80px;
+    top:-100px;
 }
 
 #about-text
@@ -608,21 +603,8 @@ body
 
 .workshop-text
 {
-    /* position:absolute; */
+    position:absolute;
     transition:0.5s;
-    width:380px;
-    font-size:16px;
-    overflow-x:hidden;
-    text-align:justify;
-
-    padding:10%;
-    color:black;
-    /* position:static; */
-    z-index:2;
-    height:fit-content;
-    /* width:400px; */
-    position:relative;
-    /* left:-30px; */
 }
 
 .workshop-image
@@ -795,7 +777,17 @@ body
     display:inline;
     justify-content: center;
     align-items: center;
-    margin-top:50px;
+}
+
+.workshop-text
+{
+    padding:10%;
+    color:black;
+    position:static;
+    z-index:2;
+    height:fit-content;
+    width:400px;
+    position:relative;
 }
 
 .workshop-container
@@ -945,6 +937,7 @@ body
 /* Join Us Starts*/
 .join_us{
     position: relative;
+    margin-bottom: 100px;
 }
 .card1{
     position: relative;
@@ -953,9 +946,9 @@ body
     transform: translate(-50%,-50%);
     width: 300px;
     height: 450px;
-    transform-style: preserve-3d;
+
     perspective: 600px;
-    transition: 0.1s;
+    transition: 0.5s;
     margin-bottom: 20px;
 }
  .card2{
@@ -965,9 +958,8 @@ body
     transform: translate(-50%,-50%);
     width: 300px;
     height: 450px;
-    transform-style: preserve-3d;
     perspective: 600px;
-    transition: 0.1s;
+    transition: 0.5s;
     margin-bottom: 20px;
 }
 
@@ -978,17 +970,21 @@ body
     transform: translate(-50%,-50%);
     width: 300px;
     height: 450px;
-    transform-style: preserve-3d;
     perspective: 600px;
-    transition: 0.1s;
+    transition: 0.5s;
     margin-bottom: 20px;
 }
-
+.card,.card1,.card2{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 .card1 .front,
 .card2 .front,
 .card .front{
     border-radius: 15px;
-    position: absolute;
+    position:relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -1007,11 +1003,14 @@ body
  .card2:hover .front,
  .card:hover .front{
           transform: rotateX(-180deg);
+          transform-style: preserve-3d;
  }
 .card1 .back,
 .card2 .back,
 .card .back{
     border-radius: 15px;
+    border: 5px;
+    border-color: #2EC4B6;
     position: absolute;
     top: 0;
     left: 0;
@@ -1026,6 +1025,7 @@ body
 .card2:hover .back,
  .card:hover .back{
           transform: rotateX(0deg);
+          transform-style: preserve-3d;
  }
  .card1 .Front .deto,
  .card2 .Front .deto,
