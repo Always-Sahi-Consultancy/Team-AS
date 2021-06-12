@@ -16,17 +16,31 @@ function workshop(n)
     var writeup="writeup-"+n;
     var section=document.getElementById(section);
     var writeup=document.getElementById(writeup);
+    var wos=screen.width;
     if(workshops[n]==1)
     {
-        section.style.height="350px";
+        if(wos>1000){  
+          section.style.height="25vw";
+        }
+        else
+        {
+          section.style.height="300px";
+        }
         writeup.style.top="0%";
         workshops[n]=0;
     }
     else
     {
         // $(writeup).attr("top","90%");
-        section.style.height="450px";
-        writeup.style.top="50%";
+        if(wos>1000)
+        {
+          section.style.height="35vw";
+        }
+        else
+        {
+          section.style.height="400px";
+        }
+        writeup.style.top="45%";
         workshops[n]=1;
     }
 }
