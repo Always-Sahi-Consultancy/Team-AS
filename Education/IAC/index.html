@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <title>IAC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name ="viewport" content ="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+            
+            <div class="sidebar">
+              <div class="logo">
+                <img src="/img/gabriel-testoni-k6YUvt2WGdI-unsplash.jpg" style="width: auto; height: 200px;">
+                <center>
+              <div class="row"><h1>Associate</h1></div></center>
+              </div>
+              <a class="active" href="" onclick="dashboard()">Dashboard</a>
+              <a href="#RegistrationForm" onclick="Register()">Downline Register</a>
+              <a href="#Purchase">Purchase</a>
+            </div> 
+
+
+            <!--MAIN BODY CONTENT-->
+            <!--DASHBOARD-->
+            <div class="content">
+              <div class="row col-md-2 head">
+                  <p class="associateId">234567</p>
+                  <a href="" class="logout">LOGOUT</a>
+              </div>
+              <div class="row line"></div>
+              <div id="Dashboard">
+                <div class="row Dashboard">
+                  <div class="col-md-4 Dh">DASHBOARD</div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-5">
+                    <p class="Linfo">
+                      <a href="" class="changePassword">KYC</a> <a href="" class="changePassword">/ Change Password</a>
+                    </p>
+                    
+                  </div>
+                </div>
+              <div class="row line2"></div>
+
+              <center>
+              <!--LEVEL TABLE-->  
+              <!--<div class="row col-md-11 levelTable">
+                <div class="col-md-4 TableHeads">Maintained Level</div>
+                <div class="col-md-4 TableHeads">Highest level</div>
+                <div class="col-md-4 TableHeads">Status</div>
+                <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
+                <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
+                <div class="col-md-4 TableHeads "><div class="TableInfo">Active</div></div>
+            </div>-->
+
+            <!--ABOUT YOU TABLE-->
+            <div class="row container-1">
+              <table>
+                <tr>
+                  <th rowspan="3">Name</th>
+                  <th rowspan="3">% Level</th>
+                  <th colspan="3">Current Month Business</th>
+                  <th colspan="3">Total Business</th>
+                  <tr>
+                </tr>
+                    <td >PCP</td>
+                    <td >GCP</td>
+                    <td >TCP</td>
+                    <td >PCP</td>
+                    <td >GCP</td>
+                    <td >TCP</td>
+                  </tr>
+                  <!--<tr>
+                    <td>BV</td>
+                    <td>Extra</td>
+                    <td>BV</td>
+                    <td>Extra</td>
+                    <td>BV</td>
+                    <td>Extra</td>
+                  </tr>-->
+                  <tr>
+                    <td>Atharv Laxman sawant</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2883</td>
+                    <td>7362</td>
+                    <td>10245</td>
+                  </tr>
+              </table>
+            </div>
+
+            <!--VERIFICATION LINKS-->
+            <div class="row statusDetails" id="verifications">
+              <div class="col-md-4 statusContainer">
+                <p class="statusDetails">
+                  <div class="heads">KYC Verification Status</div>
+                  <a href="">Click here for your KYC verification</a>
+                </p>
+              </div>
+              <div class="col-md-3 statusContainer">
+                <p class="">
+                  <div class="heads">Bank account Verification Status</div>
+                  <a href="">Click here for your Bank Account verification</a>
+                </p>
+              </div>
+              <div class="col-md-4 statusContainer">
+                <p class="statusDetails">
+                  <div class="heads">PAN Verification Status</div>
+                  <a href="">Click here for your PAN verification</a>
+                </p>
+              </div>
+            </div>
+              </div>
+
+            <!--RESIGTER FORM-->
+            <div id="RegistrationForm">
+              <div class="row register" id="RegisterForm">
+                <div class="RF col-md-10">REGISTRATION FORM</div>
+               <div class="link"> <a href="">HOME</a></div>
+              </div>
+              <!--Mobile Verification-->
+              <div class="row MV">
+                <div>Mobile OTP Verification</div>
+              </div>
+              <div class="row MobileV col-md-6">
+                <div class="titles">Mobile</div>
+                <input type="tel" name="telephone" pattern="[0-9]" required>
+                <button type="submit" name="submit" class="BO">Send OTP</button>
+              </div>
+              <!--upline Information-->
+              <div class="row MV">
+                <div>Upline Information</div>
+              </div>
+              <div class="row MobileV col-md-6">
+                <div class="titles">Upline ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                <input type="number" name="sID" maxlength="7" minlength="7" required>
+              </div>
+              <div class="row MobileV col-md-6">
+                <div class="titles">Upline Name</div>
+                <input type="text" id="sname"  required>
+              </div>
+              <div class="row MV">
+                <div>Personal Information</div>
+              </div>
+              <div class="col-md-10">
+                <form>
+                  <div class="row MobileV col-md-6">
+                  <div class="titles">Title</div>
+                  <select id="gender" name="gender" required>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                  </select>
+                  </div>
+                  <div class="row MobileV col-md-6">
+                  <div class="titles">Name</div>
+                  <input type="text" id="name" required>
+                  </div>
+                  <div class="row MobileV col-md-6">
+                    <div class="titles">PAN</div>
+                    <input type="text" id="pan" required>
+                  </div>
+                  <div class="row MobileV col-md-6">
+                    <div class="titles">Date of Birth</div>
+                    <input type="date" name="date">
+                  </div>
+                  <div class="row MobileV col-md-6">
+                    <button type="submit" name="submit">NEXT</button>
+                  </div>
+                  </form>
+                </div>
+            </div>
+              </center>
+            </div>
+          
+        
+    </div>
+</body>
+
+<script src="/menu.js"></script>
+</html>
