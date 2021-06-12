@@ -616,6 +616,27 @@ body
     width:50%;
 }
 
+.workshop-titles
+{
+    position:relative;
+    animation-duration:0s;
+}
+
+#t1
+{
+    bottom:-30%;
+}
+
+#t2
+{
+    bottom:-30%;
+}
+
+#t3
+{
+    bottom:-30%;
+}
+
 @keyframes workshop-inner-animation
 {
     from
@@ -781,6 +802,11 @@ body
     margin-top:80px;
     transition-duration:0.5s;
     border-radius:30px;
+}
+
+.workshop-texts
+{
+    display:inline-block;
 }
 
 .workshop-image
