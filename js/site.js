@@ -30,10 +30,12 @@ function workshop(n)
         {
           titles.style.bottom="-10%";
           section.style.height="300px";
+          writeup.style.width="380px";
         }
         writeup.style.top="0%";
         
         writeup.style.width="300px";
+        writeup.style.display="none";
         workshops[n]=0;
     }
     else
@@ -42,21 +44,33 @@ function workshop(n)
         if(wos>1000)
         {
           writeup.style.width="380px";
-          section.style.height="35vw";
+          section.style.height="40vw";
         }
         else
         {
-          titles.style.bottom="-10%";
-          section.style.height="400px";
+          titles.style.bottom="-100%";
+          section.style.height="500px";
+          writeup.style.width="300px";
         }
-        writeup.style.top="46%";
+        writeup.style.top="38%";
         titles.style.bottom="-50%";
-        
+        writeup.style.display="block";
         workshops[n]=1;
     }
 }
 
 window.addEventListener(onclick,workshop);
+
+function workshopSize()
+{
+  for(var a=0;a<3;a++)
+  {
+    workshop(a);
+    workshop(a);
+  }
+};
+
+workshopSize();
 
 
 $(document).ready(function () {

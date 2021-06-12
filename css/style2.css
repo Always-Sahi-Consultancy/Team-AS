@@ -253,17 +253,17 @@ body
     width:40%;
     height:300px;
     position:relative;
-    top:25%;
+    /* top:25%; */
 }
 
 .box-size
 {
     width:40%;
-    min-width:8rem;
-    min-height:400px;
+    /* min-width:8rem; */
+    /* min-height:400px; */
     color:var(--gray-100);
     background:var(--gray-600);
-    border-radius:50px;
+    border-radius:100px;
     display:inline;
     /* text-align:center; */
     position:relative;
@@ -276,7 +276,7 @@ body
 {
     position:relative;
     /* min-height:680px; */
-    top:100px;
+    top:10px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -362,6 +362,7 @@ body
     animation-name:live-right;
     animation-duration:1s;
     float:right;
+    scale:0.8;
 }
 
 .box-right-low
@@ -369,7 +370,7 @@ body
     animation-delay:0.1s;
 }
 .on-demand{
-   
+   height:100%;
 }
 .on-demand-details
 {
@@ -382,7 +383,7 @@ body
 {
     margin-top:30px;
     border:none;
-    background:var(--blue-100);
+    background:var(--blue-color);
     color:var(--white);
     height:50px;
     border-radius:25px;
@@ -396,7 +397,7 @@ body
     box-shadow:0px 0px 10px black;
 }
 
-@media screen and (max-width:900px)
+@media screen and (max-width:1000px)
 {
     .box-size
     {
@@ -452,7 +453,7 @@ body
 
     .on-demand
     {
-        height:900px;
+        height:100%;
     }
 }
 
@@ -619,22 +620,24 @@ body
 .workshop-titles
 {
     position:relative;
-    animation-duration:0s;
+    font-weight:bolder;
+    text-align:center;
+    width:300px;
 }
 
 #t1
 {
-    bottom:-30%;
+    top:100%;
 }
 
 #t2
 {
-    bottom:-30%;
+    top:100%;
 }
 
 #t3
 {
-    bottom:-30%;
+    top:100%;
 }
 
 @keyframes workshop-inner-animation
@@ -828,16 +831,20 @@ body
 #writeup-1
 {
     top:0%;
+    display:none;
 }
 
 #writeup-2
 {
     top:0%;
+    display:none;
 }
 
 #writeup-3
 {
+    animation-delay:0.5s;
     top:0%;
+    display:none;
 }
 
 @media screen and (max-width:1000px)
