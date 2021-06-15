@@ -11,23 +11,43 @@
 <body>
             
             <div class="sidebar">
-              <div class="logo">
-                <img src="/img/gabriel-testoni-k6YUvt2WGdI-unsplash.jpg" style="width: auto; height: 200px;">
+              <div>
+                <img src="img/Background Less.png" class="logo">
+                <div class="name justify-content-center"><b>Always Sahi Solutions Private Limited</b></div>
+                <div class="justify-content-center"><h2>Package Escape</h2></div>
                 <center>
-              <div class="row"><h1>Associate</h1></div></center>
+              <div class="row"><h1></h1></div></center>
               </div>
+              <!--ASSOCIATE POV-->
               <a class="active" href="" onclick="dashboard()">Dashboard</a>
-              <a href="#RegistrationForm" onclick="Register()">Downline Register</a>
+              <a href="#RegistrationForm" onclick="Register()">Register</a>
+              <a href="#RegistrationForm" onclick="Register()">Downline</a>
               <a href="#Purchase">Purchase</a>
+              <!--IAC POV-->
+              <a href="#Purchase">Associate Purchase</a>
+              <a href="#Purchase">IAC Purchase</a>
+              <!--IAC-->
+              <a href="#RegistrationForm" onclick="Register()">Sales link</a>
+              <a href="#RegistrationForm" onclick="Register()">Book sales</a>
+              <a href="#RegistrationForm" onclick="Register()">Income Statement</a>
+              <a href="#RegistrationForm" onclick="Register()">Accounts</a>
+              <a href="#RegistrationForm" onclick="Register()">Requests</a>
+              <a href="#RegistrationForm" onclick="Register()">Supports</a>
             </div> 
 
 
             <!--MAIN BODY CONTENT-->
             <!--DASHBOARD-->
             <div class="content">
-              <div class="row col-md-2 head">
-                  <p class="associateId">234567</p>
-                  <a href="" class="logout">LOGOUT</a>
+              <div class="row">
+                <div class="col-md-6">
+
+                  <div class="heading">/ ALWAYS SAHI</div>
+                </div>
+                <div class="col-md-6 head">
+                  <p class="associateId head">234567</p>
+                  <a href="" class="logout head">LOGOUT</a>
+              </div>
               </div>
               <div class="row line"></div>
               <div id="Dashboard">
@@ -36,7 +56,7 @@
                   <div class="col-md-3"></div>
                   <div class="col-md-5">
                     <p class="Linfo">
-                      <a href="" class="changePassword">KYC</a> <a href="" class="changePassword">/ Change Password</a>
+                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="IAC()"> IAC</a> <a href="#verifications" class="changePassword">/ KYC</a>
                     </p>
                     
                   </div>
@@ -54,9 +74,13 @@
                 <div class="col-md-4 TableHeads "><div class="TableInfo">Active</div></div>
             </div>-->
 
+            <!--ASSOCIATES BUSINESS-->
+            <div class="row">
+              <div class="headings">Associates Business</div>
+            </div>
             <!--ABOUT YOU TABLE-->
-            <div class="row container-1">
-              <table>
+            <div class="row col-md-12 container-1">
+              <table class="col-md-11 table1">
                 <tr>
                   <th rowspan="3">Name</th>
                   <th rowspan="3">% Level</th>
@@ -90,6 +114,86 @@
                     <td>10245</td>
                   </tr>
               </table>
+              <div class="down row col-md-12">
+                <div class="col-md-10"></div>
+                <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
+              </div>
+            </div>
+
+            <!--IAC BUSINESS-->
+            <div id="IAC-business">
+              <div class="row" >
+                <div class="headings">IAC Business</div>
+              </div>
+              <!--ABOUT YOU TABLE-->
+              <div class="row col-md-12 container-1">
+                <table class="col-md-11 table1">
+                  <tr>
+                    <th rowspan="3">Name</th>
+                    <th rowspan="3">% Level</th>
+                    <th colspan="3">Current Month Business</th>
+                    <th colspan="3">Total Business</th>
+                    <tr>
+                  </tr>
+                      <td >PCP</td>
+                      <td >GCP</td>
+                      <td >TCP</td>
+                      <td >PCP</td>
+                      <td >GCP</td>
+                      <td >TCP</td>
+                    </tr>
+                    <!--<tr>
+                      <td>BV</td>
+                      <td>Extra</td>
+                      <td>BV</td>
+                      <td>Extra</td>
+                      <td>BV</td>
+                      <td>Extra</td>
+                    </tr>-->
+                    <tr>
+                      <td>Atharv Laxman sawant</td>
+                      <td>15</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>2883</td>
+                      <td>7362</td>
+                      <td>10245</td>
+                    </tr>
+                </table>
+                <div class="down row col-md-12">
+                  <div class="col-md-10"></div>
+                  <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
+                </div>
+              </div>
+            </div>
+
+            <!--Total business-->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="align-right" id="align-right1">TOTAL BUSINESS</div>
+                <div class="align-left"> 0</div>
+              </div>
+              <div class="col-md-4">
+                <div class="align-right">TOTAL JOININGS</div>
+                <div class="align-left" id="align-left2"> 
+                  <table class="table2" id="table2">
+                    <tr class="tr2">
+                      <td class="td2">IAC</td>
+                      <td class="td2">Asso</td>
+                    </tr>
+                    <tr class="tr2">
+                      <td class="td2">0</td>
+                      <td class="td2">0</td>
+                    </tr>
+                  </table>
+                  0
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="align-right">TOTAL BUSINESS</div>
+                <div class="align-left"> 0</div>
+              </div>
             </div>
 
             <!--VERIFICATION LINKS-->
@@ -179,5 +283,5 @@
     </div>
 </body>
 
-<script src="/menu.js"></script>
+<script src="menu.js"></script>
 </html>

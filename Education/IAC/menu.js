@@ -10,3 +10,11 @@ function dashboard(){
     x.style.width = "100%";
     x.style.display = "block";
 }
+
+function IAC(){
+    var c = document.getElementById("IAC-business")
+    var d = document.getElementById("table2")
+    c.style.width= "100%";
+    c.style.display = "block";
+    d.style.display = "block";
+}
