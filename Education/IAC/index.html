@@ -56,7 +56,7 @@
                   <div class="col-md-3"></div>
                   <div class="col-md-5">
                     <p class="Linfo">
-                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="IAC()"> IAC</a> <a href="#verifications" class="changePassword">/ KYC</a>
+                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="IAC()"> IAC</a> <a href="" onclick="KYC()" class="changePassword">/ KYC</a>
                     </p>
                     
                   </div>
@@ -76,7 +76,8 @@
 
             <!--ASSOCIATES BUSINESS-->
             <div class="row">
-              <div class="headings">Associates Business</div>
+              <div class="headings col-md-3">Associates Business</div>
+              <div class="target col-md-8">Target - 0</div>
             </div>
             <!--ABOUT YOU TABLE-->
             <div class="row col-md-12 container-1">
@@ -122,8 +123,9 @@
 
             <!--IAC BUSINESS-->
             <div id="IAC-business">
-              <div class="row" >
-                <div class="headings">IAC Business</div>
+              <div class="row">
+                <div class="headings col-md-3">IAC Business</div>
+                <div class="target col-md-8">Target - 0</div>
               </div>
               <!--ABOUT YOU TABLE-->
               <div class="row col-md-12 container-1">
@@ -219,61 +221,214 @@
             </div>
               </div>
 
-            <!--RESIGTER FORM-->
+            <!--RESIGTER FORM--><!--ASSOCIATES FORM-->
             <div id="RegistrationForm">
               <div class="row register" id="RegisterForm">
                 <div class="RF col-md-10">REGISTRATION FORM</div>
-               <div class="link"> <a href="">HOME</a></div>
+                <div class="link"> <a href="">HOME</a></div>
               </div>
               <!--Mobile Verification-->
-              <div class="row MV">
-                <div>Mobile OTP Verification</div>
-              </div>
-              <div class="row MobileV col-md-6">
-                <div class="titles">Mobile</div>
-                <input type="tel" name="telephone" pattern="[0-9]" required>
-                <button type="submit" name="submit" class="BO">Send OTP</button>
-              </div>
+                <div class="row MV">
+                  <div>Mobile OTP Verification</div>
+                </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Mobile</div>
+                      <input type="tel" name="telephone" pattern="[0-9]" required>
+                        <button type="submit" name="submit" class="BO">Send OTP</button>
+                  </div>
               <!--upline Information-->
-              <div class="row MV">
-                <div>Upline Information</div>
-              </div>
-              <div class="row MobileV col-md-6">
-                <div class="titles">Upline ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
-                <input type="number" name="sID" maxlength="7" minlength="7" required>
-              </div>
-              <div class="row MobileV col-md-6">
-                <div class="titles">Upline Name</div>
-                <input type="text" id="sname"  required>
-              </div>
-              <div class="row MV">
-                <div>Personal Information</div>
-              </div>
-              <div class="col-md-10">
+                <div class="row MV">
+                  <div>Upline Information</div>
+                </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Upline ID </div>
+                      <input type="number" name="sID" maxlength="7" minlength="7" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Upline Name</div>
+                      <input type="text" id="sname"  required>
+                  </div>
+                  <div class="row justify-content-center MV">
+                    <div>Personal Information</div>
+                  </div>
+              <div class="col-md-12">
                 <form>
-                  <div class="row MobileV col-md-6">
-                  <div class="titles">Title</div>
-                  <select id="gender" name="gender" required>
-                    <option value="Mr.">Mr.</option>
-                    <option value="Mrs.">Mrs.</option>
-                  </select>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Title</div>
+                      <select id="gender" name="gender" required>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                      </select>
                   </div>
-                  <div class="row MobileV col-md-6">
-                  <div class="titles">Name</div>
-                  <input type="text" id="name" required>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Name</div>
+                      <input type="text" id="name" required>
                   </div>
-                  <div class="row MobileV col-md-6">
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Email</div>
+                      <input type="email" id="email" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
-                    <input type="text" id="pan" required>
+                      <input type="text" id="pan" required>
                   </div>
-                  <div class="row MobileV col-md-6">
+                  <div class="row justify-content-center MobileV col-md-7">
+                    <div class="titles">Aadhar number</div>
+                      <input type="number" id="AadharNO" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Address</div>
+                      <textarea id="address" required></textarea>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">PIN</div>
+                      <input type="number" id="PIN" minlength="6" maxlength="6" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">City</div>
+                      <select id="city" name="city" required>
+                        <option value="Pune">Pune</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangolore">Bangalore</option>
+                      </select>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
                     <div class="titles">Date of Birth</div>
-                    <input type="date" name="date">
+                      <input type="date" name="date">
                   </div>
-                  <div class="row MobileV col-md-6">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <button type="submit" name="submit">NEXT</button>
                   </div>
                   </form>
+                </div>
+                <!--BANK DETAILS-->
+                <div class="row MV">
+                  <div>Bank Details</div>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Account No.</div>
+                    <input type="number" id="AccNo" minlength="12" maxlength="12" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">IFSC Code</div>
+                    <input type="number" id="IFSCCode" minlength="6" maxlength="10" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Uplaod</div>
+                    <input type="number" id="PIN" minlength="6" maxlength="6" required>
+                </div>
+            </div>
+
+
+            
+            <!--RESIGTER FORM--><!--IAC FORM-->
+            <div id="RegistrationForm">
+              <div class="row register" id="RegisterForm">
+                <div class="RF col-md-10">REGISTRATION FORM</div>
+                <div class="link"> <a href="">HOME</a></div>
+              </div>
+              <!--Mobile Verification-->
+                <div class="row MV">
+                  <div>Mobile OTP Verification</div>
+                </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Mobile</div>
+                      <input type="tel" name="telephone" pattern="[0-9]" required>
+                        <button type="submit" name="submit" class="BO">Send OTP</button>
+                  </div>
+              <!--upline Information-->
+                <div class="row MV">
+                  <div>Upline Information</div>
+                </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Upline ID </div>
+                      <input type="number" name="sID" maxlength="7" minlength="7" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Upline Name</div>
+                      <input type="text" id="sname"  required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Slope</div>
+                      <select id="eligible" name="slope" required>
+                        <option value="Tally">Tally</option>
+                        <option value="BankAudit">Bank Audit</option>
+                      </select>
+                  </div>
+                  <div class="row justify-content-center MV">
+                    <div>Personal Information</div>
+                  </div>
+              <div class="col-md-12">
+                <form>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Title</div>
+                      <select id="gender" name="gender" required>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                      </select>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Name</div>
+                      <input type="text" id="name" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Email</div>
+                      <input type="email" id="email" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">PAN</div>
+                      <input type="text" id="pan" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-7">
+                    <div class="titles">Aadhar number</div>
+                      <input type="number" id="AadharNO" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Address</div>
+                      <textarea id="address" required></textarea>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">PIN</div>
+                      <input type="number" id="PIN" minlength="6" maxlength="6" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">City</div>
+                      <select id="city" name="city" required>
+                        <option value="Pune">Pune</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangolore">Bangalore</option>
+                      </select>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">AS Certificate</div>
+                      <input id="certificate" name="certificate" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-5">
+                    <div class="titles">Date of Birth</div>
+                      <input type="date" name="date">
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <button type="submit" name="submit">NEXT</button>
+                  </div>
+                  </form>
+                </div>
+                <!--BANK DETAILS-->
+                <div class="row MV">
+                  <div>Bank Details</div>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Account No.</div>
+                    <input type="number" id="AccNo" minlength="12" maxlength="12" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">IFSC Code</div>
+                    <input type="number" id="IFSCCode" minlength="6" maxlength="10" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Uplaod</div>
+                    <input type="number" id="PIN" minlength="6" maxlength="6" required>
                 </div>
             </div>
               </center>
