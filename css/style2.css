@@ -64,7 +64,7 @@ body
     border-radius:10%;
 }
 .head .head_nav{
-    padding:20px 20px;
+    padding:20px 20px 0px;
     width:100%;
     height:100%;
     display:flex;
@@ -165,8 +165,8 @@ body
 {
     position:absolute;
     display:none;
-    animation-name:options;
-    animation-duration:0.5s;
+    /* animation-name:options; */
+    /* animation-duration:0.5s; */
     top:80px;
     background:var(--white-color);
     display:none;
