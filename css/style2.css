@@ -60,8 +60,8 @@ body
     z-index:1000;
     background-color:var(--white);
     top:0;
-    border-bottom:solid 3px var(--gray-700);
-    border-radius:10%;
+    border-bottom:solid 3px var(--white-color);
+    border-radius:10px;
 }
 .head .head_nav{
     padding:20px 20px 0px;
@@ -71,8 +71,9 @@ body
     position:relative;
     /* border:2px solid red; */
 }
-#As_logo{
-    /* width:20%; */
+.head:hover
+{
+    border-bottom:solid 3px var(--gray-600);
 }
 .head #As_logo .company{
     display:flex;
@@ -100,19 +101,28 @@ body
     width:80%;
     justify-content:center;
     align-items:center;
+    height:100%;
 }
-.nav_first ,.nav_second{
+.nav_first{
+    /* list-style:none; */
+    display:flex;
+    height:100%;
+}
+
+.nav_second{
     list-style:none;
     display:flex;
 }
-.nav_first li{
+
+.nav_first span{
     font-size:1.1rem;
     cursor:pointer;
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:0px 15px;
+    padding:15px 15px;
     color:var(--gray-100);
+    height:100%;
 }
 .nav_second{
     float:right;
@@ -144,18 +154,6 @@ body
     margin-right:5px; 
 }
 
-@keyframes options
-{
-    from
-    {
-        top:-100%;
-    }
-    to
-    {
-        top:80px;
-    }
-}
-
 .service
 {
     height:100%;
@@ -165,38 +163,51 @@ body
 {
     position:absolute;
     display:none;
-    /* animation-name:options; */
-    /* animation-duration:0.5s; */
-    top:80px;
+    top:83px;
     background:var(--white-color);
     display:none;
-    width:100%;
-    /* height:60vh; */
+    width:80%;
     list-style:none;
     overflow:hidden;
-    left:5%;
+    margin:0 10%;
+}
+
+.service_1
+{
+    width:40%;
+}
+
+.service_2
+{
+    width:45%;
+    background:var(--gray-700);
+}
+
+.service_3
+{
+    width:25%;
 }
 
 .service_image
 {
     width:100%;
     height:100%;
-    border-radius:10%;
+    padding:10%;
 }
 
 .service_sections
 {
     list-style:none;
-    width:30%;
+    /* width:30%; */
     float:none;
-    text-align:center;
-    margin:1px;
+    /* text-align:center; */
     height:60vh;
     /* z-index:2; */
     position:relative;
     display:inline;
-    border-radius:10%;
-    background:var(--gray-600);
+    /* background:var(--gray-600); */
+    /* box-shadow: 2px var(--gray-600); */
+    border-bottom:var(--gray-100);
 }
 
 #service:hover .nav_first_options
@@ -208,8 +219,15 @@ body
 {
     /* display:inline-block; */
     width:100%;
-    height:20vh;
+    height:30%;
     position:relative;
+    text-align:left;
+}
+
+.nav_first_option:hover
+{
+    background:var(--gray-600);
+    transition:0.2s;
 }
 
 @keyframes top_cat

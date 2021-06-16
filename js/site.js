@@ -103,13 +103,16 @@ function service(n)
 $(document).addEventListener(onclick,service);
 $(document).addEventListener(onmouseover,service);
 
-function main_service_option()
+function mainserviceoption()
 {
   var service=document.getElementById("#service");
   service.style.display="inline-block";
+  var head=document.getElementsByClassName(".head");
+  console.log(head);
+  head.style.border_bottom="solid 3px var(--gray-400)";
 }
 
-$(documnet).addEventListener(onclick,main_service_option);
+$(documnet).addEventListener(onclick,mainserviceoption);
 
 $(document).ready(function () {
     // console.log("hi");
