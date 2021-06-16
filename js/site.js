@@ -75,6 +75,42 @@ $(document).ready(function()
   workshopSize();
 });
 
+function service(n)
+{
+  var ser1=document.getElementById("ser1");
+  var ser2=document.getElementById("ser2");
+  var ser3=document.getElementById("ser3");
+  if(n==1)
+  {
+    ser1.style.display="block";
+    ser2.style.display="none";
+    ser3.style.display="none";
+  }
+  else if(n==2)
+  {
+    ser1.style.display="none";
+    ser2.style.display="block";
+    ser3.style.display="none";
+  }
+  else if(n==3)
+  {
+    ser1.style.display="none";
+    ser2.style.display="none";
+    ser3.style.display="block";
+  }
+};
+
+$(document).addEventListener(onclick,service);
+$(document).addEventListener(onmouseover,service);
+
+function main_service_option()
+{
+  var service=document.getElementById("#service");
+  service.style.display="inline-block";
+}
+
+$(documnet).addEventListener(onclick,main_service_option);
+
 $(document).ready(function () {
     // console.log("hi");
     $(window).scroll(function () {

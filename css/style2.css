@@ -60,6 +60,8 @@ body
     z-index:1000;
     background-color:var(--white);
     top:0;
+    border-bottom:solid 3px var(--gray-700);
+    border-radius:10%;
 }
 .head .head_nav{
     padding:20px 20px;
@@ -131,7 +133,7 @@ body
 }
 .nav_second li:last-child{
     border:1px solid var(--blue-100);
-    background:var(--blue-200);
+    background:var(--blue-100);
     color:var(--white);  
     transition:1s ease-out;
 }
@@ -141,6 +143,110 @@ body
 .nav_second li:first-child{
     margin-right:5px; 
 }
+
+@keyframes options
+{
+    from
+    {
+        top:-100%;
+    }
+    to
+    {
+        top:80px;
+    }
+}
+
+.service
+{
+    height:100%;
+}
+
+.nav_first_options
+{
+    position:absolute;
+    display:none;
+    animation-name:options;
+    animation-duration:0.5s;
+    top:80px;
+    background:var(--white-color);
+    display:none;
+    width:100%;
+    /* height:60vh; */
+    list-style:none;
+    overflow:hidden;
+    left:5%;
+}
+
+.service_image
+{
+    width:100%;
+    height:100%;
+    border-radius:10%;
+}
+
+.service_sections
+{
+    list-style:none;
+    width:30%;
+    float:none;
+    text-align:center;
+    margin:1px;
+    height:60vh;
+    /* z-index:2; */
+    position:relative;
+    display:inline;
+    border-radius:10%;
+    background:var(--gray-600);
+}
+
+#service:hover .nav_first_options
+{
+    display:inline-flex;
+}
+
+.nav_first_option
+{
+    /* display:inline-block; */
+    width:100%;
+    height:20vh;
+    position:relative;
+}
+
+@keyframes top_cat
+{
+    from
+    {
+        top:-100%;
+    }
+    to
+    {
+        top:0%;
+    }
+}
+
+.top_cat
+{
+    position:relative;
+    top:0%;
+    animation-name:top_cat ;
+    animation-duration:0.2s;
+}
+
+#ser1
+{
+    display:block;
+}
+
+#ser2
+{
+    display:none;
+}
+
+#ser3
+{
+    display:none;
+}
+
 #ham_icon{
     float:right;
     position:absolute;
@@ -262,7 +368,7 @@ body
     /* min-width:8rem; */
     /* min-height:400px; */
     color:var(--gray-100);
-    background:var(--gray-600);
+    /* background:var(--gray-600); */
     border-radius:100px;
     display:inline;
     /* text-align:center; */
