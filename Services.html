@@ -1,29 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>Always Sahi Solution</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:screen-width initial-scale:1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+    <link herf="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="css/style2.css" rel="stylesheet">
+    <script src="js/site.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/services.css" />
   </head>
   <body>
+    <!-- Header Section Starts-->
+    <header>
+        <div class="head">
+            <div class="head_nav">
+                <div id="As_logo">
+                    <a href="#" class="company">
+                        <img src="image/As logo Edited.png"></img>
+                        <p class="Com_name"><b>Always Sahi</b></p>
+                    </a>  
+                </div>
+                <div class="nav">
+                    <div class="nav_first">
+                        <span class="nav_items_section" id="company">Company
+                            <div class="nav_first_options company-nav-container">
+                                <div class="service_sections company-item item-1">
+                                    <div>
+                                    <h3>About Us</h3>
+                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops. Also by ...</span><br>
+                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    </div>
+                                </div>
+                                <div class="service_sections company-item item2">
+                                    <div class="item2">
+                                        <div>
+                                        <h3>Vision</h3>
+                                        <span class="company_details">To Build young entrepreneurs
+                                        and a team of visionary leaders...</span><br>
+                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                        </div>
+                                        <div>
+                                        <h3>Mission</h3>
+                                        <span class="comapny_details">To Work Closely with our established NGO
+                                            “Bondsocially Foundation”, providing Skilling &
+                                            Financial ...</span><br>
+                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_sections company-item item-3">
+                                    <div>
+                                    <h2>Career</h2>
+                                    <span class="comapny_details">Description</span><br>
+                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="nav_items_section" id="service" onclick="main_service_option">Services
+                            <div class="nav_first_options service_minor_fix">
+                                <div class="service_sections service_1">
+                                    <img src="image/Always Sahi Official.png" class="service_image">
+                                </div>
+                                <div class="service_sections service_2">
+                                    <div class="service_container">
+                                        <div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
+                                        <img src="image/Services/001-funnel.png" class="service_icon">
+                                        </div>
+                                        <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">M-stake
+                                            <img src="image/Services/002-stock-exchange-app.png" class="service_icon">
+                                        </div>
+                                        <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">Workshop
+                                            <img src="image/Services/003-presentation.png" class="service_icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_sections service_3">
+                                    <h5>Top Catagory</h5>
+                                    <div class="top_cat" id="ser1">
+                                        <div class="nav_service_top">Pacakage Escape Funnel</div>
+                                        <div class="nav_service_top">M-stake</div>
+                                        <div class="nav_service_top">Workshop</div>
+                                    </div>
+                                    <div class="top_cat" id="ser2">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="top_cat" id="ser3">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="nav_items_section">CSR</span>
+                        <span class="nav_items_section">Join Us</span>
+                        <span class="nav_items_section">Public Notices</span>
+                    </div>
+                    <ul class="nav_second">
+                        <li onclick="login()">Login</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div  id="ham_icon" onclick="headerSidelay()">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+            <div id="sidelay" class="Sidelay">
+                <div class="first">
+                    <a href="#">Company</a>
+                    <a href="#">Services</a>
+                    <a href="#">CSR</a>
+                    <a href="#">Join Us</a>
+                    <a href="#">Public Notices</a>
+                </div>
+                <div class="second">
+                    <a href="#">Login</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <!-- Header Section Ends -->
+
+    <!-- Package Escape Funnel Start-->
     <section class="main-content">
-      <div class="container">
-        <div class="left-content">
-          <h2 class="left-content-heading">A Package Escape Funnel</h2>
-          <p class="left-content-para">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-            corrupti repellat officia, ipsa qui consectetur sit, vitae tempore
-            magnam praesentium nostrum molestias cumque excepturi ab voluptatum
-            magni. Deleniti, maxime debitis?
-          </p>
-          <button class="Enroll-btn">Enroll Now</button>
-        </div>
-        <div class="right-content">
-          <img class="right-content-img" src="image/3as.svg" alt="" />
-        </div>
+      <div class="left-content">
+        <h2 class="left-content-heading">A Package Escape Funnel</h2>
+        <p class="left-content-para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+          corrupti repellat officia, ipsa qui consectetur sit, vitae tempore
+          magnam praesentium nostrum molestias cumque excepturi ab voluptatum
+          magni. Deleniti, maxime debitis?
+        </p>
+        <button class="Enroll-btn">Enroll Now</button>
+      </div>
+      <div class="right-content">
+        <img class="right-content-img" src="image/3as.svg" alt="" />
       </div>
     </section>
+    <!-- Package Escape Funnel End-->
+
+    <!-- Scope of achievement starts -->
+    <section class="scope">
+      <h1 class="scope-heading">Scope of achievements</h1>
+      <div class="scope-content">
+        <div class="scope-first-content">Accounts & Finance</div>
+        <div class="scope-second-content">Coding & Web development</div>
+      </div>
+    </section>
+    <!-- Scope of achievement Ends -->
   </body>
 </html>
+

@@ -5,12 +5,98 @@
 }
 .main-content {
   width: 100%;
-}
-.main-content .container {
   display: flex;
+  position: relative;
+  top: 40px;
   justify-content: center;
   align-items: center;
+  margin: 30px 0px;
 }
-.left-content {
-  /* width: 40%; */
+.left-content,
+.right-content {
+  width: 40%;
+  text-align: center;
+}
+.left-content-heading {
+  font-size: 2rem;
+}
+.left-content-para {
+  margin: 30px 0px;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.Enroll-btn {
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  width: 20vw;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  background-color: #2ec4b6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.Enroll-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px black;
+}
+.right-content-img {
+  width: 90%;
+  margin: 20px 0px;
+}
+@media only screen and (max-width: 1110px) {
+  .left-content-heading {
+    font-size: 1.5rem;
+  }
+  .right-content-img {
+    width: 100%;
+    margin: 20px 0px 20px 20px;
+    transform: scale(1.1);
+  }
+  .Enroll-btn {
+    width: 30vw;
+    font-size: 1.3rem;
+  }
+  .left-content-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .left-content-para {
+    margin: 10px 0px;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .left-content-heading {
+    font-size: 1.7rem;
+  }
+  .Enroll-btn {
+    width: 40vw;
+  }
+  .left-content,
+  .right-content {
+    width: 80%;
+    text-align: center;
+  }
+  .main-content {
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding-bottom: 30px;
+  }
+  .left-content {
+    order: 2;
+  }
+  .right-content {
+    order: 1;
+  }
+  .right-content-img {
+    width: 80%;
+    margin: 0px;
+    transform: scale(0.8);
+  }
 }
