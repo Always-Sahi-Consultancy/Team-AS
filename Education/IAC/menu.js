@@ -18,3 +18,9 @@ function IAC(){
     c.style.display = "block";
     d.style.display = "block";
 }
+
+function KYC(){
+    document.getElementById("Dashboard").style.display="none";
+    document.getElementById("verifications").style.width="100%";
+    document.getElementById("verifications").style.display="block";
+}
