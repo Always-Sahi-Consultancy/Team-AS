@@ -30,24 +30,65 @@
                 </div>
                 <div class="nav">
                     <div class="nav_first">
-                        <span>Company</span>
-                        <span id="service" onclick="main_service_option">Services
-                            <div class="nav_first_options">
+                        <span class="nav_items_section" id="company">Company
+                            <div class="nav_first_options company-nav-container">
+                                <div class="service_sections company-item item-1">
+                                    <div>
+                                    <h3>About Us</h3>
+                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops. Also by ...</span><br>
+                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    </div>
+                                </div>
+                                <div class="service_sections company-item item2">
+                                    <div class="item2">
+                                        <div>
+                                        <h3>Vision</h3>
+                                        <span class="company_details">To Build young entrepreneurs
+                                        and a team of visionary leaders...</span><br>
+                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                        </div>
+                                        <div>
+                                        <h3>Mission</h3>
+                                        <span class="comapny_details">To Work Closely with our established NGO
+                                            “Bondsocially Foundation”, providing Skilling &
+                                            Financial ...</span><br>
+                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_sections company-item item-3">
+                                    <div>
+                                    <h2>Career</h2>
+                                    <span class="comapny_details">Description</span><br>
+                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="nav_items_section" id="service" onclick="main_service_option">Services
+                            <div class="nav_first_options service_minor_fix">
                                 <div class="service_sections service_1">
                                     <img src="image/Always Sahi Official.png" class="service_image">
                                 </div>
                                 <div class="service_sections service_2">
-                                    <div class="">
-                                        <span class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel</span>
-                                        <span class="nav_first_option" onclick="service(2)" onmouseover="service(2)">M-stake</span>
-                                        <span class="nav_first_option" onclick="service(3)" onmouseover="service(3)">Workshop</span>
+                                    <div class="service_container">
+                                        <div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
+                                        <img src="image/Services/001-funnel.png" class="service_icon">
+                                        </div>
+                                        <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">M-stake
+                                            <img src="image/Services/002-stock-exchange-app.png" class="service_icon">
+                                        </div>
+                                        <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">Workshop
+                                            <img src="image/Services/003-presentation.png" class="service_icon">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="service_sections service_3">
+                                    <h5>Top Catagory</h5>
                                     <div class="top_cat" id="ser1">
-                                        <span class="">Pacakage Escape Funnel</span>
-                                        <span class="">M-stake</span>
-                                        <span class="">Workshop</span>
+                                        <div class="nav_service_top">Pacakage Escape Funnel</div>
+                                        <div class="nav_service_top">M-stake</div>
+                                        <div class="nav_service_top">Workshop</div>
                                     </div>
                                     <div class="top_cat" id="ser2">
                                         <span></span>
@@ -62,12 +103,12 @@
                                 </div>
                             </div>
                         </span>
-                        <span>CSR</span>
-                        <span>Join Us</span>
-                        <span>Public Notices</span>
+                        <span class="nav_items_section">CSR</span>
+                        <span class="nav_items_section">Join Us</span>
+                        <span class="nav_items_section">Public Notices</span>
                     </div>
                     <ul class="nav_second">
-                        <li>Login</li>
+                        <li onclick="login()">Login</li>
                         <li>Contact</li>
                     </ul>
                 </div>
@@ -93,6 +134,15 @@
         </div>
     </header> -->
     <!-- Header Section Ends -->
+
+    <div class="login">
+        <div>Title</div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <div class="on-demand justify-content-center">
         <div class="box-size-left intro-text">
             <h1>Always Sahi</h1>

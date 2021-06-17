@@ -114,6 +114,14 @@ function mainserviceoption()
 
 $(documnet).addEventListener(onclick,mainserviceoption);
 
+function login()
+{
+  var login=$(document).getElementsByClassName(".login");
+  console.log(login);
+  login.classList.add('.login-on');
+  console.log(login.classList);
+}
+
 $(document).ready(function () {
     // console.log("hi");
     $(window).scroll(function () {
