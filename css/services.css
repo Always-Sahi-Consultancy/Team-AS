@@ -110,7 +110,10 @@
   width: 80%;
   margin: 30px;
 }
-.scope-first-content {
+.scope-accounts {
+  display: none;
+}
+.scope-inner-content {
   display: block;
   padding: 10px 20px;
   position: relative;
@@ -119,7 +122,7 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
-.scope-first-content::after {
+.scope-inner-content::after {
   content: "+";
   position: absolute;
   right: 20px;
@@ -128,19 +131,80 @@
   border-radius: 50%;
   font-size: 1rem;
 }
-.scope-second-content {
-  display: block;
-  cursor: pointer;
-  padding: 10px 20px;
-  position: relative;
-  background-color: #2ec4b6;
-  border-radius: 20px;
+.perks-incentives {
+  text-align: center;
+  font-size: 2rem;
 }
-.scope-second-content::after {
-  content: "+";
-  position: absolute;
-  right: 20px;
-  padding: 3px 10px;
-  border-radius: 50%;
+.scope-details {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.scope-accounts:checked ~ .scope-details {
+  height: fit-content;
+  transition: 0.5s ease-in-out;
+  margin: 20px;
+}
+.scope-accounts:checked ~ .scope-inner-content::after {
+  content: "-";
+}
+.scope-details-main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scope-details-left,
+.scope-details-right {
+  width: 40%;
+  text-align: center;
+}
+.scope-details-heading {
+  font-size: 1.5rem;
+}
+.scope-details-para {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: justify;
+}
+.accounts-btn {
+  padding: 5px 20px;
+  font-size: 1rem;
+  width: 15vw;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
   background-color: #2ec4b6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.accounts-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px black;
+}
+.scope-details-img {
+  width: 90%;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1100px) {
+  .scope-details-main {
+    flex-direction: column;
+  }
+  .scope-details-left {
+    order: 2;
+    width: 100%;
+  }
+  .scope-details-right {
+    order: 1;
+    width: 100%;
+  }
+  .scope-details-img {
+    width: 50%;
+    margin-left: 50px;
+  }
+}
+.covering-heading {
+  text-align: center;
 }
