@@ -127,30 +127,78 @@ body
 .nav_second{
     float:right;
     padding-left:4vw;
+    font-size:1.15rem;
 }
-.nav_second li{
-    font-size:1.1rem;
+.nav_second span{
+    font-size:1.15rem;
     cursor:pointer;
     display:flex;
     color:var(--blue-100);
     justify-content: center;
     align-items: center;
-    padding:10px 15px;
-    border-radius:20px;
+    padding:10px 10px;
 }
-.nav_first li:hover{
+.nav_items_section:hover{
     color:var(--blue-100);
 }
-.nav_second li:last-child{
+
+#login
+{
+    height:inherit;
+    /* padding:20px 20; */
+}
+
+.login
+{
+    width:15vw;
+    display:none;
+    position:absolute;
+    top:75px;
+    right:10%;
+    /* background:var(--gray-700); */
+    color:var(--black);
+    margin:0px 10px 10px;
+    text-align:justify;
+}
+
+#login:hover .login
+{
+    display:inline-block;
+}
+
+.option_link
+{
+    color:inherit;
+}
+
+.option_link:hover
+{
+    text-decoration:none;
+    color:var(--blue-100);
+}
+
+.options_login
+{
+    padding:10px 15px;
+    border-radius:10px;
+}
+
+.options_login:hover
+{
+    background:var(--gray-600);
+}
+
+.nav_second span:last-child{
     border:1px solid var(--blue-100);
     background:var(--blue-100);
     color:var(--white);  
     transition:1s ease-out;
+    border-radius:20px;
 }
-.nav_second li:last-child:hover{
+.nav_second span:last-child:hover{
     background:var(--blue-100);
 }
-.nav_second li:first-child{
+.nav_second span:first-child{
     margin-right:5px; 
 }
 
@@ -180,7 +228,7 @@ body
 
 .item-2
 {
-    background:var(--white-color);
+    background:var(--gray-700);
 }
 
 .button-nav-items
@@ -240,13 +288,14 @@ body
 {
     position:absolute;
     display:none;
-    top:83px;
+    top:76px;
     background:var(--white-color);
     display:none;
     width:80%;
     list-style:none;
     /* overflow:hidden; */
     margin:0 10%;
+    border-radius:10px;
 }
 
 .service_minor_fix
@@ -307,6 +356,7 @@ body
     border-bottom:var(--gray-100);
     border-radius:3%;
     margin-right:0.5vw;
+    color:black;
 }
 
 #service:hover .nav_first_options
@@ -467,6 +517,8 @@ body
     position:absolute;
     bottom:120px;
     width:100%;
+    align-items:center;
+    float:center;
 }
 #sidelay .second a{
     width:50%;
@@ -480,6 +532,7 @@ body
     align-items:center;
     transition: 0.3s;
 }
+
 #sidelay .second a:first-child:hover{
     color:var(--blue-100);
 }
@@ -488,26 +541,38 @@ body
     border-radius:30px;
     color:var(--white);
     font-weight:500;
-
 }
-/* Header Section Ends */
 
-.login
+.second_company
 {
-    width:80%;
-    margin:10%;
-    height:80%;
+    width:100%;
+    padding:0 15%;
+    /* display:none; */
+}
+
+.second_company span
+{
+    display:inline-flex;
+    width:100%;
+    height:inherit;
+}
+
+.second_company span:hover
+{
     background:var(--gray-600);
-    display:none;
-    /* visibility:0; */
 }
 
-.login-on
+#sr1
 {
-    display:block;
-    /* visibility:1; */
+    display:none;
 }
 
+#sr2
+{
+    display:none;
+}
+
+/* Header Section Ends */
 /*Live now*/
 
 .intro-text

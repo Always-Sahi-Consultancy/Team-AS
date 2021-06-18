@@ -39,8 +39,8 @@
                                     <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
                                     </div>
                                 </div>
-                                <div class="service_sections company-item item2">
-                                    <div class="item2">
+                                <div class="service_sections company-item item-2">
+                                    <div>
                                         <div>
                                         <h3>Vision</h3>
                                         <span class="company_details">To Build young entrepreneurs
@@ -107,10 +107,15 @@
                         <span class="nav_items_section">Join Us</span>
                         <span class="nav_items_section">Public Notices</span>
                     </div>
-                    <ul class="nav_second">
-                        <li onclick="login()">Login</li>
-                        <li>Contact</li>
-                    </ul>
+                    <div class="nav_second">
+                        <span onclick="login()" id="login">Login
+                            <div class="login">
+                                    <a href="#" class="option_link"><div class="options_login">Login</div></a>
+                                    <a href="#" class="option_link"><div class="options_login">Associate Login</div></a>
+                            </div>
+                        </span>
+                        <span>Contact</span>
+                    </div>
                 </div>
                 <div  id="ham_icon" onclick="headerSidelay()">
                     <div class="top"></div>
@@ -120,8 +125,18 @@
             </div>
             <div id="sidelay" class="Sidelay">
                 <div class="first">
-                    <a href="#">Company</a>
-                    <a href="#">Services</a>
+                    <a href="#" onclick="navbarOptions(0)" id="wa">Company</a>
+                        <div class="second_company" id="sr1">
+                            <span>About Us</span>
+                            <span>Vision & Mission</span>
+                            <span>Career</span>
+                        </div>
+                    <a href="#" id="ss">Services</a>
+                        <div class="second_company" id="sr2">
+                            <span>Pacakage Escape Funnel</span>
+                            <span>M-stake</span>
+                            <span>Workshop</span>
+                        </div>
                     <a href="#">CSR</a>
                     <a href="#">Join Us</a>
                     <a href="#">Public Notices</a>
@@ -134,14 +149,6 @@
         </div>
     </header> -->
     <!-- Header Section Ends -->
-
-    <div class="login">
-        <div>Title</div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
 
     <div class="on-demand justify-content-center">
         <div class="box-size-left intro-text">
