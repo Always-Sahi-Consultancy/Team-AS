@@ -100,3 +100,47 @@
     transform: scale(0.8);
   }
 }
+.scope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scope-content {
+  width: 80%;
+  margin: 30px;
+}
+.scope-first-content {
+  display: block;
+  padding: 10px 20px;
+  position: relative;
+  background-color: #2ec4b6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.scope-first-content::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+
+  padding: 0px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+.scope-second-content {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: relative;
+  background-color: #2ec4b6;
+  border-radius: 20px;
+}
+.scope-second-content::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  padding: 3px 10px;
+  border-radius: 50%;
+  background-color: #2ec4b6;
+}
