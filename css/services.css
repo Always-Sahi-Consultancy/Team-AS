@@ -136,13 +136,13 @@
   font-size: 2rem;
 }
 .scope-details {
-  height: 0px;
+  height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .scope-accounts:checked ~ .scope-details {
   height: fit-content;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   margin: 20px;
 }
 .scope-accounts:checked ~ .scope-inner-content::after {
@@ -204,7 +204,40 @@
     width: 50%;
     margin-left: 50px;
   }
+  .accounts-btn {
+    width: 30vw;
+  }
+  .account-details-img {
+    height: 70%;
+  }
 }
 .covering-heading {
   text-align: center;
+}
+.covering-inner-content {
+  display: block;
+  width: 60vw;
+  padding: 10px 20px;
+  position: relative;
+  background-color: #2ec4b6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.covering-inner-content::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  padding: 0px 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+.scope-accounts:checked ~ .covering-inner-content::after {
+  content: "-";
+}
+.covering-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
