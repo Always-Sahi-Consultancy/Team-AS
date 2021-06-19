@@ -44,6 +44,7 @@ body {
   --white-color: #fdfffc;
   --blue-color: #011627;
   --aqua-color: #2ec4b6;
+  --mint-green:#2ec4b6;
 }
 
 /*@font-face
@@ -92,7 +93,7 @@ body {
   color: var(--gray-100);
 }
 .company .Com_name .always {
-  font-weight: bold;
+  font-weight: bolder;
 }
 .head .nav {
   display: flex;
@@ -408,38 +409,8 @@ body {
   padding: 15px 20px;
   cursor: pointer;
 }
-@media only screen and (min-width: 1321px) {
-  #sidelay {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1320px) {
-  #ham_icon {
-    display: block;
-  }
-  .head .nav {
-    display: none;
-  }
-  .top,
-  .middle,
-  .bottom {
-    background-color: black;
-    width: 30px;
-    height: 6px;
-    margin-bottom: 2px;
-    transition: 0.4s ease-in-out;
-  }
-  .change .top {
-    transform: rotate(315deg) translate(-6px, 6px);
-    /* transform:rotate(-45deg) translate(-6px,6px); */
-  }
-  .change .middle {
-    display: none;
-  }
-  .change .bottom {
-    transform: rotate(-315deg);
-  }
-}
+
+
 .Sidelay {
   position: fixed;
   z-index: 1000;
@@ -570,7 +541,7 @@ body {
 .box-size-desc {
   color: black;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 .fancy-text {
@@ -626,7 +597,7 @@ body {
   width: 40%;
 }
 .box-size-desc {
-  font-size: 1.5rem;
+  /* font-size: 3rem; */
   color: rgb(102, 101, 101);
 }
 .box-size-right {
@@ -643,7 +614,7 @@ body {
 }
 .on-demand {
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 .on-demand-details {
   font-size: small;
@@ -654,7 +625,7 @@ body {
 .intro-button {
   margin-top: 30px;
   border: none;
-  background: var(--blue-color);
+  background: var(--mint-green);
   color: var(--white);
   height: 50px;
   border-radius: 25px;
@@ -662,59 +633,11 @@ body {
   padding: 10px 20px;
   transform: scale(1);
   transition: 0.5s ease-in-out;
+  color:var(--black);
 }
 .intro-button:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px black;
-}
-
-@media screen and (max-width: 1000px) {
-  .box-size {
-    width: 80%;
-    /* top:150px; */
-  }
-
-  @keyframes live-left {
-    from {
-      left: 1rem;
-    }
-    to {
-      left: 2rem;
-    }
-  }
-
-  @keyframes live-right {
-    from {
-      right: 1rem;
-    }
-    to {
-      right: 2rem;
-    }
-  }
-
-  .box-size-left {
-    left: 2rem;
-  }
-
-  .box-size-right {
-    /* right:2rem; */
-  }
-
-  .intro-text {
-    width: 100%;
-    font-size: 1rem;
-    padding-right: 4rem;
-    /* height: 60px; */
-    /* top: 0%; */
-  }
-
-  .intro-text h2 {
-    font-family: "Doris", sans-serif;
-  }
-
-  .on-demand {
-    height: 100%;
-  }
 }
 
 .on-demand-image {
@@ -765,31 +688,6 @@ body {
   position: relative;
   /* top:-100px; */
 }
-@media only screen and (max-width: 900px) {
-  .about-info {
-    flex-direction: column;
-  }
-  .on-demand {
-    flex-direction: column;
-    /* top: 100px; */
-  }
-  .about-sections {
-    width: 100%;
-  }
-  #about-text {
-    order: 2;
-  }
-  #about-image {
-    order: 1;
-  }
-  #box-size-desc {
-    order: 2;
-  }
-  #box-size {
-    order: 1;
-    border-radius: 50%;
-  }
-}
 
 #about-text {
   animation-name: live-right;
@@ -800,7 +698,7 @@ body {
   position: relative;
   top: 30%;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
@@ -996,17 +894,6 @@ body {
   width: 80%;
 }
 
-@media screen and (max-width: 900px) {
-  .city {
-    left: 10%;
-    top: 40%;
-  }
-
-  .search-input {
-    width: 100%;
-  }
-}
-
 .as-wani-image {
   height: 100%;
   width: 100%;
@@ -1091,32 +978,13 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
-  .workshop-container {
-    height: 300px;
-    width: 350px;
-  }
 
-  .workshop-image {
-    height: 300px;
-    width: 300px;
-  }
-}
 
 .workshop-container:hover {
   background: aqua;
 }
 
-@media only screen and (max-width: 1200px) {
-  .workshop-section-containers {
-    grid-template-columns: auto auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .workshop-section-containers {
-    grid-template-columns: auto;
-  }
-}
+
 
 /* Achievement Sectioin Starts */
 .achievement {
@@ -1169,21 +1037,7 @@ body {
   /* background-color:green; */
   min-width: 300px;
 }
-@media only screen and (max-width: 1200px) {
-  .stats {
-    grid-template-columns: auto auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .stats {
-    grid-template-columns: auto;
-  }
-  .stat2,
-  .stat3,
-  .stat4 {
-    margin-top: 50px;
-  }
-}
+
 /* Achievement Sectioin Ends */
 
 /* Join Us Starts*/
