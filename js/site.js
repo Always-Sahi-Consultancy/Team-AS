@@ -40,7 +40,7 @@ function workshop(n)
     }
     else
     {
-        // $(writeup).attr("top","90%");
+        $(writeup).attr("top","90%");
         if(wos>1000)
         {
           writeup.style.width="380px";
@@ -100,8 +100,8 @@ function service(n)
   }
 };
 
-$(document).addEventListener(onclick,service);
-$(document).addEventListener(onmouseover,service);
+window.addEventListener(onclick,service);
+window.addEventListener(onmouseover,service);
 
 function mainserviceoption()
 {
@@ -112,47 +112,26 @@ function mainserviceoption()
   head.style.border_bottom="solid 3px var(--gray-400)";
 };
 
-$(documnet).addEventListener(onclick,mainserviceoption);
+window.addEventListener(onclick,mainserviceoption);
 
-var states={0:1,1:1};
+var states={1:0,2:0};
 function navbarOptions(a)
 {
   var name="sr"+a;
   var s=document.getElementById(name);
-  console.log(s);
-  if(a==0)
-  {
-    // var wa=document.getElementById("#wd");
-    // console.log(s);
-    if(true)
-    {
-      s.style.display="none";
-      states[0]=1;
-    }
-    else if(states[0])
-    {
-      s.style.css="inline-block";
-      states[0]=1;
-    }
-  }
-  else if(a==1)
-  {
-    // var ss=document.getElementById("#ss");
-    // console.log(s);
-    if(!state[0])
-    {
-      s.style.display="none";
-      states[1]=1;
-    }
-    else if(states[1])
+    if(states[a]==0)
     {
       s.style.display="inline-block";
-      states[1]=1;
+      states[a]=1;
     }
-  }
-}
+    else if(states[a]==1)
+    {
+      s.style.display="none";
+      states[a]=1;
+    }
+};
 
-$(document).addEventListener(onclick,navbarOptions);
+window.addEventListener(onclick,navbarOptions);
 
 $(document).ready(function () {
     // console.log("hi");

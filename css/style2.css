@@ -229,6 +229,8 @@ body
 .item-2
 {
     background:var(--gray-700);
+    overflow-y:scroll;
+    scrollbar-width:none;
 }
 
 .button-nav-items
@@ -237,10 +239,11 @@ body
     height:40px;
     background:var(--blue-color);
     border-radius:50%;
-    border-color:var(--aqua-color);
+    /* border-color:var(--aqua-color); */
     transition:0.5s;
     /* align-items:center; */
     overflow:hidden;
+    border:solid var(--blue-color) 0px;
 }
 
 .button-nav-items:hover
@@ -963,6 +966,7 @@ body
 {
     position:absolute;
     transition:0.5s;
+    justify-content:justify;
 }
 
 .workshop-image
@@ -1168,6 +1172,7 @@ body
 .workshop-texts
 {
     display:inline-block;
+    justify-content:justify;
 }
 
 .workshop-image
