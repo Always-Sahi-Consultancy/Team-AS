@@ -414,7 +414,7 @@ body {
 .Sidelay {
   position: fixed;
   z-index: 1000;
-  top: 90px;
+  top: 15vh;
   left: 0;
   height: 100%;
   overflow-x: hidden;
@@ -426,7 +426,7 @@ body {
 .sidelay_full {
   position: fixed;
   z-index: 1000;
-  top: 90px;
+  top: 5.7vh;
   left: 0;
   height: 100%;
   overflow-x: hidden;
@@ -436,12 +436,12 @@ body {
   background-color: var(--white);
 }
 #sidelay .first a {
-  padding: 8px 8px 8px 32px;
+  padding: 1vh 5vw 1vh;
   text-decoration: none;
   color: var(--grey-100);
-  font-size: 25px;
   display: block;
   transition: 0.3s;
+  font-size:3rem;
 }
 #sidelay .first a:hover {
   color: var(--blue-100);
@@ -457,11 +457,11 @@ body {
 }
 #sidelay .second a {
   width: 50%;
-  max-width: 400px;
-  padding: 8px 8px 8px 32px;
+  /* max-width: 400px; */
+  padding:1vh;
   text-decoration: none;
   color: var(--grey-100);
-  font-size: 25px;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,7 +475,7 @@ body {
   background: var(--blue-100);
   border-radius: 30px;
   color: var(--white);
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .second_company {
@@ -698,7 +698,6 @@ body {
   position: relative;
   top: 30%;
   font-weight: bold;
-  font-size: 2rem;
   text-align: justify;
 }
 
@@ -777,6 +776,7 @@ body {
   position: absolute;
   transition: 0.5s;
   justify-content: justify;
+  transition-delay:1s;
 }
 
 .workshop-image {
@@ -792,6 +792,7 @@ body {
   font-weight: bolder;
   text-align: center;
   width: 300px;
+  margin:10px;
 }
 
 #t1 {
@@ -973,18 +974,13 @@ body {
 }
 
 #writeup-3 {
-  animation-delay: 0.5s;
   top: 0%;
   display: none;
 }
 
-
-
 .workshop-container:hover {
   background: aqua;
 }
-
-
 
 /* Achievement Sectioin Starts */
 .achievement {

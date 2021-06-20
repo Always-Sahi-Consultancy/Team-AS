@@ -29,12 +29,11 @@ function workshop(n)
         else
         {
           titles.style.bottom="-10%";
-          section.style.height="300px";
-          writeup.style.width="380px";
+          section.style.height="42vh";
+          writeup.style.width="100%";
         }
         writeup.style.top="0%";
-        
-        writeup.style.width="300px";
+        // writeup.style.width="300px";
         writeup.style.display="none";
         workshops[n]=0;
     }
@@ -45,14 +44,16 @@ function workshop(n)
         {
           writeup.style.width="380px";
           section.style.height="40vw";
+          writeup.style.top="38%";
         }
         else
         {
-          titles.style.bottom="-100%";
-          section.style.height="500px";
-          writeup.style.width="300px";
+          // titles.style.bottom="-100%";
+          section.style.height="60vh";
+          writeup.style.width="90%";
+          writeup.style.top="30vh";
         }
-        writeup.style.top="38%";
+        
         titles.style.bottom="-50%";
         writeup.style.display="block";
         workshops[n]=1;
@@ -127,7 +128,7 @@ function navbarOptions(a)
     else if(states[a]==1)
     {
       s.style.display="none";
-      states[a]=1;
+      states[a]=0;
     }
 };
 
