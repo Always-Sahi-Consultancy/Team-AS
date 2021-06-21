@@ -1,12 +1,15 @@
 body{
   margin: 0;
   padding: 0;
+  
 }
 .background{
      overflow: hidden;
 }
 .content{
-  background-color: rgb(167, 228, 247);
+  width: 100%;
+  height: 1000px;
+  background-image: linear-gradient( 140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
 }
 .bg-img{
   opacity: 0.9;
@@ -18,16 +21,17 @@ body{
 }
 .name{
   padding: 15px;
-  color: #ad3903;
+  color: #25274D;
 }
 h1{
   margin-left: 30px;
   text-align: justify;
-  color: rgb(221, 82, 31);
+  color: #25274D;
   font-weight: lighter;
 }
 .sidebar {
-  border-right: #e07a44 1px solid;
+  background-image: linear-gradient( 140deg, #AAABB8 30%, #2E9CCA 50%, #29648A 75%);
+  border-right: #25274D 1px solid;
   margin: 0;
   padding: 0;
   width: 250px;
@@ -38,7 +42,7 @@ h1{
 
 .sidebar a {
   display: block;
-  color: rgb(226, 110, 32);
+  color: #25274D;
   padding: 16px;
   font-size: 25px;
   font-weight: 500;
@@ -46,26 +50,26 @@ h1{
 }
  
 .sidebar a.active {
-  color: rgb(226, 110, 32)
+  color: #25274D;
 }
 .sidebar a.active:hover{
-  color:black;
+  color:white;
   text-decoration: none;
-  transition: 2s ease-out;
+  transition: 1s ease-out;
 }
 
 .sidebar a:hover:not(.active) {
-  color: black;
+  color: white;
   text-decoration: none;
-  transition: 2s ease-out;
+  transition: 1s ease-out;
 }
 h2{
   padding: 11px;
   font-weight: 300;
-  color: #e07a44;
+  color: #25274D;
 }
 div.content {
-  color: rgb(221, 82, 31);
+  color: #25274D;
   margin-left: 250px;
   padding:20px 0px 20px 20px;
   height: auto;
@@ -112,7 +116,7 @@ div.content {
 .logout,.associateId{
   margin-left: 10px;
   font-size: 18px;
-  color: black;
+  color: rgb(36, 119, 168);
 }
 .head a:hover{
   text-decoration: none;
@@ -124,46 +128,46 @@ div.content {
 }
 .line{
   width: 100%;
-  margin-top:20px;
+  margin-top:5px;
   margin-bottom: 10px;
   height: 1px;
-  background-color: rgb(255, 123, 0);
+  background-color: #25274D;
 }
 .line2{
   width: 100%;
   height: 1px;
   font-weight: 100;
-  background-color: #e07a44;
+  background-color:#25274D;
 }
 .Dashboard{
-  padding: 10px;
+  padding: 5px;
 }
 .Dh{
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 .Linfo{
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   float: right;
   padding-right: 15px;
 }
 .changePassword {
   text-decoration: none;
-  color: #e07a44;
+  color:#25274D ;
 }
 .changePassword:hover{
   text-decoration: none;
-  color: black;
-  transition: 2s ease-out;
+  color: #29648A;
+  transition: 1s ease-out;
 }
 .levelTable{
-  background-color: rgb(17, 225, 240);
+  background-color: #464866;
   width: auto;
   padding: 25px;
   margin: 0px 20px 50px 20px ;
-  box-shadow: 5px 6px 8px rgb(245, 115, 92) ;
+  box-shadow: 5px 6px 8px #464866 ;
 }
 .TableHeads{
   border: 1px solid white;
@@ -185,22 +189,19 @@ div.content {
   background-color:rgb(101, 216, 252) ;
 }
 .table1{
-  background-color: rgb(192, 237, 243);
-  margin: 10px 30px 30px 30px;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: 300;
+  background-color: #2E9CCA;
+  margin-bottom:10px ;
+  font-size: 20px;
+  font-weight: 400;
   color: black;
-  box-shadow: 5px 10px 20px rgb(180, 204, 211);
+  opacity: 68%;
+  box-shadow: 5px 10px 10px #25274d;
 }
 td, th{
   width: auto;
   height: 30px;
-  padding: 25px 30px 25px 15px ;
-  border: 1px solid white;
-}
-tr{
-  padding: 20px;
+  padding: 5px;
+  border: 1px solid #25274D;
 }
 .flex-box-container-1{
   display: flex;
@@ -226,11 +227,18 @@ tr{
   color: black;
   font-weight: 100;
 }
+.statusContainer a:hover{
+  text-decoration: none;
+  font-size: 20px;
+  color: #AAABB8;
+  font-weight: 100;
+}
+
 .statusContainer{
   border-radius: 20px;
   padding: 0px;
   margin: 30px 10px;
-  background-color:rgb(255, 123, 0)  ;
+  background-color:#464866  ;
 }
 .register a{
   text-decoration: none;
@@ -257,36 +265,45 @@ tr{
   color: whitesmoke;
   padding: 10px;
   margin-top: 20px;
-  background-color: rgb(255, 123, 0);
+  background-color: #464866;
+  opacity: 50%;
 }
 .titles{
   text-align: right;
   margin-right:  50px;
   font-size: 20px;
 }
-input{
+.titles1{
+  text-align: right;
+  margin-right: 25px;
+  font-size: 20px;
+}
+input, textarea, select{
   text-align: left;
   margin-bottom: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  width: 65%;
   height: 40px;
+  background-color: #dfe0eb;
   border-radius: 10px;
-  border: 5px #ad3903;
-  border-style:double;
+  border: 1px #25274D solid;
+}
+textarea{
+  height: 60px;
 }
 .MobileV{
   margin-top: 30px;
   text-align: left;
 }
 button{
-  margin:20px;
-  background-color: #e07a44;
+  background-color: #25274D;
   color: white;
   text-align: center;
 }
 .BO{
   padding: 5px;
-  margin: 0px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
 }
 #titles{
   margin-right: 50px;
@@ -299,6 +316,9 @@ select{
 #RegistrationForm{
   display: none;
 }
+#IACRegistrationForm{
+  display: none;
+}
 .logo{
   width: auto;
   height: 50px;
@@ -308,12 +328,14 @@ select{
 #IAC-business{
   display: none;
 }
-.align-right, .align-left{
-  font-size: 20px;
+.align-right{
+  font-size: 26px;
+  width: 100%;
   font-weight: 400;
-  margin: 20px;
+  margin: 15px;
+  background-image: linear-gradient(60deg,#e9acd3 20%, #cc70ab 75%);
   padding: 5px;
-  border: 1px solid orange;
+  border: 1px solid #25274D;
   border-radius: 20px;
 }
 .table2{
@@ -324,19 +346,27 @@ select{
 .td2{
   padding: 5px 15px;
 }
-#table2{
+/*#table2{
   display: none;
-}
+}*/
 .down{
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 #verifications{
-  display: none;
+  visibility:hidden;
 }
 .target{
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 15px;
   text-align: right;
+}
+.courseImg{
+  width: auto;
+  height: 400px;
+}
+#MyCourses{
+  height: 500px;
+  display: none;
 }
