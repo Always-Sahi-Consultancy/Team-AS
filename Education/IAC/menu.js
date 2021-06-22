@@ -22,16 +22,23 @@ function IAC(){
 }
 
 function KYC(){
-    var d=document.getElementById("Dashboard")
+    var dash =document.getElementById("Dashboard")
     var l= document.getElementById("verifications")
-    d.style.display="none";
+    dash.style.display="none";
     l.style.visibility="visible";
 }
 
 function MyCourse(){
-    var d= document.getElementById("Dashboard")
-    const C =document.getElementById("MyCourses")
-    d.style.display= "none";
-    C.style.width= "100%";
-    C.style.display="block";
+    var db= document.getElementById("Dashboard")
+    const mC =document.getElementById("MyCourses")
+    db.style.display= "none";
+    mC.style.width= "100%";
+    mC.style.display="block";
+}
+
+function  ReferalLink(){
+    var D = document.getElementById("Dashboard")
+    var rf=document.getElementById("ReferalLink")
+    D.style.display="none";
+    rf.style.display= "block";
 }

@@ -333,10 +333,19 @@ select{
   width: 100%;
   font-weight: 400;
   margin: 15px;
-  background-image: linear-gradient(60deg,#e9acd3 20%, #cc70ab 75%);
+  
   padding: 5px;
   border: 1px solid #25274D;
   border-radius: 20px;
+}
+.S-color{
+  background-image: linear-gradient(60deg,#e9acd3 20%, #cc70ab 75%);
+}
+.E-color{
+  background-image: linear-gradient(60deg,#b1e6cd 20%, #70cca9 75%);
+}
+.J-color{
+  background-image: linear-gradient(60deg,#e9e0ac 20%, #cacc70 75%);
 }
 .table2{
   border: none;
@@ -368,5 +377,20 @@ select{
 }
 #MyCourses{
   height: 500px;
+  display: none;
+}
+.rf{
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.linkIn{
+  margin-top: 40px;
+  width: 100%;
+}
+.copy{
+  margin-top: 40px;
+}
+#ReferalLink{
   display: none;
 }
