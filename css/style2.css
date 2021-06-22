@@ -151,7 +151,7 @@ body {
   display: none;
   position: absolute;
   top: 75px;
-  right: 10%;
+  left: 73%;
   /* background:var(--gray-700); */
   color: var(--black);
   margin: 0px 10px 10px;
@@ -500,6 +500,20 @@ body {
 
 #sr2 {
   display: none;
+}
+
+#sr3
+{
+  display:none;
+  /* position:relative; */
+  /* bottom:20vh; */
+}
+
+.login-options
+{
+  width:100%;
+  position:absolute;
+  top:-230%;
 }
 
 /* Header Section Ends */
