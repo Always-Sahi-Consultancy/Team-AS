@@ -20,17 +20,10 @@
               </div>
               <!--ASSOCIATE POV-->
               <a class="active" href="" onclick="dashboard()">Dashboard</a>
-              <a href="#RegistrationForm" onclick="Register()">Register</a>
-              <a href="#RegistrationForm" onclick="Register()">Downline</a>
-              <a href="#Purchase">Purchase</a>
-              <!--IAC POV-->
-              <a href="#Purchase">Associate Purchase</a>
-              <a href="#Purchase">IAC Purchase</a>
-              <!--IAC-->
-              <a href="#RegistrationForm" onclick="Register()">Sales link</a>
-              <a href="#RegistrationForm" onclick="Register()">Book sales</a>
-              <a href="#RegistrationForm" onclick="Register()">Income Statement</a>
-              <a href="#RegistrationForm" onclick="Register()">Accounts</a>
+              <a href="#RegistrationForm" onclick="MyCourse()">My Courses</a>
+              <a href="#Purchase">Referal link</a>
+              <a href="#RegistrationForm" onclick="Register()">Registration</a>
+              <a href="#RegistrationForm" onclick="Register()">Monthly Reports</a>
               <a href="#RegistrationForm" onclick="Register()">Requests</a>
               <a href="#RegistrationForm" onclick="Register()">Supports</a>
             </div> 
@@ -38,7 +31,7 @@
 
             <!--MAIN BODY CONTENT-->
             <!--DASHBOARD-->
-            <div class="content">
+          <div class="content">
               <div class="row">
                 <div class="col-md-6">
 
@@ -52,7 +45,7 @@
               <div class="row line"></div>
               <div id="Dashboard">
                 <div class="row Dashboard">
-                  <div class="col-md-4 Dh">DASHBOARD</div>
+                  <div class="col-md-4 Dh">DASHBOARD / BROCHURE</div>
                   <div class="col-md-3"></div>
                   <div class="col-md-5">
                     <p class="Linfo">
@@ -75,49 +68,51 @@
             </div>-->
 
             <!--ASSOCIATES BUSINESS-->
-            <div class="row">
-              <div class="headings col-md-3">Associates Business</div>
-              <div class="target col-md-8">Target - 0</div>
-            </div>
-            <!--ABOUT YOU TABLE-->
-            <div class="row col-md-12 container-1">
-              <table class="col-md-11 table1">
-                <tr>
-                  <th rowspan="3">Name</th>
-                  <th rowspan="3">% Level</th>
-                  <th colspan="3">Current Month Business</th>
-                  <th colspan="3">Total Business</th>
+            <div id="AssociateBusiness">
+              <div class="row">
+                <div class="headings col-md-3">Associates Business</div>
+                <div class="target col-md-8">Target 0</div>
+              </div>
+              <!--ABOUT YOU TABLE-->
+              <div class="row col-md-12 container-1">
+                <table class="col-md-11 table1">
                   <tr>
-                </tr>
-                    <td >PCP</td>
-                    <td >GCP</td>
-                    <td >TCP</td>
-                    <td >PCP</td>
-                    <td >GCP</td>
-                    <td >TCP</td>
+                    <th rowspan="3">Name</th>
+                    <th rowspan="3">% Level</th>
+                    <th colspan="3">Current Month Business</th>
+                    <th colspan="3">Total Business</th>
+                    <tr>
                   </tr>
-                  <!--<tr>
-                    <td>BV</td>
-                    <td>Extra</td>
-                    <td>BV</td>
-                    <td>Extra</td>
-                    <td>BV</td>
-                    <td>Extra</td>
-                  </tr>-->
-                  <tr>
-                    <td>Atharv Laxman sawant</td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2883</td>
-                    <td>7362</td>
-                    <td>10245</td>
-                  </tr>
-              </table>
-              <div class="down row col-md-12">
-                <div class="col-md-10"></div>
-                <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
+                      <td >PCP</td>
+                      <td >GCP</td>
+                      <td >TCP</td>
+                      <td >PCP</td>
+                      <td >GCP</td>
+                      <td >TCP</td>
+                    </tr>
+                    <!--<tr>
+                      <td>BV</td>
+                      <td>Extra</td>
+                      <td>BV</td>
+                      <td>Extra</td>
+                      <td>BV</td>
+                      <td>Extra</td>
+                    </tr>-->
+                    <tr>
+                      <td>Atharv Laxman sawant</td>
+                      <td>15</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>2883</td>
+                      <td>7362</td>
+                      <td>10245</td>
+                    </tr>
+                </table>
+                <div class="down row col-md-12">
+                  <div class="col-md-10"></div>
+                  <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
+                </div>
               </div>
             </div>
 
@@ -125,7 +120,7 @@
             <div id="IAC-business">
               <div class="row">
                 <div class="headings col-md-3">IAC Business</div>
-                <div class="target col-md-8">Target - 0</div>
+                <div class="target col-md-8">Target 0</div>
               </div>
               <!--ABOUT YOU TABLE-->
               <div class="row col-md-12 container-1">
@@ -171,55 +166,47 @@
             </div>
 
             <!--Total business-->
-            <div class="row">
-              <div class="col-md-4">
-                <div class="align-right" id="align-right1">TOTAL BUSINESS</div>
-                <div class="align-left"> 0</div>
+            <div class="row col-md-10">
+              <div class="col-md-3 align-right">
+                <div  id="align-right1">TOTAL BUSINESS</div>
+                <div class=""> 0</div>
               </div>
-              <div class="col-md-4">
-                <div class="align-right">TOTAL JOININGS</div>
-                <div class="align-left" id="align-left2"> 
-                  <table class="table2" id="table2">
-                    <tr class="tr2">
-                      <td class="td2">IAC</td>
-                      <td class="td2">Asso</td>
-                    </tr>
-                    <tr class="tr2">
-                      <td class="td2">0</td>
-                      <td class="td2">0</td>
-                    </tr>
-                  </table>
+              <div class="col-md-3 align-right">
+                <div >TOTAL JOININGS</div>
+                <div > 
                   0
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="align-right">TOTAL BUSINESS</div>
-                <div class="align-left"> 0</div>
+              <div class="col-md-3 align-right" >
+                <div >TOTAL BUSINESS</div>
+                <div > 0</div>
               </div>
             </div>
 
             <!--VERIFICATION LINKS-->
-            <div class="row statusDetails" id="verifications">
-              <div class="col-md-4 statusContainer">
-                <p class="statusDetails">
-                  <div class="heads">KYC Verification Status</div>
-                  <a href="">Click here for your KYC verification</a>
-                </p>
-              </div>
-              <div class="col-md-3 statusContainer">
-                <p class="">
-                  <div class="heads">Bank account Verification Status</div>
-                  <a href="">Click here for your Bank Account verification</a>
-                </p>
-              </div>
-              <div class="col-md-4 statusContainer">
-                <p class="statusDetails">
-                  <div class="heads">PAN Verification Status</div>
-                  <a href="">Click here for your PAN verification</a>
-                </p>
+            <div id="verifications">
+              <div class="row statusDetails" >
+                <div class="col-md-4 statusContainer">
+                  <p class="statusDetails">
+                    <div class="heads">KYC Verification Status</div>
+                    <a href="">Click here for your KYC verification</a>
+                  </p>
+                </div>
+                <div class="col-md-3 statusContainer">
+                  <p class="">
+                    <div class="heads">Bank account Verification Status</div>
+                    <a href="">Click here for your Bank Account verification</a>
+                  </p>
+                </div>
+                <div class="col-md-4 statusContainer">
+                  <p class="statusDetails">
+                    <div class="heads">PAN Verification Status</div>
+                    <a href="">Click here for your PAN verification</a>
+                  </p>
+                </div>
               </div>
             </div>
-              </div>
+              
 
             <!--RESIGTER FORM--><!--ASSOCIATES FORM-->
             <div id="RegistrationForm">
@@ -233,58 +220,58 @@
                 </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Mobile</div>
-                      <input type="tel" name="telephone" pattern="[0-9]" required>
+                      <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
                         <button type="submit" name="submit" class="BO">Send OTP</button>
                   </div>
               <!--upline Information-->
                 <div class="row MV">
                   <div>Upline Information</div>
                 </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Upline ID </div>
-                      <input type="number" name="sID" maxlength="7" minlength="7" required>
+                      <input type="number" name="sID" placeholder="Upline Id" maxlength="7" minlength="7" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
-                    <div class="titles">Upline Name</div>
-                      <input type="text" id="sname"  required>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles1">Upline Name</div>
+                      <input type="text" id="sname" placeholder="Upline Name"  required>
                   </div>
-                  <div class="row justify-content-center MV">
+                  <div class="row MV">
                     <div>Personal Information</div>
                   </div>
               <div class="col-md-12">
                 <form>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <!--<div class="row justify-content-center MobileV col-md-5">
                     <div class="titles">Title</div>
                       <select id="gender" name="gender" required>
                         <option value="Mr.">Mr.</option>
                         <option value="Mrs.">Mrs.</option>
                       </select>
-                  </div>
+                  </div>-->
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Name</div>
-                      <input type="text" id="name" required>
+                      <input type="text" id="name" placeholder="Name" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
-                      <input type="email" id="email" required>
+                      <input type="email" id="email" placeholder="Email" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
-                      <input type="text" id="pan" required>
+                      <input type="text" id="pan" placeholder="PAN No." required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-7">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Aadhar number</div>
-                      <input type="number" id="AadharNO" required>
+                      <input  type="number" id="AadharNO" placeholder="Aadhar No." required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Address</div>
-                      <textarea id="address" required></textarea>
+                      <textarea id="address" placeholder="Address" required></textarea>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PIN</div>
-                      <input type="number" id="PIN" minlength="6" maxlength="6" required>
+                      <input type="number" id="PIN" placeholder="PIN code" minlength="6" maxlength="6" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">City</div>
                       <select id="city" name="city" required>
                         <option value="Pune">Pune</option>
@@ -295,7 +282,7 @@
                   </div>
                   <div class="row justify-content-center MobileV col-md-5">
                     <div class="titles">Date of Birth</div>
-                      <input type="date" name="date">
+                      <input type="date" placeholder="DOB" name="date">
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <button type="submit" name="submit">NEXT</button>
@@ -308,11 +295,11 @@
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Account No.</div>
-                    <input type="number" id="AccNo" minlength="12" maxlength="12" required>
+                    <input type="number" id="AccNo" placeholder="Account no." minlength="12" maxlength="12" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">IFSC Code</div>
-                    <input type="number" id="IFSCCode" minlength="6" maxlength="10" required>
+                    <input type="number" id="IFSCCode" placeholder="IFSC code" minlength="6" maxlength="10" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Uplaod</div>
@@ -323,7 +310,7 @@
 
             
             <!--RESIGTER FORM--><!--IAC FORM-->
-            <div id="RegistrationForm">
+            <div id="IACRegistrationForm">
               <div class="row register" id="RegisterForm">
                 <div class="RF col-md-10">REGISTRATION FORM</div>
                 <div class="link"> <a href="">HOME</a></div>
@@ -334,65 +321,65 @@
                 </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Mobile</div>
-                      <input type="tel" name="telephone" pattern="[0-9]" required>
+                      <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
                         <button type="submit" name="submit" class="BO">Send OTP</button>
                   </div>
               <!--upline Information-->
                 <div class="row MV">
                   <div>Upline Information</div>
                 </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Upline ID </div>
-                      <input type="number" name="sID" maxlength="7" minlength="7" required>
+                      <input type="number" name="sID" placeholder="Upline Id" maxlength="7" minlength="7" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
-                    <div class="titles">Upline Name</div>
-                      <input type="text" id="sname"  required>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles1">Upline Name</div>
+                      <input type="text" id="sname" placeholder="Upline Name"  required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Slope</div>
                       <select id="eligible" name="slope" required>
                         <option value="Tally">Tally</option>
                         <option value="BankAudit">Bank Audit</option>
                       </select>
                   </div>
-                  <div class="row justify-content-center MV">
+                  <div class="row MV">
                     <div>Personal Information</div>
                   </div>
               <div class="col-md-12">
                 <form>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <!--<div class="row justify-content-center MobileV col-md-5">
                     <div class="titles">Title</div>
                       <select id="gender" name="gender" required>
                         <option value="Mr.">Mr.</option>
                         <option value="Mrs.">Mrs.</option>
                       </select>
-                  </div>
+                  </div>-->
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Name</div>
-                      <input type="text" id="name" required>
+                      <input type="text" id="name" placeholder="Name" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
-                      <input type="email" id="email" required>
+                      <input type="email" id="email" placeholder="Email" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
-                      <input type="text" id="pan" required>
-                  </div>
-                  <div class="row justify-content-center MobileV col-md-7">
-                    <div class="titles">Aadhar number</div>
-                      <input type="number" id="AadharNO" required>
+                      <input type="text" id="pan" placeholder="PAN No." required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
-                    <div class="titles">Address</div>
-                      <textarea id="address" required></textarea>
+                    <div class="titles">Aadhar number</div>
+                      <input type="number" id="AadharNO" placeholder="Aadhar No." required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles1">Address</div>
+                      <textarea id="address" placeholder="Address" required></textarea>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PIN</div>
-                      <input type="number" id="PIN" minlength="6" maxlength="6" required>
+                      <input type="number" id="PIN" placeholder="PIN code" minlength="6" maxlength="6" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">City</div>
                       <select id="city" name="city" required>
                         <option value="Pune">Pune</option>
@@ -401,38 +388,54 @@
                         <option value="Bangolore">Bangalore</option>
                       </select>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">AS Certificate</div>
                       <input id="certificate" name="certificate" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-5">
+                  <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Date of Birth</div>
-                      <input type="date" name="date">
+                      <input type="date" placeholder="DOB" name="date">
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <button type="submit" name="submit">NEXT</button>
                   </div>
-                  </form>
-                </div>
+                </form>
+              </div>
                 <!--BANK DETAILS-->
                 <div class="row MV">
                   <div>Bank Details</div>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Account No.</div>
-                    <input type="number" id="AccNo" minlength="12" maxlength="12" required>
+                    <input type="number" id="AccNo" placeholder="Account no." minlength="12" maxlength="12" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">IFSC Code</div>
-                    <input type="number" id="IFSCCode" minlength="6" maxlength="10" required>
+                    <input type="number" id="IFSCCode" placeholder="IFSC code" minlength="6" maxlength="10" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Uplaod</div>
                     <input type="number" id="PIN" minlength="6" maxlength="6" required>
                 </div>
             </div>
-              </center>
+
+
+            <!--MY COURSES-->
+            <div id="MyCourses">
+              <div class="row col-md-10">
+                <div class="course col-md-3">
+                  <div>
+                    <img src="/Education/img/photo6300930260224551730.jpg" class="courseImg">
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!--REQUESTS-->
+            
+
+              </center>
+          </div>
           
         
     </div>
