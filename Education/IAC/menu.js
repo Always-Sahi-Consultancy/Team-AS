@@ -24,6 +24,7 @@ function IAC(){
 function KYC(){
     var dash =document.getElementById("Dashboard")
     var l= document.getElementById("verifications")
+    l.style.display = "block";
     dash.style.display="none";
     l.style.visibility="visible";
 }
@@ -31,14 +32,14 @@ function KYC(){
 function MyCourse(){
     var db= document.getElementById("Dashboard")
     const mC =document.getElementById("MyCourses")
-    db.style.display= "none";
     mC.style.width= "100%";
     mC.style.display="block";
+    db.style.display= "none";
 }
 
 function  ReferalLink(){
     var D = document.getElementById("Dashboard")
     var rf=document.getElementById("ReferalLink")
-    D.style.display="none";
     rf.style.display= "block";
+    D.style.display="none";
 }
