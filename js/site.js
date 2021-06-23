@@ -115,7 +115,7 @@ function mainserviceoption()
 
 window.addEventListener(onclick,mainserviceoption);
 
-var states={1:0,2:0};
+var states={1:0,2:0,3:0};
 function navbarOptions(a)
 {
   var name="sr"+a;
