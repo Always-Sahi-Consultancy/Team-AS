@@ -102,6 +102,10 @@ div.content {
 }
 .head{
   float: right;
+  color: black;
+}
+.head a{
+  color: black;
 }
 .heading{
   font-size: 28px;
@@ -126,6 +130,7 @@ div.content {
 }
 .associateId{
   font-weight: 700;
+  color: black;
 }
 .line{
   width: 100%;
@@ -160,7 +165,7 @@ div.content {
 }
 .changePassword:hover{
   text-decoration: none;
-  color: #29648A;
+  color: white;
   transition: 1s ease-out;
 }
 .levelTable{
@@ -214,6 +219,7 @@ td, th{
   overflow-x: scroll;
   width: 100%;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 .heads{
@@ -314,7 +320,16 @@ select{
   width: 100px;
   height: 40px;
 }
-#RegistrationForm{
+#ASSRegistrationForm{
+  display: none ;
+}
+.OTP{
+  width: 72%;
+}
+#OTP{
+  display: none;
+}
+.OTPNo{
   display: none;
 }
 #IACRegistrationForm{
@@ -374,9 +389,9 @@ select{
 }
 .courseImg{
   width: auto;
-  height: 400px;
+  height: 350px;
 }
-#MyCourses{
+.MyCourses{
   height: 500px;
   display: none;
 }
@@ -393,5 +408,15 @@ select{
   margin-top: 40px;
 }
 #ReferalLink{
+  display: none;
+}
+#downlineInfo{
+  display: none;
+}
+#description{
+  height: 100px;
+}
+.generateticket{
+  overflow-x: hidden;
   display: none;
 }

@@ -18,14 +18,16 @@
                 <center>
               <div class="row"><h1></h1></div></center>
               </div>
-              <!--ASSOCIATE POV-->
-              <a class="active" href="" onclick="dashboard()">Dashboard</a>
-              <a href="" onclick="MyCourse()">My Courses</a>
-              <a href="" onclick="ReferalLink()">Referal link</a>
-              <a href="" onclick="Register()">Registration</a>
-              <a href="" onclick="Monthly()">Monthly Reports</a>
-              <a href="#RegistrationForm" onclick="Register()">Requests</a>
-              <a href="#RegistrationForm" onclick="Register()">Supports</a>
+              <!--IAC POV-->
+              <div id="">
+                <a class="active" href="" onclick="tabs(1)">Dashboard</a>
+                <a href="" onclick="tabs(2)">My Courses</a>
+                <a href="" onclick="tabs(3)">Referal link</a>
+                <a href="" onclick="tabs(4)">Registration</a>
+                <a href="" onclick="tabs(5)">Monthly Reports</a>
+                <a href="" onclick="tabs(6)">Requests</a>
+                <a href="" onclick="tabs(7)">Supports</a>
+              </div>
             </div> 
 
 
@@ -45,11 +47,11 @@
               <div class="row line"></div>
               <div id="Dashboard">
                 <div class="row Dashboard">
-                  <div class="col-md-4 Dh">DASHBOARD / BROCHURE</div>
+                  <div class="col-md-4 Dh">DASHBOARD / <a href="">BROCHURE</a></div>
                   <div class="col-md-3"></div>
                   <div class="col-md-5">
                     <p class="Linfo">
-                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="IAC()"> IAC</a> <a href="" onclick="KYC()" class="changePassword">/ KYC</a>
+                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="iac()"> IAC</a> / <a href="" onclick="tabs(8)" class="changePassword"> KYC</a>
                     </p>
                     
                   </div>
@@ -111,11 +113,49 @@
                 </table>
                 <div class="down row col-md-12">
                   <div class="col-md-10"></div>
-                  <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
+                  <div class="col-md-2"><button onclick="downline()" class=" btn btn-primary">DOWNLINE</button></div>
                 </div>
               </div>
             </div>
 
+            <!--DOWNLINE-->
+            <div class="row col-md-12 container-1" id="downlineInfo">
+              <table class="col-md-12 table1">
+                <tr>
+                  <th rowspan="3">Name</th>
+                  <th rowspan="3">% Level</th>
+                  <th colspan="3">Current Month Business</th>
+                  <th colspan="3">Total Business</th>
+                  <tr>
+                </tr>
+                    <td >PCP</td>
+                    <td >GCP</td>
+                    <td >TCP</td>
+                    <td >PCP</td>
+                    <td >GCP</td>
+                    <td >TCP</td>
+                  </tr>
+                  <!--<tr>
+                    <td>BV</td>
+                    <td>Extra</td>
+                    <td>BV</td>
+                    <td>Extra</td>
+                    <td>BV</td>
+                    <td>Extra</td>
+                  </tr>-->
+                  <tr>
+                    <td>Atharv Laxman sawant</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2883</td>
+                    <td>7362</td>
+                    <td>10245</td>
+                  </tr>
+              </table>
+            </div>
+            
             <!--IAC BUSINESS-->
             <div id="IAC-business">
               <div class="row">
@@ -157,11 +197,7 @@
                       <td>7362</td>
                       <td>10245</td>
                     </tr>
-                </table>
-                <div class="down row col-md-12">
-                  <div class="col-md-10"></div>
-                  <div class="col-md-2"><button class=" btn btn-primary">DOWNLINE</button></div>
-                </div>
+                  </table>
               </div>
             </div>
 
@@ -209,8 +245,8 @@
               
 
             <!--RESIGTER FORM--><!--ASSOCIATES FORM-->
-            <div id="RegistrationForm">
-              <div class="row register" id="RegisterForm">
+            <div id="ASSRegistrationForm" >
+              <div class="row register">
                 <div class="RF col-md-10">REGISTRATION FORM</div>
                 <div class="link"> <a href="">HOME</a></div>
               </div>
@@ -221,8 +257,17 @@
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Mobile</div>
                       <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
-                        <button type="submit" name="submit" class="BO">Send OTP</button>
                   </div>
+                  <div id="OTP">
+                    <div class="row justify-content-center MobileV col-md-6">
+                        <div class="titles">Enter 6 digit OTP </div>
+                      <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6"  required>  
+                    </div>
+                  </div>
+                    <div class="row justify-content-center col-md-5">
+                      <button type="submit" onclick="OTP()"  name="submit" class="BO">Send OTP</button>
+                    </div>
+                  
               <!--upline Information-->
                 <div class="row MV">
                   <div>Upline Information</div>
@@ -421,7 +466,7 @@
 
 
             <!--MY COURSES-->
-            <div id="MyCourses">
+            <div class="MyCourses" id="MyCourses">
               <div class="row col-md-10">
                 <div class="course col-md-3">
                   <div>
@@ -457,6 +502,36 @@
               </center>
           </div>
           
+          <!--support-->
+          <div class="generateticket" id="generateticket">
+            <div class="row MV">
+              <h2>Generate ticket</h2>
+            </div>
+            <div class="row justify-content-center MobileV col-md-6">
+              <div class="titles">ID No.</div>
+                <input type="number" id="ID" placeholder="ID No." min="99999" max="1000000" required>
+            </div>
+            <div class="row justify-content-center MobileV col-md-6">
+              <div class="titles">Name</div>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div class="row justify-content-center MobileV col-md-6">
+              <div class="titles">Mobile</div>
+                <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
+            </div>
+            <div class="row justify-content-center MobileV col-md-6">
+              <div class="titles">Description</div>
+                <textarea type="text" id="description" placeholder="Description" required></textarea>
+            </div>
+            <div class="row col-md-10">
+              <div class=" col-md-3">
+                <button class="btn btn-primary copy">GENERATE</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-danger copy">CANCEL</button>
+              </div>
+            </div>
+          </div>
         
     </div>
 </body>
