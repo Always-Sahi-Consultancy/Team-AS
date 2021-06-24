@@ -6,17 +6,30 @@ function tabs(n){
     var mC =document.getElementById("MyCourses");
     var rf=document.getElementById("ReferalLink");
     var supports= document.getElementById("generateticket");
+    a.style.display="none";
+    iac.style.display="none";
+    l.style.display="none";
+    mC.style.display="none";
+    rf.style.display="none";
+    supports.style.display="none";
 
     if(n==1)
     {
         db.style.display="block";
+        a.style.display="none";
+        iac.style.display="none";
+        l.style.display="none";
+        mC.style.display="none";
+        rf.style.display="none";
+        supports.style.display="none";
+
     }
-    if(n==2)
+    else if(n==2)
     {
         mC.style.display="block";
         db.style.display="none";
     }
-    if(n==3)
+    else if(n==3)
     {
         rf.style.display="block";
         db.style.display="none";
@@ -49,6 +62,7 @@ function tabs(n){
     }
 
 }
+
 window.addEventListener(onclick,tabs);
 
 function downline(){

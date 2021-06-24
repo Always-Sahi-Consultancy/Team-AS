@@ -148,6 +148,9 @@ div.content {
 .Dashboard{
   padding: 5px;
 }
+#Dashboard{
+  height: 700px;
+}
 .Dh{
   font-size: 30px;
   font-weight: 300;
@@ -408,6 +411,7 @@ select{
   margin-top: 40px;
 }
 #ReferalLink{
+  height: 650px;
   display: none;
 }
 #downlineInfo{

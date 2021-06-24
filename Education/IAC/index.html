@@ -51,33 +51,76 @@
                   <div class="col-md-3"></div>
                   <div class="col-md-5">
                     <p class="Linfo">
-                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="iac()"> IAC</a> / <a href="" onclick="tabs(8)" class="changePassword"> KYC</a>
+                      <a href="" class="changePassword">Associate</a> / <a href="" class="changePassword" onclick="iac"> IAC</a> / <a href="" onclick="tabs(8)" class="changePassword"> KYC</a>
                     </p>
                     
                   </div>
                 </div>
-              <div class="row line2"></div>
+               <div class="row line2"></div>
 
-              <center>
-              <!--LEVEL TABLE-->  
-              <!--<div class="row col-md-11 levelTable">
-                <div class="col-md-4 TableHeads">Maintained Level</div>
-                <div class="col-md-4 TableHeads">Highest level</div>
-                <div class="col-md-4 TableHeads">Status</div>
-                <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
-                <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
-                <div class="col-md-4 TableHeads "><div class="TableInfo">Active</div></div>
-            </div>-->
+                <center>
+                <!--LEVEL TABLE-->  
+                <!--<div class="row col-md-11 levelTable">
+                  <div class="col-md-4 TableHeads">Maintained Level</div>
+                  <div class="col-md-4 TableHeads">Highest level</div>
+                  <div class="col-md-4 TableHeads">Status</div>
+                  <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
+                  <div class="col-md-4 TableHeads "><div class="TableInfo">Star 2</div></div>
+                  <div class="col-md-4 TableHeads "><div class="TableInfo">Active</div></div>
+               </div>-->
 
-            <!--ASSOCIATES BUSINESS-->
-            <div id="AssociateBusiness">
-              <div class="row">
-                <div class="headings col-md-3">Associates Business</div>
-                <div class="target col-md-8">Target 0</div>
-              </div>
-              <!--ABOUT YOU TABLE-->
-              <div class="row col-md-12 container-1">
-                <table class="col-md-11 table1">
+               <!--ASSOCIATES BUSINESS-->
+               <div id="AssociateBusiness">
+                <div class="row">
+                  <div class="headings col-md-3">Associates Business</div>
+                  <div class="target col-md-8">Target 0</div>
+                </div>
+                <!--ABOUT YOU TABLE-->
+                <div class="row col-md-12 container-1">
+                  <table class="col-md-11 table1">
+                    <tr>
+                      <th rowspan="3">Name</th>
+                      <th rowspan="3">% Level</th>
+                      <th colspan="3">Current Month Business</th>
+                      <th colspan="3">Total Business</th>
+                      <tr>
+                    </tr>
+                        <td >PCP</td>
+                        <td >GCP</td>
+                        <td >TCP</td>
+                        <td >PCP</td>
+                        <td >GCP</td>
+                        <td >TCP</td>
+                      </tr>
+                      <!--<tr>
+                        <td>BV</td>
+                        <td>Extra</td>
+                        <td>BV</td>
+                        <td>Extra</td>
+                        <td>BV</td>
+                        <td>Extra</td>
+                      </tr>-->
+                      <tr>
+                        <td>Atharv Laxman sawant</td>
+                        <td>15</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2883</td>
+                        <td>7362</td>
+                        <td>10245</td>
+                      </tr>
+                  </table>
+                  <div class="down row col-md-12">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-2"><button onclick="downline" class=" btn btn-primary">DOWNLINE</button></div>
+                  </div>
+                </div>
+               </div>
+
+               <!--DOWNLINE-->
+               <div class="row col-md-12 container-1" id="downlineInfo">
+                <table class="col-md-12 table1">
                   <tr>
                     <th rowspan="3">Name</th>
                     <th rowspan="3">% Level</th>
@@ -111,59 +154,16 @@
                       <td>10245</td>
                     </tr>
                 </table>
-                <div class="down row col-md-12">
-                  <div class="col-md-10"></div>
-                  <div class="col-md-2"><button onclick="downline()" class=" btn btn-primary">DOWNLINE</button></div>
-                </div>
-              </div>
-            </div>
-
-            <!--DOWNLINE-->
-            <div class="row col-md-12 container-1" id="downlineInfo">
-              <table class="col-md-12 table1">
-                <tr>
-                  <th rowspan="3">Name</th>
-                  <th rowspan="3">% Level</th>
-                  <th colspan="3">Current Month Business</th>
-                  <th colspan="3">Total Business</th>
-                  <tr>
-                </tr>
-                    <td >PCP</td>
-                    <td >GCP</td>
-                    <td >TCP</td>
-                    <td >PCP</td>
-                    <td >GCP</td>
-                    <td >TCP</td>
-                  </tr>
-                  <!--<tr>
-                    <td>BV</td>
-                    <td>Extra</td>
-                    <td>BV</td>
-                    <td>Extra</td>
-                    <td>BV</td>
-                    <td>Extra</td>
-                  </tr>-->
-                  <tr>
-                    <td>Atharv Laxman sawant</td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2883</td>
-                    <td>7362</td>
-                    <td>10245</td>
-                  </tr>
-              </table>
-            </div>
-            
-            <!--IAC BUSINESS-->
-            <div id="IAC-business">
-              <div class="row">
+               </div>
+              
+               <!--IAC BUSINESS-->
+               <div id="IAC-business">
+                <div class="row">
                 <div class="headings col-md-3">IAC Business</div>
                 <div class="target col-md-8">Target 0</div>
-              </div>
-              <!--ABOUT YOU TABLE-->
-              <div class="row col-md-12 container-1">
+                </div>
+               <!--ABOUT YOU TABLE-->
+               <div class="row col-md-12 container-1">
                 <table class="col-md-11 table1">
                   <tr>
                     <th rowspan="3">Name</th>
@@ -198,54 +198,54 @@
                       <td>10245</td>
                     </tr>
                   </table>
-              </div>
-            </div>
+                </div>
+               </div>
 
-            <!--Total business-->
-            <div class="row col-md-10">
-              <div class="col-md-3 align-right S-color">
+               <!--Total business-->
+               <div class="row col-md-10">
+               <div class="col-md-3 align-right S-color">
                 <div  id="align-right1">TOTAL SALES</div>
                 <div class=""> 0</div>
-              </div>
-              <div class="col-md-3 align-right E-color">
+                </div>
+                <div class="col-md-3 align-right E-color">
                 <div >TOTAL EARNINGS</div>
                 <div > 
                   0
                 </div>
-              </div>
-              <div class="col-md-3 align-right J-color" >
+                </div>
+                <div class="col-md-3 align-right J-color" >
                 <div >TOTAL JOININGS</div>
                 <div > 0</div>
-              </div>
-            </div>
+                </div>
+               </div>
 
-            <!--VERIFICATION LINKS-->
-            <div id="verifications">
-              <div class="row statusDetails" >
-                <div class="col-md-4 statusContainer">
-                  <p class="statusDetails">
-                    <div class="heads">KYC Verification Status</div>
-                    <a href="">Click here for your KYC verification</a>
-                  </p>
+                <!--VERIFICATION LINKS-->
+                <div id="verifications">
+                  <div class="row statusDetails" >
+                    <div class="col-md-4 statusContainer">
+                      <p class="statusDetails">
+                        <div class="heads">KYC Verification Status</div>
+                        <a href="">Click here for your KYC verification</a>
+                      </p>
+                    </div>
+                    <div class="col-md-3 statusContainer">
+                      <p class="">
+                        <div class="heads">Bank account Verification Status</div>
+                        <a href="">Click here for your Bank Account verification</a>
+                      </p>
+                    </div>
+                    <div class="col-md-4 statusContainer">
+                      <p class="statusDetails">
+                        <div class="heads">PAN Verification Status</div>
+                        <a href="">Click here for your PAN verification</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-3 statusContainer">
-                  <p class="">
-                    <div class="heads">Bank account Verification Status</div>
-                    <a href="">Click here for your Bank Account verification</a>
-                  </p>
-                </div>
-                <div class="col-md-4 statusContainer">
-                  <p class="statusDetails">
-                    <div class="heads">PAN Verification Status</div>
-                    <a href="">Click here for your PAN verification</a>
-                  </p>
-                </div>
-              </div>
-            </div>
               
-
-            <!--RESIGTER FORM--><!--ASSOCIATES FORM-->
-            <div id="ASSRegistrationForm" >
+              </div>
+                <!--RESIGTER FORM--><!--ASSOCIATES FORM-->
+                <div id="ASSRegistrationForm" >
               <div class="row register">
                 <div class="RF col-md-10">REGISTRATION FORM</div>
                 <div class="link"> <a href="">HOME</a></div>
@@ -265,7 +265,7 @@
                     </div>
                   </div>
                     <div class="row justify-content-center col-md-5">
-                      <button type="submit" onclick="OTP()"  name="submit" class="BO">Send OTP</button>
+                      <button type="submit" onclick="OTP"  name="submit" class="BO">Send OTP</button>
                     </div>
                   
               <!--upline Information-->
