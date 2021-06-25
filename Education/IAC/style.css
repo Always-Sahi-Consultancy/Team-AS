@@ -4,6 +4,7 @@ body{
   overflow-x: hidden;
   
 }
+
 .background{
      overflow: hidden;
 }
@@ -11,6 +12,23 @@ body{
   width: 100%;
   height: 1000px;
   background-image: linear-gradient( 140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+}
+.iconimg{
+  width: auto;
+  height: 28px;
+  padding: 2px;
+  margin: 2px;
+}
+.iconimgT{
+  width: auto;
+  height: 35px;
+}
+.iconimg a:hover{
+  height: 35px;
+}
+
+.icons{
+  text-align: right;
 }
 .bg-img{
   opacity: 0.9;
@@ -275,7 +293,7 @@ td, th{
   color: whitesmoke;
   padding: 10px;
   margin-top: 20px;
-  background-color: #464866;
+  background-color: #313349;
   opacity: 50%;
 }
 .titles{
@@ -294,6 +312,7 @@ input, textarea, select{
   margin-right: 20px;
   margin-top: 20px;
   width: 65%;
+  padding: 5px;
   height: 40px;
   background-color: #dfe0eb;
   border-radius: 10px;
@@ -311,9 +330,15 @@ button{
   color: white;
   text-align: center;
 }
-.BO{
+.BO, .BO2, .BO3, .BO4{
   padding: 5px;
   margin: 20px 20px 20px 20px;
+}
+.Final{
+  margin-top: 10px;
+}
+#MobileChange{
+  display: none;
 }
 #titles{
   margin-right: 50px;
@@ -330,6 +355,15 @@ select{
   width: 72%;
 }
 #OTP{
+  display: none;
+}
+#OTP2{
+  display: none;
+}
+#OTP3{
+  display: none;
+}
+#OTP4{
   display: none;
 }
 .OTPNo{
@@ -382,7 +416,8 @@ select{
   margin-bottom: 8px;
 }
 #verifications{
-  visibility:hidden;
+  height: 650px;
+  display: none;
 }
 .target{
   font-size: 25px;
@@ -391,14 +426,18 @@ select{
   text-align: right;
 }
 .courseImg{
+  margin-top: 40px;
   width: auto;
-  height: 350px;
+  height: 250px;
 }
 .MyCourses{
-  height: 500px;
+  background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  background-size: cover;
+  height: 650px;
   display: none;
 }
 .rf{
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 400;
   margin-top: 40px;
@@ -421,6 +460,26 @@ select{
   height: 100px;
 }
 .generateticket{
-  overflow-x: hidden;
+  height: 650px;
+  display:none;
+}
+.referalLink{
+  margin-top: 20px;
+}
+.home{
+  text-align: right;
+}
+.home a{
+  color: black;
+}
+.home a:hover{
+  text-decoration: none;
+  color: white;
+}
+.joinings{
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+#requests{
   display: none;
 }
