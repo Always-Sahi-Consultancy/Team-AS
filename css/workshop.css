@@ -1,52 +1,279 @@
+body{
+    overflow-x:hidden;
+}
+
 /* introscreen */
 .intro
 {
-    display:inline-grid;
-    /* position:relative; */
-    /* top:100px; */
+    display:grid;
     column-gap:10px;
     justify-content:center;
     align-content:center;
+    align-items:center;
+    grid-template-columns:auto auto;
 }
 
 .intro-1 ,.intro-2
 {
     width:45vw;
     height:100vh;
-    background:aqua;
     justify-content:center;
-    align-content:space-around;
+    align-content:center;
     text-align:center;
 }
 
 .intro-1{
-    grid-column:1 / 2;
+    /* grid-column:1 / 2; */
 }
 
 .intro-2{
-    grid-column:2/3;
+    /* grid-column:2/3; */
+    display:flex;
+    flex-direction:column;
+    float:right;
 }
 
 .intro-image
 {
     padding:1vw;
     width:70%;
+    margin: 0 10%;
+}
+
+.intro-1 h2{
+    margin:40vh 0 0;
+}
+
+.intro-1 div{
+    text-align:justify;
+    /* width:95%; */
+    padding:0 0 0 5%;
+}
+
+.intro-2 button{
+    width:60%;
+    float:right;
+    margin:0% 0% 0 15%;
+    height:50px;
+    background-color:var(--red-100);
+    border-radius:25px;
+    border-color:var(--red-100);
+    color:var(--white);
+    font-size:1rem;
+}
+
+.intro-2 button:hover{
+    box-shadow:1px 2px 5px var(--gray-600);
+}
+
+.intro-1 h2
+{
+    font-size:2.5rem;
+}
+
+.intro-1 div
+{
+    font-size:1.2rem;
 }
 
 .workshops
 {
+    display:inline-grid;
     justify-content:center;
     align-content:center;
     align-items:center;
-    /* width:100vw; */
-    height:90vh;
-    background:azure;
-    padding:10%;
+    width:80vw;
+    grid-template-columns:auto auto auto auto;
+    grid-column-gap:1vw;
 }
 
 .workshops-div
 {
-    width:20%;
+    grid-column:auto auto auto auto;
     justify-content:center;
-    border:solid black 1px;
+    padding:10vw;
+}
+
+.workshops-div:hover
+{
+    background:aqua;
+}
+
+.workshop-section
+{
+    width:100vw;
+    padding:0 10vw;
+}
+
+@media only screen and (max-width:1000px) and (orientation:landscape)
+{
+    .intro{
+        grid-template-columns:auto;
+    }
+
+    .workshops{
+        grid-template-columns:auto auto;
+        width:100vw;
+    }
+
+    .intro-1 , .intro-2{
+        width:100vw;
+    }
+
+    .workshop-section{
+        padding:20vw;
+    }
+
+    .intro-1{
+        order:2;
+    }
+
+    .intro-2{
+        order:1;
+    }
+
+    .intro-2 img{
+        width:100%;
+        margin:0px;
+    }
+
+    .intro-2 button{
+        width:60%;
+        margin:0 20%;
+    }
+}
+
+@media only screen and (max-width:768px) and (orientation:landscape)
+{ 
+    .intro{
+        grid-template-columns:auto;
+    }
+
+    .workshops{
+        grid-template-columns:auto;
+    }
+
+    .intro-1 , .intro-2{
+        width:100vw;
+    }
+
+    .workshop-section{
+        padding:20vw;
+    }
+
+
+    .intro-1{
+        order:2;
+    }
+
+    .intro-2{
+        order:1;
+    }
+
+
+    .intro-2 img{
+        width:100%;
+        margin:0px;
+    }
+
+    .intro-2 button{
+        width:60%;
+        margin:0 20%;
+    }
+}
+
+@media only screen and (max-width:1000px) and (orientation:portrait)
+{
+    .intro{
+        grid-template-columns:auto;
+    }
+
+    .workshops{
+        grid-template-columns:auto auto;
+    }
+
+    .intro-1 , .intro-2{
+        width:100vw;
+        height:50vh;
+    }
+
+    .workshop-section{
+        padding:20vw;
+    }
+
+
+    .intro-1{
+        order:2;
+    }
+
+    .intro-2{
+        order:1;
+    }
+
+    .intro-2 img{
+        width:100%;
+        margin:6vh 0 1vh;
+    }
+
+    .intro-2 button{
+        width:60%;
+        margin:0 20%;
+        height:6vh;
+        font-size:3rem;
+        border-radius:3vh;
+    }
+
+    .intro-2 h2{
+        margin:0vh;
+    }
+
+    .intro div{
+        padding:0%;
+    }
+}
+
+@media only screen and (max-width:768px) and (orientation:portrait)
+{
+    .intro{
+        grid-template-columns:auto;
+    }
+
+    .workshops{
+        grid-template-columns:auto auto;
+    }
+
+    .intro-1 , .intro-2{
+        width:100vw;
+        height:50vh;
+    }
+
+    .workshop-section{
+        padding:20vw;
+    }
+
+    .intro-1{
+        order:2;
+    }
+
+    .intro-2{
+        order:1;
+    }
+
+    .intro-2 img{
+        width:80%;
+        margin:20vh 0;
+    }
+
+    .intro-2 button{
+        width:60%;
+        margin:0 20%;
+        height:6vh;
+        font-size:3rem;
+        border-radius:3vh;
+    }
+
+    .intro-2 h2{
+        margin:0;
+    }
+    
 }
