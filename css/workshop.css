@@ -83,15 +83,15 @@ body{
     align-content:center;
     align-items:center;
     width:80vw;
-    grid-template-columns:auto auto auto auto;
-    grid-column-gap:1vw;
+    grid-template-columns:auto auto auto;
+    grid-column-gap:2vw;
+    grid-row-gap:2vw;
 }
 
-.workshops-div
+.workshops-div img
 {
-    grid-column:auto auto auto auto;
-    justify-content:center;
-    padding:10vw;
+    height:20vw;
+    height:20vw;
 }
 
 .workshops-div:hover
@@ -108,57 +108,76 @@ body{
 @media only screen and (max-width:1000px) and (orientation:landscape)
 {
     .intro{
-        grid-template-columns:auto;
+        grid-template-columns:auto auto;
     }
 
     .workshops{
         grid-template-columns:auto auto;
-        width:100vw;
+        width:80vw;
+        /* padding:0; */
     }
 
     .intro-1 , .intro-2{
-        width:100vw;
+        width:45vw;
     }
 
-    .workshop-section{
-        padding:20vw;
+    .intro-1 h2
+    {
+        font-size:2rem;
     }
+
+    /* .workshop-section{
+        padding:20vw;
+    } */
 
     .intro-1{
-        order:2;
+        /* order:2; */
     }
 
     .intro-2{
-        order:1;
+        /* order:1; */
     }
 
     .intro-2 img{
-        width:100%;
-        margin:0px;
+        /* width:100%; */
+        /* margin:0px; */
     }
 
     .intro-2 button{
         width:60%;
         margin:0 20%;
+    }
+
+    .workshops{
+        grid-column-gap:3vw;
+        grid-row-gap:3vw;
+    }
+
+    .workshops-div img
+    {
+        width:38vw;
+        height:38vw;
     }
 }
 
 @media only screen and (max-width:768px) and (orientation:landscape)
 { 
     .intro{
-        grid-template-columns:auto;
+        grid-template-columns:auto auto;
     }
 
     .workshops{
-        grid-template-columns:auto;
+        grid-template-columns:auto auto;
+        width:100%;
+        
     }
 
     .intro-1 , .intro-2{
-        width:100vw;
+        width:45vw;
     }
 
     .workshop-section{
-        padding:20vw;
+        padding:10vw;
     }
 
 
@@ -172,13 +191,24 @@ body{
 
 
     .intro-2 img{
-        width:100%;
+        /* width:100%; */
         margin:0px;
     }
 
     .intro-2 button{
         width:60%;
         margin:0 20%;
+    }
+
+    .workshops-div{
+        grid-column-gap:3vw;
+        grid-row-gap:3vw;
+    }
+
+    .workshops-div img
+    {
+        width:38vw;
+        height:38vw;
     }
 }
 
@@ -189,7 +219,7 @@ body{
     }
 
     .workshops{
-        grid-template-columns:auto auto;
+        grid-template-columns:auto;
     }
 
     .intro-1 , .intro-2{
@@ -197,10 +227,15 @@ body{
         height:50vh;
     }
 
-    .workshop-section{
-        padding:20vw;
+    .intro-1 h2{
+        font-size:3rem;
+        font-weight:bolder;
+        margin:10vh 2vw 0vh;
     }
 
+    .intro-1 div{
+        font-size:2.5rem;
+    }
 
     .intro-1{
         order:2;
@@ -225,10 +260,25 @@ body{
 
     .intro-2 h2{
         margin:0vh;
+        font-size:2rem;
     }
 
     .intro div{
         padding:0%;
+    }
+
+    .workshop-section h2{
+        font-size:3rem;
+        font-weight:bolder;
+    }
+
+    .workshops-div{
+        padding:1vw;
+    }
+
+    .workshops-div img{
+        width:80vw;
+        height:80vw;
     }
 }
 
@@ -247,9 +297,19 @@ body{
         height:50vh;
     }
 
-    .workshop-section{
-        padding:20vw;
+    .intro-1 h2{
+        font-size:3rem;
+        font-weight:bolder;
+        margin:10vh 2vw 0vh;
     }
+
+    .intro-1 div{
+        font-size:2.5rem;
+    }
+
+    /* .workshop-section{
+        padding:20vw;
+    } */
 
     .intro-1{
         order:2;
@@ -262,6 +322,7 @@ body{
     .intro-2 img{
         width:80%;
         margin:20vh 0;
+        margin:10vh 0 0 0;
     }
 
     .intro-2 button{
@@ -274,6 +335,25 @@ body{
 
     .intro-2 h2{
         margin:0;
+        font-size:2rem;
+    }
+
+    .intro-2 div{
+        font-size:1.2rem;
+    }
+
+    .workshop-section h2{
+        font-size:3rem;
+        font-weight:bolder;
+    }
+
+    .workshops-div{
+        padding:1vw;
+    }
+
+    .workshops-div img{
+        width:80vw;
+        height:80vw;
     }
     
 }
