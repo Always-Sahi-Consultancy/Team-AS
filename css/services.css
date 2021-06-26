@@ -291,7 +291,7 @@
 }
 .tab {
   padding-right: 10px;
-  background-color: white;
+
   width: 100%;
   border-radius: 30px;
   /* overflow: hidden; */
@@ -385,9 +385,26 @@
   flex-direction: column;
   text-align: left;
   flex-shrink: 0;
+  border-radius: 30px;
   cursor: pointer;
   position: relative;
   padding-right: 20px;
+}
+.front-heading {
+  width: 30%;
+  text-align: left;
+  font-size: 1rem;
+  height: 15px;
+}
+.front-button {
+  width: 30%;
+  position: relative;
+  top: 80%;
+}
+.front-img {
+  width: 30%;
+  position: relative;
+  top: 20%;
 }
 .front,
 .back {
@@ -395,11 +412,17 @@
   /* padding-right: 10px; */
   position: absolute;
   top: 0%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
   left: 0%;
   width: 100%;
   border-radius: 30px;
+  /* row-gap: 13vh; */
   height: 100%;
   backface-visibility: hidden;
+  background-color: #2ec4b6;
   transition: transform 0.6s linear;
 }
 .front {
@@ -410,7 +433,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: var(--blue-color);
+  color: var(--white);
   transform: perspective(600px) rotateY(180deg);
 }
 .tab#t1.target {
