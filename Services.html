@@ -11,12 +11,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
     <link herf="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="css/style2.css" rel="stylesheet">
-    <script src="js/site.js" defer></script>
+    <script src="js/services.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/style2Header.css" />
+    <link rel="stylesheet" href="/css/style2-res.css" />
     <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/style2Color.css" />
+
+
   </head>
   <body>
     <!-- Header Section Starts-->
@@ -174,7 +178,7 @@
                     </div>
                 </section>
                 <section class="covering">
-                    <h2 class="covering-heading">Covering</h2>
+                    <!-- <h2 class="covering-heading">Covering</h2>
                     <div class="covering-content">
                         <div class="covering-div">
                             <input type="checkbox" id="accounts1" class="scope-accounts" name="scope-accounts"/>
@@ -186,7 +190,139 @@
                             <label for="accounts2" class="covering-inner-content">Taxation</label>
                             <div class="scope-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, sapiente.</div>
                          </div>
-                    </div>
+                    </div> -->
+                    <div class="services">
+      <div class="tabs" id="target">
+        <!-- first element start here -->
+        <input type="radio" id="s1" class="slider" name="slider" />
+        <input type="radio" id="s2" class="slider" name="slider" />
+        <input type="radio" id="s3" class="slider" name="slider" checked />
+        <input type="radio" id="s4" class="slider" name="slider" />
+        <input type="radio" id="s5" class="slider" name="slider" />
+        <div class="tab target"></div>
+        <label for="s1" class="slider-label" id="slider1">
+          <div class="tab" id="t1" reference="target">
+            <div class="card ">
+              <div class="front" onclick="first(0)">
+                <div class="img">
+                  <a href="#"><img src="download (1).png" /></a>
+                </div>
+                <div class="heading">
+                  <h2>A Package Escape Funnel</h2>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  quam facilis aliquid eos voluptate at, tempore natus.
+                </p>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <h2>Sanket</h2>
+                  <span>Welcomet to my project :)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <!-- first element ends here -->
+        <label for="s2" class="slider-label" id="slider2">
+          <div class="tab" id="t2" reference="target">
+            <div class="card">
+              <div class="front" onclick="first(1)">
+                <div class="img">
+                  <a href="#"><img src="download (1).png" /></a>
+                </div>
+                <div class="heading">
+                  <h2>A Package Escape Funnel</h2>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  quam facilis aliquid eos voluptate at, tempore natus.
+                </p>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <h2>Sanket</h2>
+                  <span>Welcomet to my project :)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label for="s3" class="slider-label" id="slider3">
+          <div class="tab" id="t3">
+            <div class="card">
+              <div class="front" onclick="first(2)">
+                <div class="img">
+                  <a href="#"><img src="download (1).png" /></a>
+                </div>
+                <div class="heading">
+                  <h2>A Package Escape Funnel</h2>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  quam facilis aliquid eos voluptate at, tempore natus.
+                </p>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <h2>Sanket</h2>
+                  <span>Welcomet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label for="s4" class="slider-label" id="slider4">
+          <div class="tab" id="t4">
+            <div class="card ">
+              <div class="front" onclick="first(3)">
+                <div class="img">
+                  <a href="#"><img src="download (1).png" /></a>
+                </div>
+                <div class="heading">
+                  <h2>A Package Escape Funnel</h2>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  quam facilis aliquid eos voluptate at, tempore natus.
+                </p>
+              </div>
+              <div class="back">
+                <div class="back-content ">
+                  <h2>Sanket</h2>
+                  <span>Welcomet to my project :)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label for="s5" class="slider-label" id="slider5">
+          <div class="tab" id="t5">
+            <div class="card ">
+              <div class="front" onclick="first(4)">
+                <div class="img">
+                  <a href="#"><img src="download (1).png" /></a>
+                </div>
+                <div class="heading">
+                  <h2>A Package Escape Funnel</h2>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  quam facilis aliquid eos voluptate at, tempore natus.
+                </p>
+              </div>
+              <div class="back">
+                <div class="back-content ">
+                  <h2>Sanket</h2>
+                  <span>Welcomet to my project :)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
                 </section>
             </div>
         </div>
