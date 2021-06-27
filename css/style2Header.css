@@ -32,9 +32,9 @@
   }
   .company .Com_name {
     margin-bottom: 0px;
-    width: 150px;
+    width: 200px;
     text-align: center;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     color: var(--gray-100);
   }
   .company .Com_name .always {
@@ -359,7 +359,7 @@
   .Sidelay {
     position: fixed;
     z-index: 1000;
-    top: 15vh;
+    top: 20vh;
     left: 0;
     height: 100%;
     overflow-x: hidden;
@@ -371,7 +371,7 @@
   .sidelay_full {
     position: fixed;
     z-index: 1000;
-    top: 5.7vh;
+    /* top: 5.7vh; */
     left: 0;
     height: 100%;
     overflow-x: hidden;
