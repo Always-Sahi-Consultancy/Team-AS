@@ -84,4 +84,24 @@ function first(a) {
 }
 
 window.addEventListener(onclick, first);
-  // Services Section Ends
+// Services Section Ends
+function second(c) {
+    switch (c) {
+        case 0:
+            back[c].classList.remove("flip");
+            break;
+        case 1:
+            back[c].classList.remove("flip");
+            break;
+        case 2:
+            back[c].classList.remove("flip");
+            break;
+        case 3:
+            back[c].classList.remove("flip");
+            break;
+        case 4:
+            back[c].classList.remove("flip");
+            break;
+    }
+}
+window.addEventListener(onclick, second);
