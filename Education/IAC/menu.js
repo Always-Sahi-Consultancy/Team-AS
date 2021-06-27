@@ -7,6 +7,7 @@ function tabs(n){
     var rf=document.getElementById("ReferalLink");
     var supports= document.getElementById("generateticket");
     var requests=document.getElementById("requests");
+    var content = document.getElementById("content");
     a.style.display="none";
     iac.style.display="none";
     l.style.display="none";
@@ -18,6 +19,7 @@ function tabs(n){
     if(n==1)
     {
         db.style.display="block";
+        content.style.height="1100px";
         a.style.display="none";
         iac.style.display="none";
         l.style.display="none";
@@ -40,6 +42,7 @@ function tabs(n){
     {
         a.style.display="block";
         iac.style.display="block";
+        content.style.height="auto";
         db.style.display="none";
     }
    else if(n==5)
@@ -56,11 +59,13 @@ function tabs(n){
     {
         supports.style.display="block";
         db.style.display="none";
+        content.style.height="1000px";
     }
     else if(n==8)
     {
         l.style.display="block";
         db.style.display="none";
+        content.style.height="800px";
     }
 
 }
@@ -73,7 +78,7 @@ function downline(){
 
 function iac(){
     document.getElementById("IAC-business").style.display="block";
-    document.getElementById("Dashboard").style.height="900px";
+    document.getElementById("content").style.height="1200px";
 }
 
 function OTP(n){
