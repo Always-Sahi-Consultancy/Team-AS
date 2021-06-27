@@ -185,11 +185,6 @@
         font-size:2rem;
     }
 
-    #box-size-new
-    {
-        margin-top:2vh;
-    }
-
     .company img
     {
         height:90px;
@@ -202,12 +197,13 @@
 
     .Com_name .company
     {
-        font-size:3rem;
-        width:fit-content;
+        font-size:2rem;
+        /* width:fit-content; */
     }
 
     .head{
-      font-size:3rem;
+      font-size:2rem;
+      font-weight:bolder;
     }
 
     #ham_icon{
@@ -228,6 +224,7 @@
     {
       font-size:3rem;
       width:100%;
+      /* min-width:80%; */
       /* justify-content:center; */
       text-align:center;
       /* flex:none; */
@@ -237,6 +234,7 @@
     .workshop-text{
       font-size:1.8rem;
       width:90vw;;
+      /* min-width:90vw; */
     }
 
     .card{
@@ -432,6 +430,10 @@
   .about-image{
     order:1;
   }
+
+#sidelay first a{
+  font-size:2rem;
+}
 }
 
 /* @media screen and (max-width:768px) and (orientation:landscape){
@@ -444,7 +446,7 @@
 
   /* #sidelay{
     /* width:100%; */
-  }
+  /* } */
 
   /* #sidelay .first a{
     font-size:1.2rem;
@@ -493,4 +495,4 @@
   .about-image{
     order:1;
   } */
-/* } */ */ */
+/* } }*/
