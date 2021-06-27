@@ -32,7 +32,7 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px){
     .box-size {
       width: 100%;
       padding:0;
@@ -77,7 +77,7 @@
     }
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1000px){
     .about-info {
       flex-direction: column;
     }
@@ -104,7 +104,7 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px){
     .city {
       left: 10%;
       top: 40%;
@@ -115,7 +115,7 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1024px)  and (orientation:portrait){
     .workshop-container {
       height: 42vh;
       width: 90%;
@@ -133,7 +133,7 @@
       grid-template-columns: auto auto;
     }
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1024px) {
     .workshop-section-containers {
       grid-template-columns: auto;
     }
@@ -155,7 +155,7 @@
     }
   
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px) and  (orientation:portrait)
 {
     .box-size-desc
     {
@@ -275,3 +275,222 @@
   font-size: 2.6rem;
 }
 }
+
+@media only screen and (max-width: 768px) and (orientation:landscape)
+{
+    .box-size-desc
+    {
+        font-size:2.5rem;
+        /* margin-top:vh; */
+    }
+
+    .as-title
+    {
+        font-size:4rem;
+    }
+
+    .on-demand
+    {
+        height:80vh;
+        top:0vh;
+    }
+
+    .box-size-right
+    {
+        scale:1;
+    }
+
+    .intro-button
+    {
+        height:70px;
+        font-size:2rem;
+    }
+
+    #box-size-new
+    {
+        margin-top:2vh;
+    }
+
+    .company img
+    {
+        height:90px;
+    }
+
+    .company a p{ 
+      font-size:3rem;
+      width:fit-content;
+    }
+
+    .Com_name .company
+    {
+        font-size:3rem;
+        width:fit-content;
+    }
+
+    .head{
+      font-size:3rem;
+    }
+
+    #ham_icon{
+      height:20vw;
+    }
+
+    .nav_bar
+    {
+      font-size:2rem;
+    }
+
+    #sidelay .second a{
+      display:flex;
+      width:100%;
+    }
+
+    .workshop-titles
+    {
+      font-size:3rem;
+      width:100%;
+      /* justify-content:center; */
+      text-align:center;
+      /* flex:none; */
+      height:fit-content
+    }
+
+    .workshop-text{
+      font-size:1.8rem;
+      width:90vw;;
+    }
+
+    .card{
+      height:65vh;
+      width:80vw;
+    }
+
+    .card1 .front,.card2 .front,.card3 .front
+    {
+      font-size:3rem;
+    }
+
+    .deto span
+    {
+      font-size:3rem;
+    }
+
+    .deto img
+    {
+      width:70vw;
+    }
+
+    .card1 .back .details,
+.card2 .back .details,
+.card .back .details {
+  font-size:2rem;
+}
+.card1 .back .details h2,
+.card2 .back .details h2,
+.card .back .details h2 {
+  font-size: 2rem;
+}
+.card1 .back .details h2 span,
+.card2 .back .details h2 span,
+.card .back .details h2 span {
+  font-size: 2.6rem;
+}
+}
+
+@media screen and (max-width:768px) and (orientation:landscape){
+  .as-title{
+    font-size:2rem;
+  }
+  .on-demand{
+    grid-template-columns:auto auto;
+    flex-direction:row;
+  }
+  #box-size-new{
+    order:1;
+  }
+
+  #box-size{
+    order:2;
+  }
+  .intro-button{
+    height:fit-content;
+    font-size:0.8rem;
+  } 
+  .about-info{
+    flex-direction:column;
+  }
+
+  .about-sections{
+    width:100%;
+  }
+
+  .about-text{
+    font-size:1rem;
+    order:2;
+  }
+
+  .about-image{
+    order:1;
+  }
+}
+
+/* @media screen and (max-width:768px) and (orientation:landscape){
+ 
+  /* .first{
+    display:inline-grid;
+    grid-template-columns:auto;
+    font-size:1.2rem;
+  } */
+
+  /* #sidelay{
+    /* width:100%; */
+  }
+
+  /* #sidelay .first a{
+    font-size:1.2rem;
+    width:100%;
+  }
+
+  #sidelay .second a{
+    font-size:1.2rem;
+    bottom:0px;
+  } */ */
+
+  /* .font-size-navbar{
+    font-size:1.rem;
+  }
+
+  .on-demand{
+    /* grid-template-columns:auto auto; */
+    /* flex-direction:row;
+  }
+  #box-size-new{
+    order:1;
+  }
+
+  #box-size{
+    order:2;
+  }
+
+  .intro-button{
+    height:fit-content;
+    font-size:0.8rem;
+  } */
+/* 
+  .about-info{
+    flex-direction:column;
+  }
+
+  .about-sections{
+    width:100%;
+  }
+
+  .about-text{
+    font-size:1rem;
+    order:2;
+  }
+
+  .about-image{
+    order:1;
+  } */
+/* } */ */ */
