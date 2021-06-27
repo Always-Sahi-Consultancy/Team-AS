@@ -1,9 +1,15 @@
 .navbar{
   position: sticky;
   display: block;
+  padding: 20px;
 }
 .navbar-brand, .navbar-dark{
+  height: 40px;
+  padding: 10px;
   color: #25274D;
+}
+nav{
+  position: sticky;
 }
 .bg-blue{
   padding: 2px;
@@ -11,21 +17,25 @@
   background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
 }
 .navbar-nav .nav-link + .nav-link {
+    margin-top: 1rem;
     margin-left: 0 rem;
 }
 
 .navbar-nav .nav-item + .nav-item .navbar-toggler-icon {
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
 @media (max-width: 543px) {
     .navbar-toggleable .navbar-nav .nav-item {
+        margin-top: 1rem;
         margin-left: 0;
     }
 }
 
 @media (max-width: 767px) {
     .navbar-toggleable-sm .navbar-nav .nav-item {
+        margin-top: 1rem;
         margin-left: 0;
     }
 }
@@ -115,7 +125,7 @@ body {
 
 .sidebar-nav li {
   text-indent: 10px;
-  line-height: 60px;
+  line-height: 55px;
   margin: 10px;
 }
 
@@ -326,10 +336,18 @@ td, th{
   margin-top: 18px;
   color: black;
 }
+p{
+  margin: 0;
+  padding: 0;
+}
 .RF{
   font-size: 38px;
   font-weight: 300;
   text-align: left;
+}
+.as{
+  font-size: 20px;
+  color: #25274D;
 }
 .MV{
   font-size: 25px;
