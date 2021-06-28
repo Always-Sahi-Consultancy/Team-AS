@@ -539,8 +539,8 @@ select{
   color: white;
 }
 .joinings{
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 #requests{
   display: none;
@@ -594,4 +594,23 @@ h1{
   text-align: justify;
   color: #25274D;
   font-weight: lighter;
+}
+.gift{
+  margin-top: 10px;
+  width: auto;
+  height: 50px;
+}
+.upgrade{
+  width: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: #25274D 5px double;
+  border-radius: 20px;
+  height: 148px;
+  background-color: white;
+}
+.plan{
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 300;
 }
