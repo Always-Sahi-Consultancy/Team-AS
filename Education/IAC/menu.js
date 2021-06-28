@@ -6,7 +6,7 @@ function tabs(n){
     var mC =document.getElementById("MyCourses");
     var rf=document.getElementById("ReferalLink");
     var supports= document.getElementById("generateticket");
-    var requests=document.getElementById("requests");
+    var RL=document.getElementById("requestList");
     var content = document.getElementById("content");
     a.style.display="none";
     iac.style.display="none";
@@ -14,7 +14,7 @@ function tabs(n){
     mC.style.display="none";
     rf.style.display="none";
     supports.style.display="none";
-    requests.style.display="none";
+    RL.style.display="none";
 
     if(n==1)
     {
@@ -26,6 +26,7 @@ function tabs(n){
         mC.style.display="none";
         rf.style.display="none";
         supports.style.display="none";
+        RL.style.display="none";
 
     }
     else if(n==2)
@@ -45,16 +46,11 @@ function tabs(n){
         content.style.height="auto";
         db.style.display="none";
     }
-   else if(n==5)
-    {
-        mr.style.display="block";
-        db.style.display="none";
-    }
-    else if(n==6)
-    {
-        requests.style.display="block";
-        db.style.display="none";
-    }
+    // else if(n==5)
+    //     {
+    //         mr.style.display="block";
+    //         db.style.display="none";
+    //     }
     else if(n==7)
     {
         supports.style.display="block";
@@ -78,6 +74,7 @@ function downline(){
 
 function iac(){
     document.getElementById("IAC-business").style.display="block";
+    document.getElementById("mycourses").style.display="block";
     document.getElementById("content").style.height="1200px";
 }
 
@@ -88,14 +85,17 @@ function OTP(n){
     }
     else if(n==2)
     {
-    document.getElementById("OTP2").style.display="block";
-    document.getElementById("MobileChange").style.display="block";
-    document.getElementById("BO2").style.display="none";
+    document.getElementById("mobileChange").style.display="block";
+    document.getElementById("BO2").style.display="block";
+    document.getElementById("BO2").innerHTML="Resend OTP";
+    document.getElementById("new").style.display="block";
     }
     else if(n==3)
     {
         document.getElementById("OTP3").style.display="block";
-        document.getElementById("BO3").style.display="none";
+        document.getElementById("BO3").style.display="block";
+        document.getElementById("BO3").innerHTML="Resend OTP";
+        document.getElementById("SU3").style.display="block";
     }
     else if(n==4)
     {
@@ -112,6 +112,10 @@ function OTP(n){
 
 window.addEventListener(onclick,OTP);
 
+function ass(){
+    document.getElementById("mycourses").style.display="none";
+    document.getElementById("IAC-business").style.display="none";
+}
 function next(n){
     if(n==1){
         document.getElementById("bankDetails").style.display="block";
@@ -135,6 +139,34 @@ $(function(){
     });
   });
 
+function show(){
+    document.getElementById("requestList").style.display="block";
+    var requests=document.getElementById("requests");
+    var db = document.getElementById("Dashboard");
+    requests.style.display="block";
+    db.style.display="none";
+}
 
+function request(n){
+    document.getElementById("mobileChange").style.display="none";
+    document.getElementById("BankChange").style.display="none";
+    document.getElementById("resignation").style.display="none";
+    if(n==1){
+        document.getElementById("mobileChange").style.display="block";
+    }
+    else if(n==2){
+        document.getElementById("BankChange").style.display="block";
+    }
+    else if(n==3){
+        document.getElementById("resignation").style.display="block";
+    }
+}
 
+function SU(n){
+    if(n==3)
+    {
+        document.getElementById("bankdetail").style.display="block";
+    }
+}
+window.addEventListener(onclick,SU);
 
