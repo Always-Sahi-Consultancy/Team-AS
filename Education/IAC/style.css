@@ -79,7 +79,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 240px;
+  width: 250px;
 }
 
 #page-content-wrapper {
@@ -117,7 +117,7 @@ body {
 /* Sidebar Styles */
 
 .sidebar-nav {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 235px;
   margin: 0;
@@ -194,9 +194,8 @@ body {
 }
 
 .row{
-  margin-right: 0;
-  padding-right: 0;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 .head{
   float: right;
@@ -287,6 +286,23 @@ body {
   opacity: 68%;
   box-shadow: 5px 10px 10px #25274d;
 }
+.thead{
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #25274D;
+}
+.iachead{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  background-color: #2E9CCA;
+  height: 45px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #25274D;
+}
 td, th{
   width: auto;
   height: 30px;
@@ -299,7 +315,7 @@ td, th{
   padding: 10px;
   justify-content: space-around;
 }
-.container-1{
+.iac-container, .container-1{
   overflow-x: scroll;
   width: 100%;
   margin: 0;
@@ -570,6 +586,9 @@ body{
 .content{
   width: 100%;
   height: 1200px;
+  margin-left: 0px;
+  margin-right: 15px;
+  padding: 0;
   background-image: linear-gradient(140deg, #29648A 20%, #2E9CCA 40%,#AAABB8 65%);
 }
 .iconimg{
@@ -613,19 +632,19 @@ h1{
   font-weight: lighter;
 }
 .gift{
-  margin: 10px 10px 0px 0px;
+  margin: 6px 10px 0px 0px;
   width: auto;
   height: 50px;
 }
 .upgrade{
-  width: auto;
+  width: 25%;
   margin-top: 20px;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-right: 25px;
-  padding: 0;
-  border: #25274D 5px double;
+  padding: 20;
+  border: double 10px red;
   border-radius: 20px;
-  height: 110px;
+  height: 120px;
   background-color: white;
 }
 .plan {
@@ -634,12 +653,12 @@ h1{
   margin-bottom: 5px;
   font-size: 20px;
   color:black;
-  font-weight: 300;
+  font-weight: 400;
 }
 .upgrade a:hover{
   transition: 1s ease-in-out;
   font-size: 22px;
-  color: #2E9CCA;
+  color: #d62912;
   text-decoration: none;
 }
 .SU{
@@ -666,4 +685,13 @@ h1{
   width: auto;
   height: 10px;
   text-align: right;
+}
+.up{
+  text-align: right;
+}
+#downline{
+  margin-left: 15px;
+  margin-right: 0;
+  margin-top: 30px;
+  display: none;
 }
