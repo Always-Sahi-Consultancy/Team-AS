@@ -19,7 +19,7 @@ function tabs(n){
     if(n==1)
     {
         db.style.display="block";
-        content.style.height="1100px";
+        content.style.height="1200px";
         a.style.display="none";
         iac.style.display="none";
         l.style.display="none";
@@ -102,9 +102,23 @@ function OTP(n){
         document.getElementById("OTP4").style.display="block";
         document.getElementById("BO4").style.display="none";   
     }
+    else if(n==5)
+    {    document.getElementById("OTP4").style.display="block";
+        document.getElementById("BO4").innerHTML="Resend OTP";
+        document.getElementById("SU").style.display="block";   
+
+    }
 }
 
 window.addEventListener(onclick,OTP);
+
+function next(n){
+    if(n==1){
+        document.getElementById("bankDetails").style.display="block";
+    }
+}
+window.addEventListener(onclick,next);
+
 
 $(function(){
     $("#menu-toggle").click(function(e) {

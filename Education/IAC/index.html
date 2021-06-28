@@ -208,7 +208,7 @@
                           <div class="row justify-content-center">
                             <div class="upgrade col-md-4 ">
                               <img class="gift" src="/Education/IAC/img/giftbox.png">
-                              <p class="plan">Upgrade Your Plan</p>
+                              <a class="plan" href="#"><p class="plan">Upgrade Your Plan</p></a>
                             </div>
                           </div>
                     </div>
@@ -253,19 +253,20 @@
                                   <div class="row MV">
                                     <div>Mobile OTP Verification</div>
                                   </div>
+                                  <div class="row justify-content-center MobileV col-md-6">
+                                    <div class="titles">Mobile</div>
+                                      <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
+                                  </div>
+                                  <div id="OTP4">
                                     <div class="row justify-content-center MobileV col-md-6">
-                                      <div class="titles">Mobile</div>
-                                        <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
+                                        <div class="titles">Enter 6 digit OTP </div>
+                                      <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6"  required>  
                                     </div>
-                                    <div id="OTP">
-                                      <div class="row justify-content-center MobileV col-md-6">
-                                          <div class="titles">Enter 6 digit OTP </div>
-                                            <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6"  required>  
-                                      </div>
-                                    </div>
-                                    <div class="row justify-content-center col-md-5">
-                                        <button type="submit" onclick="OTP()"  name="submit" class="BO">Send OTP</button>
-                                    </div>
+                                  </div>
+                                <div class="row justify-content-center col-md-6">
+                                  <button type="submit" onclick="OTP(5)"  name="submit" class="BO5" id="BO4">Send OTP</button>
+                                  <button type="submit" onclick="OTP(5)"  name="submit" class="SU" id="SU">SUBMIT</button>
+                                </div>
                 
                                   <!--upline Information-->
                                     <div class="row MV">
@@ -322,12 +323,13 @@
                                                       <input type="date" placeholder="DOB" name="date">
                                               </div>
                                             <div class="row justify-content-center MobileV col-md-6">
-                                                <button type="submit" name="submit">NEXT</button>
+                                                <button type="submit" onclick="next(1)" name="submit">NEXT</button>
                                             </div>
                                           </form>
                                       </div>
                                         <!--BANK DETAILS-->
-                                        <div class="row MV">
+                                        <div id="bankDetails">
+                                          <div class="row MV">
                                             <div>Bank Details</div>
                                         </div>
                                           <div class="row justify-content-center MobileV col-md-6">
@@ -342,6 +344,7 @@
                                               <div class="titles">Uplaod</div>
                                                 <input type="number" id="PIN" minlength="6" maxlength="6" required>
                                           </div>
+                                        </div>
                               </div>
 
 
@@ -359,7 +362,7 @@
                                         <div class="row justify-content-center MobileV col-md-6">
                                           <div class="titles">Mobile</div>
                                             <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
-                                              <button type="submit" name="submit" class="BO">Send OTP</button>
+                                              <button type="submit" name="submit" onclick="OTP(1)" class="BO">Send OTP</button>
                                         </div>
                                   <!--upline Information-->
                                         <div class="row MV">
