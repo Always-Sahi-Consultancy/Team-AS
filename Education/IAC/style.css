@@ -14,7 +14,7 @@ nav{
 .bg-blue{
   padding: 2px;
   color: black;
-  background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  background-image: linear-gradient(140deg, #29648A 20%, #2E9CCA 40%,#AAABB8 65%);
 }
 .navbar-nav .nav-link + .nav-link {
     margin-top: 1rem;
@@ -71,7 +71,7 @@ body {
   height: 1000px;
   margin-left: -250px;
   overflow-y: auto;
-  background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  background-image: linear-gradient(140deg, #29648A 20%, #2E9CCA 40%,#AAABB8 65%);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -79,7 +79,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 240px;
 }
 
 #page-content-wrapper {
@@ -93,18 +93,23 @@ body {
 }
 .logoImg{
   text-align: center;
+  margin-left: 10px;
   width: auto;
   padding: 0;
-  height: 40px;
+  height: 60px;
 }
-.package{
-  margin-top: 20px;
+.logoC{
+  text-align: center;
+}
+.package {
+  height: 28px;
+  margin-bottom: 0;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
 }
 .logoText{
-  width: 140px;
-  height: 20px;
+  padding-top: 5px;
+  height: 10px;
   font-size: 9px;
   margin: 0;
 }
@@ -114,19 +119,16 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 235px;
   margin: 0;
   overflow-y: visible;
   padding: 0;
   height: 1000px;
-  border-right: #25274D 1px solid;
   list-style: none;
 }
 
 .sidebar-nav li {
-  text-indent: 10px;
-  line-height: 55px;
-  margin: 10px;
+  margin: 10px ;
 }
 
 .sidebar-nav li a {
@@ -150,7 +152,7 @@ body {
 .sidebar-nav .sidebar-brand {
   height: 65px;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .sidebar-nav .sidebar-brand a {
@@ -269,7 +271,16 @@ body {
 }
 .table1{
   background-color: #2E9CCA;
-  margin-bottom:10px ;
+  margin-bottom: 10px ;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  opacity: 68%;
+  box-shadow: 5px 10px 10px #25274d;
+}
+.table2{
+  background-color: #2E9CCA;
+  margin-bottom: 10px ;
   font-size: 20px;
   font-weight: 400;
   color: black;
@@ -293,7 +304,7 @@ td, th{
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 0px 5px;
 }
 .heads{
   font-size: 24px;
@@ -346,8 +357,12 @@ p{
   text-align: left;
 }
 .as{
-  font-size: 20px;
-  color: #25274D;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  color: #0f1011;
 }
 .MV{
   font-size: 25px;
@@ -417,9 +432,6 @@ select{
   width: 72%;
 }
 #OTP{
-  display: none;
-}
-#OTP2{
   display: none;
 }
 #OTP3{
@@ -557,8 +569,8 @@ body{
 }
 .content{
   width: 100%;
-  height: 1100px;
-  background-image: linear-gradient( 140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  height: 1200px;
+  background-image: linear-gradient(140deg, #29648A 20%, #2E9CCA 40%,#AAABB8 65%);
 }
 .iconimg{
   width: auto;
@@ -573,7 +585,12 @@ body{
 .iconimg a:hover{
   height: 35px;
 }
-
+.iconimgB{
+  width: auto;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
 .icons{
   text-align: right;
 }
@@ -596,28 +613,57 @@ h1{
   font-weight: lighter;
 }
 .gift{
-  margin-top: 10px;
+  margin: 10px 10px 0px 0px;
   width: auto;
   height: 50px;
 }
 .upgrade{
   width: auto;
+  margin-top: 20px;
   margin-left: 25px;
   margin-right: 25px;
+  padding: 0;
   border: #25274D 5px double;
   border-radius: 20px;
-  height: 130px;
+  height: 110px;
   background-color: white;
 }
-.plan a{
+.plan {
+  padding-top: 20px;
+  margin-top: 20px;
   margin-bottom: 5px;
-  font-size: 30px;
+  font-size: 20px;
+  color:black;
   font-weight: 300;
+}
+.upgrade a:hover{
+  transition: 1s ease-in-out;
+  font-size: 22px;
+  color: #2E9CCA;
+  text-decoration: none;
 }
 .SU{
   margin-right: 30px;
   display: none;
 }
+.SU3{
+  margin-top: 20px;
+  height: 35px;
+  display: none;
+}
 #bankDetails{
   display: none;
+}
+#mycourses{
+  display: none;
+}
+#mobileChange, #BankChange, #resignation, #requestList, #new, #bankdetail{
+  display: none;
+}
+.arrow{
+  margin-left: 200px;
+  border: 2px solid black;
+  width: auto;
+  height: 10px;
+  text-align: right;
 }
