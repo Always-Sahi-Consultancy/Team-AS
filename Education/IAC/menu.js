@@ -8,6 +8,13 @@ function tabs(n) {
     var supports = document.getElementById("generateticket");
     var RL = document.getElementById("requestList");
     var content = document.getElementById("content");
+    document.getElementById("requestList").style.display = "block";
+    var requests = document.getElementById("requests");
+    var db = document.getElementById("Dashboard");
+    document.getElementById("resignation").style.display = "none";
+    document.getElementById("BankChange").style.display = "none";
+    document.getElementById("mobileChange").style.display="none";
+
     a.style.display = "none";
     iac.style.display = "none";
     l.style.display = "none";
@@ -40,7 +47,6 @@ function tabs(n) {
     }
     else if (n == 4) {
         a.style.display = "block";
-        iac.style.display = "block";
         content.style.height = "auto";
         db.style.display = "none";
     }
@@ -58,6 +64,18 @@ function tabs(n) {
         l.style.display = "block";
         db.style.display = "none";
         content.style.height = "800px";
+    }
+    else if(n==9){
+        document.getElementById("requestList").style.display = "block";
+        var requests = document.getElementById("requests");
+        db.style.display="none";
+        document.getElementById("mobileChange").style.display = "block";
+    }
+    else if(n==10){
+        document.getElementById("requestList").style.display = "block";
+        var requests = document.getElementById("requests");
+        db.style.display="none";
+        document.getElementById("BankChange").style.display = "block";
     }
 
 }
@@ -138,45 +156,6 @@ function show() {
     var db = document.getElementById("Dashboard");
     requests.style.display = "block";
     db.style.display = "none";
-}
-
-function request(n) {
-    document.getElementById("mobileChange").style.display = "none";
-    document.getElementById("BankChange").style.display = "none";
-    document.getElementById("resignation").style.display = "none";
-    document.getElementById("ASSRegistrationForm").style.display = "none";
-    document.getElementById("IACRegistrationForm").style.display = "none";
-    document.getElementById("verifications").style.display = "none";
-    document.getElementById("MyCourses").style.display = "none";
-    document.getElementById("ReferalLink").style.display = "none";
-    document.getElementById("generateticket").style.display = "none";
-    if (n == 1) {
-        document.getElementById("mobileChange").style.display = "block";
-        document.getElementById("ASSRegistrationForm").style.display = "none";
-        document.getElementById("IACRegistrationForm").style.display = "none";
-        document.getElementById("verifications").style.display = "none";
-        document.getElementById("MyCourses").style.display = "none";
-        document.getElementById("ReferalLink").style.display = "none";
-        document.getElementById("generateticket").style.display = "none";
-    }
-    else if (n == 2) {
-        document.getElementById("BankChange").style.display = "block";
-        document.getElementById("ASSRegistrationForm").style.display = "none";
-        document.getElementById("IACRegistrationForm").style.display = "none";
-        document.getElementById("verifications").style.display = "none";
-        document.getElementById("MyCourses").style.display = "none";
-        document.getElementById("ReferalLink").style.display = "none";
-        document.getElementById("generateticket").style.display = "none";
-    }
-    else if (n == 3) {
-        document.getElementById("resignation").style.display = "block";
-        document.getElementById("ASSRegistrationForm").style.display = "none";
-        document.getElementById("IACRegistrationForm").style.display = "none";
-        document.getElementById("verifications").style.display = "none";
-        document.getElementById("MyCourses").style.display = "none";
-        document.getElementById("ReferalLink").style.display = "none";
-        document.getElementById("generateticket").style.display = "none";
-    }
 }
 
 function SU(n) {
