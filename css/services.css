@@ -853,6 +853,14 @@
   .tabs {
     height: 60vh;
   }
+
+  .slider{
+    position:relative;
+    top:20vh;
+    height:60px;
+    width: 30px;
+  }
+
   .tab,
   .card,
   .front,
