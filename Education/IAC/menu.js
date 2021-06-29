@@ -91,7 +91,7 @@ function downline() {
 function iac() {
     document.getElementById("IAC-business").style.display = "block";
     document.getElementById("mycourses").style.display = "block";
-    document.getElementById("content").style.height = "950px";
+    document.getElementById("content").style.height = "1200px";
 }
 
 function OTP(n) {
