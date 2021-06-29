@@ -859,5 +859,42 @@
   .back,
   .slider-label {
     width: 50vw;
+    height: 45vh;
+  }
+  .target {
+    width:0px;
+    /* min-width:0px; */
+    /* max-width:0px; */
+  }
+  .tab,
+  .card,
+  .front,
+  .back,
+  .slider-label {
+    width:100vw;
+    min-width:60vw;
+    height:45vh;
+  }
+  .services label{
+    height:45vh;
+  }
+
+  .back{
+    font-size:1.8rem;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .front{
+    font-size:2vh;
+  }
+
+  .front-heading{
+    font-size:2rem;
+  }
+
+  .front-img{
+    width:40vw;
+    height:40vw;
   }
 }
