@@ -849,7 +849,7 @@
     width: 60%;
   }
 }
-@media screen and (max-device-width: 1000px) and (orientation: portrait) {
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
   .tabs {
     height: 60vh;
   }
