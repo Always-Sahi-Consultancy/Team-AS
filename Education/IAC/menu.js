@@ -14,6 +14,7 @@ function tabs(n) {
     document.getElementById("resignation").style.display = "none";
     document.getElementById("BankChange").style.display = "none";
     document.getElementById("mobileChange").style.display="none";
+    document.getElementById("downline").style.display="none";
 
     a.style.display = "none";
     iac.style.display = "none";
@@ -58,7 +59,7 @@ function tabs(n) {
     else if (n == 7) {
         supports.style.display = "block";
         db.style.display = "none";
-        content.style.height = "1000px";
+        content.style.height = "950px";
     }
     else if (n == 8) {
         l.style.display = "block";
@@ -67,14 +68,14 @@ function tabs(n) {
     }
     else if(n==9){
         document.getElementById("requestList").style.display = "block";
-        var requests = document.getElementById("requests");
         db.style.display="none";
+        content.style.height="950px";
         document.getElementById("mobileChange").style.display = "block";
     }
     else if(n==10){
         document.getElementById("requestList").style.display = "block";
-        var requests = document.getElementById("requests");
         db.style.display="none";
+        content.style.height="950px";
         document.getElementById("BankChange").style.display = "block";
     }
 
@@ -90,7 +91,7 @@ function downline() {
 function iac() {
     document.getElementById("IAC-business").style.display = "block";
     document.getElementById("mycourses").style.display = "block";
-    document.getElementById("content").style.height = "1450px";
+    document.getElementById("content").style.height = "950px";
 }
 
 function OTP(n) {
@@ -98,9 +99,10 @@ function OTP(n) {
         document.getElementById("OTP1").style.display = "block";
     }
     else if (n == 2) {
-        document.getElementById("mobileChange").style.display = "block";
+        document.getElementById("OTP2").style.display = "block";
         document.getElementById("BO2").style.display = "block";
         document.getElementById("BO2").innerHTML = "Resend OTP";
+        document.getElementById("SU2").style.display="block";
         document.getElementById("new").style.display = "block";
     }
     else if (n == 3) {
@@ -161,6 +163,9 @@ function show() {
 function SU(n) {
     if (n == 3) {
         document.getElementById("bankdetail").style.display = "block";
+    }
+    else if(n==2){
+        document.getElementById("new").style.display="block";
     }
 }
 window.addEventListener(onclick, SU);

@@ -78,7 +78,7 @@ body {
   left: 250px;
   top: 40px;
   width: 0;
-  height: 1000px;
+  height: 950px;
   margin-left: -250px;
   overflow-y: auto;
   background-image: linear-gradient(
@@ -138,7 +138,7 @@ body {
   margin: 0;
   overflow-y: visible;
   padding: 0;
-  height: 1000px;
+  height: 950px;
   list-style: none;
 }
 
@@ -227,7 +227,6 @@ body {
 }
 .headings {
   float: left;
-  margin: 20px;
   font-size: 28px;
   font-weight: 400;
 }
@@ -248,8 +247,8 @@ body {
 }
 .line {
   width: 100%;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: 0px;
   height: 1px;
   background-color: #25274d;
 }
@@ -260,10 +259,10 @@ body {
   background-color: #25274d;
 }
 .Dashboard {
-  padding: 5px;
+  padding: 3px;
 }
 #Dashboard {
-  height: 700px;
+  height: 950px;
 }
 .Dh {
   font-size: 20px;
@@ -316,7 +315,6 @@ body {
   padding: 5px;
   background-color: #2e9cca;
   height: 45px;
-  margin-bottom: 10px;
   width: 100%;
   border: 1px solid #25274d;
 }
@@ -471,7 +469,7 @@ select {
 .OTP {
   width: 72%;
 }
-#OTP {
+#OTP2{
   display: none;
 }
 #OTP3 {
@@ -537,7 +535,7 @@ select {
 .target {
   font-size: 25px;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 5px;
   text-align: right;
 }
 .courseImg {
@@ -591,8 +589,8 @@ select {
   color: white;
 }
 .joinings {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 #requests {
   display: none;
@@ -697,7 +695,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 65vw;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 35px;
   margin-right: 25px;
   padding: 0;
@@ -890,14 +888,9 @@ h1 {
   color: rgb(104, 71, 71);
   text-decoration: none;
 }
-.SU {
-  margin-right: 30px;
-  display: none;
-}
-.SU3 {
+.SU3, .SU2{
   margin-top: 20px;
   height: 35px;
-  display: none;
 }
 #bankDetails {
   display: none;
