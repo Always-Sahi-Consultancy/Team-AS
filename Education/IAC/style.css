@@ -688,7 +688,7 @@ h1 {
   animation-duration: 2s;
   transform-origin: bottom;
   animation-iteration-count: 1;
-  margin: 15px;
+  margin: 10px;
   width: auto;
   height: 45px;
 }
@@ -696,7 +696,7 @@ h1 {
   background-image: url(img/mockaroon-lgi3W65lmvA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 25%;
+  width: 65vw;
   margin-top: 20px;
   margin-left: 35px;
   margin-right: 25px;
