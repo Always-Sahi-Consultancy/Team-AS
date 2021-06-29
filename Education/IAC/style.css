@@ -1,6 +1,10 @@
 .navbar {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  height: 40px;
+  z-index: 1001;
   display: block;
+  width: 100%;
   padding: 20px;
 }
 .navbar-brand,
@@ -72,6 +76,7 @@ body {
   z-index: 1000;
   position: fixed;
   left: 250px;
+  top: 40px;
   width: 0;
   height: 1000px;
   margin-left: -250px;
