@@ -27,6 +27,8 @@ function tabs(n){
         rf.style.display="none";
         supports.style.display="none";
         RL.style.display="none";
+        document.getElementById("requests").style.display="none";
+        document.getElementById("downline").style.display="none";
 
     }
     else if(n==2)
@@ -69,13 +71,14 @@ function tabs(n){
 window.addEventListener(onclick,tabs);
 
 function downline(){
-    document.getElementById("downlineInfo").style.display="block";
+    document.getElementById("downline").style.display="block";
+    document.getElementById("Dashboard").style.display="none";
 }
 
 function iac(){
     document.getElementById("IAC-business").style.display="block";
     document.getElementById("mycourses").style.display="block";
-    document.getElementById("content").style.height="1200px";
+    document.getElementById("content").style.height="1450px";
 }
 
 function OTP(n){
