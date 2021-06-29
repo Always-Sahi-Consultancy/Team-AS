@@ -941,7 +941,7 @@
   top: 10vh;
 }
 .perks-btn {
-  width: 15vw;
+  width: 19vw;
   height: 50px;
   border-radius: 10px;
   overflow: hidden;
@@ -1020,5 +1020,34 @@ input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
     opacity: 1;
   }
 }
-
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  #show-menu {
+    top: 50%;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
+    top: -10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(3) {
+    top: 0vh;
+    left: 30vw;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(4) {
+    top: 10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
+    top: 0;
+    left: -30vw;
+    opacity: 1;
+  }
+  .perks-btn {
+    width: 29vw;
+    text-align: center;
+    /* height: 10vh; */
+  }
+}
 /* Perks And Incentives Ends */
