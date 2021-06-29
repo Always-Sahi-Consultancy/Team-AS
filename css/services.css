@@ -948,14 +948,25 @@
   transform: translate(-50%, -50%);
   position: absolute;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #2ec4b6; */
+}
+.perks-name {
+  width: 30vw;
   background-color: #2ec4b6;
 }
 .material-content {
   font-size: 1rem;
+  background-color: #011627;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .perks-btn:nth-child(2) {
   top: 0;

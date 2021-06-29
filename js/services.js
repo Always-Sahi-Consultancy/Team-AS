@@ -4,7 +4,6 @@ const tabs = document.getElementsByClassName("tabs");
 const back = document.getElementsByClassName("back");
 const front = document.getElementsByClassName("front");
 const target = document.getElementsByClassName("target");
-console.log(tab[7]);
 
 
 function first(a) {
