@@ -178,8 +178,9 @@ function Number() {
   const SlideInAt = (window.scrollY + window.innerHeight) - achievement.offsetHeight / 2;
   // const imageBottom = achievement.offsetTop + achievement.offsetHeight;
   const isHalfShown = SlideInAt > achievement.offsetTop;
-  const isNotScrolledPast = window.scrollY < (SlideInAt);
-
+  const isNotScrolledPast = window.scrollY + window.innerHeight < (achievement.offsetTop + achievement.offsetHeight);
+  console.log(window.scrollY);
+  console.log(achievement.offsetTop);
   if (isHalfShown && isNotScrolledPast) {
     function animateValue(obj, start, end, duration) {
       let startTimestamp = null;
@@ -326,7 +327,7 @@ function first(a) {
 }
 
 window.addEventListener(onclick, first);
-  // Services Section Ends
+// Services Section Ends
 
 //footer
 var slideIndex = 0;
@@ -337,15 +338,15 @@ function showSlides() {
   var slides = document.getElementsByClassName("item");
   var dots = document.getElementsByClassName("f-dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 3000);
 }
 
@@ -357,14 +358,18 @@ function showslides() {
   var slides = document.getElementsByClassName("f-item");
   var dots = document.getElementsByClassName("ff-dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideindex++;
-  if (slideindex > slides.length) {slideindex = 1}    
+  if (slideindex > slides.length) { slideindex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideindex-1].style.display = "block";  
-  dots[slideindex-1].className += " active";
-  setTimeout(showslides, 3000); 
+  slides[slideindex - 1].style.display = "block";
+  dots[slideindex - 1].className += " active";
+  setTimeout(showslides, 3000);
+}
+function about_us() {
+  headerSidelay();
+  $('#sidelay').toggleClass("Sidelay sidelay_full");
 }

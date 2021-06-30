@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/style2-res.css" />
     <link rel="stylesheet" href="/css/mstake.css" />
     <link rel="stylesheet" href="/css/style2Color.css" />
+    <link rel="stylesheet" href="/css/style2Footer.css">
 
 
   </head>
@@ -28,7 +29,7 @@
         <div class="head">
             <div class="head_nav">
                 <div id="As_logo">
-                    <a href="index2.html" class="company">
+                    <a href="index.html" class="company">
                         <img src="image/As logo Edited.png"></img>
                         <div class="Company_name">
                           <p class="Com_name">Always <span class="sahi">Sahi</span></p>
@@ -73,8 +74,8 @@
                                 <div class="service_sections company-item item-3">
                                     <div>
                                     <h2>Career</h2>
-                                    <span class="comapny_details">Description</span><br>
-                                    <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <!-- <span class="comapny_details">Description</span><br> -->
+                                    <a href="./comingsoon.html"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -86,15 +87,20 @@
                                 </div>
                                 <div class="service_sections service_2">
                                     <div class="service_container">
-                                        <div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
+                                        <a class="nav_link" href="/Services.html"><div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
                                         <img src="image/Services/001-funnel.png" class="service_icon">
                                         </div>
+                                        </a>
+                                        <a class="nav_link" href="/MStake.html">
                                         <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">M-stake
                                             <img src="image/Services/002-stock-exchange-app.png" class="service_icon">
                                         </div>
+                                        </a>
+                                        <a class="nav_link" href="/workshops.html">
                                         <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">Workshop
                                             <img src="image/Services/003-presentation.png" class="service_icon">
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="service_sections service_3">
@@ -119,9 +125,9 @@
                                 </div>
                             </div>
                         </span>
-                        <span class="nav_items_section">CSR</span>
-                        <span class="nav_items_section">Join Us</span>
-                        <span class="nav_items_section">Public Notices</span>
+                        <a href="/comingsoon.html"><span class="nav_items_section">CSR</span></a>
+                        <a href="/comingsoon.html"><span class="nav_items_section">Join Us</span></a>
+                        <a href="/comingsoon.html"><span class="nav_items_section">Public Notices</span></a>
                     </div>
                     <div class="nav_second">
                         <span onclick="login()" id="login">Login
@@ -130,7 +136,7 @@
                                     <a href="#" class="option_link"><div class="options_login">IAC Login</div></a>
                             </div>
                         </span>
-                        <span>Contact</span>
+                        <a href="#footer"><span>Contact</span></a>
                     </div>
                 </div>
                 <div  id="ham_icon" onclick="headerSidelay()">
@@ -141,21 +147,21 @@
             </div>
             <div id="sidelay" class="Sidelay">
                 <div class="first">
-                    <a href="#" onclick="navbarOptions(1)" id="wa">Company</a>
+                    <a href="#about_us" onclick="navbarOptions(1)" id="wa">Company</a>
                         <div class="second_company" id="sr1">
-                            <span>About Us</span>
-                            <span>Vision & Mission</span>
-                            <span>Career</span>
+                            <a href="#about_us" onclick="about_us()"><span>About Us</span></a>
+                            <a href="/comingsoon.html"><span>Vision & Mission</span></a>
+                            <a href="/comingsoon.html"><span>Career</span></a>
                         </div>
-                    <a href="#" id="ss" onclick="navbarOptions(2)">Services</a>
+                    <a href="#workshop" id="ss" onclick="navbarOptions(2)">Services</a>
                         <div class="second_company" id="sr2">
-                            <span>Pacakage Escape Funnel</span>
-                            <span>M-stake</span>
-                            <span>Workshop</span>
+                            <a href="/Services.html"><span>Pacakage Escape Funnel</span></a>
+                            <a href="/MStake.html"><span>M-stake</span></a>
+                            <a href="/workshops.html"><span>Workshop</span></a>
                         </div>
-                    <a href="#">CSR</a>
-                    <a href="#">Join Us</a>
-                    <a href="#">Public Notices</a>
+                    <a href="/comingsoon.html">CSR</a>
+                    <a href="/comingsoon.html">Join Us</a>
+                    <a href="/comingsoon.html">Public Notices</a>
                 </div>
                 <div class="second">
                     <a href="#" onclick="navbarOptions(3)">Login</a>
@@ -163,7 +169,7 @@
                         <a href="#"><span>Associate Login</span></a>
                         <a href="#"><span>IAC Login</span></a>
                     </div>
-                    <a href="#">Contact</a>
+                    <a href="#footer">Contact</a>
                 </div>
             </div>
         </div>
@@ -375,6 +381,171 @@
     </label>
   </div>
   <!-- Perks And Incentives Ends -->
+  <!-- footer -->
+    <div class="footer container-fluid">
+        <div class="footer-top row">
+            <div class=" col-xs-12 col-sm-6 col-lg-3">
+                <div class="feed-widget">
+                                <h2 class="f-head">OUR SERVICES</h2>
+                                <div class="footercarosule">
+                                    <div class="item f-fade">
+                                        <p>A series of training program designed, after years of experience and
+                                            research, to create a pathway for every individual to achieve "A Package
+                                            Escape".
+                                        </p>
+                                        <div class="icon"><i aria-hidden="true"><img src="image/3as.svg"
+                                                    alt="logo" /></i>
+                                            <h4><a href="Services.html">Package Escape Funnel</a></h4>
+
+                                        </div>
+                                    </div>
+                                    <div class="item f-fade">
+                                        <p>An Initiative introduced to, bring in more Investors as Well as Traders,
+                                            into the world of Securities market. Providing them the Financial
+                                            Freedom, and Future Planning. 
+                                        </p>
+                                        <div class="icon"><i aria-hidden="true"><img src="image/4as.svg"
+                                                    alt="logo" /></i>
+                                            <h4><a href="MStake.html">MStake Funnel</a></h4>
+
+                                        </div>
+                                    </div>
+                                    <div class="item f-fade">
+                                        <p>Skill up yourself, with our Short workshops. Short in tenure, Large in 
+                                            Impact. To develop & Nourish skills in your field, we have designed quality
+                                             based sessions, delivered by Experts.
+                                        </p>
+                                        <div class="icon"><i aria-hidden="true"><img src="image/5as.svg"
+                                                    alt="logo" /></i>
+                                            <h4><a href="workshops.html">Workshop</a></h4>
+
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div style="text-align:center">
+                                    <span class="f-dot"></span> 
+                                    <span class="f-dot"></span> 
+                                    <span class="f-dot"></span> 
+                                </div>
+                            </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-lg-3">
+                <div class="feed-widget">
+                                <h2 class="f-head">JOIN US</h2>
+                                <div class="footercarosule">
+                                    <div class="f-item ff-fade">
+                                        
+                                        <div class="icon"><i aria-hidden="true"><img src="image/join us/associate.jpg"
+                                                    alt="logo" /></i>
+                                            <a href="Services.html">Associate With Us</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="f-item ff-fade">
+                                        
+                                        <div class="icon"><i aria-hidden="true"><img src="image/join us/iasc.jpg"
+                                                    alt="logo" /></i>
+                                            <a href="MStake.html">Be Our IASC</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="f-item ff-fade">
+                                        
+                                        <div class="icon"><i aria-hidden="true"><img src="image/join us/intern.jpg"
+                                                    alt="logo" /></i>
+                                          <a href="workshops.html">Career With AS</a>
+
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div style="text-align:center">
+                                    <span class="ff-dot"></span> 
+                                    <span class="ff-dot"></span> 
+                                    <span class="ff-dot"></span> 
+                                </div>
+                            </div>
+            </div>
+            <div class="f-team col-xs-12 col-sm-12 col-lg-6">
+                <div class="f-head ">OUR TEAM</div>
+                <div class="row">
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/atharv.jpg" alt="Atharv">
+                        <p>Atharv Sawant</p>
+                        <p>Founder & Ceo</p>  </center>              
+                    </div></center>
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/mandy.jpg" alt="Mandy">
+                        <p>Mandeep Dalavi</p>
+                        <p>Co founder & Director</p> </center>                
+                    </div>
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/sanika.jpg" alt="sanika">
+                        <p>Sanika Dewoolkar</p>
+                        <p>Chief Marketing Head</p> </center>               
+                    </div>
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/akhil.jpg" alt="Akhil">
+                        <p>Akhil A Nair</p>
+                        <p>Chief Technical Head</p> </center>               
+                    </div>
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/anjali.jpg" alt="Anjali">
+                        <p>Anjali Kalange</p>
+                        <p>Chief Training Head</p>  </center>              
+                    </div>
+                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
+                        <center><img src="image/team/sanket.jpg" alt="Sanket">
+                        <p>Sanket Shinde</p>
+                        <p>Chief Associates Head</p> </center>               
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="footer-bottom row">
+            <div class="f-com col-xs-12 col-md-6 col-lg-3">
+                <div class="f-head">COMPANY</div>
+                <a href="#"><p>About Us</p></a>
+                <a href="#"><p>Services</p></a>
+                <a href="#"><p>Join Us</p></a>
+            </div>
+            <div class="f-add col-xs-12 col-md-6 col-lg-3">
+                <div class="f-head">ADDRESS</div>
+                <p><span>Address: </span>A-702,Aurum Vrundavan Apartment,
+                     Dighi, Pune, Maharashtra</p>
+                <p><span>Pincode: </span>411015</p>
+                
+            </div>
+            <div class="f-con col-xs-12 col-md-6 col-lg-3">
+                <div class="f-head">CONTACT</div>
+                <a href="mailto:hello@alwayssahi.com"><span>Mail: </span><p>hello@alwayssahi.com</p></a>
+                <a href="#"><span>Phone:</span><p>8857086790</p></a>
+                
+            </div>
+            <div class="f-social col-xs-12 col-md-6 col-lg-3">
+                <div class="f-head">SOCIALS</div>
+                <div class="row">
+                    <div class="ft-icon col-xs-3">
+                        <center><a href="#"><img src="image/icon/003-instagram.png" alt="instagram"></a></center>
+                    </div>
+                    <div class="ft-icon col-xs-3">
+                        <center><a href="#"><img src="image/icon/001-facebook.png" alt="instagram"></a></center>
+                    </div>
+                    <div class="ft-icon col-xs-3">
+                        <center><a href="#"><img src="image/icon/002-linkedin-1.png" alt="instagram"></a></center>
+                    </div>
+                    <div class="ft-icon col-xs-3">
+                        <center><a href="#"><img src="image/icon/002-telegram-1.png" alt="instagram"></a></center>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="copyright row">
+            <div class="ft-head"><center>@2021 Always Sahi Solutions Pvt Ltd: All Rights Reserved | 
+                ISO 9001:2015 Certified & MCA Registered</center></div>       
+        </div>
+    </div>
   </body>
 </html>
 

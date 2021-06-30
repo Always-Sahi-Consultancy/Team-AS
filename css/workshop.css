@@ -86,6 +86,7 @@ body{
     grid-template-columns:auto auto auto;
     grid-column-gap:2vw;
     grid-row-gap:2vw;
+    margin-bottom:10vh;
 }
 
 .workshops-div img
@@ -313,6 +314,7 @@ body{
 
     .intro-1{
         order:2;
+        height:20vh;
     }
 
     .intro-2{
@@ -357,3 +359,72 @@ body{
     }
     
 }
+
+@media screen and (max-device-width:1920px) and (max-width:768px) and (orientation:landscape){
+    .intro{
+        grid-template-columns:auto;
+    }
+
+    .workshops{
+        grid-template-columns:auto auto;
+    }
+
+    .intro-1 , .intro-2{
+        width:100vw;
+        height:50vh;
+    }
+    .intro-1 h2{
+        font-size:2rem;
+        font-weight:bolder;
+        margin:10vh 2vw 0vh;
+    }
+
+    .intro-1 div{
+        margin-left:5%;
+        margin-right:5%;
+        font-size:1.5rem;
+    }
+    .intro-1{
+        order:2;
+        height:20vh;
+    }
+
+    .intro-2{
+        order:1;
+        /* height:3vh; */
+    }
+    .intro-2 img{
+        width:100%;
+        /* margin:20vh 0; */
+        /* margin:10vh 0 0 0; */
+    }
+    .workshops-div{
+        grid-column-gap:3vw;
+        grid-row-gap:3vw;
+    }
+
+    /* .workshops-div img
+    {
+        width:25vw;
+        height:25vw;
+    } */
+
+    .workshop-section h1{
+        font-size:2rem;
+    }
+}
+
+@media screen and (max-width:768px) and (min-device-width:1024px){
+    .intro-1 div{
+        font-size:1.2rem;
+        margin-left:2%;
+        margin-right:2%;
+    }
+    
+    .intro button{
+        font-size:1rem;
+        position:relative;
+        top:6vh;
+    }
+
+} */

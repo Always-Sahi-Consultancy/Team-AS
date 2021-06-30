@@ -1,0 +1,29 @@
+::-webkit-scrollbar{
+    width:0;
+    background:transparent;
+}
+
+body{
+    background:url("../image/francesco-ungaro-R8w4vDYScXU-unsplash.jpg");
+}
+
+
+.image_container{
+    width:100vw;
+    height:fit-content;
+    display:grid;
+    grid-template-columns:auto;
+}
+
+.image_container img{
+    height:auto;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media screen and (max-device-width:1024px){
+    .image_container img{
+        width:100%;
+    }
+}
