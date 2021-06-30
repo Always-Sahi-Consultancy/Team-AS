@@ -1,3 +1,12 @@
+function headerSidelay() {
+    var ham_icon = document.getElementById("ham_icon").classList.toggle("change");
+}
+// document.getElementById("ham_icon").addEventListener("click",headerSidelay);
+$(document).ready(function () {
+    $('#ham_icon').click(function () {
+        $('#sidelay').toggleClass("Sidelay sidelay_full");
+    });
+});
 // Services Section starts
 const tab = document.getElementsByClassName("tab");
 const tabs = document.getElementsByClassName("tabs");
