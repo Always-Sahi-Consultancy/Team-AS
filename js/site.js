@@ -269,4 +269,43 @@ function first(a) {
 window.addEventListener(onclick, first);
   // Services Section Ends
 
- 
+//footer
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("item");
+  var dots = document.getElementsByClassName("f-dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+
+var slideindex = 0;
+showslides();
+
+function showslides() {
+  var i;
+  var slides = document.getElementsByClassName("f-item");
+  var dots = document.getElementsByClassName("ff-dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideindex++;
+  if (slideindex > slides.length) {slideindex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideindex-1].style.display = "block";  
+  dots[slideindex-1].className += " active";
+  setTimeout(showslides, 3000); 
+}

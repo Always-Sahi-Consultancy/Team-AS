@@ -722,18 +722,19 @@ body {
 .f-head{
   color: #2ec4b6;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 .f-head:hover{
   color: #fff; 
 }
 .feed-widget{
-  padding-right: 40px;
+  padding-right: 10px;
 }
 .feed-widget .item p {
   color: #aeaeae;
   letter-spacing: -0.1px;
   margin: 0;
+  justify-content: space-around;
 }
 .feed-widget .item a {
   color: #2ec4b6;
@@ -746,8 +747,8 @@ body {
 .feed-widget .item .icon i img{
   float: left;
   font-size: 40px;
-  height:40px;
-  width: 40px;
+  height:60px;
+  width: 60px;
   margin-right: 19px;
   color: #B0B0B0;
 }
@@ -770,6 +771,79 @@ body {
   padding-top: 7px;
   color:#2ec4b6
 }
+.item {display: none;}
+.f-item {display: block;}
+.f-item .icon{
+  padding: 10px;
+  margin: 10px;
+}
+.f-item .icon img{
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.f-item .icon a{
+  color: #bbb;
+  text-align: left;
+  font-size: 20px;
+  display: block;
+  margin: 2px;
+  padding-right: -50x;
+}
+.f-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.f-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: f-fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes f-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes f-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.active {
+  background-color: #717171;
+}
+.ff-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+.ff-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: f-fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes ff-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes ff-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 .f-ser img{
   width: 50px;
   border-radius: 2px;
@@ -805,7 +879,7 @@ body {
   width: 100px;
   height: 100px;
   margin: 5px;
-  border-radius: 2px;
+  border-radius:0rem 2rem 0rem 2rem;
   border: #2ec4b6 2px;
 }
 .f-social .ft-icon img{
@@ -821,13 +895,12 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   margin-bottom: 1px;
-  text-align: center;
 }
 .copyright .ft-head{
   color: #000;
   line-height: 20px;
   font-size: 1rem;
-  text-align: center;
+  
 }
 
 /*Footer ends*/
