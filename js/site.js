@@ -328,7 +328,6 @@ function first(a) {
 window.addEventListener(onclick, first);
   // Services Section Ends
 
-<<<<<<< HEAD
 //footer
 var slideIndex = 0;
 showSlides();
@@ -369,5 +368,3 @@ function showslides() {
   dots[slideindex-1].className += " active";
   setTimeout(showslides, 3000); 
 }
-=======
->>>>>>> 2afd73e4e20215980b0939249b9a660429c831db
