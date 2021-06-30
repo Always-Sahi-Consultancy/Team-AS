@@ -86,6 +86,7 @@ body{
     grid-template-columns:auto auto auto;
     grid-column-gap:2vw;
     grid-row-gap:2vw;
+    margin-bottom:10vh;
 }
 
 .workshops-div img
