@@ -66,6 +66,8 @@ body{
 input[type=text]{
     height: 40px;
     border-radius:15px;
+    padding: 10px;
+    font-size: 18px;
 }
 .courses{
     margin-left: 20px;
