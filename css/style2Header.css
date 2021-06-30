@@ -203,6 +203,12 @@
 #about-header-2 {
   display: none;
 }
+.second-company a:hover {
+  text-decoration: none;
+}
+.nav_first a:hover {
+  text-decoration: none;
+}
 
 .button-nav-items {
   width: 40px;
