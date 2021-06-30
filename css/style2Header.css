@@ -1,3 +1,8 @@
+::-webkit-scrollbar{
+  width:0;
+  background:transparent;
+}
+
 /* Header Section Starts */
 .head {
     width: 100%;
@@ -161,12 +166,19 @@
     background: var(--gray-600);
   }
   
-  .item-2 {
-    background: var(--gray-700);
+  .item-2, .item-1 {
     overflow-y: scroll;
     scrollbar-width: none;
   }
-  
+
+  .item-2{
+    background: var(--gray-700);
+  }
+
+  #about-header-2{
+    display:none;
+  }
+
   .button-nav-items {
     width: 40px;
     height: 40px;
@@ -381,12 +393,12 @@
     background-color: var(--white);
   }
   #sidelay .first a {
-    padding: 1vh 5vw 1vh;
+    padding: 0.6vh 5vw 0.6vh;
     text-decoration: none;
     color: var(--grey-100);
     display: block;
     transition: 0.3s;
-    font-size:3rem;
+    font-size:1.6rem;
   }
   #sidelay .first a:hover {
     color: var(--blue-100);
@@ -403,10 +415,10 @@
   #sidelay .second a {
     width: 50%;
     /* max-width: 400px; */
-    padding:1vh;
+    padding:0.6vh;
     text-decoration: none;
     color: var(--grey-100);
-    font-size: 4rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,5 +472,5 @@
     position:absolute;
     top:-230%;
   }
-  
+
   /* Header Section Ends */

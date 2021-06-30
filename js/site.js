@@ -8,6 +8,41 @@ $(document).ready(function () {
   });
 });
 
+var aboutState=0;
+function aboutHeader(){
+  var as2=document.getElementById("about-header-2");
+  var ia=document.getElementById("read-more-about");
+  var amt=document.getElementById("about-more-text");
+  if(aboutState==0){
+    as2.style.display="block";
+    ia.src="../image/arrow-left.png";
+    amt.innerText="Read Less";
+    aboutState=1;
+  }
+  else if(aboutState==1){
+    as2.style.display="none";
+    ia.src="../image/arrow-right.png";
+    amt.innerText="Read More...";
+    aboutState=0;
+  }
+}
+
+var state=0;
+function aboutUs(){
+  var at2=document.getElementById("about-text-2");
+  var ia=document.getElementById("about-arrow");
+  if(state==0){
+    at2.style.display="block";
+    ia.src="../image/arrow-up.png";
+    state=1;
+  }
+  else if(state==1){
+    at2.style.display="none";
+    ia.src="../image/arrow-down.png";
+    state=0;
+  }
+}
+
 var workshops = { "1": 0, "2": 0, "3": 0 }
 
 function workshop(n) {
@@ -17,38 +52,42 @@ function workshop(n) {
   var section = document.getElementById(section);
   var writeup = document.getElementById(writeup);
   var wos = $(window).width();
-  // var wos=screen.width;
+  var woh = window.height;
   var titles = document.getElementById(titles);
   if (workshops[n] == 1) {
-    if (wos > 1000) {
-      writeup.style.width = "380px";
+    if (wos > 1024) {
       section.style.height = "25vw";
     }
     else {
-      titles.style.bottom = "-10%";
-      section.style.height = "42vh";
-      writeup.style.width = "100%";
+     
+      if(wos>woh){
+        section.style.height = "42vh";//For mobile
+      }
+      else{
+        section.style.height = "60vh";//Mobile
+      }
     }
     writeup.style.top = "0%";
-    // writeup.style.width="300px";
     writeup.style.display = "none";
     workshops[n] = 0;
   }
   else {
     $(writeup).attr("top", "90%");
-    if (wos > 1000) {
-      writeup.style.width = "380px";
-      section.style.height = "40vw";
-      writeup.style.top = "38%";
+    if (wos > 1024) {
+      section.style.height = "45vw";
+      writeup.style.top = "60%";
     }
     else {
-      // titles.style.bottom="-100%";
-      section.style.height = "60vh";
-      writeup.style.width = "90%";
-      writeup.style.top = "30vh";
+      if(wos>woh){
+        section.style.height = "60vh";//For mobile
+        writeup.style.top = "100%";
+      }
+      else{
+        section.style.height = "100vh";//Mobile
+        writeup.style.top = "60%";
+        writeup.style.height = "40vh";
+      }
     }
-
-    titles.style.bottom = "-50%";
     writeup.style.display = "block";
     workshops[n] = 1;
   }

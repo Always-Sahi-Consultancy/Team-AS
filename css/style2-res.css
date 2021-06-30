@@ -236,9 +236,9 @@
     }
 
     .workshop-text{
-      font-size:1.8rem;
+      font-size:3rem;
       width:90vw;
-      margin:auto;
+      height:30vw;
     }
 
     .card{
@@ -337,6 +337,10 @@
       width:100%;
     }
 
+    .workshop-container{
+      height:60vh;
+    }
+
     .workshop-titles
     {
       font-size:1.2rem;
@@ -348,8 +352,11 @@
     }
 
     .workshop-text{
-      font-size:1rem;
-      width:90vw;;
+      font-size:3rem;
+      /* width:90vw;; */
+      height:30vw;
+      overflow:scroll;
+      scrollbar-width:none;
     }
 
     .card{
@@ -446,4 +453,43 @@
 .second_company span{
   font-size:1.2rem;
 }
+}
+@media screen and (max-device-width:1920px) and (max-width:800px) {
+  /* .nav_bar
+    {
+      font-size:1.6rem;
+    }
+
+    #sidelay .first a{
+      font-size:1rem;
+    }
+
+    #sidelay .second a{
+      display:flex;
+      width:100%;
+    } */
+    .about-info {
+      flex-direction: column;
+    }
+    .on-demand {
+      flex-direction: column;
+      /* top: 100px; */
+    }
+    .about-sections {
+      width: 100%;
+    }
+    #about-text {
+      order: 2;
+      /* font-size:2rem; */
+    }
+    #about-image {
+      order: 1;
+    }
+    #box-size-new {
+      order: 2;
+    }
+    #box-size {
+      order: 1;
+      /* border-radius: 50%; */
+    }
 }
