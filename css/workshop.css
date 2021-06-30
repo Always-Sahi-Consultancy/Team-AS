@@ -283,7 +283,7 @@ body{
     }
 }
 
-@media only screen and (max-device-width:768px) and (orientation:portrait)
+@media only screen and (max-width:768px) and (orientation:portrait)
 {
     .intro{
         grid-template-columns:auto;
@@ -314,6 +314,7 @@ body{
 
     .intro-1{
         order:2;
+        height:20vh;
     }
 
     .intro-2{
@@ -370,7 +371,7 @@ body{
 
     .intro-1 , .intro-2{
         width:100vw;
-        /* height:50vh; */
+        height:50vh;
     }
     .intro-1 h2{
         font-size:2rem;
@@ -385,6 +386,7 @@ body{
     }
     .intro-1{
         order:2;
+        height:20vh;
     }
 
     .intro-2{
@@ -401,11 +403,11 @@ body{
         grid-row-gap:3vw;
     }
 
-    .workshops-div img
+    /* .workshops-div img
     {
         width:25vw;
         height:25vw;
-    }
+    } */
 
     .workshop-section h1{
         font-size:2rem;
@@ -425,4 +427,4 @@ body{
         top:6vh;
     }
 
-}
+} */
