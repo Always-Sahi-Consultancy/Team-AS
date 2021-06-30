@@ -67,8 +67,38 @@
   .left-content-para {
     margin: 10px 0px;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 10px;
+  }
+  .main-content {
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+  .left-content {
+    order: 2;
+    width: 80%;
+  }
+  .right-content {
+    order: 1;
+    width: 40%;
+  }
+  .scope-heading {
+    text-align: center;
+  }
+  .scope-inner-content {
+    font-size: 1.2rem;
+  }
+  .scope-details-para {
+    font-size: 1.4rem;
+  }
+  .scope-details-right {
+    width: 60%;
+  }
+  .account-details-img {
+    height: 30vh;
+  }
+  .slider-label {
+    width: 50vw;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -88,12 +118,7 @@
     /* border: 2px solid red; */
     padding-bottom: 30px;
   }
-  .left-content {
-    order: 2;
-  }
-  .right-content {
-    order: 1;
-  }
+
   .right-content-img {
     width: 80%;
     margin: 0px;
@@ -119,8 +144,9 @@
   position: relative;
   background-color: #2ec4b6;
   border-radius: 20px;
-  margin-bottom: 20px;
   cursor: pointer;
+  margin: 0px 5vw;
+  margin-bottom: 20px;
 }
 .scope-inner-content::after {
   content: "+";
@@ -131,10 +157,7 @@
   border-radius: 50%;
   font-size: 1rem;
 }
-.perks-incentives {
-  text-align: center;
-  font-size: 2rem;
-}
+
 .personality-img {
   height: 40vh;
 }
@@ -218,9 +241,6 @@
   }
   .accounts-btn {
     width: 30vw;
-  }
-  .account-details-img {
-    height: 40vh;
   }
 }
 .covering-heading {
@@ -827,3 +847,218 @@
     width: 60%;
   }
 }
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .tabs {
+    height: 60vh;
+  }
+
+  .slider {
+    position: relative;
+    top: 20vh;
+    height: 60px;
+    width: 30px;
+  }
+
+  .tab,
+  .card,
+  .front,
+  .back,
+  .slider-label {
+    width: 50vw;
+    height: 45vh;
+  }
+  .target {
+    width: 0px;
+    /* min-width:0px; */
+    /* max-width:0px; */
+  }
+  .tab,
+  .card,
+  .front,
+  .back,
+  .slider-label {
+    width: 100vw;
+    min-width: 60vw;
+    height: 45vh;
+  }
+  .services label {
+    height: 45vh;
+  }
+
+  .back {
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .front {
+    font-size: 2vh;
+  }
+
+  .front-heading {
+    font-size: 2rem;
+  }
+
+  .front-img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .personality-img {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+}
+/* Perks And Incentives Starts */
+.perks-incentives {
+  text-align: center;
+  font-size: 2rem;
+}
+.perks-menu {
+  /* border: 2px solid red; */
+  width: 100vw;
+  height: 30vh;
+  /* padding: 5vh; */
+  z-index: -1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.material-content {
+  text-align: center;
+}
+.perks-btn:not(:first-child) {
+  opacity: 0;
+  z-index: -2;
+  transition: all 0.3s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+}
+#perks-toggle {
+  position: absolute;
+  display: none;
+}
+#show-menu {
+  position: relative;
+  top: 10vh;
+}
+.perks-btn {
+  width: 19vw;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #2ec4b6; */
+}
+.perks-name {
+  width: 30vw;
+  background-color: #2ec4b6;
+}
+.material-content {
+  font-size: 1rem;
+  background-color: #011627;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perks-btn:nth-child(2) {
+  top: 0;
+  transition-delay: 0s;
+}
+.perks-btn:nth-child(3) {
+  top: 0;
+  left: 0;
+  transition-delay: 0.1s;
+}
+.perks-btn:nth-child(4) {
+  top: 0;
+  transition-delay: 0.2s;
+}
+.perks-btn:nth-child(5) {
+  top: 0;
+  left: 0;
+  transition-delay: 0.3s;
+}
+input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
+  top: 15vh;
+  left: -30vw;
+  opacity: 1;
+}
+input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(3) {
+  top: 15vh;
+  left: -10vw;
+  opacity: 1;
+}
+input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(4) {
+  top: 15vh;
+  left: 10vw;
+  opacity: 1;
+}
+input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
+  top: 15vh;
+  left: 30vw;
+  opacity: 1;
+}
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+  #show-menu {
+    top: 50%;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
+    top: -10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(3) {
+    top: 0vh;
+    left: 25vw;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(4) {
+    top: 10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
+    top: 0;
+    left: -25vw;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  #show-menu {
+    top: 50%;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
+    top: -10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(3) {
+    top: 0vh;
+    left: 30vw;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(4) {
+    top: 10vh;
+    left: 0;
+    opacity: 1;
+  }
+  input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
+    top: 0;
+    left: -30vw;
+    opacity: 1;
+  }
+  .perks-btn {
+    width: 29vw;
+    text-align: center;
+    /* height: 10vh; */
+  }
+}
+/* Perks And Incentives Ends */

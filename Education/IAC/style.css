@@ -1,41 +1,60 @@
-.navbar{
-  position: sticky;
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 40px;
+  z-index: 1001;
   display: block;
+  width: 100%;
+  padding: 20px;
 }
-.navbar-brand, .navbar-dark{
-  color: #25274D;
+.navbar-brand,
+.navbar-dark {
+  height: 40px;
+  padding: 10px;
+  color: #25274d;
 }
-.bg-blue{
+nav {
+  position: sticky;
+}
+.bg-blue {
   padding: 2px;
   color: black;
-  background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  background-image: linear-gradient(
+    140deg,
+    #29648a 20%,
+    #2e9cca 40%,
+    #aaabb8 65%
+  );
 }
 .navbar-nav .nav-link + .nav-link {
-    margin-left: 0 rem;
+  margin-top: 1rem;
+  margin-left: 0 rem;
 }
 
 .navbar-nav .nav-item + .nav-item .navbar-toggler-icon {
-    margin-left: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 543px) {
-    .navbar-toggleable .navbar-nav .nav-item {
-        margin-left: 0;
-    }
+  .navbar-toggleable .navbar-nav .nav-item {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
-    .navbar-toggleable-sm .navbar-nav .nav-item {
-        margin-left: 0;
-    }
+  .navbar-toggleable-sm .navbar-nav .nav-item {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 991px) {
-    .navbar-toggleable-md .navbar-nav .nav-item {
-        margin-left: 0;
-    }
+  .navbar-toggleable-md .navbar-nav .nav-item {
+    margin-left: 0;
+  }
 }
-
 
 body {
   overflow-x: hidden;
@@ -57,11 +76,17 @@ body {
   z-index: 1000;
   position: fixed;
   left: 250px;
+  top: 40px;
   width: 0;
-  height: 1000px;
+  height: 950px;
   margin-left: -250px;
   overflow-y: auto;
-  background-image: linear-gradient(140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  background-image: linear-gradient(
+    140deg,
+    #29648a 20%,
+    #2e9cca 40%,
+    #aaabb8 65%
+  );
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -81,20 +106,25 @@ body {
   position: absolute;
   margin-left: 0px;
 }
-.logoImg{
+.logoImg {
   text-align: center;
+  margin-left: 10px;
   width: auto;
   padding: 0;
-  height: 40px;
+  height: 60px;
 }
-.package{
-  margin-top: 20px;
+.logoC {
+  text-align: center;
+}
+.package {
+  height: 28px;
+  margin-bottom: 0;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
 }
-.logoText{
-  width: 140px;
-  height: 20px;
+.logoText {
+  padding-top: 5px;
+  height: 10px;
   font-size: 9px;
   margin: 0;
 }
@@ -102,20 +132,17 @@ body {
 /* Sidebar Styles */
 
 .sidebar-nav {
-  position: absolute;
+  position: relative;
   top: 0;
-  width: 250px;
+  width: 235px;
   margin: 0;
   overflow-y: visible;
   padding: 0;
-  height: 1000px;
-  border-right: #25274D 1px solid;
+  height: 950px;
   list-style: none;
 }
 
 .sidebar-nav li {
-  text-indent: 10px;
-  line-height: 60px;
   margin: 10px;
 }
 
@@ -123,24 +150,25 @@ body {
   display: block;
   font-size: 22px;
   text-decoration: none;
-  color: #25274D;
+  color: #25274d;
 }
 
 .sidebar-nav li a:hover {
-  color:white;
+  color: white;
   font-size: 25px;
   text-decoration: none;
   transition: 1s ease-out;
 }
 
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
   text-decoration: none;
 }
 
 .sidebar-nav .sidebar-brand {
   height: 65px;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .sidebar-nav .sidebar-brand a {
@@ -152,7 +180,7 @@ body {
   background: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   #wrapper {
     padding-right: 0;
   }
@@ -173,7 +201,7 @@ body {
     margin-left: 0;
   }
 }
-.container-fluid1{
+.container-fluid1 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -181,68 +209,67 @@ body {
   padding-right: 0;
 }
 
-.row{
-  margin-right: 0;
-  padding-right: 0;
-  margin-left: 0;
+.row {
+  margin: 0;
+  padding: 0;
 }
-.head{
+.head {
   float: right;
   color: black;
 }
-.head a{
+.head a {
   color: black;
 }
-.heading{
-  font-size: 28px;
+.heading {
+  font-size: 18px;
   font-weight: 400;
   margin-left: 20px;
 }
-.headings{
+.headings {
   float: left;
-  margin: 20px;
   font-size: 28px;
   font-weight: 400;
 }
-.logout,.associateId{
+.logout,
+.associateId {
   margin-left: 10px;
   font-size: 18px;
   color: rgb(36, 119, 168);
 }
-.head a:hover{
+.head a:hover {
   text-decoration: none;
   transition: 1s ease-out;
   color: blue;
 }
-.associateId{
+.associateId {
   font-weight: 700;
   color: black;
 }
-.line{
+.line {
   width: 100%;
-  margin-top:5px;
-  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: 0px;
   height: 1px;
-  background-color: #25274D;
+  background-color: #25274d;
 }
-.line2{
+.line2 {
   width: 100%;
   height: 1px;
   font-weight: 100;
-  background-color:#25274D;
+  background-color: #25274d;
 }
-.Dashboard{
-  padding: 5px;
+.Dashboard {
+  padding: 3px;
 }
-#Dashboard{
-  height: 700px;
+#Dashboard {
+  height: 950px;
 }
-.Dh{
-  font-size: 30px;
+.Dh {
+  font-size: 20px;
   font-weight: 300;
 }
 
-.Linfo{
+.Linfo {
   font-size: 20px;
   font-weight: 400;
   float: right;
@@ -250,88 +277,127 @@ body {
 }
 .changePassword {
   text-decoration: none;
-  color:#25274D ;
+  color: #25274d;
 }
-.changePassword:hover{
+.changePassword:hover {
   text-decoration: none;
   color: white;
   transition: 1s ease-out;
 }
-.table1{
-  background-color: #2E9CCA;
-  margin-bottom:10px ;
+.table1 {
+  background-color: #2e9cca;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 400;
   color: black;
   opacity: 68%;
   box-shadow: 5px 10px 10px #25274d;
 }
-td, th{
+.table2 {
+  background-color: #2e9cca;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  opacity: 68%;
+  box-shadow: 5px 10px 10px #25274d;
+}
+.thead {
   width: auto;
   height: 30px;
   padding: 5px;
-  border: 1px solid #25274D;
+  border: 1px solid #25274d;
 }
-.flex-box-container-1{
+.iachead {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  background-color: #2e9cca;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #25274d;
+}
+td,
+th {
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #25274d;
+}
+.flex-box-container-1 {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   justify-content: space-around;
 }
-.container-1{
+.iac-container,
+.container-1 {
   overflow-x: scroll;
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 0px 5px;
 }
-.heads{
+.heads {
   font-size: 24px;
   font-weight: 200;
   color: aliceblue;
   margin: 20px 0px;
 }
-.statusContainer a{
+.statusContainer a {
   text-decoration: none;
   font-size: 20px;
   color: black;
   font-weight: 100;
 }
-.statusContainer a:hover{
+.statusContainer a:hover {
   text-decoration: none;
   font-size: 20px;
-  color: #AAABB8;
+  color: #aaabb8;
   font-weight: 100;
 }
 
-.statusContainer{
+.statusContainer {
   border-radius: 20px;
   padding: 0px;
   margin: 30px 10px;
-  background-color:#464866  ;
+  background-color: #464866;
 }
-.register a{
+.register a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 100;
   float: right;
 }
-.register a:hover{
+.register a:hover {
   text-decoration: none;
   color: black;
 }
-.link a{
+.link a {
   margin-right: 15px;
   margin-left: 20px;
   margin-top: 18px;
   color: black;
 }
-.RF{
+p {
+  margin: 0;
+  padding: 0;
+}
+.RF {
   font-size: 38px;
   font-weight: 300;
   text-align: left;
 }
-.MV{
+.as {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  color: #0f1011;
+}
+.MV {
   font-size: 25px;
   font-weight: 400;
   color: whitesmoke;
@@ -341,225 +407,239 @@ td, th{
   background-color: #313349;
   opacity: 50%;
 }
-.titles{
+.titles {
   text-align: right;
-  margin-right:  50px;
+  margin-right: 50px;
   font-size: 20px;
 }
-.titles1{
+.titles1 {
   text-align: right;
   margin-right: 25px;
   font-size: 20px;
 }
-input, textarea, select{
+input,
+textarea,
+select {
   text-align: left;
   margin-bottom: 10px;
   margin-right: 10px;
   width: 65%;
-  padding: 5px;
+  padding: 5px 5px 10px 5px;
   height: 40px;
   background-color: #dfe0eb;
   border-radius: 10px;
-  border: 1px #25274D solid;
+  border: 1px #25274d solid;
 }
-textarea{
+textarea {
   height: 60px;
 }
-.MobileV{
+.MobileV {
   margin-top: 30px;
   text-align: left;
 }
-button{
-  background-color: #25274D;
+button {
+  background-color: #25274d;
   color: white;
   text-align: center;
 }
-.BO, .BO2, .BO3, .BO4{
+.BO,
+.BO2,
+.BO3,
+.BO4 {
   padding: 5px;
   margin: 20px 20px 20px 20px;
 }
-.Final{
+.Final {
   margin-top: 10px;
 }
-#MobileChange{
+#MobileChange {
   display: none;
 }
-#titles{
+#titles {
   margin-right: 50px;
 }
-select{
+select {
   border-radius: 10px;
   width: 100px;
   height: 40px;
 }
-#ASSRegistrationForm{
-  display: none ;
-}
-.OTP{
-  width: 72%;
-}
-#OTP{
+#ASSRegistrationForm {
   display: none;
+}
+.OTP {
+  width: 72%;
 }
 #OTP2{
   display: none;
 }
-#OTP3{
+#OTP3 {
   display: none;
 }
-#OTP4{
+#OTP4 {
   display: none;
 }
-.OTPNo{
+.OTPNo {
   display: none;
 }
-#IACRegistrationForm{
+#IACRegistrationForm {
   display: none;
 }
-.logo{
+.logo {
   width: auto;
   height: 50px;
   text-align: right;
-  margin:20px 0px 20px 70px;
+  margin: 20px 0px 20px 70px;
 }
-#IAC-business{
+#IAC-business {
   display: none;
 }
-.align-right{
+.align-right {
   font-size: 26px;
   width: 100%;
   font-weight: 400;
   margin: 15px;
-  
+
   padding: 5px;
-  border: 1px solid #25274D;
+  border: 1px solid #25274d;
   border-radius: 20px;
 }
-.S-color{
-  background-image: linear-gradient(60deg,#e9acd3 20%, #cc70ab 75%);
+.S-color {
+  background-image: linear-gradient(60deg, #e9acd3 20%, #cc70ab 75%);
 }
-.E-color{
-  background-image: linear-gradient(60deg,#b1e6cd 20%, #70cca9 75%);
+.E-color {
+  background-image: linear-gradient(60deg, #b1e6cd 20%, #70cca9 75%);
 }
-.J-color{
-  background-image: linear-gradient(60deg,#e9e0ac 20%, #cacc70 75%);
+.J-color {
+  background-image: linear-gradient(60deg, #e9e0ac 20%, #cacc70 75%);
 }
-.table2{
+.table2 {
   border: none;
   font-size: 20px;
   font-weight: 400;
 }
-.td2{
+.td2 {
   padding: 5px 15px;
 }
 /*#table2{
   display: none;
 }*/
-.down{
+.down {
   float: right;
   margin-bottom: 8px;
 }
-#verifications{
+#verifications {
   margin: 20px;
   height: 650px;
   display: none;
 }
-.target{
+.target {
   font-size: 25px;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 5px;
   text-align: right;
 }
-.courseImg{
+.courseImg {
   margin-top: 40px;
   width: auto;
   height: 250px;
 }
-.MyCourses{
+.MyCourses {
   background-size: cover;
   height: 650px;
   display: none;
 }
-.rf{
+.rf {
   margin-top: 40px;
   font-size: 25px;
   font-weight: 400;
   margin-top: 40px;
 }
-.linkIn{
+.linkIn {
   margin-top: 40px;
   width: 100%;
 }
-.copy{
+.copy {
   margin-top: 40px;
 }
-#ReferalLink{
+#ReferalLink {
   height: 650px;
   display: none;
 }
-#downlineInfo{
+#downlineInfo {
   display: none;
 }
-#description{
+#description {
   height: 100px;
 }
-.generateticket{
+.generateticket {
   height: 650px;
-  display:none;
+  display: none;
 }
-.referalLink{
+.referalLink {
   margin-top: 20px;
 }
-.home{
+.home {
   text-align: right;
 }
-.home a{
+.home a {
   color: black;
 }
-.home a:hover{
+.home a:hover {
   text-decoration: none;
   color: white;
 }
-.joinings{
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+.joinings {
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
-#requests{
+#requests {
   display: none;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  
 }
 
-.background{
-     overflow: hidden;
+.background {
+  overflow: hidden;
 }
-.content{
+.content {
+  position: relative;
+  top: 40px;
   width: 100%;
-  height: 1100px;
-  background-image: linear-gradient( 140deg, #AAABB8 20%, #2E9CCA 40%, #29648A 65%);
+  height: 1200px;
+  padding: 0;
+  background-image: linear-gradient(
+    140deg,
+    #29648a 20%,
+    #2e9cca 40%,
+    #aaabb8 65%
+  );
 }
-.iconimg{
+.iconimg {
   width: auto;
   height: 28px;
   padding: 2px;
   margin: 2px;
 }
-.iconimgT{
+.iconimgT {
   width: auto;
   height: 35px;
 }
-.iconimg a:hover{
+.iconimg a:hover {
   height: 35px;
 }
-
-.icons{
+.iconimgB {
+  width: auto;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.icons {
   text-align: right;
 }
-.bg-img{
+.bg-img {
   opacity: 0.9;
   position: absolute;
   left: 0;
@@ -567,13 +647,276 @@ body{
   width: 100%;
   height: 100%;
 }
-.name{
+.name {
   padding: 15px;
-  color: #25274D;
+  color: #25274d;
 }
-h1{
+h1 {
   margin-left: 30px;
   text-align: justify;
-  color: #25274D;
+  color: #25274d;
   font-weight: lighter;
+}
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.7) translateY(0);
+  }
+  30% {
+    transform: scale(0.7, 1.1) translateY(-12px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.gift {
+  align-self: flex-end;
+  animation-duration: 2s;
+  transform-origin: bottom;
+  animation-iteration-count: 1;
+  margin: 10px;
+  width: auto;
+  height: 45px;
+}
+.upgrade {
+  background-image: url(img/mockaroon-lgi3W65lmvA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 65vw;
+  margin-top: 5px;
+  margin-left: 35px;
+  margin-right: 25px;
+  padding: 0;
+  border: solid 1px white;
+  border-radius: 4rem 20px 4rem 10px;
+  background-color: white;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #a50ca5;
+    text-shadow: 0 0 0.2rem #a10aa1, 0 0 1.1rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.4rem 2rem #ff2483, 0 0.4rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #e07fe0;
+    text-shadow: 0 0 0.2rem #e9a0e9, 0 0 1.1rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.4rem 2rem #ff2483, 0 0.4rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.plan {
+  animation-name: bounce;
+  animation-timing-function: ease;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 5px;
+  font-weight: 300;
+  text-indent: 2%;
+}
+.upgrade a:hover {
+  transition: 1s ease-in-out;
+  font-size: 25px;
+  color: rgb(104, 71, 71);
+  text-decoration: none;
+}
+.SU3, .SU2{
+  margin-top: 20px;
+  height: 35px;
+}
+#bankDetails {
+  display: none;
+}
+#mycourses {
+  display: none;
+}
+#mobileChange,
+#BankChange,
+#resignation,
+#requestList,
+#new,
+#bankdetail {
+  display: none;
+}
+.arrow {
+  margin-left: 200px;
+  border: 2px solid black;
+  width: auto;
+  height: 10px;
+  text-align: right;
+}
+.up {
+  text-align: right;
+}
+#downline {
+  margin-left: 15px;
+  margin-right: 0;
+  margin-top: 30px;
+  display: none;
 }

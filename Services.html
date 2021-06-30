@@ -9,10 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="js/bootstrap.min.js" defer></script>
   <script src="js/jquery.js"></script>
+  <!-- <script src="js/menu.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
   <link herf="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/services.js" defer></script>
+  <!-- <script src="js/site.js" defer></script> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
@@ -32,7 +34,10 @@
                 <div id="As_logo">
                     <a href="index2.html" class="company">
                         <img src="image/As logo Edited.png"></img>
-                        <p class="Com_name">Always Sahi</p>
+                        <div class="Company_name">
+                          <p class="Com_name">Always <span class="sahi">Sahi</span></p>
+                          <p class="company-tagline">A Package Escape</p>
+                        </div>
                     </a>  
                 </div>
                 <div class="nav">
@@ -42,8 +47,10 @@
                                 <div class="service_sections company-item item-1">
                                     <div>
                                     <h3>About Us</h3>
-                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops. Also by ...</span><br>
-                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops.</span><br>
+                                    <span class=".company_details" id="about-header-2">Also by giving Finance and Business Consultancy, from “establishment to success”.
+                                        We aim to build a network of Challenging, Smart, competent & Growing Associates and Independent Consultants who will be the upcoming face of our Company. Last but not the least, we aim to fulfill all the demands of our Family members consisting of our Managers, Employees, Distributors & Investors, Including all the Shareholders, giving them Best Returns for the dedication and time they devote for their Company “Always Sahi Solutions Private Limited”.</span>
+                                    <button class="button-nav-items" onclick="aboutHeader()"><img src="image/arrow-right.png" class="read-more-image" id="read-more-about"><span class="button-nav-info" id="about-more-text">Read More...</span></button>
                                     </div>
                                 </div>
                                 <div class="service_sections company-item item-2">
@@ -51,15 +58,19 @@
                                         <div>
                                         <h3>Vision</h3>
                                         <span class="company_details">To Build young entrepreneurs
-                                        and a team of visionary leaders...</span><br>
-                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                            and a team of visionary leaders
+                                            to achieve “a Package Escape”.</span><br>
+                                        <!-- <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a> -->
                                         </div>
                                         <div>
                                         <h3>Mission</h3>
                                         <span class="comapny_details">To Work Closely with our established NGO
                                             “Bondsocially Foundation”, providing Skilling &
-                                            Financial ...</span><br>
-                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                            Financial Support to make our Country a
+                                            SuperPower Nation by the year 2047,
+                                            Celebrating 100 years of Independence, by its
+                                            Navratnas which is Indeed “Always Sahi”.</span><br>
+                                        <!-- <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +78,7 @@
                                     <div>
                                     <h2>Career</h2>
                                     <span class="comapny_details">Description</span><br>
-                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +203,7 @@
         <div class="scope-details">
           <section class="scope-details-main">
             <div class="scope-details-left">
-              <h2 class="scope-details-heading">Account & Finances</h2>
+              <h1 class="scope-details-heading">Account & Finances</h1>
               <p class="scope-details-para">Doing business easy with smart and Organized backend, learning how to Manage
                 Accounts & Maintaining Finances, ready to go with all the compliances.
               </p>
@@ -313,7 +324,7 @@
                             <li class="back-items">Filing ITR </li>
                             <li class="back-items">Deductions in ITR </li>
                             <li class="back-items">TDS Forms </li>
-                            <li class="back-items">Basics of GST </li>
+                            <!-- <li class="back-items">Basics of GST </li> -->
                             <li class="back-items">GST Registration</li>
                             <li class="back-items">GST Sales FIling </li>
                             <li class="back-items">GST Monthly Report FIling</li>
@@ -361,8 +372,10 @@
         <div class="scope-details">
           <section class="scope-details-main">
             <div class="scope-details-left">
-              <h2 class="scope-details-heading">Personality Development</h2>
-              <p class="scope-details-para">Individuals Personality plays a very Important Role, in presenting himself/herself in the market. Be is Job Sector, or Freelancing & Business Sector. Personality gives an Individual its own value, gain your Value by Grooming your Personality with Always Sahi.
+              <h1 class="scope-details-heading">Personality Development</h1>
+              <p class="scope-details-para">Individuals Personality plays a very Important Role, in presenting
+                himself/herself in the market. Be is Job Sector, or Freelancing & Business Sector. Personality gives an
+                Individual its own value, gain your Value by Grooming your Personality with Always Sahi.
               </p>
               <button class="accounts-btn">Enroll Now</button>
             </div>
@@ -506,9 +519,21 @@
           </section>
         </div>
       </div>
-      <div class="perks-incentives">Perks and Incentives</div>
   </section>
   <!-- Scope of achievement Ends -->
+  <!-- Perks And Incentives Starts -->
+  <!-- <h1 class="perks-incentives">Perks and Incentives</h1> -->
+  <div class="perks-menu">
+    <input type="checkbox" id="perks-toggle" />
+    <label for="perks-toggle" id="show-menu">
+      <h1 class="perks-btn perks-name">Perks & Incentives</h1>
+      <div class="perks-btn"><span class="material-content">Get ISO Certification</span></div>
+      <div class="perks-btn"><span class="material-content">Become our IAC</span></div>
+      <div class="perks-btn"><span class="material-content">Start Freelancing or Entrepreneurship</span></div>
+      <div class="perks-btn"><span class="material-content">Find Your Package Escape</span></div>
+    </label>
+  </div>
+  <!-- Perks And Incentives Ends -->
 </body>
 
 </html>
