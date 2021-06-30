@@ -501,8 +501,9 @@ if ($_SESSION['logged_in'] != 1) {
                 <div class="col-md-9"></div>
                 <div class="link col-md-3"> <a href="">HOME</a></div>
               </div>
-              <div class="referalLink col-md-2 heading">REFERAL LINK
-              </div>
+              <div class="referalLink col-md-2 heading"
+              >REFERAL LINK
+                </div>
               <div class="row line2"></div>
               <div class="row col-md-10">
                 <div class="col-md-3 rf">
