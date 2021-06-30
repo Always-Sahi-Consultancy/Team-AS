@@ -8,38 +8,38 @@ $(document).ready(function () {
   });
 });
 
-var aboutState=0;
-function aboutHeader(){
-  var as2=document.getElementById("about-header-2");
-  var ia=document.getElementById("read-more-about");
-  var amt=document.getElementById("about-more-text");
-  if(aboutState==0){
-    as2.style.display="block";
-    ia.src="../image/arrow-left.png";
-    amt.innerText="Read Less";
-    aboutState=1;
+var aboutState = 0;
+function aboutHeader() {
+  var as2 = document.getElementById("about-header-2");
+  var ia = document.getElementById("read-more-about");
+  var amt = document.getElementById("about-more-text");
+  if (aboutState == 0) {
+    as2.style.display = "block";
+    ia.src = "../image/arrow-left.png";
+    amt.innerText = "Read Less";
+    aboutState = 1;
   }
-  else if(aboutState==1){
-    as2.style.display="none";
-    ia.src="../image/arrow-right.png";
-    amt.innerText="Read More...";
-    aboutState=0;
+  else if (aboutState == 1) {
+    as2.style.display = "none";
+    ia.src = "../image/arrow-right.png";
+    amt.innerText = "Read More...";
+    aboutState = 0;
   }
 }
 
-var state=0;
-function aboutUs(){
-  var at2=document.getElementById("about-text-2");
-  var ia=document.getElementById("about-arrow");
-  if(state==0){
-    at2.style.display="block";
-    ia.src="../image/arrow-up.png";
-    state=1;
+var state = 0;
+function aboutUs() {
+  var at2 = document.getElementById("about-text-2");
+  var ia = document.getElementById("about-arrow");
+  if (state == 0) {
+    at2.style.display = "block";
+    ia.src = "../image/arrow-up.png";
+    state = 1;
   }
-  else if(state==1){
-    at2.style.display="none";
-    ia.src="../image/arrow-down.png";
-    state=0;
+  else if (state == 1) {
+    at2.style.display = "none";
+    ia.src = "../image/arrow-down.png";
+    state = 0;
   }
 }
 
@@ -59,11 +59,11 @@ function workshop(n) {
       section.style.height = "25vw";
     }
     else {
-     
-      if(wos>woh){
+
+      if (wos > woh) {
         section.style.height = "42vh";//For mobile
       }
-      else{
+      else {
         section.style.height = "60vh";//Mobile
       }
     }
@@ -78,11 +78,11 @@ function workshop(n) {
       writeup.style.top = "60%";
     }
     else {
-      if(wos>woh){
+      if (wos > woh) {
         section.style.height = "60vh";//For mobile
         writeup.style.top = "100%";
       }
-      else{
+      else {
         section.style.height = "100vh";//Mobile
         writeup.style.top = "60%";
         writeup.style.height = "40vh";
@@ -156,42 +156,62 @@ function navbarOptions(a) {
 
 window.addEventListener(onclick, navbarOptions);
 
-$(document).ready(function () {
-  // console.log("hi");
-  $(window).scroll(function () {
-    var positiontop = $(document).scrollTop();
-    //   console.log(positiontop);
-    if ((positiontop > 308) && (positiontop < 320)) {
-      function animateValue(obj, start, end, duration) {
-        let startTimestamp = null;
-        const step = (time) => {
-          if (!startTimestamp) {
-            startTimestamp = time;
-          }
-          const progress = Math.min((time - startTimestamp) / duration, 1);
-          obj.innerHTML = Math.floor(progress * (end - start) + start);
-          if (progress < 1) {
-            window.requestAnimationFrame(step);
-          }
-          else {
-            obj.innerHTML = Math.floor(progress * (end - start) + start) + "+";
-          }
-        };
+function debounce(func, wait = 20, immediate = true) {
+  var timeout;
+  return function () {
+    var context = this, args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
 
-        window.requestAnimationFrame(step);
-      }
+function Number() {
+  console.log("hii");
+  var positiontop = $(document).scrollTop();
+  const achievement = document.getElementById("achievement");
+  const SlideInAt = (window.scrollY + window.innerHeight) - achievement.offsetHeight / 2;
+  // const imageBottom = achievement.offsetTop + achievement.offsetHeight;
+  const isHalfShown = SlideInAt > achievement.offsetTop;
+  const isNotScrolledPast = window.scrollY < (SlideInAt);
 
-      const obj1 = document.getElementById("stat-box1");
-      const obj2 = document.getElementById("stat-box2");
-      const obj3 = document.getElementById("stat-box3");
-      const obj4 = document.getElementById("stat-box4");
-      animateValue(obj1, 0, 35, 2000);
-      animateValue(obj2, 0, 350, 2000);
-      animateValue(obj3, 0, 21, 1500);
-      animateValue(obj4, 0, 15, 1500);
+  if (isHalfShown && isNotScrolledPast) {
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (time) => {
+        if (!startTimestamp) {
+          startTimestamp = time;
+        }
+        const progress = Math.min((time - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+        else {
+          obj.innerHTML = Math.floor(progress * (end - start) + start) + "+";
+        }
+      };
+
+      window.requestAnimationFrame(step);
     }
-  })
-})
+
+    const obj1 = document.getElementById("stat-box1");
+    const obj2 = document.getElementById("stat-box2");
+    const obj3 = document.getElementById("stat-box3");
+    const obj4 = document.getElementById("stat-box4");
+    animateValue(obj1, 0, 35, 2000);
+    animateValue(obj2, 0, 350, 2000);
+    animateValue(obj3, 0, 21, 1500);
+    animateValue(obj4, 0, 15, 1500);
+  }
+}
+
+window.addEventListener("scroll", debounce(Number));
 
 // Typing Effect Starts
 const text = document.querySelector(".box-size-desc");
@@ -308,4 +328,3 @@ function first(a) {
 window.addEventListener(onclick, first);
   // Services Section Ends
 
- 
