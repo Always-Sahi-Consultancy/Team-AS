@@ -314,6 +314,11 @@
   font-size: 1.1rem;
   padding-right: 30px;
   width: 90%;
+  top: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .description {
   color: grey;
@@ -699,6 +704,67 @@
     width: 60%;
   }
 }
+@media screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .tabs {
+    height: 60vh;
+  }
+
+  .slider {
+    position: relative;
+    top: 20vh;
+    height: 60px;
+    width: 30px;
+  }
+
+  .tab,
+  .card,
+  .front,
+  .back,
+  .slider-label {
+    width: 50vw;
+    height: 45vh;
+  }
+  .target {
+    width: 0px;
+    /* min-width:0px; */
+    /* max-width:0px; */
+  }
+  .tab,
+  .card,
+  .front,
+  .back,
+  .slider-label {
+    width: 100vw;
+    min-width: 60vw;
+    height: 45vh;
+  }
+  .services label {
+    height: 45vh;
+  }
+
+  .back {
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .front {
+    font-size: 2vh;
+  }
+
+  .front-heading {
+    font-size: 2rem;
+  }
+
+  .front-img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .personality-img {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+}
 /* Perks And Incentives Starts */
 .perks-incentives {
   text-align: center;
@@ -798,8 +864,12 @@ input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
   opacity: 1;
 }
 @media screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .perks-menu {
+    /* position: relative; */
+    top: 10vh;
+  }
   #show-menu {
-    top: 50%;
+    top: 60%;
   }
   input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
     top: -10vh;
@@ -824,7 +894,7 @@ input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(5) {
 }
 @media screen and (max-width: 1000px) and (orientation: portrait) {
   #show-menu {
-    top: 50%;
+    top: 60%;
   }
   input#perks-toggle:checked ~ #show-menu .perks-btn:nth-child(2) {
     top: -10vh;

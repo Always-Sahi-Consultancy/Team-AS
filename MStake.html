@@ -28,9 +28,12 @@
         <div class="head">
             <div class="head_nav">
                 <div id="As_logo">
-                    <a href="#" class="company">
+                    <a href="index2.html" class="company">
                         <img src="image/As logo Edited.png"></img>
-                        <p class="Com_name"><b>Always Sahi</b></p>
+                        <div class="Company_name">
+                          <p class="Com_name">Always <span class="sahi">Sahi</span></p>
+                          <p class="company-tagline">A Package Escape</p>
+                        </div>
                     </a>  
                 </div>
                 <div class="nav">
@@ -40,24 +43,30 @@
                                 <div class="service_sections company-item item-1">
                                     <div>
                                     <h3>About Us</h3>
-                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops. Also by ...</span><br>
-                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <span class=".company_details">Always Sahi Solutions aims to build Individuals as well as corporate solutions, where you can achieve “a Package Escape”, to build young entrepreneurs with our Individuals Training Modules, and Workshops.</span><br>
+                                    <span class=".company_details" id="about-header-2">Also by giving Finance and Business Consultancy, from “establishment to success”.
+                                        We aim to build a network of Challenging, Smart, competent & Growing Associates and Independent Consultants who will be the upcoming face of our Company. Last but not the least, we aim to fulfill all the demands of our Family members consisting of our Managers, Employees, Distributors & Investors, Including all the Shareholders, giving them Best Returns for the dedication and time they devote for their Company “Always Sahi Solutions Private Limited”.</span>
+                                    <button class="button-nav-items" onclick="aboutHeader()"><img src="image/arrow-right.png" class="read-more-image" id="read-more-about"><span class="button-nav-info" id="about-more-text">Read More...</span></button>
                                     </div>
                                 </div>
-                                <div class="service_sections company-item item2">
-                                    <div class="item2">
+                                <div class="service_sections company-item item-2">
+                                    <div>
                                         <div>
                                         <h3>Vision</h3>
                                         <span class="company_details">To Build young entrepreneurs
-                                        and a team of visionary leaders...</span><br>
-                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                            and a team of visionary leaders
+                                            to achieve “a Package Escape”.</span><br>
+                                        <!-- <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a> -->
                                         </div>
                                         <div>
                                         <h3>Mission</h3>
                                         <span class="comapny_details">To Work Closely with our established NGO
                                             “Bondsocially Foundation”, providing Skilling &
-                                            Financial ...</span><br>
-                                        <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                            Financial Support to make our Country a
+                                            SuperPower Nation by the year 2047,
+                                            Celebrating 100 years of Independence, by its
+                                            Navratnas which is Indeed “Always Sahi”.</span><br>
+                                        <!-- <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +74,7 @@
                                     <div>
                                     <h2>Career</h2>
                                     <span class="comapny_details">Description</span><br>
-                                    <a href="#"><button class="button-nav-items"><img src="image/right-arrow.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -91,19 +100,21 @@
                                 <div class="service_sections service_3">
                                     <h5>Top Catagory</h5>
                                     <div class="top_cat" id="ser1">
-                                        <div class="nav_service_top">Pacakage Escape Funnel</div>
-                                        <div class="nav_service_top">M-stake</div>
-                                        <div class="nav_service_top">Workshop</div>
+                                        <div class="nav_service_top">Accounting and Finance</div>
+                                        <div class="nav_service_top">Personality Developement</div>
+                                        <div class="nav_service_top">Coding and Web Dev</div>
+                                        <div class="nav_service_top">Digital Marketing</div>
                                     </div>
                                     <div class="top_cat" id="ser2">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                        <div class="nav_service_top">Basics of Stock Market</div>
+                                        <div class="nav_service_top">Fundamental Analysis</div>
+                                        <div class="nav_service_top">Technical Analysis</div>
+                                        <div class="nav_service_top">Virtual Stock Trading</div>
                                     </div>
                                     <div class="top_cat" id="ser3">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                        <div class="nav_service_top">Startup Guide</div>
+                                        <div class="nav_service_top">Digtal Marketing</div>
+                                        <div class="nav_service_top">Time Management</div>
                                     </div>
                                 </div>
                             </div>
@@ -112,10 +123,15 @@
                         <span class="nav_items_section">Join Us</span>
                         <span class="nav_items_section">Public Notices</span>
                     </div>
-                    <ul class="nav_second">
-                        <li onclick="login()">Login</li>
-                        <li>Contact</li>
-                    </ul>
+                    <div class="nav_second">
+                        <span onclick="login()" id="login">Login
+                            <div class="login">
+                                    <a href="#" class="option_link"><div class="options_login">Associate Login</div></a>
+                                    <a href="#" class="option_link"><div class="options_login">IAC Login</div></a>
+                            </div>
+                        </span>
+                        <span>Contact</span>
+                    </div>
                 </div>
                 <div  id="ham_icon" onclick="headerSidelay()">
                     <div class="top"></div>
@@ -125,14 +141,28 @@
             </div>
             <div id="sidelay" class="Sidelay">
                 <div class="first">
-                    <a href="#">Company</a>
-                    <a href="#">Services</a>
+                    <a href="#" onclick="navbarOptions(1)" id="wa">Company</a>
+                        <div class="second_company" id="sr1">
+                            <span>About Us</span>
+                            <span>Vision & Mission</span>
+                            <span>Career</span>
+                        </div>
+                    <a href="#" id="ss" onclick="navbarOptions(2)">Services</a>
+                        <div class="second_company" id="sr2">
+                            <span>Pacakage Escape Funnel</span>
+                            <span>M-stake</span>
+                            <span>Workshop</span>
+                        </div>
                     <a href="#">CSR</a>
                     <a href="#">Join Us</a>
                     <a href="#">Public Notices</a>
                 </div>
                 <div class="second">
-                    <a href="#">Login</a>
+                    <a href="#" onclick="navbarOptions(3)">Login</a>
+                    <div class="login-options" id="sr3">
+                        <a href="#"><span>Associate Login</span></a>
+                        <a href="#"><span>IAC Login</span></a>
+                    </div>
                     <a href="#">Contact</a>
                 </div>
             </div>
