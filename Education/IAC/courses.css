@@ -42,10 +42,10 @@ body{
         #29648a 20%,
         #2e9cca 40%,
         #aaabb8 65%);
-    margin: 0;
+    margin-right: 15px;
     padding: 0;
 }
-.rf {
+.name {
   margin-top: 40px;
   font-size: 25px;
   font-weight: 400;
@@ -58,7 +58,7 @@ body{
 .copy {
     margin-top: 40px;
   }
-.referal{
+.nameID{
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -80,7 +80,7 @@ input[type=text]{
     height: 200px;
     width: auto;
     border: 1px solid black;
-    margin: 0;
+    margin: 15px;
     padding: 0;
     border-radius: 10%;
     box-shadow: 5px 10px 20px rgb(146, 145, 145);
@@ -92,4 +92,16 @@ input.check{
 }
 .eligibleCourses{
     text-align: center;
+}
+.next{
+    margin: 20px;
+}
+.e{
+    height: 200px;
+    width: auto;
+    border: 1px solid black;
+    margin-left: 25px;
+    padding: 0;
+    border-radius: 10%;
+    box-shadow: 5px 10px 20px rgb(146, 145, 145);
 }
