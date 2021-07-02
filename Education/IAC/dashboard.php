@@ -371,6 +371,11 @@ if ($_SESSION['logged_in'] != 1) {
                   <input type="number" id="PIN" name="upload" minlength="6" maxlength="6" required>
                 </div>
               </div>
+              <div class="row justify-content-center">
+                    <div class="next">
+                        <button type="submit" onclick="Registered()" name="next" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
             </div>
 
 

@@ -430,6 +430,9 @@ select {
   border-radius: 10px;
   border: 1px #25274d solid;
 }
+.next{
+  margin: 20px;
+}
 textarea {
   height: 60px;
 }
