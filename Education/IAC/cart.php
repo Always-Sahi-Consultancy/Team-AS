@@ -42,8 +42,8 @@
   <title>Courses | AS</title>
 </head>
 
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="background-image: linear-gradient(140deg,#29648a 20%,#2e9cca,#aaabb8);">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(140deg,#29648a 20%,#2e9cca,#aaabb8);">
     <a href="course.php" class="navbar-brand">
       <h3 class="px-5">
         <i class="fas fa-shopping-basket"></i> Courses @ AS
