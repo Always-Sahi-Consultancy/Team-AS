@@ -60,31 +60,31 @@ else { // Email doesn't already exist in a database, proceed...
                  your account by clicking on the link in the message!";
 
         // Send registration confirmation link (verify.php)
-        $mail = new PHPMailer();
+        //$mail = new PHPMailer();
         // SMTP Settings
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.hostinger.com';                   // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'hello@alwayssahi.com';             // SMTP username
-        $mail->Password = 'hello';                  // SMTP password
-        $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 465;                                    // TCP port to connect to
+        // $mail->isSMTP();                                      // Set mailer to use SMTP
+        // $mail->Host = 'smtp.hostinger.com';                   // Specify main and backup SMTP servers
+        // $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        // $mail->Username = 'hello@alwayssahi.com';             // SMTP username
+        // $mail->Password = 'noPasswordSorry';                  // SMTP password
+        // $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+        // $mail->Port = 465;                                    // TCP port to connect to
 
         // Email Settings
-        $mail->setFrom('hello@alwayssahi.com', 'Always');
-        $mail->addAddress($email, $name);                  // Add a recipient
+        // $mail->setFrom('hello@alwayssahi.com', 'Always');
+        // $mail->addAddress($email, $name);                  // Add a recipient
         //$mail->addAddress('ellen@example.com');                // Name is optional
-        $mail->addReplyTo('hello@alwayssahi.com', 'Always');
+        //$mail->addReplyTo('hello@alwayssahi.com', 'Always');
         //$mail->addCC('cc@example.com');
         //$mail->addBCC('bcc@example.com');
 
         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-        $mail->isHTML(true);                                     // Set email format to HTML
+        // $mail->isHTML(true);                                     // Set email format to HTML
 
-        $mail->Subject = 'Account Verification';
-        $mail->Body    = 'Hello '.$name.',<br>Please click this link to verify your account:<br>http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        // $mail->Subject = 'Account Verification';
+        // $mail->Body    = 'Hello '.$name.',<br>Please click this link to verify your account:<br>http://localhost/login-system/verify.php?email='.$email.'&hash='.$hash;
+        // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         // if(!$mail->send()) {
         //     echo 'Message could not be sent.';
