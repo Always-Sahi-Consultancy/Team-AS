@@ -72,7 +72,7 @@
             <div class="input-group">
                 <input type="email" placeholder="Email" name="email" autocomplete="off" required>
             </div>
-            <div class="input-group">   
+            <div class="input-group">
                 <input type="password" placeholder="Password" name="password" autocomplete="off" required>
             </div>
             <div class="input-group">

@@ -1,12 +1,18 @@
 <?php
 /* Displays user information and some useful messages */
 session_start();
+require 'db.php';
 
+// User auto logout after Session Timeout
 if ((time() - $_SESSION['login_time']) > 900) {
   header("Location: logout.php");
 } else {
   $_SESSION['login_time'] = time();
 }
+
+$_SESSION['fileaadhaar'] = 'fileaadhaar';
+$_SESSION['filepan'] = 'filepan';
+$_SESSION['filebr'] = 'filebr';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['register'])) { // user loggin in
@@ -15,6 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['support'])) { 
     require 'support.php';
   }
+  if (isset($_POST['showDownline'])) { 
+    $_Session['userID'] = $user_details['id'];
+  }
+  // if (isset($_POST['bank_details'])) {
+  //   require 'bank.php';
+  // }
 }
 
 // Check if user is logged in using the session variable
@@ -53,7 +65,7 @@ if ($_SESSION['logged_in'] != 1) {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
+  <script src="menu.js"></script>
 </head>
 
 <body>
@@ -102,20 +114,20 @@ if ($_SESSION['logged_in'] != 1) {
           </div>
         </li>
         <li class="as">A Package Escape</li>
-        <li><a class="active" href="#" onclick="tabs(1)">Dashboard</a> </li>
-        <li> <a href="#" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
-        <li> <a href="#" onclick="tabs(3)">Referal link</a> </li>
-        <li> <a href="#" onclick="tabs(4)">Associate Joining</a> </li>
-        <li> <a href="#" onclick="tabs(5)">Monthly Reports</a></li>
+        <li><a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
+        <li> <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
+        <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
+        <li> <a href="#dashboard.php?tab=ass_join" onclick="tabs(4)">Associate Joining</a> </li>
+        <li> <a href="#dashboard.php?tab=month_report" onclick="tabs(5)">Monthly Reports</a></li>
         <li>
-          <a href="#" onclick="show()">Requests
+          <a href="#dashboard.php?tab=requests" onclick="show()">Requests
           </a>
           <ul class="requestList" id="requestList">
-            <li> <a href="#" onclick="tabs(9)">Mobile change</a></li>
-            <li> <a href="#" onclick="tabs(10)">Bank change</a></li>
+            <li> <a href="#dashboard.php?tab=mobile_change" onclick="tabs(9)">Mobile change</a></li>
+            <li> <a href="#dashboard.php?tab=bank_change" onclick="tabs(10)">Bank change</a></li>
           </ul>
         </li>
-        <li> <a href="#" onclick="tabs(7)">Supports</a> </li>
+        <li> <a href="#dashboard.php?tab=support" onclick="tabs(7)">Supports</a> </li>
       </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -171,34 +183,38 @@ if ($_SESSION['logged_in'] != 1) {
                 <!--ABOUT YOU TABLE-->
                 <div class="row container-1">
                   <table class="col-md-12 table1">
-                    <tr>
-                      <th rowspan="3">Name</th>
-                      <th rowspan="3">% Level</th>
-                      <th colspan="3">Current Month Business</th>
-                      <th colspan="3">Total Business</th>
-                    <tr>
-                    </tr>
-                    <td>Personal</td>
-                    <td>Group</td>
-                    <td>Total</td>
-                    <td>Personal</td>
-                    <td>Group</td>
-                    <td>Total</td>
-                    </tr>
-                    <tr>
-                      <td><?= $name ?></td>
-                      <td><?= $level ?></td>
-                      <td><?= $currPCP ?></td>
-                      <td><?= $currGCP ?></td>
-                      <td><?= $currTCP ?></td>
-                      <td><?= $totalPCP ?></td>
-                      <td><?= $totalGCP ?></td>
-                      <td><?= $totalTCP ?></td>
-                    </tr>
+                    <thead>
+                      <tr>
+                        <th class="text-center" rowspan="3">Name</th>
+                        <th class="text-center" rowspan="3">% Level</th>
+                        <th class="text-center" colspan="3">Current Month Business</th>
+                        <th class="text-center" colspan="3">Total Business</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">Personal</th>
+                        <th class="text-center">Group</th>
+                        <th class="text-center">Total</th>
+                        <th class="text-center">Personal</th>
+                        <th class="text-center">Group</th>
+                        <th class="text-center">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"><?= $name ?></td>
+                        <td class="text-center"><?= $level ?></td>
+                        <td class="text-center"><?= $currPCP ?></td>
+                        <td class="text-center"><?= $currGCP ?></td>
+                        <td class="text-center"><?= $currTCP ?></td>
+                        <td class="text-center"><?= $totalPCP ?></td>
+                        <td class="text-center"><?= $totalGCP ?></td>
+                        <td class="text-center"><?= $totalTCP ?></td>
+                      </tr>
+                    </tbody>
                   </table>
                   <div class="down row col-md-12">
                     <div class="col-md-10"></div>
-                    <div class="col-md-2"><button onclick="downline()" class=" btn btn-primary">DOWNLINE</button></div>
+                    <div class="col-md-2"><button onclick="downline()" class="btn btn-primary">DOWNLINE</button></div>
                   </div>
                 </div>
               </div>
@@ -285,68 +301,69 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
 
               <!--Mobile Verification-->
-              <div class="row MV">
-                <div>Mobile OTP Verification</div>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Mobile</div>
-                <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" required>
-              </div>
-              <div id="OTP4">
-                <div class="row justify-content-center MobileV col-md-6">
-                  <div class="titles">Enter 6 digit OTP </div>
-                  <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6" required>
+                <div class="row MV">
+                  <div>Mobile OTP Verification</div>
                 </div>
-              </div>
-              <div class="row justify-content-center col-md-6">
-                <button type="submit" onclick="OTP(5)" name="submit" class="BO5" id="BO4">Send OTP</button>
-                <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
-              </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Mobile</div>
+                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
+                </div>
+                <div id="OTP5" style="display: none;">
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Enter 6 digit OTP </div>
+                    <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6">
+                    <h1 id="countdown"></h1>
+                  </div>
+                </div>
+                <div class="row justify-content-center col-md-6">
+                  <button onclick="OTP(5)" name="submit" class="BO5" id="BO5">Send OTP</button>
+                  <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
+                </div> 
 
-              <!--upline Information-->
-              <div class="row MV">
-                <div>Upline Information</div>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Upline ID </div>
-                <input type="number" name="sID" placeholder="Upline Id" maxlength="6" minlength="6" required>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles1">Upline Name</div>
-                <input type="text" id="sname" placeholder="Upline Name" required>
-              </div>
-              <div class="row MV">
-                <div>Personal Information</div>
-              </div>
-              <div class="col-md-12">
-                <form>
+              <form method="post" enctype="multipart/form-data">
+                <!--upline Information-->
+                <div class="row MV">
+                  <div>Upline Information</div>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upline ID </div>
+                  <input type="number" name="UID" value="<?= $id ?>" placeholder="Upline Id" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles1">Upline Name</div>
+                  <input type="text" id="sname" value="<?= $name ?>" placeholder="Upline Name" autocomplete="off" required>
+                </div>
+                <div class="row MV">
+                  <div>Personal Information</div>
+                </div>
+                <div class="col-md-12">
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Name</div>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
-                    <input type="text" id="pan" name="pan" placeholder="PAN No." required>
+                    <input type="text" id="pan" name="pan" placeholder="PAN No." autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
-                    <div class="titles">Aadhar number</div>
-                    <input type="number" id="AadharNO" name="aadhaar" placeholder="Aadhaar No." required>
+                    <div class="titles">Aadhaar number</div>
+                    <input type="number" id="AadharNO" name="aadhaar" placeholder="Aadhaar No." autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Address</div>
-                    <textarea id="address" name="address" placeholder="Address" required></textarea>
+                    <textarea id="address" name="address" placeholder="Address" autocomplete="off" required></textarea>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PIN</div>
-                    <input type="number" id="PIN" name="pin" placeholder="PIN code" minlength="6" maxlength="6" required>
+                    <input type="number" id="PIN" name="pin" placeholder="PIN code" minlength="6" maxlength="6" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">City</div>
-                    <select id="city" name="city" required>
+                    <select id="city" name="city" autocomplete="off" required>
                       <option value="Pune">Pune</option>
                       <option value="Delhi">Delhi</option>
                       <option value="Mumbai">Mumbai</option>
@@ -355,36 +372,40 @@ if ($_SESSION['logged_in'] != 1) {
                   </div>
                   <div class="row justify-content-center MobileV col-md-5">
                     <div class="titles">Date of Birth</div>
-                    <input type="date" placeholder="DOB" name="dob">
+                    <input type="date" placeholder="DOB" name="dob" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-6">
-                    <button type="submit" onclick="next(1)" name="register">NEXT</button>
-                  </div>
-                </form>
-              </div>
-              <!--BANK DETAILS-->
-              <div id="bankDetails">
+                  <!-- <div class="row justify-content-center MobileV col-md-6">
+                    <button type="submit" onclick="next(1)" name="next">NEXT</button>
+                  </div> -->
+                </div>
+                <!--BANK DETAILS-->
                 <div class="row MV">
                   <div>Bank Details</div>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Account No.</div>
-                  <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" required>
+                  <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" autocomplete="off" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">IFSC Code</div>
-                  <input type="number" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" required>
+                  <input type="text" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" autocomplete="off" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
-                  <div class="titles">Uplaod</div>
-                  <input type="number" id="PIN" name="upload" minlength="6" maxlength="6" required>
+                  <div class="titles">Upload Aadhaar</div>
+                  <input type="file" id="<?php echo $_SESSION['fileaadhaar'];?>" name="uploadaadhaar" required>
                 </div>
-              </div>
-              <div class="row justify-content-center">
-                    <div class="next">
-                        <button type="submit" onclick="Registered()" name="next" class="btn btn-primary">SUBMIT</button>
-                    </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upload PAN</div>
+                  <input type="file" id="<?php echo $_SESSION['filepan'];?>" name="uploadpan" required>
                 </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upload Bank Passbook/Receipt</div>
+                  <input type="file" id="<?php echo $_SESSION['filebr'];?>" name="uploadbr" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <button type="submit" name="register">SUBMIT</button>
+                </div>
+              </form>
             </div>
 
 
@@ -402,7 +423,7 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Mobile</div>
-                <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" required>
+                <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
                 <button type="submit" name="submit" onclick="OTP(1)" class="BO">Send OTP</button>
               </div>
               <!--upline Information-->
@@ -411,15 +432,15 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Upline ID </div>
-                <input type="number" name="sID" placeholder="Upline Id" maxlength="6" minlength="6" required>
+                <input type="number" name="sID" placeholder="Upline Id" maxlength="6" minlength="6" autocomplete="off" required>
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles1">Upline Name</div>
-                <input type="text" id="sname" placeholder="Upline Name" required>
+                <input type="text" id="sname" placeholder="Upline Name" autocomplete="off" required>
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Slope</div>
-                <select id="eligible" name="slope" required>
+                <select id="eligible" name="slope" autocomplete="off" required>
                   <option value="Tally">Tally</option>
                   <option value="BankAudit">Bank Audit</option>
                 </select>
@@ -431,31 +452,31 @@ if ($_SESSION['logged_in'] != 1) {
                 <form>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Name</div>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
-                    <input type="text" id="pan" name="pan" placeholder="PAN No." required>
+                    <input type="text" id="pan" name="pan" placeholder="PAN No." autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Aadhaar number</div>
-                    <input type="number" id="AadharNO" name="aadhaar" placeholder="Aadhaar No." required>
+                    <input type="number" id="AadharNO" name="aadhaar" placeholder="Aadhaar No." autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles1">Address</div>
-                    <textarea id="address" name="address" placeholder="Address" required></textarea>
+                    <textarea id="address" name="address" placeholder="Address" autocomplete="off" required></textarea>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PIN</div>
-                    <input type="number" id="PIN" name="pin" placeholder="PIN code" minlength="6" maxlength="6" required>
+                    <input type="number" id="PIN" name="pin" placeholder="PIN code" minlength="6" maxlength="6" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">City</div>
-                    <select id="city" name="city" required>
+                    <select id="city" name="city" autocomplete="off" required>
                       <option value="Pune">Pune</option>
                       <option value="Delhi">Delhi</option>
                       <option value="Mumbai">Mumbai</option>
@@ -464,11 +485,11 @@ if ($_SESSION['logged_in'] != 1) {
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">AS Certificate</div>
-                    <input id="certificate" name="certificate" required>
+                    <input id="certificate" name="certificate" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Date of Birth</div>
-                    <input type="date" placeholder="DOB" name="dob">
+                    <input type="date" placeholder="DOB" name="dob" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <button type="submit" name="register">NEXT</button>
@@ -481,15 +502,15 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Account No.</div>
-                <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" required>
+                <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" autocomplete="off" required>
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">IFSC Code</div>
-                <input type="number" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" required>
+                <input type="number" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" autocomplete="off" required>
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Uplaod</div>
-                <input type="number" id="PIN" name="upload" minlength="6" maxlength="6" required>
+                <input type="number" id="PIN" name="upload" minlength="6" maxlength="6" autocomplete="off" required>
               </div>
             </div>
 
@@ -669,35 +690,67 @@ if ($_SESSION['logged_in'] != 1) {
 
           <!--DOWNLINE-->
           <div id="downline">
+          <?php 
+            if (isset($_REQUEST['user_id'])) {
+              $level_sponsor = $_REQUEST['user_id'];
+              if (checkdownline($level_sponsor, $id)) {
+                // continue;
+              } else {
+                $level_sponsor = $id;
+              }
+            } else {
+              $level_sponsor = $id;
+            }
+          ?>
+            <div class="row MV" style="margin-bottom: 20px;">
+              <div>Downline of ID: <?= $level_sponsor?></div>
+            </div>
             <div class="row container-1">
               <table class="col-md-12 table1">
-                <tr>
-                  <th rowspan="3">Name</th>
-                  <th rowspan="3">Downline</th>
-                  <th rowspan="3">% Level</th>
-                  <th colspan="3">Current Month Business</th>
-                  <th colspan="3">Total Business</th>
-                <tr>
-                </tr>
-                <td>Personal</td>
-                <td>Group</td>
-                <td>Total</td>
-                <td>Personal</td>
-                <td>Group</td>
-                <td>Total</td>
+                <thead>
+                  <tr>
+                    <th class="text-center" rowspan="3">Name</th>
+                    <th class="text-center" rowspan="3">Downline</th>
+                    <th class="text-center" rowspan="3">% Level</th>
+                    <th class="text-center" colspan="3">Current Month Business</th>
+                    <th class="text-center" colspan="3">Total Business</th>
+                  </tr>
+                  <tr>
+                    <th class="text-center">Personal</th>
+                    <th class="text-center">Group</th>
+                    <th class="text-center">Total</th>
+                    <th class="text-center">Personal</th>
+                    <th class="text-center">Group</th>
+                    <th class="text-center">Total</th>
 
-                </tr>
-                <tr>
-                  <td><?= $name ?></td>
-                  <td><button onclick="showDownline()" class="btn btn-success">Down</button></td>
-                  <td><?= $level ?></td>
-                  <td><?= $currPCP ?></td>
-                  <td><?= $currGCP ?></td>
-                  <td><?= $currTCP ?></td>
-                  <td><?= $totalPCP ?></td>
-                  <td><?= $totalGCP ?></td>
-                  <td><?= $totalTCP ?></td>
-                </tr>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php $data = $mysqli->query("SELECT * FROM dash WHERE UID='$level_sponsor'");?>
+                  <?php 
+                    if ($data->num_rows > 0) {
+                      while ($user_details = $data->fetch_assoc()) 
+                      { ?>
+                        <tr>
+                          <td class="text-center"><?php echo $user_details['name'] ?></td>
+                          <td class="text-center"><a href="downline.php?user_id=<?= $user_details['id']?>"><button class="btn btn-success">Down</button></a></td>
+                          <td class="text-center"><?php echo $user_details['level'] ?></td>
+                          <td class="text-center"><?php echo $user_details['currPCP'] ?></td>
+                          <td class="text-center"><?php echo $user_details['currGCP'] ?></td>
+                          <td class="text-center"><?php echo $user_details['currTCP'] ?></td>
+                          <td class="text-center"><?php echo $user_details['totalPCP'] ?></td>
+                          <td class="text-center"><?php echo $user_details['totalGCP'] ?></td>
+                          <td class="text-center"><?php echo $user_details['totalTCP'] ?></td>
+                        </tr> <?php
+                      } 
+                    } else { ?>
+                      <tr>
+                        <td class="text-center" colspan="9" style="color: red;"><b>Data Not Available</b></td>
+                      </tr> <?php
+                    }
+                  ?>
+                   
+                </tbody>
               </table>
             </div>
 
@@ -706,6 +759,31 @@ if ($_SESSION['logged_in'] != 1) {
       </div>
     </div>
   </div>
+
+  <?php 
+    function checkdownline($user_id, $login_id) { 
+      global $userDetail, $mysqli;
+      $data = $mysqli->query("SELECT * FROM dash WHERE id='$user_id'");
+      if ($data->num_rows > 0) {
+        $userDetail = $data->fetch_assoc();
+        $sponID = $userDetail['UID'];
+        while ($sponID != 0) {
+          if ($sponID == $login_id) {
+            return true;
+          } else {
+            $data = $mysqli->query("SELECT * FROM dash WHERE id='$sponID'");
+            $userDetail = $data->fetch_assoc();
+            $sponID = $userDetail['UID'];
+          }
+        }
+        if ($sponID == 0) {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    }
+  ?>
 
   <script src="menu.js"></script>
 

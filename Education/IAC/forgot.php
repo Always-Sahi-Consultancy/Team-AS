@@ -82,7 +82,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
         <label>
           Email Address<span class="req">*</span>
         </label>
-        <input type="email"required autocomplete="off" name="email"/>
+        <input type="email" required autocomplete="off" name="email"/>
       </div>
       <div class="input-group">
         <button class="button button-block"/>Reset</button>

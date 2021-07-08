@@ -22,6 +22,7 @@ else { // User exists
         $_SESSION['name'] = $user['name'];
         $_SESSION['active_email'] = $user['active_email'];
         $_SESSION['uid'] = $user['uid'];
+        $_SESSION['phone'] = $dash['phone'];
         $_SESSION['level'] = $dash['level'];
         $_SESSION['currPCP'] = $dash['currPCP'];
         $_SESSION['currGCP'] = $dash['currGCP'];
@@ -36,6 +37,7 @@ else { // User exists
         
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;
+        $_SESSION['login_time'] = time();
 
         header("location: dashboard.php");
     }
