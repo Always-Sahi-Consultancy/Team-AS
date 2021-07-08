@@ -2,9 +2,18 @@
 /* Displays user information and some useful messages */
 session_start();
 
+if ((time() - $_SESSION['login_time']) > 900) {
+  header("Location: logout.php");
+} else {
+  $_SESSION['login_time'] = time();
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['register'])) { // user loggin in
     require 'register.php';
+  }
+  if (isset($_POST['support'])) { 
+    require 'support.php';
   }
 }
 
@@ -17,6 +26,7 @@ if ($_SESSION['logged_in'] != 1) {
   $id = $_SESSION['id'];
   $name = $_SESSION['name'];
   $email = $_SESSION['email'];
+  $phone = $_SESSION['phone'];
   $active_email = $_SESSION['active_email'];
   $uid = $_SESSION['uid'];
   $level = $_SESSION['level'];
@@ -41,7 +51,6 @@ if ($_SESSION['logged_in'] != 1) {
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="menu.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -120,7 +129,7 @@ if ($_SESSION['logged_in'] != 1) {
             </div>
             <div class="col-md-9 head">
               <p class="associateId head"><?= $id ?></p>
-              <a href="" class="logout head">LOGOUT</a>
+              <a href="logout.php" class="logout head">LOGOUT</a>
             </div>
           </div>
           <div class="row line"></div>
@@ -506,19 +515,18 @@ if ($_SESSION['logged_in'] != 1) {
                 <div class="col-md-9"></div>
                 <div class="link col-md-3"> <a href="">HOME</a></div>
               </div>
-              <div class="referalLink col-md-2 heading"
-              >REFERAL LINK
-                </div>
+              <div class="referalLink col-md-2 heading">REFERAL LINK
+              </div>
               <div class="row line2"></div>
               <div class="row col-md-10">
                 <div class="col-md-3 rf">
                   Referal Link
                 </div>
                 <div class="col-md-8">
-                  <input type="text" placeholder="Referal Link" class="linkIn">
+                  <input type="text" id="ReferralInput" value="courses.html?refer=<?= $id ?>" placeholder="Referal Link" class="linkIn" readonly>
                 </div>
                 <div class="col-md-1">
-                  <button class="btn btn-primary copy">COPY</button>
+                  <button class="btn btn-primary copy" onclick="copyReferral()">COPY</button>
                 </div>
               </div>
             </div>
@@ -532,7 +540,7 @@ if ($_SESSION['logged_in'] != 1) {
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Mobile</div>
-                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
+                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" required>
                 </div>
                 <div id="OTP2">
                   <div class="row justify-content-center MobileV col-md-6">
@@ -551,7 +559,7 @@ if ($_SESSION['logged_in'] != 1) {
                 <div id="new">
                   <div class="row justify-content-center MobileV col-md-7">
                     <div class="titles">Enter new Number</div>
-                    <input type="tel" name="telephone" placeholder="New Mobile" pattern="[0-9]" required>
+                    <input type="tel" name="telephone" placeholder="New Mobile" pattern="[0-9]{10}" required>
                   </div>
                   <div class="row justify-content-center col-md-4">
                     <button type="submit" onclick="" name="submit" class="btn btn-primary Final" id="Final">SUBMIT</button>
@@ -565,7 +573,7 @@ if ($_SESSION['logged_in'] != 1) {
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Mobile</div>
-                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
+                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" required>
                 </div>
                 <div id="OTP3">
                   <div class="row justify-content-center MobileV col-md-6">
@@ -631,30 +639,32 @@ if ($_SESSION['logged_in'] != 1) {
             <div class="row MV">
               Generate ticket
             </div>
-            <div class="row justify-content-center MobileV col-md-6">
-              <div class="titles">ID No.</div>
-              <input type="number" id="ID" placeholder="ID No." min="99999" max="1000000" required>
-            </div>
-            <div class="row justify-content-center MobileV col-md-6">
-              <div class="titles">Name</div>
-              <input type="text" id="name" placeholder="Name" required>
-            </div>
-            <div class="row justify-content-center MobileV col-md-5">
-              <div class="titles">Mobile</div>
-              <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]" required>
-            </div>
-            <div class="row justify-content-center MobileV col-md-6">
-              <div class="titles">Description</div>
-              <textarea type="text" id="description" placeholder="Description" required></textarea>
-            </div>
-            <div class="row col-md-10">
-              <div class=" col-md-3">
-                <button class="btn btn-primary copy">GENERATE</button>
+            <form method="post">
+              <div class="row justify-content-center MobileV col-md-6">
+                <div class="titles">ID No.</div>
+                <input type="number" value="<?= $id ?>" id="ID" name="id" placeholder="ID No." readonly>
               </div>
-              <div class="col-md-3">
-                <button class="btn btn-danger copy">CANCEL</button>
+              <div class="row justify-content-center MobileV col-md-6">
+                <div class="titles">Name</div>
+                <input type="text" value="<?= $name ?>" id="name" name="name" readonly>
               </div>
-            </div>
+              <div class="row justify-content-center MobileV col-md-5">
+                <div class="titles">Mobile</div>
+                <input type="tel" value="<?= $phone ?>" name="telephone" pattern="[0-9]{10}" readonly>
+              </div>
+              <div class="row justify-content-center MobileV col-md-6">
+                <div class="titles">Description</div>
+                <textarea type="text" id="description" name="description" placeholder="Description" required></textarea>
+              </div>
+              <div class="row col-md-10">
+                <div class=" col-md-3">
+                  <button class="btn btn-primary copy" onclick="supportTicket()" name="support">GENERATE</button>
+                </div>
+                <div class="col-md-3">
+                  <a href="dashboard.php"><button class="btn btn-danger copy">CANCEL</button></a>
+                </div>
+              </div>
+            </form>
           </div>
 
           <!--DOWNLINE-->
@@ -696,6 +706,9 @@ if ($_SESSION['logged_in'] != 1) {
       </div>
     </div>
   </div>
+
+  <script src="menu.js"></script>
+
 </body>
 
 </html>
