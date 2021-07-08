@@ -301,7 +301,7 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
 
               <!--Mobile Verification-->
-                <div class="row MV">
+                <!-- <div class="row MV">
                   <div>Mobile OTP Verification</div>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
@@ -318,7 +318,7 @@ if ($_SESSION['logged_in'] != 1) {
                 <div class="row justify-content-center col-md-6">
                   <button onclick="OTP(5)" name="submit" class="BO5" id="BO5">Send OTP</button>
                   <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
-                </div> 
+                </div>  -->
 
               <form method="post" enctype="multipart/form-data">
                 <!--upline Information-->
@@ -344,6 +344,10 @@ if ($_SESSION['logged_in'] != 1) {
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
                     <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Mobile</div>
+                    <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
@@ -418,14 +422,14 @@ if ($_SESSION['logged_in'] != 1) {
                 <div class="link"> <a href="">HOME</a></div>
               </div>
               <!--Mobile Verification-->
-              <div class="row MV">
+              <!-- <div class="row MV">
                 <div>Mobile OTP Verification</div>
               </div>
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Mobile</div>
                 <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
                 <button type="submit" name="submit" onclick="OTP(1)" class="BO">Send OTP</button>
-              </div>
+              </div> -->
               <!--upline Information-->
               <div class="row MV">
                 <div>Upline Information</div>
@@ -544,7 +548,7 @@ if ($_SESSION['logged_in'] != 1) {
                   Referal Link
                 </div>
                 <div class="col-md-8">
-                  <input type="text" id="ReferralInput" value="courses.html?refer=<?= $id ?>" placeholder="Referal Link" class="linkIn" readonly>
+                  <input type="text" id="ReferralInput" value="http://localhost/AS/Education/IAC/course.php?refer=<?= $id ?>" placeholder="Referal Link" class="linkIn" readonly>
                 </div>
                 <div class="col-md-1">
                   <button class="btn btn-primary copy" onclick="copyReferral()">COPY</button>
