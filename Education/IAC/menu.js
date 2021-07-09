@@ -88,6 +88,13 @@ function downline() {
     document.getElementById("Dashboard").style.display = "none";
 }
 
+function showDownline(clicked_id) {
+    document.getElementById("downline").style.display = "block";
+    document.getElementById("Dashboard").style.display = "none";
+    //location.reload();
+    window.href="dashboard.php.php?user_id="+clicked_id;
+}
+
 function iac() {
     document.getElementById("IAC-business").style.display = "block";
     document.getElementById("mycourses").style.display = "block";
@@ -116,10 +123,11 @@ function OTP(n) {
         document.getElementById("BO4").style.display = "none";
     }
     else if (n == 5) {
-        document.getElementById("OTP4").style.display = "block";
-        document.getElementById("BO4").innerHTML = "Resend OTP";
+        document.getElementById("OTP5").style.display = "block";
+        document.getElementById("BO5").innerHTML = "Resend OTP";
+        document.getElementById("BO5").disabled = true;
+        document.getElementById("BO5").style.backgroundColor = 'red';
         document.getElementById("SU").style.display = "block";
-
     }
 }
 
@@ -169,4 +177,44 @@ function SU(n) {
     }
 }
 window.addEventListener(onclick, SU);
+
+function copyReferral() {
+    /* Get the text field */
+  var copyText = document.getElementById("ReferralInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Referral Link Copied");
+}
+
+function supportTicket() {
+    alert("Your Support Ticket has been generated. Our Team will contact you shortly");
+}
+
+var sendOTP = document.getElementById("BO5");
+
+sendOTP.addEventListener("click", function() {   
+    let time = 30;
+    const countdownEl = document.getElementById("countdown");
+
+    var interval = setInterval(function () {
+        let seconds = time % 60;
+
+        countdownEl.innerHTML = `${seconds}`;
+        time--;
+
+        if (time < 0) {
+            clearInterval(interval);
+            document.getElementById("BO5").disabled = false;
+            document.getElementById("BO5").style.backgroundColor = '#25274d';
+            document.getElementById("BO5").cursor = "pointer";
+        }
+    }, 1000);
+});
 
