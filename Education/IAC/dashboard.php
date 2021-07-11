@@ -256,7 +256,7 @@ if ($_SESSION['logged_in'] != 1) {
             <!--UPGRADE OPTION-->
             <div class="row col-md-12 ">
               <div class="col-md-3 col-sm-10 upgrade">
-                <img class="gift bounce" src="">
+                <img class="gift bounce" src="img/giftbox.png">
                 <a class="plan" href="#"><span class="fast-flicker">UP</span>GRADE <span class="flicker">Y</span>OURSELF</a>
               </div>
             </div>
