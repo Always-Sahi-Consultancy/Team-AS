@@ -204,11 +204,34 @@
   padding-left: 70px;
   padding-right: 70px;
   margin-bottom: 1px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .copyright .ft-head {
   color: #000;
   line-height: 20px;
   font-size: 1rem;
 }
-
+.copyright .ft-head-right {
+  color: black;
+  /* border: 2px solid red; */
+}
+.Terms {
+  color: black;
+}
+.Terms:hover {
+  text-decoration: none;
+}
+.Privacy {
+  color: black;
+}
+.Refund {
+  color: black;
+}
+.leftT {
+  text-align: left;
+}
+.rightT {
+  text-align: right;
+}
 /*Footer ends*/
