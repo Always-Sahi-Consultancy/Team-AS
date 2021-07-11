@@ -65,7 +65,6 @@ if ($_SESSION['logged_in'] != 1) {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="menu.js"></script>
 </head>
 
 <body>
@@ -257,7 +256,7 @@ if ($_SESSION['logged_in'] != 1) {
             <!--UPGRADE OPTION-->
             <div class="row col-md-12 ">
               <div class="col-md-3 col-sm-10 upgrade">
-                <img class="gift bounce" src="img/giftbox.png">
+                <img class="gift bounce" src="">
                 <a class="plan" href="#"><span class="fast-flicker">UP</span>GRADE <span class="flicker">Y</span>OURSELF</a>
               </div>
             </div>
@@ -528,7 +527,7 @@ if ($_SESSION['logged_in'] != 1) {
               <div class="row col-md-10">
                 <div class="course col-md-3">
                   <div>
-                    <img src="/Education/img/photo6300930260224551730.jpg" class="courseImg">
+                    <img src="img/photo6300930260224551730.jpg" class="courseImg">
                   </div>
                 </div>
               </div>
