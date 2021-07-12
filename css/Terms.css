@@ -1,0 +1,31 @@
+.Terms_page {
+  width: 80%;
+  text-align: left;
+  padding: 30px;
+  margin-top: 70px;
+  /* border: 2px solid red; */
+}
+.Privacy {
+  width: 80%;
+}
+@font-face {
+  font-family: bebas;
+  src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
+}
+@font-face {
+  font-family: sauce;
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: sauce1;
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
+}
+h1 {
+  font-family: bebas;
+}
+h2 {
+  font-family: sauce;
+}
+p {
+  font-family: sauce1;
+}
