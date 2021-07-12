@@ -116,10 +116,23 @@ body {
 .logoC {
   text-align: center;
 }
+@font-face {
+  font-family: bebas;
+  src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
+}
+@font-face {
+  font-family: sauce;
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: sauce1;
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
+}
 .package {
   height: 28px;
   margin-bottom: 0;
   font-weight: 400;
+  font-family: sauce;
   font-size: 28px;
 }
 .logoText {
@@ -127,6 +140,7 @@ body {
   height: 10px;
   font-size: 9px;
   margin: 0;
+  font-family: sauce1;
 }
 
 /* Sidebar Styles */
@@ -149,12 +163,14 @@ body {
 .sidebar-nav li a {
   display: block;
   font-size: 22px;
+  font-family: sauce;
   text-decoration: none;
   color: #25274d;
 }
 
 .sidebar-nav li a:hover {
   color: white;
+  font-family: sauce;
   font-size: 25px;
   text-decoration: none;
   transition: 1s ease-out;
@@ -222,17 +238,20 @@ body {
 }
 .heading {
   font-size: 18px;
+  font-family: sauce;
   font-weight: 400;
   margin-left: 20px;
 }
 .headings {
   float: left;
+  font-family: bebas;
   font-size: 28px;
   font-weight: 400;
 }
 .logout,
 .associateId {
   margin-left: 10px;
+  font-family: bebas;
   font-size: 18px;
   color: rgb(36, 119, 168);
 }
@@ -266,11 +285,13 @@ body {
 }
 .Dh {
   font-size: 20px;
+  font-family: bebas;
   font-weight: 300;
 }
 
 .Linfo {
   font-size: 20px;
+  font-family: sauce;
   font-weight: 400;
   float: right;
   padding-right: 15px;
@@ -288,6 +309,7 @@ body {
   background-color: #2e9cca;
   margin-bottom: 10px;
   font-size: 20px;
+  font-family: sauce1;
   font-weight: 400;
   color: black;
   opacity: 68%;
@@ -297,6 +319,7 @@ body {
   background-color: #2e9cca;
   margin-bottom: 10px;
   font-size: 20px;
+  font-family: sauce1;
   font-weight: 400;
   color: black;
   opacity: 68%;
@@ -313,6 +336,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   padding: 5px;
+  font-family: sauce1;
   background-color: #2e9cca;
   height: 45px;
   width: 100%;
@@ -341,6 +365,7 @@ th {
 }
 .heads {
   font-size: 24px;
+  font-family: sauce1;
   font-weight: 200;
   color: aliceblue;
   margin: 20px 0px;
@@ -354,6 +379,7 @@ th {
 .statusContainer a:hover {
   text-decoration: none;
   font-size: 20px;
+  font-family: sauce1;
   color: #aaabb8;
   font-weight: 100;
 }
@@ -386,12 +412,14 @@ p {
 }
 .RF {
   font-size: 38px;
+  font-family: bebas;
   font-weight: 300;
   text-align: left;
 }
 .as {
   font-size: 18px;
   padding: 0;
+  font-family: sauce;
   margin: 0;
   font-weight: 400;
   text-align: center;
@@ -400,6 +428,7 @@ p {
 .MV {
   font-size: 25px;
   font-weight: 400;
+  font-family: sauce1;
   color: whitesmoke;
   padding: 10px 0px 10px 20px;
   margin-left: 20px;
@@ -408,12 +437,14 @@ p {
   opacity: 50%;
 }
 .titles {
+  font-family: sauce1;
   text-align: right;
   margin-right: 50px;
   font-size: 20px;
 }
 .titles1 {
   text-align: right;
+  font-family: sauce1;
   margin-right: 25px;
   font-size: 20px;
 }
@@ -498,10 +529,10 @@ select {
 }
 .align-right {
   font-size: 26px;
+  font-family: bebas;
   width: 100%;
   font-weight: 400;
   margin: 15px;
-
   padding: 5px;
   border: 1px solid #25274d;
   border-radius: 20px;
@@ -518,6 +549,7 @@ select {
 .table2 {
   border: none;
   font-size: 20px;
+  font-family: sauce1;
   font-weight: 400;
 }
 .td2 {
@@ -537,6 +569,7 @@ select {
 }
 .target {
   font-size: 25px;
+  font-family: sauce1;
   font-weight: 400;
   margin-top: 5px;
   text-align: right;
@@ -554,6 +587,7 @@ select {
 .rf {
   margin-top: 40px;
   font-size: 25px;
+  font-family: sauce1;
   font-weight: 400;
   margin-top: 40px;
 }
@@ -879,6 +913,7 @@ h1 {
   animation-timing-function: ease;
   font-size: 22px;
   color: black;
+  font-family: sauce;
   margin-bottom: 5px;
   font-weight: 300;
   text-indent: 2%;
@@ -886,6 +921,7 @@ h1 {
 .upgrade a:hover {
   transition: 1s ease-in-out;
   font-size: 25px;
+  font-family: sauce;
   color: rgb(104, 71, 71);
   text-decoration: none;
 }
@@ -923,3 +959,4 @@ h1 {
   margin-top: 30px;
   display: none;
 }
+
