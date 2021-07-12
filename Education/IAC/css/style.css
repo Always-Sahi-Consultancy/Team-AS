@@ -118,15 +118,15 @@ body {
 }
 @font-face {
   font-family: bebas;
-  src: url("/Education/IAC/fonts/Bebas\ Neue\ Cyrillic.ttf");
+  src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
 }
 @font-face {
   font-family: sauce;
-  src: url("/Education/IAC/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-SemiBold.ttf");
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-SemiBold.ttf");
 }
 @font-face {
   font-family: sauce1;
-  src: url("/Education/IAC/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
+  src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
 }
 .package {
   height: 28px;
