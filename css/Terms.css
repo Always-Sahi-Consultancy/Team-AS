@@ -1,16 +1,17 @@
-.Terms_page {
+.Privacy_page {
   width: 100vw;
   text-align: left;
   padding: 30px;
   margin-top: 10vh;
   /* border: 2px solid red; */
 }
-.Privacy {
+.Refund {
   width: 100vw;
   margin-top: 10vh;
   padding: 30px;
   text-align: left;
 }
+
 @font-face {
   font-family: bebas;
   src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
