@@ -1,12 +1,15 @@
 .Terms_page {
-  width: 80%;
+  width: 100vw;
   text-align: left;
   padding: 30px;
-  margin-top: 70px;
+  margin-top: 10vh;
   /* border: 2px solid red; */
 }
 .Privacy {
-  width: 80%;
+  width: 100vw;
+  margin-top: 10vh;
+  padding: 30px;
+  text-align: left;
 }
 @font-face {
   font-family: bebas;
