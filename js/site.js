@@ -46,6 +46,7 @@ function aboutUs() {
 var workshops = { "1": 0, "2": 0, "3": 0 }
 
 function workshop(n) {
+  try{
   var section = "section-" + n;
   var writeup = "writeup-" + n;
   var titles = "t" + n;
@@ -90,6 +91,10 @@ function workshop(n) {
     }
     writeup.style.display = "block";
     workshops[n] = 1;
+  }
+  }
+  catch{
+    console.log("Error occured in workshops");
   }
 }
 

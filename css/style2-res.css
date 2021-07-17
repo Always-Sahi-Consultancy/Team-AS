@@ -77,7 +77,7 @@
   }
 }
 /* main resize of desktop */
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 1024px) {
   .about-info {
     flex-direction: column;
   }
@@ -154,7 +154,7 @@
   margin-top: 50px;
 }
 
-@media only screen and (max-device-width: 1000px) and (orientation: portrait) {
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
   .box-size-desc {
     font-size: 2.5rem;
     /* margin-top:vh; */
@@ -165,7 +165,7 @@
   }
 
   .on-demand {
-    height: 80vh;
+    /* height: 80vh; */
     top: 5vh;
   }
 
@@ -469,5 +469,14 @@
   #box-size {
     order: 1;
     /* border-radius: 50%; */
+  }
+}
+
+@media only screen and (max-device-width: 768px) and (orientation:potrait){
+  .on-demand{
+    height:100vh;
+  }
+  .workshop-container{
+    width:80%;
   }
 }
