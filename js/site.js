@@ -134,7 +134,6 @@ function mainserviceoption() {
   var service = document.getElementById("#service");
   service.style.display = "inline-block";
   var head = document.getElementsByClassName(".head");
-  console.log(head);
   head.style.border_bottom = "solid 3px var(--gray-400)";
 };
 
@@ -172,15 +171,12 @@ function debounce(func, wait = 20, immediate = true) {
 };
 
 function Number() {
-  console.log("hii");
   var positiontop = $(document).scrollTop();
   const achievement = document.getElementById("achievement");
   const SlideInAt = (window.scrollY + window.innerHeight) - achievement.offsetHeight / 2;
   // const imageBottom = achievement.offsetTop + achievement.offsetHeight;
   const isHalfShown = SlideInAt > achievement.offsetTop;
   const isNotScrolledPast = window.scrollY + window.innerHeight < (achievement.offsetTop + achievement.offsetHeight);
-  console.log(window.scrollY);
-  console.log(achievement.offsetTop);
   if (isHalfShown && isNotScrolledPast) {
     function animateValue(obj, start, end, duration) {
       let startTimestamp = null;
@@ -218,7 +214,6 @@ window.addEventListener("scroll", debounce(Number));
 const text = document.querySelector(".box-size-desc");
 const strText = text.textContent;
 const splitText = strText.split("");
-console.log(splitText);
 text.textContent = "";
 for (let i = 0; i < splitText.length; i++) {
   text.innerHTML += "<span class='fancy-text'>" + splitText[i] + "</span>";
