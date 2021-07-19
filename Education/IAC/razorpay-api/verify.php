@@ -46,6 +46,26 @@ if ($success === true)
     
     $razorpay_order_id = $_SESSION['razorpay_order_id'];
     $razorpay_payment_id = $_POST['razorpay_payment_id'];
+    $email = $_SESSION['email'];
+    $name = $_SESSION['name'];
+    $refer = $_SESSION['refer'];
+    $amount_paid = $_SESSION['price'];
+    date_default_timezone_set("Asia/Kolkata");
+    $orderDate = date("d-m-y h-i-s");
+
+    if (isset($_SESSION['cart'])) {
+        $courseID = array_column($_SESSION['cart'], 'course_id');
+        while ($data = $result->fetch_assoc()) {
+            foreach ($courseID as $ID) {
+                if ($data['id'] == $ID) {
+                    $course = $data['course_name'];
+                    $sqlOrders = "INSERT INTO orders (order_date, order_id, payment_id, name, email, course, referer, status, amount_paid) "
+                            . "VALUES ('$orderDate', '$razorpay_order_id', '$razorpay_payment_id', '$name', '$email', '$course','$refer', 'success', '$amount_paid')";
+                    $mysqli->query($sqlOrders);
+                }
+            }
+        }
+    }
     $html = "
     ";
     echo $html;
