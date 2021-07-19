@@ -67,6 +67,20 @@ if ($success === true)
         }
     }
     $html = "
+    <div class=\"card\">
+    <div style=\"border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto; position: relative\">
+        <i class=\"checkmark fas fa-check\" aria-hidden=\"true\"></i>
+        </div>
+            <h1>Success</h1> 
+            <p>Your payment was successful</p>
+            <p>We've received your purchase request;<br/> we'll notify you by email shortly!</p>
+            <br/>
+            <p><b>Payment ID: {$_POST['razorpay_payment_id']}</b></p>
+        </div>
+    </div>
+    </div>
+    <br/><br/><br/>
+    <p style=\"color: #FF0000; padding:0;\">Please wait for 10sec. You will be redirected to our website soon.</p>
     ";
     echo $html;
 }
