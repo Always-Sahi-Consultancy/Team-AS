@@ -1,27 +1,17 @@
 .Privacy_page {
-  text-align: justify;
-  width: 80vw;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 10vh 10vw;
+  width: 100vw;
+  text-align: left;
+  padding: 30px;
+  margin-top: 10vh;
+  /* border: 2px solid red; */
 }
 .Refund {
-  text-align: justify;
-  width: 80vw;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 10vh 10vw;
+  width: 100vw;
+  margin-top: 10vh;
+  padding: 30px;
+  text-align: left;
 }
-.Terms_page {
-  text-align: justify;
-  width: 80vw;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 10vh 10vw;
-}
+
 @font-face {
   font-family: bebas;
   src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
@@ -36,16 +26,10 @@
 }
 h1 {
   font-family: bebas;
-  font-weight: 500;
 }
 h2 {
   font-family: sauce;
-  font-weight: 400;
-  font-size: 1.4rem;
 }
 p {
-  font-family: sauce1;
-}
-li {
   font-family: sauce1;
 }
