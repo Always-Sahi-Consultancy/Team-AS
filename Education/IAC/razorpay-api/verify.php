@@ -88,6 +88,21 @@ else
 {
     global $error;
     $html = "
+    <div class=\"card\">
+    <div style=\"border-radius:200px; height:200px; width:200px; background: #FF0000; margin:0 auto; position: relative\">
+        <i class=\"checkmark far fa-thumbs-down\" aria-hidden=\"true\" style=\"font-size: 8em; color: #FFFFFF\"></i>
+        </div>
+            <h1 style=\"color: #FF0000;\">Oh no!</h1> 
+            <p>Your payment failed</p>
+            <p>Oops! Something went wrong,;<br/> you should try again.</p>
+            <br/>
+            <p><b>{$error}</b></p>
+            <br/>
+            <button><b>Try Again</b></button>
+        </div>
+        
+    </div>
+    </div>
     ";
     echo $html;
 }
