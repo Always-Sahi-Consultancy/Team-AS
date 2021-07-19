@@ -406,7 +406,9 @@ if ($_SESSION['logged_in'] != 1) {
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Upload Bank Passbook/Receipt</div>
-                  <input type="file" id="<?php echo $_SESSION['filebr'];?>" name="uploadbr" required>
+                <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">AS Certificate</div>
+                    <input type="file" id="<?php echo $_SESSION['filecertificate'];?>" name="uploadcertificate[]" multiple="" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <button type="submit" name="register">SUBMIT</button>
