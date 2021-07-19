@@ -40,30 +40,26 @@
 
   @keyframes live-left {
     from {
-      left: 1rem;
+      left: -1rem;
     }
     to {
-      left: 2rem;
+      left: 0rem;
     }
   }
 
   @keyframes live-right {
     from {
-      right: 1rem;
+      right: 0rem;
     }
     to {
-      right: 2rem;
+      right: -1rem;
     }
-  }
-
-  .box-size-left {
-    left: 2rem;
   }
 
   .intro-text {
-    width: 100%;
+    width: auto;
     font-size: 1rem;
-    padding-right: 4rem;
+    /* padding-right: 4rem; */
     /* height: 60px; */
     /* top: 0%; */
   }
@@ -83,14 +79,13 @@
   }
   .on-demand {
     flex-direction: column;
-    /* top: 100px; */
   }
   .about-sections {
     width: 100%;
   }
   #about-text {
     order: 2;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   #about-image {
     order: 1;
@@ -140,7 +135,7 @@
   } */
 @media only screen and (max-width: 1200px) {
   .stats {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 }
 /* @media only screen and (max-width: 1000px) {
@@ -151,22 +146,22 @@
 .stat2,
 .stat3,
 .stat4 {
-  margin-top: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media only screen and (max-device-width: 1024px) and (orientation: portrait) {
   .box-size-desc {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     /* margin-top:vh; */
   }
 
   .as-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .on-demand {
-    /* height: 80vh; */
-    top: 5vh;
+    top: 10vh;
   }
 
   .box-size-right {
@@ -175,25 +170,25 @@
 
   .intro-button {
     height: 70px;
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .company img {
-    height: 90px;
+    height: 50%;
   }
 
   .company a p {
-    font-size: 3rem;
+    font-size: 1rem;
     width: fit-content;
   }
 
   .Com_name .company {
-    font-size: 2rem;
+    font-size: 1rem;
     /* width:fit-content; */
   }
 
   .head {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   }
 
@@ -202,7 +197,7 @@
   }
 
   .nav_bar {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #sidelay .second a {
@@ -215,7 +210,7 @@
   }
 
   .workshop-titles {
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
     /* min-width:80%; */
     /* justify-content:center; */
@@ -225,7 +220,7 @@
   }
 
   .workshop-text {
-    font-size: 3rem;
+    font-size: 1.3rem;
     width: 90vw;
     height: 30vw;
   }
@@ -238,11 +233,11 @@
   .card1 .front,
   .card2 .front,
   .card3 .front {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .deto span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .deto img {
@@ -451,7 +446,7 @@
   }
   .on-demand {
     flex-direction: column;
-    /* top: 100px; */
+    top: 10vh;
   }
   .about-sections {
     width: 100%;

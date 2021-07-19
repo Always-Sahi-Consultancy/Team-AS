@@ -17,7 +17,6 @@ body {
   width: 40%;
   height: 300px;
   position: relative;
-  /* top:25%; */
 }
 
 .box-size {
@@ -37,14 +36,11 @@ body {
 
 .on-demand {
   position: relative;
-  /* min-height:680px; */
-  top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  /* padding:30px; */
-  /* margin-bottom:100px; */
+  top: 10vh;
 }
 .box-size-desc {
   color: black;
@@ -681,11 +677,12 @@ body {
 .deto img {
   border: 2px solid white;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 5%;
   right: 5%;
   border-radius: 15px;
   width: 268px;
+  padding: 2%;
 }
 /* Join Us Ends*/
 
