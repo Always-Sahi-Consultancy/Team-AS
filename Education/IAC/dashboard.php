@@ -13,6 +13,7 @@ if ((time() - $_SESSION['login_time']) > 900) {
 $_SESSION['fileaadhaar'] = 'fileaadhaar';
 $_SESSION['filepan'] = 'filepan';
 $_SESSION['filebr'] = 'filebr';
+$_SESSION['filecertificate'] = 'filecertificate';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['register'])) { // user loggin in
@@ -52,6 +53,9 @@ if ($_SESSION['logged_in'] != 1) {
   $totalEarn = $_SESSION['totalEarn'];
   $totalJoin = $_SESSION['totalJoin'];
   $target = $_SESSION['target'];
+
+  // Fetching all courses from database which matches email
+  $result = $mysqli->query("SELECT * FROM course_log WHERE email='$email'");
 }
 ?>
 <html lang="en">
@@ -65,6 +69,7 @@ if ($_SESSION['logged_in'] != 1) {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="menu.js"></script>
 </head>
 
 <body>
@@ -240,7 +245,6 @@ if ($_SESSION['logged_in'] != 1) {
                         }
                       ?>
                     </select>
-
                   </div>
                   <div class=" col-md-4">
                     <div class="iachead">
@@ -303,24 +307,24 @@ if ($_SESSION['logged_in'] != 1) {
               </div>
 
               <!--Mobile Verification-->
-                <!-- <div class="row MV">
-                  <div>Mobile OTP Verification</div>
-                </div>
+              <!-- <div class="row MV">
+                <div>Mobile OTP Verification</div>
+              </div>
+              <div class="row justify-content-center MobileV col-md-6">
+                <div class="titles">Mobile</div>
+                <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
+              </div>
+              <div id="OTP5" style="display: none;">
                 <div class="row justify-content-center MobileV col-md-6">
-                  <div class="titles">Mobile</div>
-                  <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
+                  <div class="titles">Enter 6 digit OTP </div>
+                  <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6">
+                  <h1 id="countdown"></h1>
                 </div>
-                <div id="OTP5" style="display: none;">
-                  <div class="row justify-content-center MobileV col-md-6">
-                    <div class="titles">Enter 6 digit OTP </div>
-                    <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6">
-                    <h1 id="countdown"></h1>
-                  </div>
-                </div>
-                <div class="row justify-content-center col-md-6">
-                  <button onclick="OTP(5)" name="submit" class="BO5" id="BO5">Send OTP</button>
-                  <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
-                </div>  -->
+              </div>
+              <div class="row justify-content-center col-md-6">
+                <button onclick="OTP(5)" name="submit" class="BO5" id="BO5">Send OTP</button>
+                <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
+              </div>-->
 
               <form method="post" enctype="multipart/form-data">
                 <!--upline Information-->
@@ -434,32 +438,43 @@ if ($_SESSION['logged_in'] != 1) {
               <div class="row justify-content-center MobileV col-md-6">
                 <div class="titles">Mobile</div>
                 <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
-                <button type="submit" name="submit" onclick="OTP(1)" class="BO">Send OTP</button>
-              </div> -->
-              <!--upline Information-->
-              <div class="row MV">
-                <div>Upline Information</div>
               </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Upline ID </div>
-                <input type="number" name="sID" placeholder="Upline Id" maxlength="6" minlength="6" autocomplete="off" required>
+              <div id="OTP5" style="display: none;">
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Enter 6 digit OTP </div>
+                  <input type="number" name="OTP" placeholder="Enter OTP" maxlength="6" minlength="6">
+                  <h1 id="countdown"></h1>
+                </div>
               </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles1">Upline Name</div>
-                <input type="text" id="sname" placeholder="Upline Name" autocomplete="off" required>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Slope</div>
-                <select id="eligible" name="slope" autocomplete="off" required>
-                  <option value="Tally">Tally</option>
-                  <option value="BankAudit">Bank Audit</option>
-                </select>
-              </div>
-              <div class="row MV">
-                <div>Personal Information</div>
-              </div>
-              <div class="col-md-12">
-                <form>
+              <div class="row justify-content-center col-md-6">
+                <button onclick="OTP(5)" name="submit" class="BO5" id="BO5">Send OTP</button>
+                <button type="submit" onclick="OTP(5)" name="verify" class="SU" id="SU">SUBMIT</button>
+              </div>-->
+              
+              <form method="post" enctype="multipart/form-data">
+                <!--upline Information-->
+                <div class="row MV">
+                  <div>Upline Information</div>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upline ID </div>
+                  <input type="number" name="sID" placeholder="Upline Id" maxlength="6" minlength="6" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles1">Upline Name</div>
+                  <input type="text" id="sname" placeholder="Upline Name" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Slope</div>
+                  <select id="eligible" name="slope" required>
+                    <option value="Tally">Tally</option>
+                    <option value="BankAudit">Bank Audit</option>
+                  </select>
+                </div>
+                <div class="row MV">
+                  <div>Personal Information</div>
+                </div>
+                <div class="col-md-12">
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Name</div>
                     <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required>
@@ -467,6 +482,10 @@ if ($_SESSION['logged_in'] != 1) {
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Email</div>
                     <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
+                  </div>
+                  <div class="row justify-content-center MobileV col-md-6">
+                    <div class="titles">Mobile</div>
+                    <input type="tel" name="telephone" placeholder="Mobile" pattern="[0-9]{10}" autocomplete="off" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">PAN</div>
@@ -495,33 +514,44 @@ if ($_SESSION['logged_in'] != 1) {
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">AS Certificate</div>
-                    <input id="certificate" name="certificate" autocomplete="off" required>
+                    <input type="file" id="<?php echo $_SESSION['filecertificate'];?>" name="uploadcertificate[]" multiple="" required>
                   </div>
                   <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">Date of Birth</div>
-                    <input type="date" placeholder="DOB" name="dob" autocomplete="off" required>
+                    <input type="date" placeholder="DOB" name="dob" required>
                   </div>
-                  <div class="row justify-content-center MobileV col-md-6">
-                    <button type="submit" name="register">NEXT</button>
-                  </div>
-                </form>
-              </div>
-              <!--BANK DETAILS-->
-              <div class="row MV">
-                <div>Bank Details</div>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Account No.</div>
-                <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" autocomplete="off" required>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">IFSC Code</div>
-                <input type="number" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" autocomplete="off" required>
-              </div>
-              <div class="row justify-content-center MobileV col-md-6">
-                <div class="titles">Uplaod</div>
-                <input type="number" id="PIN" name="upload" minlength="6" maxlength="6" autocomplete="off" required>
-              </div>
+                  <!-- <div class="row justify-content-center MobileV col-md-6">
+                    <button type="submit" onclick="next(1)" name="next">NEXT</button>
+                  </div> -->
+                </div>
+                <!--BANK DETAILS-->
+                <div class="row MV">
+                  <div>Bank Details</div>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Account No.</div>
+                  <input type="number" id="AccNo" name="ac_no" placeholder="Account no." minlength="12" maxlength="12" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">IFSC Code</div>
+                  <input type="text" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" autocomplete="off" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upload Aadhaar</div>
+                  <input type="file" id="<?php echo $_SESSION['fileaadhaar'];?>" name="uploadaadhaar" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upload PAN</div>
+                  <input type="file" id="<?php echo $_SESSION['filepan'];?>" name="uploadpan" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <div class="titles">Upload Bank Passbook/Receipt</div>
+                  <input type="file" id="<?php echo $_SESSION['filebr'];?>" name="uploadbr" required>
+                </div>
+                <div class="row justify-content-center MobileV col-md-6">
+                  <button type="submit" name="register">SUBMIT</button>
+                </div>
+              </form>
             </div>
 
 
@@ -732,7 +762,6 @@ if ($_SESSION['logged_in'] != 1) {
                     <th class="text-center">Personal</th>
                     <th class="text-center">Group</th>
                     <th class="text-center">Total</th>
-
                   </tr>
                 </thead>
                 <tbody>
@@ -819,7 +848,7 @@ if ($_SESSION['logged_in'] != 1) {
     }
   ?>
 
-  <script src="menu.js"></script>
+  <script src="menu.js" type="text/javascript"></script>
 
 </body>
 
