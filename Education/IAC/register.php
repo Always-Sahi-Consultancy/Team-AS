@@ -30,6 +30,7 @@ $hash = $mysqli->escape_string(md5(rand(0,1000)));
 $fileaadhaar = $_FILES['uploadaadhaar'];
 $filepan = $_FILES['uploadpan'];
 $filebr = $_FILES['uploadbr'];
+$filecertificate = $_FILES['uploadcertificate'];
 
 // Set session variables to be used on upload.php page
 if (isset($fileaadhaar)) {
@@ -50,6 +51,12 @@ if (isset($filebr)) {
     $_SESSION['fileID'] = $_SESSION['filebr'];
     require 'upload.php';
 }
+if (isset($filecertificate)) {
+    $_SESSION['email'] = $email;
+    $_SESSION['multifile'] = 'uploadcertificate';
+    $_SESSION['fileID'] = $_SESSION['filecertificate'];
+    require 'uploadmultifile.php';
+}
 
 // Check if user with that email already exists
 $result = $mysqli->query("SELECT * FROM users WHERE email='$email'");
@@ -63,11 +70,14 @@ else { // Email doesn't already exist in a database, proceed...
     $sqlusers = "INSERT INTO users (name, email, password, hash) "
             . "VALUES ('$name', '$email', '$password', '$hash')";
 
-    $sqldetails = "INSERT INTO details (UID, name, email, phone, pan, aadhaar, address, pin, city, dob, ac_no, ifsc) "
-            . "VALUES ('$UID', '$name', '$email', '$phone', '$pan', '$aadhaar', '$address', '$pin', '$city', '$dob', '$ac_no', '$ifsc')";
+    $sqldetails = "INSERT INTO details (UID, name, email, phone, pan, aadhaar, address, pin, city, dob, ac_no, ifsc, fileadhaar, filepan, filebr, filecertificate) "
+            . "VALUES ('$UID', '$name', '$email', '$phone', '$pan', '$aadhaar', '$address', '$pin', '$city', '$dob', '$ac_no', '$ifsc', '1', '1', '1', '1')";
+
+    $sqldash = "INSERT INTO dash (UID, name, email, phone, level, currPCP, currGCP, currTCP, totalPCP, totalGCP, totalTCP, totalSales, totalEarn, totalJoin, target) "
+            . "VALUES ('$UID', '$name', '$email', '$phone', '5', '0', '0', '0', '0', '0', '0', '0', '0', '0', '100')";
     
     // Add user to the database
-    if($mysqli->query($sqlusers) && $mysqli->query($sqldetails)){
+    if($mysqli->query($sqlusers) && $mysqli->query($sqldetails) && $mysqli->query($sqldash)){
         echo '<script>alert("New User Account created")</script>';
 
         // Send registration confirmation link (verify.php)
