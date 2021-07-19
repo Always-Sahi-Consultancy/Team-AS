@@ -360,6 +360,35 @@ else
     echo $html;
 }
 
+function cartItem() {
+    global $result;
+    if (isset($_SESSION['cart'])) {
+        $courseID = array_column($_SESSION['cart'], 'course_id');
+        while ($data = $result->fetch_assoc()) {
+            foreach ($courseID as $ID) {
+                if ($data['id'] == $ID) {
+                    proEl($data['course_name'], $data['course_price']);
+                }
+            }
+        }
+    }
+    else {
+        return null;
+    }
+}
+
+function proEL($courseName, $coursePrice) {
+    $element = "
+    
+    <tr>
+        <td width=\"75%\" align=\"left\" style=\"font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 15px 10px 5px 10px;\">".$courseName."</td>
+        <td width=\"25%\" align=\"left\" style=\"font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding: 15px 10px 5px 10px;\">".$coursePrice." INR </td>
+    </tr>
+
+    ";
+    echo $element;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -375,5 +404,11 @@ else
     <title>Verification</title>
 </head>
 <body>
+    <script>
+        window.onload = function fun() {
+            var elem = document.getElementById("cartItem");
+            elem.innerHTML = <?php cartItem();?>
+        }
+    </script>
 </body>
 </html>
