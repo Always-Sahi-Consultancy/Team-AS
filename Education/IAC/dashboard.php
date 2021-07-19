@@ -532,11 +532,11 @@ if ($_SESSION['logged_in'] != 1) {
                 <div class="link col-md-2"> <a href="">HOME</a></div>
               </div>
               <div class="row col-md-10">
-                <div class="course col-md-3">
-                  <div>
-                    <img src="img/photo6300930260224551730.jpg" class="courseImg">
-                  </div>
-                </div>
+                <?php
+                  while ($dataCourse = $result->fetch_assoc()) {
+                    userCourse($dataCourse['course'], $dataCourse['course_img']);
+                  }
+                ?>
               </div>
             </div>
 
@@ -793,6 +793,21 @@ if ($_SESSION['logged_in'] != 1) {
         return false;
       }
     }
+
+    function userCourse($courseName, $courseImage) {
+      $elementCourse = "
+
+      <div class=\"course col-md-3\">
+        <div>
+          <img src=\"$courseImage\" class=\"courseImg\" alt=\"$courseName\">
+        </div>
+      </div>
+
+      ";
+
+      echo $elementCourse;
+    }
+
     function userEligibility($courseName) {
       $element = "
 
