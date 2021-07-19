@@ -234,8 +234,11 @@ if ($_SESSION['logged_in'] != 1) {
                   <div class=" col-md-4">
                     <select id="city" class="iachead" name="city" required>
                       <option value="" disabled selected hidden>Eligibility</option>
-                      <option value="Pune">tally</option>
-                      <option value="Delhi">bank audit</option>
+                      <?php
+                        while ($data = $result->fetch_assoc()) {
+                          userEligibility($data['course']);
+                        }
+                      ?>
                     </select>
 
                   </div>
@@ -785,6 +788,15 @@ if ($_SESSION['logged_in'] != 1) {
       } else {
         return false;
       }
+    }
+    function userEligibility($courseName) {
+      $element = "
+
+      <option value=\"$courseName\">$courseName</option>
+
+      ";
+
+      echo $element;
     }
   ?>
 
