@@ -150,7 +150,7 @@ if ($_SESSION['logged_in'] != 1) {
               <div class="col-md-3"></div>
               <div class="col-md-5">
                 <p class="Linfo">
-                  <a href="#" onclick="ass()" class="changePassword">Associate</a> / <a href="#" class="changePassword" onclick="iac()"> IAC</a> / <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a>
+                  <!-- <a href="#" onclick="ass()" class="changePassword">Associate</a> / --> <a href="#" class="changePassword" onclick="iac()"> IAC</a> / <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a> -->
                 </p>
               </div>
             </div>

@@ -524,9 +524,9 @@ select {
   text-align: right;
   margin: 20px 0px 20px 70px;
 }
-#IAC-business {
+/* #IAC-business {
   display: none;
-}
+} */
 .align-right {
   font-size: 26px;
   font-family: bebas;
@@ -932,9 +932,9 @@ h1 {
 #bankDetails {
   display: none;
 }
-#mycourses {
+/* #mycourses {
   display: none;
-}
+} */
 #mobileChange,
 #BankChange,
 #resignation,
