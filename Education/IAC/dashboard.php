@@ -554,7 +554,7 @@ if ($_SESSION['logged_in'] != 1) {
                   Referal Link
                 </div>
                 <div class="col-md-8">
-                  <input type="text" id="ReferralInput" value="http://localhost/AS/Education/IAC/course.php?refer=<?= $id ?>" placeholder="Referal Link" class="linkIn" readonly>
+                  <input type="text" id="ReferralInput" value="http://localhost/AS/Education/IAC/course.php?refer=<?= $id ?>&category=Accounts_%26_Finance" placeholder="Referal Link" class="linkIn" readonly>
                 </div>
                 <div class="col-md-1">
                   <button class="btn btn-primary copy" onclick="copyReferral()">COPY</button>
