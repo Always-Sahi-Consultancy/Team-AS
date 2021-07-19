@@ -2,12 +2,9 @@
 /* Registration process, inserts user info into the database 
    and sends account confirmation email message
 */
-require 'PHPMailer/PHPMailerAutoload.php';
 
-// Set session variables to be used on profile.php page
-$_SESSION['id'] = $_POST['id'];
-$_SESSION['email'] = $_POST['email'];
-$_SESSION['name'] = $_POST['name'];
+require 'db.php';
+require 'PHPMailer/PHPMailerAutoload.php';
 
 // random password generate
 $passStr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
