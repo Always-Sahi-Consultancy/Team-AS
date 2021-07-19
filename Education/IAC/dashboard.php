@@ -398,14 +398,16 @@ if ($_SESSION['logged_in'] != 1) {
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Upload Aadhaar</div>
-                  <input type="file" id="<?php echo $_SESSION['fileaadhaar'];?>" name="uploadaadhaar" required>
+                  <input type="file" id="<?php echo $_SESSION['fileaadhaar'];?>" name="uploadaadhaar" onchange="return fileValidation(this.id)" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Upload PAN</div>
-                  <input type="file" id="<?php echo $_SESSION['filepan'];?>" name="uploadpan" required>
+                  <input type="file" id="<?php echo $_SESSION['filepan'];?>" name="uploadpan" onchange="return fileValidation(this.id)" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Upload Bank Passbook/Receipt</div>
+                  <input type="file" id="<?php echo $_SESSION['filebr'];?>" name="uploadbr" onchange="return fileValidation(this.id)" required>
+                </div>
                 <div class="row justify-content-center MobileV col-md-6">
                     <div class="titles">AS Certificate</div>
                     <input type="file" id="<?php echo $_SESSION['filecertificate'];?>" name="uploadcertificate[]" multiple="" required>

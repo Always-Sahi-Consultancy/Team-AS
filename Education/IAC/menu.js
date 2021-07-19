@@ -218,3 +218,40 @@ sendOTP.addEventListener("click", function() {
     }, 1000);
 });
 
+function fileValidation(id) {
+    console.log(id);
+    var fileInput = document.getElementById(id);
+    var filePath = fileInput.value;
+
+    var allowedExtn = /(\.jpg|\.jpeg|\.png|\.pdf)$/i;
+
+    // File Type Validation
+    if (!allowedExtn.test(filePath)) {
+        alert("Invalid File Type");
+        fileInput.value = '';
+        return false;
+    }
+    else {
+        // Image Preview of uploaded File
+        // if (fileInput.files && fileInput.files[0]) {
+        //     var reader = new FileReader();
+        //     reader.onload = function(e) {
+        //         document.getElementById("imgPreview").innerHTML = '<img src="' + e.target.result + '"/>';
+        //     };
+        //     reader.readAsDataURL(fileInput.files[0]);
+        // }
+
+        // File Size Validation
+        if (fileInput.files.length > 0) {
+            for (const i = 0; i <= fileInput.files.length-1; i++) {
+                const fsize = fileInput.files.item(i).size; // Size in Binary Bytes i.e 1 KB = 1024 Bytes
+                const file = Math.round(fsize/1024);    // Size in KiloBytes
+                if (file > 800) {
+                    alert("File is too large. Please select a file less than 1MB");
+                    fileInput.value = '';
+                    return false;
+                }
+            }
+        }
+    }
+}
