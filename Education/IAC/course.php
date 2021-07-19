@@ -4,18 +4,41 @@
 
   require 'db.php';
 
-  $result = $mysqli->query("SELECT * FROM courses");
+  // Make sure refer and category variables aren't empty
+  if( isset($_GET['refer']) && !empty($_GET['refer']) AND isset($_GET['category']) && !empty($_GET['category']) )
+  {
+      $refer = $mysqli->escape_string($_GET['refer']); 
+      $category = $mysqli->escape_string($_GET['category']); 
+      $_SESSION['refer'] = $refer;
+
+      // Make sure user email with matching refer exist
+      $result = $mysqli->query("SELECT * FROM users WHERE id='$refer'");
+
+      if ( $result->num_rows == 0 )
+      { 
+          $_SESSION['message'] = "You have entered invalid URL for course purchase!";
+          header("location: error.php");
+      }
+  }
+  else {
+      $_SESSION['message'] = "Sorry, verification failed, try again!";
+      header("location: error.php");  
+  }
+
+  // Fetching all courses from database which matches category
+  $result = $mysqli->query("SELECT * FROM courses WHERE category='$category'");
 
   if (isset($_POST['add'])) {
     if (isset($_SESSION['cart'])) {
       $item_arr_id = array_column($_SESSION['cart'], "course_id");
       if (in_array($_POST['course_id'], $item_arr_id)) {
         echo "<script>alert('Course is already added in the Cart!')</script>";
-        echo "<script>window.location = 'course.php'</script>";
+        
       } else {
         $count = count($_SESSION['cart']);
         $item_arr = array('course_id'=>$_POST['course_id']);
         $_SESSION['cart'][$count] = $item_arr;
+        $_SESSION['refer'] = $refer;
       }
     } else {
       $item_arr = array('course_id'=>$_POST['course_id']);
@@ -32,6 +55,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/course.css">
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootstrap -->
@@ -82,10 +106,11 @@
   
   <?php
     function component($courseName, $coursePrice, $courseImg, $productID) {
+      $secondaryCoursePrice = $coursePrice + 500;
       $element = "
 
       <div class=\"card-pad col-md-3 col-sm-6 my-3 my-md-0\">
-        <form action=\"course.php\" method=\"post\">
+        <form method=\"post\">
           <div class=\"card shadow\">
             <div>
               <img src=\"$courseImg\" alt=\"Course 1\" class=\"img-fluid card-img-top\">
@@ -99,9 +124,9 @@
                 <i class=\"fas fa-star\"></i>
                 <i class=\"far fa-star\"></i>
               </h6>
-              <p class=\"card-text\">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <!--<p class=\"card-text\">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
               <h5>
-                <small><s class=\"text-secondary\">599 INR</s></small>
+                <small><s class=\"text-secondary\">$secondaryCoursePrice INR</s></small>
                 <span class=\"price\">$coursePrice INR</span>
               </h5>
 
