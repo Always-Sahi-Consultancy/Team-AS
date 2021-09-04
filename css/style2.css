@@ -569,6 +569,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+.Terms_page {
+  padding-top: 10vh;
+  padding-left: 5vh;
+  padding-right: 2vh;
+}
+@media only screen and (max-device-width:600px) and (orientation:portrait){
+  .Terms_page{
+    padding-top: 10vh;
+  }
+}
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .as-title {
+    font-size: 2rem;
+  }
 .card1 .front,
 .card2 .front,
 .card .front {
