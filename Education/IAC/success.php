@@ -6,7 +6,7 @@ session_start();
 <html>
 <head>
   <title>Success</title>
-  <?php include 'css/css.html'; ?>
+  <?php include 'css/css'; ?>
 </head>
 <body>
 <div class="form">

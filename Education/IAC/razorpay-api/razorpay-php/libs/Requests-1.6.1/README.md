@@ -1,5 +1,4 @@
-Requests for PHP
-================
+# Requests for PHP
 
 Requests is a HTTP library written in PHP, for human beings. It is roughly
 based on the API from the excellent [Requests Python
@@ -31,15 +30,13 @@ var_dump($request->body);
 // string(26891) "[...]"
 ```
 
-Requests allows you to send  **HEAD**, **GET**, **POST**, **PUT**, **DELETE**, 
-and **PATCH** HTTP requests. You can add headers, form data, multipart files, 
-and parameters with simple arrays, and access the response data in the same way. 
-Requests uses cURL and fsockopen, depending on what your system has available, 
+Requests allows you to send **HEAD**, **GET**, **POST**, **PUT**, **DELETE**,
+and **PATCH** HTTP requests. You can add headers, form data, multipart files,
+and parameters with simple arrays, and access the response data in the same way.
+Requests uses cURL and fsockopen, depending on what your system has available,
 but abstracts all the nasty stuff out of your way, providing a consistent API.
 
-
-Features
---------
+## Features
 
 - International Domains and URLs
 - Browser-style SSL Verification
@@ -47,11 +44,10 @@ Features
 - Automatic Decompression
 - Connection Timeouts
 
-
-Installation
-------------
+## Installation
 
 ### Install with Composer
+
 If you're using [Composer](https://github.com/composer/composer) to manage
 dependencies, you can add Requests with it.
 
@@ -65,6 +61,7 @@ dependencies, you can add Requests with it.
     }
 
 ### Install source from GitHub
+
 To install the source code:
 
     $ git clone git://github.com/rmccue/Requests.git
@@ -77,8 +74,8 @@ You'll probably also want to register an autoloader:
 
     Requests::register_autoloader();
 
-
 ### Install source from zip/tarball
+
 Alternatively, you can fetch a [tarball][] or [zipball][]:
 
     $ curl -L https://github.com/rmccue/Requests/tarball/master | tar xzv
@@ -88,19 +85,18 @@ Alternatively, you can fetch a [tarball][] or [zipball][]:
 [tarball]: https://github.com/rmccue/Requests/tarball/master
 [zipball]: https://github.com/rmccue/Requests/zipball/master
 
-
 ### Using a Class Loader
+
 If you're using a class loader (e.g., [Symfony Class Loader][]) for
 [PSR-0][]-style class loading:
 
     $loader->registerPrefix('Requests', 'path/to/vendor/Requests/library');
 
-[Symfony Class Loader]: https://github.com/symfony/ClassLoader
-[PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+[symfony class loader]: https://github.com/symfony/ClassLoader
+[psr-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 
+## Documentation
 
-Documentation
--------------
 The best place to start is our [prose-based documentation][], which will guide
 you through using Requests.
 
@@ -113,10 +109,10 @@ If you find any problems with it, [create a new
 issue](https://github.com/rmccue/Requests/issues/new)!
 
 [prose-based documentation]: https://github.com/rmccue/Requests/blob/master/docs/README.md
-[request_method]: http://requests.ryanmccue.info/api/class-Requests.html#_request
+[request_method]: http://requests.ryanmccue.info/api/class-Requests#_request
 
-Testing
--------
+## Testing
+
 [![Build Status](https://secure.travis-ci.org/rmccue/Requests.png?branch=master)](http://travis-ci.org/rmccue/Requests)
 [![Coverage Status](https://coveralls.io/repos/rmccue/Requests/badge.png?branch=master)][coveralls]
 
@@ -134,12 +130,11 @@ If you'd like to run a single set of tests, specify just the name:
 
     $ phpunit Transport/cURL
 
-Contribute
-----------
+## Contribute
 
 1. Check for open issues or open a new issue for a feature request or a bug
 2. Fork [the repository][] on Github to start making your changes to the
-    `master` branch (or branch off of it)
+   `master` branch (or branch off of it)
 3. Write a test which shows that the bug was fixed or that the feature works as expected
 4. Send a pull request and bug me until I merge it
 

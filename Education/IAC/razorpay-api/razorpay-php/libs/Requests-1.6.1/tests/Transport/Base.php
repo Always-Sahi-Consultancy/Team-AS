@@ -441,7 +441,7 @@ abstract class RequestsTest_Transport_Base extends PHPUnit_Framework_TestCase {
 			return;
 		}
 
-		$request = Requests::get('https://testssl-expire.disig.sk/index.en.html', array(), $this->getOptions());
+		$request = Requests::get('https://testssl-expire.disig.sk/index.en', array(), $this->getOptions());
 	}
 
 	/**
@@ -453,14 +453,14 @@ abstract class RequestsTest_Transport_Base extends PHPUnit_Framework_TestCase {
 			return;
 		}
 
-		$request = Requests::get('https://testssl-revoked.disig.sk/index.en.html', array(), $this->getOptions());
+		$request = Requests::get('https://testssl-revoked.disig.sk/index.en', array(), $this->getOptions());
 	}
 
 	/**
 	 * Test that SSL fails with a bad certificate
 	 *
 	 * This is defined as invalid by
-	 * https://onlinessl.netlock.hu/en/test-center/invalid-ssl-certificate.html
+	 * https://onlinessl.netlock.hu/en/test-center/invalid-ssl-certificate
 	 * and is used in testing in PhantomJS. That said, expect this to break.
 	 *
 	 * @expectedException Requests_Exception

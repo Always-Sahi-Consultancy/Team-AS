@@ -33,7 +33,7 @@
         <div class="head">
             <div class="head_nav">
                 <div id="As_logo">
-                    <a href="index.html" class="company">
+                    <a href="index" class="company">
                         <img src="image/As logo Edited.png"></img>
                         <div class="Company_name">
                           <p class="Com_name">Always <span class="sahi">Sahi</span></p>
@@ -79,7 +79,7 @@
                                     <div>
                                     <h2>Career</h2>
                                     <!-- <span class="comapny_details">Description</span><br> -->
-                                    <a href="./comingsoon.html"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
+                                    <a href="./comingsoon"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -91,16 +91,16 @@
                                 </div>
                                 <div class="service_sections service_2">
                                     <div class="service_container">
-                                        <a class="nav_link" href="/Services.html"><div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
+                                        <a class="nav_link" href="/Services"><div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">Pacakage Escape Funnel
                                         <img src="image/Services/001-funnel.png" class="service_icon">
                                         </div>
                                         </a>
-                                        <a class="nav_link" href="/MStake.html">
+                                        <a class="nav_link" href="/MStake">
                                         <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">M-stake
                                             <img src="image/Services/002-stock-exchange-app.png" class="service_icon">
                                         </div>
                                         </a>
-                                        <a class="nav_link" href="/workshops.html">
+                                        <a class="nav_link" href="/workshops">
                                         <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">Workshop
                                             <img src="image/Services/003-presentation.png" class="service_icon">
                                         </div>
@@ -129,9 +129,9 @@
                                 </div>
                             </div>
                         </span>
-                        <a href="/comingsoon.html"><span class="nav_items_section">CSR</span></a>
-                        <a href="/index.html#join_us"><span class="nav_items_section">Join Us</span></a>
-                        <a href="/comingsoon.html"><span class="nav_items_section">Public Notices</span></a>
+                        <a href="/comingsoon"><span class="nav_items_section">CSR</span></a>
+                        <a href="/index#join_us"><span class="nav_items_section">Join Us</span></a>
+                        <a href="/comingsoon"><span class="nav_items_section">Public Notices</span></a>
                     </div>
                     <div class="nav_second">
                         <span onclick="login()" id="login">Login
@@ -154,18 +154,18 @@
                     <a href="#about_us" onclick="navbarOptions(1)" id="wa">Company</a>
                         <div class="second_company" id="sr1">
                             <a href="#about_us" onclick="about_us()"><span>About Us</span></a>
-                            <a href="/comingsoon.html"><span>Vision & Mission</span></a>
-                            <a href="/comingsoon.html"><span>Career</span></a>
+                            <a href="/comingsoon"><span>Vision & Mission</span></a>
+                            <a href="/comingsoon"><span>Career</span></a>
                         </div>
                     <a href="#workshop" id="ss" onclick="navbarOptions(2)">Services</a>
                         <div class="second_company" id="sr2">
-                            <a href="/Services.html"><span>Pacakage Escape Funnel</span></a>
-                            <a href="/MStake.html"><span>M-stake</span></a>
-                            <a href="/workshops.html"><span>Workshop</span></a>
+                            <a href="/Services"><span>Pacakage Escape Funnel</span></a>
+                            <a href="/MStake"><span>M-stake</span></a>
+                            <a href="/workshops"><span>Workshop</span></a>
                         </div>
-                    <a href="/comingsoon.html">CSR</a>
-                    <a href="/index.html#join_us">Join Us</a>
-                    <a href="/comingsoon.html">Public Notices</a>
+                    <a href="/comingsoon">CSR</a>
+                    <a href="/index#join_us">Join Us</a>
+                    <a href="/comingsoon">Public Notices</a>
                 </div>
                 <div class="second">
                     <a href="#" onclick="navbarOptions(3)">Login</a>
@@ -554,7 +554,7 @@
                                         </p>
                                         <div class="icon"><i aria-hidden="true"><img src="image/3as.svg"
                                                     alt="logo" /></i>
-                                            <h4><a href="Services.html">Package Escape Funnel</a></h4>
+                                            <h4><a href="Services">Package Escape Funnel</a></h4>
 
                                         </div>
                                     </div>
@@ -565,7 +565,7 @@
                                         </p>
                                         <div class="icon"><i aria-hidden="true"><img src="image/4as.svg"
                                                     alt="logo" /></i>
-                                            <h4><a href="MStake.html">MStake Funnel</a></h4>
+                                            <h4><a href="MStake">MStake Funnel</a></h4>
 
                                         </div>
                                     </div>
@@ -576,7 +576,7 @@
                                         </p>
                                         <div class="icon"><i aria-hidden="true"><img src="image/5as.svg"
                                                     alt="logo" /></i>
-                                            <h4><a href="workshops.html">Workshop</a></h4>
+                                            <h4><a href="workshops">Workshop</a></h4>
 
                                         </div>
                                     </div>
@@ -596,7 +596,7 @@
                                         
                                         <div class="icon"><i aria-hidden="true"><img src="image/join us/associate.jpg"
                                                     alt="logo" /></i>
-                                            <a href="Services.html">Associate With Us</a>
+                                            <a href="Services">Associate With Us</a>
 
                                         </div>
                                     </div>
@@ -604,7 +604,7 @@
                                         
                                         <div class="icon"><i aria-hidden="true"><img src="image/join us/iasc.jpg"
                                                     alt="logo" /></i>
-                                            <a href="MStake.html">Be Our IASC</a>
+                                            <a href="MStake">Be Our IASC</a>
 
                                         </div>
                                     </div>
@@ -612,7 +612,7 @@
                                         
                                         <div class="icon"><i aria-hidden="true"><img src="image/join us/intern.jpg"
                                                     alt="logo" /></i>
-                                          <a href="workshops.html">Career With AS</a>
+                                          <a href="workshops">Career With AS</a>
 
                                         </div>
                                     </div>
@@ -722,9 +722,9 @@
                 </div>
                 <div class="ft-head-right col-md-5">
                     <div class="row justify-content-center">
-                        <div><a href="Terms.html" class="Terms">Terms of Use </a>|&nbsp</div>
-                        <div ><a href="Privacy.html" class="Privacy">Privacy Policy </a>|&nbsp</div>
-                        <div ><a href="Refund.html" class="Refund">Refund Policy </a></div>
+                        <div><a href="Terms" class="Terms">Terms of Use </a>|&nbsp</div>
+                        <div ><a href="Privacy" class="Privacy">Privacy Policy </a>|&nbsp</div>
+                        <div ><a href="Refund" class="Refund">Refund Policy </a></div>
                     </div>
                 </div>
             </div>

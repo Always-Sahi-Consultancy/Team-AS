@@ -1,16 +1,15 @@
-Changelog
-=========
+# Changelog
 
-1.6.1
------
+## 1.6.1
+
 - [Fix compatibility with HHVM][#121] - Using HHVM with Requests would
   previously cause either exceptions with SSL or segfaults with the cURL
   handler. Props Ozh for his work here.
 
 [#121]: https://github.com/rmccue/Requests/issues/121
 
-1.6.0
------
+## 1.6.0
+
 - [Add multiple request support][#23] - Send multiple HTTP requests with both
   fsockopen and cURL, transparently falling back to synchronous when
   not supported.
@@ -35,9 +34,8 @@ Changelog
 - [Add Composer support][#6] - You can now install Requests via the
   `rmccue/requests` package on Composer
 
-[docs/proxy]: http://requests.ryanmccue.info/docs/proxy.html
-[docs/usage-advanced]: http://requests.ryanmccue.info/docs/usage-advanced.html
-
+[docs/proxy]: http://requests.ryanmccue.info/docs/proxy
+[docs/usage-advanced]: http://requests.ryanmccue.info/docs/usage-advanced
 [#1]: https://github.com/rmccue/Requests/issues/1
 [#2]: https://github.com/rmccue/Requests/issues/2
 [#3]: https://github.com/rmccue/Requests/issues/3
@@ -49,8 +47,8 @@ Changelog
 [#64]: https://github.com/rmccue/Requests/issues/64
 [#70]: https://github.com/rmccue/Requests/issues/70
 
-[View all changes][https://github.com/rmccue/Requests/compare/v1.5.0...v1.6.0]
+[View all changes][https://github.com/rmccue/requests/compare/v1.5.0...v1.6.0]
 
-1.5.0
------
+## 1.5.0
+
 Initial release!

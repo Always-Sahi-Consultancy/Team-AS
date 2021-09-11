@@ -30,7 +30,7 @@
         <div class="head">
             <div class="head_nav">
                 <div id="As_logo">
-                    <a href="index.html" class="company">
+                    <a href="index" class="company">
                         <img src="image/As logo Edited.png"></img>
                         <div class="Company_name">
                             <p class="Com_name">Always <span class="sahi">Sahi</span></p>
@@ -72,7 +72,7 @@
                                                 and a team of visionary leaders
                                                 to achieve “a Package Escape”.</span><br>
                                             <!-- <a href="#"><button class="button-nav-items"><img src="image/arrow-right.png" class="read-more-image"><span class="button-nav-info">Read More...</span></button></a> -->
-                                        </div>
+                                        </div>2
                                         <div>
                                             <h3>Mission</h3>
                                             <span class="comapny_details">To Work Closely with our established NGO
@@ -89,7 +89,7 @@
                                     <div>
                                         <h2>Career</h2>
                                         <!-- <span class="comapny_details">Description</span><br> -->
-                                        <a href="./comingsoon.html"><button class="button-nav-items"><img
+                                        <a href="./comingsoon"><button class="button-nav-items"><img
                                                     src="image/arrow-right.png" class="read-more-image"><span
                                                     class="button-nav-info">Read More...</span></button></a>
                                     </div>
@@ -103,20 +103,20 @@
                                 </div>
                                 <div class="service_sections service_2">
                                     <div class="service_container">
-                                        <a class="nav_link" href="/Services.html">
+                                        <a class="nav_link" href="/Services">
                                             <div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">
                                                 Pacakage Escape Funnel
                                                 <img src="image/Services/001-funnel.png" class="service_icon">
                                             </div>
                                         </a>
-                                        <a class="nav_link" href="/MStake.html">
+                                        <a class="nav_link" href="/MStake">
                                             <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">
                                                 M-stake
                                                 <img src="image/Services/002-stock-exchange-app.png"
                                                     class="service_icon">
                                             </div>
                                         </a>
-                                        <a class="nav_link" href="/workshops.html">
+                                        <a class="nav_link" href="/workshops">
                                             <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">
                                                 Workshop
                                                 <img src="image/Services/003-presentation.png" class="service_icon">
@@ -146,9 +146,9 @@
                                 </div>
                             </div>
                         </span>
-                        <a href="/comingsoon.html"><span class="nav_items_section">CSR</span></a>
+                        <a href="/comingsoon"><span class="nav_items_section">CSR</span></a>
                         <a href="#join_us"><span class="nav_items_section">Join Us</span></a>
-                        <a href="/comingsoon.html"><span class="nav_items_section">Public Notices</span></a>
+                        <a href="/comingsoon"><span class="nav_items_section">Public Notices</span></a>
                     </div>
                     <div class="nav_second">
                         <span onclick="login()" id="login">Login
@@ -175,18 +175,18 @@
                     <a href="#about_us" onclick="navbarOptions(1)" id="wa">Company</a>
                     <div class="second_company" id="sr1">
                         <a href="#about_us" onclick="about_us()"><span>About Us</span></a>
-                        <a href="/comingsoon.html"><span>Vision & Mission</span></a>
-                        <a href="/comingsoon.html"><span>Career</span></a>
+                        <a href="/comingsoon"><span>Vision & Mission</span></a>
+                        <a href="/comingsoon"><span>Career</span></a>
                     </div>
                     <a href="#workshop" id="ss" onclick="navbarOptions(2)">Services</a>
                     <div class="second_company" id="sr2">
-                        <a href="/Services.html"><span>Pacakage Escape Funnel</span></a>
-                        <a href="/MStake.html"><span>M-stake</span></a>
-                        <a href="/workshops.html"><span>Workshop</span></a>
+                        <a href="/Services"><span>Pacakage Escape Funnel</span></a>
+                        <a href="/MStake"><span>M-stake</span></a>
+                        <a href="/workshops"><span>Workshop</span></a>
                     </div>
-                    <a href="/comingsoon.html">CSR</a>
+                    <a href="/comingsoon">CSR</a>
                     <a href="#join_us">Join Us</a>
-                    <a href="/comingsoon.html">Public Notices</a>
+                    <a href="/comingsoon">Public Notices</a>
                 </div>
                 <div class="second">
                     <a href="#" onclick="navbarOptions(3)">Login</a>

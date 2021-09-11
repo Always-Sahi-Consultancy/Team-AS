@@ -574,8 +574,8 @@ body {
   padding-left: 5vh;
   padding-right: 2vh;
 }
-@media only screen and (max-device-width:600px) and (orientation:portrait){
-  .Terms_page{
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+  .Terms_page {
     padding-top: 10vh;
   }
 }
@@ -583,6 +583,7 @@ body {
   .as-title {
     font-size: 2rem;
   }
+}
 .card1 .front,
 .card2 .front,
 .card .front {

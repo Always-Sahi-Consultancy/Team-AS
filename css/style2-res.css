@@ -467,11 +467,11 @@
   }
 }
 
-@media only screen and (max-device-width: 768px) and (orientation:potrait){
-  .on-demand{
-    height:100vh;
+@media only screen and (max-device-width: 768px) and (orientation: potrait) {
+  .on-demand {
+    height: 100vh;
   }
-  .workshop-container{
-    width:80%;
+  .workshop-container {
+    width: 80%;
   }
 }

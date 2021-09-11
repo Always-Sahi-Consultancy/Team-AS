@@ -172,7 +172,7 @@ try {
             ' (PHPMailer test using ' . addslashes(strtoupper($test_type)) . ')";';
 
         if ($_POST['Message'] == '') {
-            $body = file_get_contents('contents.html');
+            $body = file_get_contents('contents');
         } else {
             $body = $message;
         }
@@ -462,7 +462,7 @@ if (isset($_POST["submit"]) && $_POST["submit"] == "Submit") {
                     <tr>
                         <td class="colleft">
                             <label for="Message"><strong>Message</strong><br>
-                                <small>If blank, will use content.html</small>
+                                <small>If blank, will use content</small>
                             </label>
                         </td>
                         <td class="colrite">

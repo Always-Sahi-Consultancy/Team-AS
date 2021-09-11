@@ -8,7 +8,7 @@ require '../PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$body = file_get_contents('contents.html');
+$body = file_get_contents('contents');
 
 $mail->isSMTP();
 $mail->Host = 'smtp.example.com';

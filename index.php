@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Always Sahi Solution</title>
     <meta http-equiv="Content-Type" content="text/html charset=utf-8">
@@ -22,15 +21,13 @@
     <link href="css/style2Footer.css" rel="stylesheet">
     <script src="js/site.js" defer></script>
 </head>
-
 <body>
-    <!-- Header Section Starts-->
     <header>
         <div class="head">
             <div class="head_nav">
                 <div id="As_logo">
-                    <a href="index.html" class="company">
-                        <img src="image/As logo Edited.png" alt="logo"></img>
+                    <a href="index" class="company">
+                        <img class="As_logo_Edited" src="image/As logo Edited.png" alt="logo"></img>
                         <div class="Company_name">
                             <p class="Com_name">Always <span class="sahi">Sahi</span></p>
                             <p class="company-tagline">A Package Escape</p>
@@ -88,7 +85,7 @@
                                     <div>
                                         <h2>Career</h2>
                                         <!-- <span class="comapny_details">Description</span><br> -->
-                                        <a href="./comingsoon.html"><button class="button-nav-items"><img
+                                        <a href="./comingsoon"><button class="button-nav-items"><img
                                                     src="image/arrow-right.png" class="read-more-image" alt="read-more"><span
                                                     class="button-nav-info">Read More...</span></button></a>
                                     </div>
@@ -102,20 +99,20 @@
                                 </div>
                                 <div class="service_sections service_2">
                                     <div class="service_container">
-                                        <a class="nav_link" href="/Services.html">
+                                        <a class="nav_link" href="/Services">
                                             <div class="nav_first_option" onclick="service(1)" onmouseover="service(1)">
                                                 Pacakage Escape Funnel
                                                 <img src="image/Services/001-funnel.png" class="service_icon" alt="package escape funnel">
                                             </div>
                                         </a>
-                                        <a class="nav_link" href="/MStake.html">
+                                        <a class="nav_link" href="/MStake">
                                             <div class="nav_first_option" onclick="service(2)" onmouseover="service(2)">
                                                 M-stake
                                                 <img src="image/Services/002-stock-exchange-app.png"
                                                     class="service_icon" alt="mstake">
                                             </div>
                                         </a>
-                                        <a class="nav_link" href="/workshops.html">
+                                        <a class="nav_link" href="/workshops">
                                             <div class="nav_first_option" onclick="service(3)" onmouseover="service(3)">
                                                 Workshop
                                                 <img src="image/Services/003-presentation.png" class="service_icon"> alt="workshops"
@@ -145,17 +142,17 @@
                                 </div>
                             </div>
                         </span>
-                        <a href="/comingsoon.html"><span class="nav_items_section">CSR</span></a>
-                        <a href="#join_us"><span class="nav_items_section">Join Us</span></a>
-                        <a href="/comingsoon.html"><span class="nav_items_section">Public Notices</span></a>
+                        <a class="nav_items_section_link" href="/comingsoon"><span class="nav_items_section">CSR</span></a>
+                        <a class="nav_items_section_link" href="#join_us"><span class="nav_items_section">Join Us</span></a>
+                        <a class="nav_items_section_link" href="/comingsoon"><span class="nav_items_section">Public Notices</span></a>
                     </div>
                     <div class="nav_second">
                         <span onclick="login()" id="login">Login
                             <div class="login">
-                                <a href="#" class="option_link">
+                                <!-- <a href="" class="option_link">
                                     <div class="options_login">Associate Login</div>
-                                </a>
-                                <a href="#" class="option_link">
+                                </a> -->
+                                <a href="/Education/IAC/dashboard.php" class="option_link">
                                     <div class="options_login">IAC Login</div>
                                 </a>
                             </div>
@@ -174,18 +171,18 @@
                     <a href="#about_us" onclick="navbarOptions(1)" id="wa">Company</a>
                     <div class="second_company" id="sr1">
                         <a href="#about_us" onclick="about_us()"><span>About Us</span></a>
-                        <a href="/comingsoon.html"><span>Vision & Mission</span></a>
-                        <a href="/comingsoon.html"><span>Career</span></a>
+                        <a href="/comingsoon"><span>Vision & Mission</span></a>
+                        <a href="/comingsoon"><span>Career</span></a>
                     </div>
                     <a href="#workshop" id="ss" onclick="navbarOptions(2)">Services</a>
                     <div class="second_company" id="sr2">
-                        <a href="/Services.html"><span>Pacakage Escape Funnel</span></a>
-                        <a href="/MStake.html"><span>M-stake</span></a>
-                        <a href="/workshops.html"><span>Workshop</span></a>
+                        <a href="/Services"><span>Pacakage Escape Funnel</span></a>
+                        <a href="/MStake"><span>M-stake</span></a>
+                        <a href="/workshops"><span>Workshop</span></a>
                     </div>
-                    <a href="/comingsoon.html">CSR</a>
+                    <a href="/comingsoon">CSR</a>
                     <a href="#join_us">Join Us</a>
-                    <a href="/comingsoon.html">Public Notices</a>
+                    <a href="/comingsoon">Public Notices</a>
                 </div>
                 <div class="second">
                     <a href="#" onclick="navbarOptions(3)">Login</a>
@@ -198,15 +195,13 @@
             </div>
         </div>
     </header>
-    <!-- Header Section Ends -->
-
     <div class="on-demand">
         <div class="box-size-left intro-text" id="box-size-new">
             <h1 class="as-title">Always Sahi</h1>
             <p class="box-size-desc" id="box-size-desc">
                 Building&ensp;Young&ensp;Entrepreneurs&ensp;&&ensp;a&ensp;Team&ensp;of&ensp;Visionary&ensp;Leaders&ensp;achieving&ensp;"A&ensp;Package&ensp;Escape"
             </p>
-            <a href="/Services.html">
+            <a href="/Services">
                 <button class="intro-button">Join our "Package Escape Funnel"</button>
             </a>
         </div>
@@ -214,33 +209,31 @@
             <img src="image/1as.svg" alt="main">
         </div>
     </div>
-
-        <div class="about" id="about_us">
-            <h2 class="as-title">About Us</h2>
-            <div class="about-info">
-                <div class="about-sections about-text" id="about-text">
-                    <div id="about-text-1">Always Sahi Solutions aims to build Individuals as well as corporate
-                        solutions, where you
-                        can achieve “a Package Escape”, to build young entrepreneurs with our Individuals
-                        Training Modules, and Workshops. Also by giving Finance and Business Consultancy, from
-                        “establishment to success”.</div>
-                    <div id="about-text-2">We aim to build a network of Challenging, Smart, competent & Growing
-                        Associates and
-                        Independent Consultants who will be the upcoming face of our Company. Last but not the
-                        least, we aim to fulfill all the demands of our Family members consisting of our Managers,
-                        Employees, Distributors & Investors, Including all the Shareholders, giving them Best
-                        Returns for the dedication and time they devote for their Company “Always Sahi Solutions
-                        Private Limited”.
-                    </div>
-                    <center><button onclick="aboutUs()"><img src="image/arrow-down.png" id="about-arrow" alt="arrow"></button>
-                    </center>
+    <div class="about" id="about_us">
+        <h2 class="as-title">About Us</h2>
+        <div class="about-info">
+            <div class="about-sections about-text" id="about-text">
+                <div id="about-text-1">Always Sahi Solutions aims to build Individuals as well as corporate
+                    solutions, where you
+                    can achieve “a Package Escape”, to build young entrepreneurs with our Individuals
+                    Training Modules, and Workshops. Also by giving Finance and Business Consultancy, from
+                    “establishment to success”.</div>
+                <div id="about-text-2">We aim to build a network of Challenging, Smart, competent & Growing
+                    Associates and
+                    Independent Consultants who will be the upcoming face of our Company. Last but not the
+                    least, we aim to fulfill all the demands of our Family members consisting of our Managers,
+                    Employees, Distributors & Investors, Including all the Shareholders, giving them Best
+                    Returns for the dedication and time they devote for their Company “Always Sahi Solutions
+                    Private Limited”.
                 </div>
-                <div class="about-sections" id="about-image">
-                    <img src="image/2as.png" class="about-image" alt="about us">
-                </div>
+                <center><button onclick="aboutUs()"><img src="image/arrow-down.png" id="about-arrow" alt="arrow"></button>
+                </center>
+            </div>
+            <div class="about-sections" id="about-image">
+                <img src="image/2as.png" class="about-image" alt="about us">
             </div>
         </div>
-
+    </div>
     <div>
         <div class="workshop" id="workshop">
             <h2 class="as-title">Our Services</h2>
@@ -279,7 +272,6 @@
             </div>
         </div>
     </div>
-    <!-- Achievements Section Starts-->
     <section class="achievement">
         <h2 class="as-title">Achievements</h2>
         <div class="stats" id="achievement">
@@ -305,8 +297,6 @@
             </div>
         </div>
     </section>
-
-    <!--Join Us Starts-->
     <center>
         <h1 class="as-title">JOIN US</h1>
     </center>
@@ -378,7 +368,6 @@
         </div>
     </div>
     <br><br>
-    <!--footer-->
     <div class="footer container-fluid" id="footer">
         <div class="footer-top row">
             <div class=" col-xs-12 col-sm-6 col-lg-3">
@@ -391,7 +380,7 @@
                                 Escape".
                             </p>
                             <div class="icon"><i aria-hidden="true"><img src="image/3as.png" alt="logo" /></i>
-                                <h3><a href="Services.html">Package Escape Funnel</a></h3>
+                                <h3><a href="Services">Package Escape Funnel</a></h3>
 
                             </div>
                         </div>
@@ -401,7 +390,7 @@
                                 Freedom, and Future Planning.
                             </p>
                             <div class="icon"><i aria-hidden="true"><img src="image/4as.png" alt="logo" /></i>
-                                <h3><a href="MStake.html">MStake Funnel</a></h3>
+                                <h3><a href="MStake">MStake Funnel</a></h3>
 
                             </div>
                         </div>
@@ -411,7 +400,7 @@
                                 based sessions, delivered by Experts.
                             </p>
                             <div class="icon"><i aria-hidden="true"><img src="image/5as.png" alt="logo" /></i>
-                                <h3><a href="workshops.html">Workshop</a></h3>
+                                <h3><a href="workshops">Workshop</a></h3>
                             </div>
                         </div>
                     </div><br>
@@ -430,14 +419,14 @@
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/associate.jpg"
                                         alt="logo" /></i>
-                                <a href="Services.html">Associate With Us</a>
+                                <a href="Services">Associate With Us</a>
 
                             </div>
                         </div>
                         <div class="f-item ff-fade">
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/iasc.jpg" alt="logo" /></i>
-                                <a href="MStake.html">Be Our IAC</a>
+                                <a href="MStake">Be Our IAC</a>
 
                             </div>
                         </div>
@@ -445,7 +434,7 @@
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/intern.jpg"
                                         alt="logo" /></i>
-                                <a href="workshops.html">Career With AS</a>
+                                <a href="workshops">Career With AS</a>
 
                             </div>
                         </div>
@@ -536,13 +525,13 @@
                 <div class="f-head">SOCIALS</div>
                 <div class="row">
                     <div class="ft-icon col-xs-3">
-                        <center><a href="https://www.instagram.com/alwayssahi"><img src="image/icon/003-instagram.png"
+                        <center><a href="https://www.instagram.com/alwayssahi"><img src="image/icon/007-instagram-1.png"
                                     alt="instagram"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
                         <center><a
                                 href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAlways-Sahi-Solutions-Private-Limited-100805488788703"><img
-                                    src="image/icon/001-facebook.png" alt="facebook"></a></center>
+                                    src="image/icon/002-facebook-1.png" alt="facebook"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
                         <center><a
@@ -550,7 +539,7 @@
                                     src="image/icon/002-linkedin-1.png" alt="linkedin"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
-                        <center><a href="https://t.me/joinalwayssahi"><img src="image/icon/002-telegram-1.png"
+                        <center><a href="https://t.me/joinalwayssahi"><img src="image/icon/telegram (1).png"
                                     alt="telegram"></a></center>
                     </div>
                 </div>
@@ -565,14 +554,13 @@
                 </div>
                 <div class="ft-head-right col-md-5">
                     <div class="row justify-content-center">
-                        <div><a href="Terms.html" class="Terms">Terms of Use </a>|&nbsp</div>
-                        <div ><a href="Privacy.html" class="Privacy">Privacy Policy </a>|&nbsp</div>
-                        <div ><a href="Refund.html" class="Refund">Refund Policy </a></div>
+                        <div><a href="Terms" class="Terms">Terms of Use </a>|&nbsp</div>
+                        <div ><a href="Privacy" class="Privacy">Privacy Policy </a>|&nbsp</div>
+                        <div ><a href="Refund" class="Refund">Refund Policy </a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
