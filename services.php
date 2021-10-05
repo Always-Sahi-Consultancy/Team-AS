@@ -17,10 +17,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style2Color.css" />
-  <link rel="stylesheet" href="/css/style2Header.css" />
-  <link rel="stylesheet" href="/css/style2-res.css" />
-  <link rel="stylesheet" href="/css/services.css" />
+  <link rel="stylesheet" href="css/style2Color.css">
+  <link rel="stylesheet" href="css/style2Header.css">
+  <link rel="stylesheet" href="css/style2-res.css">
+  <link rel="stylesheet" href="css/services.css">
   <link href="css/style2Footer.css" rel="stylesheet">
 
 
