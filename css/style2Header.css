@@ -248,6 +248,7 @@
 }
 
 #company:hover .nav_first_options {
+  margin-top:10%;
   display: inline-flex;
 }
 
@@ -280,7 +281,7 @@
   width: 80%;
   list-style: none;
   /* overflow:hidden; */
-  margin: 0 10%;
+  margin: 10% 10%;
   border-radius: 10px;
 }
 
