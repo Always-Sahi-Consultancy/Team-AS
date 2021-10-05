@@ -10,7 +10,11 @@
                                 Escape".
                             </p>
                             <div class="icon"><i aria-hidden="true"><img src="image/3as.png" alt="logo" /></i>
+<<<<<<< HEAD
                                 <h3><a href="services.php">Package Escape Funnel</a></h3>
+=======
+                                <h3><a href="Services">Package Escape Funnel</a></h3>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
 
                             </div>
                         </div>
@@ -20,7 +24,11 @@
                                 Freedom, and Future Planning.
                             </p>
                             <div class="icon"><i aria-hidden="true"><img src="image/4as.png" alt="logo" /></i>
+<<<<<<< HEAD
                                 <h3><a href="mStake.php">MStake Funnel</a></h3>
+=======
+                                <h3><a href="MStake">MStake Funnel</a></h3>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
 
                             </div>
                         </div>
@@ -49,14 +57,22 @@
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/associate.jpg"
                                         alt="logo" /></i>
+<<<<<<< HEAD
                                 <a href="services.php">Associate With Us</a>
+=======
+                                <a href="Services">Associate With Us</a>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
 
                             </div>
                         </div>
                         <div class="f-item ff-fade">
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/iasc.jpg" alt="logo" /></i>
+<<<<<<< HEAD
                                 <a href="mStake.php">Be Our IAC</a>
+=======
+                                <a href="MStake">Be Our IAC</a>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
 
                             </div>
                         </div>
@@ -64,7 +80,11 @@
 
                             <div class="icon"><i aria-hidden="true"><img src="image/join us/intern.jpg"
                                         alt="logo" /></i>
+<<<<<<< HEAD
                                 <a href="workshops.php">Career With AS</a>
+=======
+                                <a href="workshops">Career With AS</a>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
 
                             </div>
                         </div>
@@ -155,21 +175,37 @@
                 <div class="f-head">SOCIALS</div>
                 <div class="row">
                     <div class="ft-icon col-xs-3">
+<<<<<<< HEAD
                         <center><a href="https://www.instagram.com/alwayssahi" target='_blank'><img src="image/icon/007-instagram-1.png"
+=======
+                        <center><a href="https://www.instagram.com/alwayssahi"><img src="image/icon/007-instagram-1.png"
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
                                     alt="instagram"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
                         <center><a
+<<<<<<< HEAD
                                 href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAlways-Sahi-Solutions-Private-Limited-100805488788703" target="_blank"><img
+=======
+                                href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAlways-Sahi-Solutions-Private-Limited-100805488788703"><img
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
                                     src="image/icon/002-facebook-1.png" alt="facebook"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
                         <center><a
+<<<<<<< HEAD
                                 href="https://www.linkedin.com/company/always-sahi-solutions-private-limited/mycompany/?viewAsMember=true" target="_blank"><img
                                     src="image/icon/002-linkedin-1.png" alt="linkedin"></a></center>
                     </div>
                     <div class="ft-icon col-xs-3">
                         <center><a href="https://t.me/joinalwayssahi" target="_blank"><img src="image/icon/telegram (1).png"
+=======
+                                href="https://www.linkedin.com/company/always-sahi-solutions-private-limited/mycompany/?viewAsMember=true"><img
+                                    src="image/icon/002-linkedin-1.png" alt="linkedin"></a></center>
+                    </div>
+                    <div class="ft-icon col-xs-3">
+                        <center><a href="https://t.me/joinalwayssahi"><img src="image/icon/telegram (1).png"
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
                                     alt="telegram"></a></center>
                     </div>
                 </div>
@@ -184,9 +220,15 @@
                 </div>
                 <div class="ft-head-right col-md-5">
                     <div class="row justify-content-center">
+<<<<<<< HEAD
                         <div><a href="terms.php" class="Terms">Terms of Use </a>|&nbsp</div>
                         <div ><a href="privacy.php" class="Privacy">Privacy Policy </a>|&nbsp</div>
                         <div ><a href="refund.php" class="Refund">Refund Policy </a></div>
+=======
+                        <div><a href="Terms" class="Terms">Terms of Use </a>|&nbsp</div>
+                        <div ><a href="Privacy" class="Privacy">Privacy Policy </a>|&nbsp</div>
+                        <div ><a href="Refund" class="Refund">Refund Policy </a></div>
+>>>>>>> 72ce9887e53e2bcc52521a76b74966a34165a5ab
                     </div>
                 </div>
             </div>
