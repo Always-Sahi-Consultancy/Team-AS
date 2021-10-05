@@ -33,12 +33,12 @@ function aboutUs() {
   var ia = document.getElementById("about-arrow");
   if (state == 0) {
     at2.style.display = "block";
-    ia.src = "../image/arrow-up.png";
+    ia.src = "image/arrow-up.png";
     state = 1;
   }
   else if (state == 1) {
     at2.style.display = "none";
-    ia.src = "../image/arrow-down.png";
+    ia.src = "image/arrow-down.png";
     state = 0;
   }
 }
@@ -46,54 +46,54 @@ function aboutUs() {
 var workshops = { "1": 0, "2": 0, "3": 0 }
 
 function workshop(n) {
-  try{
-  var section = "section-" + n;
-  var writeup = "writeup-" + n;
-  var titles = "t" + n;
-  var section = document.getElementById(section);
-  var writeup = document.getElementById(writeup);
-  var wos = $(window).width();
-  var woh = window.height;
-  var titles = document.getElementById(titles);
-  if (workshops[n] == 1) {
-    if (wos > 1024) {
-      section.style.height = "25vw";
-    }
-    else {
+  try {
+    var section = "section-" + n;
+    var writeup = "writeup-" + n;
+    var titles = "t" + n;
+    var section = document.getElementById(section);
+    var writeup = document.getElementById(writeup);
+    var wos = $(window).width();
+    var woh = window.height;
+    var titles = document.getElementById(titles);
+    if (workshops[n] == 1) {
+      if (wos > 1024) {
+        section.style.height = "25vw";
+      }
+      else {
 
-      if (wos > woh) {
-        section.style.height = "42vh";//For mobile
+        if (wos > woh) {
+          section.style.height = "42vh";//For mobile
+        }
+        else {
+          section.style.height = "60vh";//Mobile
+        }
       }
-      else {
-        section.style.height = "60vh";//Mobile
-      }
-    }
-    writeup.style.top = "0%";
-    writeup.style.display = "none";
-    workshops[n] = 0;
-  }
-  else {
-    $(writeup).attr("top", "90%");
-    if (wos > 1024) {
-      section.style.height = "45vw";
-      writeup.style.top = "60%";
+      writeup.style.top = "0%";
+      writeup.style.display = "none";
+      workshops[n] = 0;
     }
     else {
-      if (wos > woh) {
-        section.style.height = "60vh";//For mobile
-        writeup.style.top = "100%";
+      $(writeup).attr("top", "90%");
+      if (wos > 1024) {
+        section.style.height = "45vw";
+        writeup.style.top = "60%";
       }
       else {
-        section.style.height = "100vh";//Mobile
-        writeup.style.top = "60%";
-        writeup.style.height = "40vh";
+        if (wos > woh) {
+          section.style.height = "60vh";//For mobile
+          writeup.style.top = "100%";
+        }
+        else {
+          section.style.height = "100vh";//Mobile
+          writeup.style.top = "60%";
+          writeup.style.height = "40vh";
+        }
       }
+      writeup.style.display = "block";
+      workshops[n] = 1;
     }
-    writeup.style.display = "block";
-    workshops[n] = 1;
   }
-  }
-  catch{
+  catch {
     console.log("Workshops");
   }
 }
