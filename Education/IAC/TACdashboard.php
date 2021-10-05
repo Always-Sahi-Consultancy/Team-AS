@@ -64,7 +64,7 @@ if ($_SESSION['logged_in'] != 1) {
   <title>IAC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style(TAC).css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
@@ -114,15 +114,41 @@ if ($_SESSION['logged_in'] != 1) {
           <div class="logoC justify-content-center">
             <img class="logoImg" src="img/Background Less.png">
             <p class="logoText">An ISO 9001:2015 Certified & MCA Registered</p>
-            <p class="package">Always Sahi</p>
+            <p class="package">TEAM ATHARV CREATES16</p>
           </div>
         </li>
         <li class="as">A Package Escape</li>
-        <li><a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
-        <li> <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
-        <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
-        <li> <a href="#dashboard.php?tab=ass_join" onclick="tabs(4)">Associate Joining</a> </li>
-        <li> <a href="#dashboard.php?tab=month_report" onclick="tabs(5)">Monthly Reports</a></li>
+        <li>
+            <a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> 
+            <ul class="requestList" id="requestList">
+                <li> <a onclick="tabs(9)">Profile</a></li>
+                <li> <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a></li>
+            </ul>
+        </li>
+        <li> 
+            <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a>
+            <ul class="requestList" id="requestList">
+                <li> <a href="#" onclick="tabs(9)">My Courses</a></li>
+                <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a></li>
+                <li> <a href="#">Upgrade</a></li>
+          </ul>
+        </li>
+        <li>
+            <a class="" href="#">Downline</a> 
+            <ul class="requestList" id="requestList">
+                <li> <a onclick="tabs(9)">Registration</a></li>
+                <li> <a href="#">My Downline </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Business</a> 
+            <ul class="requestList" id="requestList">
+                <li> <a onclick="tabs(9)">Account</a></li>
+                <li> <a href="#"> INR statement</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Training</a> </li>
+        <li> <a href="#dashboard.php?tab=support" onclick="tabs(7)">Supports & help</a> </li>
         <li>
           <a href="#dashboard.php?tab=requests" onclick="show()">Requests
           </a>
@@ -131,7 +157,6 @@ if ($_SESSION['logged_in'] != 1) {
             <li> <a href="#dashboard.php?tab=bank_change" onclick="tabs(10)">Bank change</a></li>
           </ul>
         </li>
-        <li> <a href="#dashboard.php?tab=support" onclick="tabs(7)">Supports</a> </li>
       </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -155,7 +180,7 @@ if ($_SESSION['logged_in'] != 1) {
               <div class="col-md-3"></div>
               <div class="col-md-5">
                 <p class="Linfo">
-                  <!-- <a href="#" onclick="ass()" class="changePassword">Associate</a> /  <a href="#" class="changePassword" onclick="iac()"> IAC</a> /--> <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a>
+                   <a href="#" onclick="ass()" class="changePassword">Associate</a> / <!-- <a href="#" class="changePassword" onclick="iac()"> IAC</a> /--> <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a>
                 </p>
               </div>
             </div>
@@ -170,11 +195,11 @@ if ($_SESSION['logged_in'] != 1) {
                   <div class=""> <?= $totalSales ?></div>
                 </div>
                 <div class="col-md-3 align-right E-color">
-                  <div>TOTAL EARNINGS</div>
+                  <div>TOTAL DOWNLINE</div>
                   <div><?= $totalEarn ?></div>
                 </div>
                 <div class="col-md-3 align-right J-color">
-                  <div>TOTAL JOININGS</div>
+                  <div>TOTAL EARNINGS</div>
                   <div> <?= $totalJoin ?></div>
                 </div>
               </div>
@@ -182,7 +207,7 @@ if ($_SESSION['logged_in'] != 1) {
               <div id="AssociateBusiness">
                 <div class="row">
                   <div class="headings col-md-3">Associates Business</div>
-                  <div class="target col-md-8">Target <?= $target ?></div>
+                  <!-- <div class="target col-md-8">Target <?#= $target ?></div> -->
                 </div>
                 <!--ABOUT YOU TABLE-->
                 <div class="row container-1">
@@ -263,7 +288,6 @@ if ($_SESSION['logged_in'] != 1) {
             <!--UPGRADE OPTION-->
             <div class="row col-md-12 ">
               <div class="col-md-3 col-sm-10 upgrade">
-                <img class="gift bounce" src="img/giftbox.png">
                 <a class="plan" href="#"><span class="fast-flicker">UP</span>GRADE <span class="flicker">Y</span>OURSELF</a>
               </div>
             </div>
