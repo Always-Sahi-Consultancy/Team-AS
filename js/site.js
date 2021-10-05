@@ -94,7 +94,7 @@ function workshop(n) {
   }
   }
   catch{
-    console.log("Error occured in workshops");
+    console.log("Workshops");
   }
 }
 
