@@ -244,7 +244,10 @@ body {
   text-align: center;
   font-family: "Vollkron", serif;
 }
-
+.workshop-para {
+  height: 0px;
+  overflow: hidden;
+}
 .workshop-section {
   width: 240px;
   height: 240px;
@@ -278,7 +281,7 @@ body {
   transition-property: transform;
 }
 .workshop-section:hover:before {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 .workshop-section:hover .workshop-image {
