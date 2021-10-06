@@ -32,12 +32,14 @@ function aboutUs() {
   var at2 = document.getElementById("about-text-2");
   var ia = document.getElementById("about-arrow");
   if (state == 0) {
-    at2.style.display = "block";
+    // at2.style.display = "block";
+    at2.style.height = "170px";
     ia.src = "image/arrow-up.png";
     state = 1;
   }
   else if (state == 1) {
-    at2.style.display = "none";
+    // at2.style.display = "none";
+    at2.style.height = "0px";
     ia.src = "image/arrow-down.png";
     state = 0;
   }
