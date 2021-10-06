@@ -7,10 +7,15 @@
   font-family: bebasREGULAR;
   src: url("/Team-AS/fonts/BebasAR/BebasAR-Regular.otf");
 }
+@font-face {
+  font-family: bebasBOLD;
+  src: url("/Team-AS/fonts/BebasAR/BebasAR-Bold.ttf");
+}
 
 body {
   /* margin-left:auto;
     margin-right:auto; */
+  font-family: bebasREGULAR;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -49,7 +54,7 @@ body {
 .box-size-desc {
   color: black;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-top: 10px;
 }
 .fancy-text {
@@ -140,6 +145,7 @@ body {
   border-color: var(--blue-100);
   padding: 10px 20px;
   transform: scale(1);
+  font-size: 1.3rem;
   transition: 0.5s ease-in-out;
   color: var(--black);
 }
@@ -213,6 +219,7 @@ body {
 .about-text {
   position: relative;
   top: 30%;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: justify;
 }
@@ -590,8 +597,17 @@ body {
 }
 @media screen and (max-device-width: 1024px) and (orientation: landscape) {
   .as-title {
-    font-size: 2rem;
+    font-family: bebasBOLD;
   }
+}
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2.2rem;
 }
 .card1 .front,
 .card2 .front,
