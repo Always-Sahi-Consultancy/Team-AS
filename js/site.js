@@ -15,13 +15,13 @@ function aboutHeader() {
   var amt = document.getElementById("about-more-text");
   if (aboutState == 0) {
     as2.style.display = "block";
-    ia.src = "../image/arrow-left.png";
+    ia.src = "image/arrow-left.png";
     amt.innerText = "Read Less";
     aboutState = 1;
   }
   else if (aboutState == 1) {
     as2.style.display = "none";
-    ia.src = "../image/arrow-right.png";
+    ia.src = "image/arrow-right.png";
     amt.innerText = "Read More...";
     aboutState = 0;
   }

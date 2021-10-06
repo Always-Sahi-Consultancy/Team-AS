@@ -123,7 +123,7 @@
                         <a class="nav_items_section_link" href="comingsoon.php"><span class="nav_items_section">Public Notices</span></a>
                     </div>
                     <div class="nav_second">
-                        <span onclick="login()" id="login">Login
+                        <span onclick="login()" id="login" class="login_second">Login
                             <div class="login">
                                 <!-- <a href="" class="option_link">
                                     <div class="options_login">Associate Login</div>
@@ -133,7 +133,7 @@
                                 </a>
                             </div>
                         </span>
-                        <a href="#footer"><span>Contact</span></a>
+                        <a href="#footer" class="login_second"><span>Contact</span></a>
                     </div>
                 </div>
                 <div id="ham_icon" onclick="headerSidelay()">

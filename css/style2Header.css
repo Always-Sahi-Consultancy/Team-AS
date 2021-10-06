@@ -21,8 +21,8 @@
   z-index: 1000;
   background-color: var(--white);
   top: 0;
-  border-bottom: solid 3px var(--white-color);
-  border-radius: 10px;
+  /* border-bottom: solid 3px var(--white-color); */
+  /* border-radius: 10px; */
 }
 .head .head_nav {
   padding-top: 10px;
@@ -36,7 +36,7 @@
   /* border:2px solid red; */
 }
 .head:hover {
-  border-bottom: solid 3px var(--gray-600);
+  /* border-bottom: solid 3px var(--gray-600); */
 }
 .head #As_logo .company {
   display: flex;
@@ -118,16 +118,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 15px;
+  padding: 20px 15px;
   color: var(--gray-100);
   height: 100%;
 }
-#login{
-  padding-bottom: 2px;
+.login_second{
+  padding:10px 0;
 }
 .nav_second {
   float: right;
-  padding-left: 15vw;
+  padding-left: 16vw;
   font-size: 1.15rem;
 }
 .nav_second span {
@@ -153,11 +153,11 @@
   padding-left: 10vw;
 }
 .login {
-  width: 15vw;
+  width: fit-content;
   display: none;
   position: absolute;
-  top: 75px;
-  left: 72%;
+  top: 70px;
+  right: 10%;
   /* background: var(--gray-700); */
   color: var(--black);
   margin: 0px 10px 10px;
@@ -253,17 +253,17 @@
   width: 40px;
   height: 40px;
   background: var(--blue-color);
-  border-radius: 50%;
+  border-radius: 20px;
   /* border-color:var(--aqua-color); */
   transition: 0.5s;
   /* align-items:center; */
   overflow: hidden;
-  border: solid var(--blue-color) 0px;
+  border: 0px solid var(--blue-color);
 }
 
 .button-nav-items:hover {
   width: 80%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .button-nav-info {
@@ -298,7 +298,7 @@
 .nav_first_options {
   position: absolute;
   display: none;
-  top: 76px;
+  top: 72px;
   background: var(--white-color);
   display: none;
   width: 80%;
