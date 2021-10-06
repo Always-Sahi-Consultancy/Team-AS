@@ -125,34 +125,34 @@
             <div class="f-com col-xs-12 col-md-6 col-lg-3">
                 <div class="f-head">COMPANY</div>
                 <a href="#about_us">
-                    <p>About Us</p>
+                    <p class="footer-link">About Us</p>
                 </a>
                 <a href="#workshop">
-                    <p>Services</p>
+                    <p class="footer-link">Services</p>
                 </a>
                 <a href="#">
-                    <p>Join Us</p>
+                    <p class="footer-link">Join Us</p>
                 </a>
             </div>
             <div class="f-add col-xs-12 col-md-6 col-lg-3">
                 <div class="f-head">ADDRESS</div>
-                <p><span>Address: </span>A-702,Aurum Vrundavan Apartment,
+                <p class="ff"><span>Address: </span>A-702,Aurum Vrundavan Apartment,
                     Dighi, Pune, Maharashtra</p>
-                <p><span>Pincode: </span>411015</p>
+                <p class="ff"><span>Pincode: </span>411015</p>
 
             </div>
             <div class="f-con col-xs-12 col-md-6 col-lg-3">
                 <div class="f-head">CONTACT</div>
-                <a href="mailto:hello@alwayssahi.com"><span>Mail: </span>
-                    <p>hello@alwayssahi.com</p>
+                <a href="mailto:hello@alwayssahi.com" class="ff"><span>Mail: </span>
+                    <p class="ff">hello@alwayssahi.com</p>
                 </a>
-                <a href="#"><span>Phone:</span>
-                    <p>+91 8857086790</p>
+                <a href="#" class="ff"><span>Phone:</span>
+                    <p class="ff">+91 8857086790</p>
                 </a>
 
             </div>
             <div class="f-social col-xs-12 col-md-6 col-lg-3">
-                <div class="f-head">SOCIALS</div>
+                <div id="ff">SOCIALS</div>
                 <div class="row">
                     <div class="ft-icon col-xs-3">
                         <center><a href="https://www.instagram.com/alwayssahi" target='_blank'><img src="image/icon/007-instagram-1.png"
@@ -184,9 +184,9 @@
                 </div>
                 <div class="ft-head-right col-md-5">
                     <div class="row justify-content-center">
-                        <div><a href="terms.php" class="Terms">Terms of Use </a>|&nbsp</div>
-                        <div ><a href="privacy.php" class="Privacy">Privacy Policy </a>|&nbsp</div>
-                        <div ><a href="refund.php" class="Refund">Refund Policy </a></div>
+                        <div class="copyFont"><a href="terms.php" class="Terms">Terms of Use </a>|&nbsp</div>
+                        <div class="copyFont"><a href="privacy.php" class="Privacy">Privacy Policy </a>|&nbsp</div>
+                        <div class="copyFont"><a href="refund.php" class="Refund">Refund Policy </a></div>
                     </div>
                 </div>
             </div>

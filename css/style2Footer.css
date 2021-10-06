@@ -9,20 +9,19 @@
   padding-right: 70px;
   margin-bottom: 1px;
 }
-.f-head {
+
+.f-head{
   color: #2ec4b6;
   padding: 20px;
-  font-size: 25px;
-}
-.f-head:hover {
-  color: #fff;
+  font-size: 30px;
 }
 .feed-widget {
   padding-right: 10px;
 }
 .feed-widget .item p {
-  color: #aeaeae;
+  color: #aeaeae;  
   letter-spacing: -0.1px;
+  font-size: 18px;
   margin: 0;
   justify-content: space-around;
 }
@@ -56,7 +55,7 @@
 .feed-widget .item h5 {
   color: #2ec4b6;
 }
-.feed-widget .item .icon > p {
+.feed-widget .item .icon  p {
   font-size: 11px;
   padding-top: 7px;
   color: #2ec4b6;
@@ -164,10 +163,7 @@
   text-decoration: none;
   padding: 0px 20px;
 }
-.footer p:hover {
-  color: #2ec4b6;
-  text-decoration: none;
-}
+
 .footer span {
   padding: opx 20px;
   color: #2ec4b6;
@@ -183,7 +179,21 @@
 }
 .ft-img p {
   line-height: 15px;
-  font-size: 12px;
+  font-size: 17px;
+}
+.footer-link:hover{
+  color: #2ec4b6;
+}
+.footer-link{
+  font-size: 18px;
+}
+.ff{
+  font-size: 18px;
+}
+#ff{
+  font-size: 30px;
+  color: #2ec4b6;
+  padding: 20px;
 }
 .f-team .ft-img img {
   width: 100px;
@@ -219,9 +229,6 @@
 .Terms {
   color: black;
 }
-.Terms:hover {
-  text-decoration: none;
-}
 .Privacy {
   color: black;
 }
@@ -230,8 +237,13 @@
 }
 .leftT {
   text-align: left;
+  font-size: 18px;
+}
+.copyFont{
+  font-size: 18px;
 }
 .rightT {
   text-align: right;
 }
+
 /*Footer ends*/
