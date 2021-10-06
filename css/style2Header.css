@@ -2,7 +2,18 @@
   width: 0;
   background: transparent;
 }
-
+@font-face {
+  font-family: bebasBold;
+  src: url("/Team-AS/fonts/BebasAR/BebasAR-Bold.ttf");
+}
+@font-face {
+  font-family: bebasLIGHTER;
+  src: url("/Team-AS/fonts/BebasAR/BebasAR-Light.otf");
+}
+@font-face {
+  font-family: bebasREGULAR;
+  src: url("/Team-AS/fonts/BebasAR/BebasAR-Regular.otf");
+}
 /* Header Section Starts */
 .head {
   width: 100%;
@@ -14,7 +25,10 @@
   border-radius: 10px;
 }
 .head .head_nav {
-  padding: 1% 1% 0px;
+  padding-top: 10px;
+  padding-right: 1%;
+  padding-bottom: 0px;
+  padding-left: 1%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -52,6 +66,7 @@
 }
 .company-tagline {
   text-align: center;
+  font-family: bebasBold;
   font-size: 1rem;
   color: #2ec4b6;
 }
@@ -64,14 +79,16 @@
 .company .Com_name {
   margin-bottom: 0px;
   width: auto;
-  padding-top: 10px;
   font-weight: 800;
   text-align: center;
+  font-family: bebasBOLD;
+  font-size: 1.5rem;
   /* font-size: 1.3rem; */
   color: var(--gray-100);
 }
 .company .Com_name .always {
   font-weight: bolder;
+  font-family: bebasBOLD;
 }
 .head .nav {
   display: flex;
@@ -94,8 +111,10 @@
   text-decoration: none;
 }
 .nav_items_section {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   cursor: pointer;
+  font-family: bebasLIGHTER;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,9 +122,12 @@
   color: var(--gray-100);
   height: 100%;
 }
+#login{
+  padding-bottom: 2px;
+}
 .nav_second {
   float: right;
-  padding-left: 4vw;
+  padding-left: 15vw;
   font-size: 1.15rem;
 }
 .nav_second span {
@@ -115,7 +137,7 @@
   color: var(--blue-100);
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
+  padding: 7px;
 }
 .nav_items_section:hover {
   color: var(--blue-100);
@@ -127,7 +149,9 @@
   /* padding:20px 20; */
   border: 5px solid transparent;
 }
-
+.nav_first{
+  padding-left: 10vw;
+}
 .login {
   width: 15vw;
   display: none;
@@ -173,7 +197,7 @@
   background: var(--blue-100);
 }
 .nav_second span:first-child {
-  margin-right: 5px;
+  margin-right: 18px;
 }
 .nav_link {
   color: black;
