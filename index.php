@@ -3,7 +3,7 @@
 <head>
     <title>Always Sahi Solution</title>
     <meta http-equiv="Content-Type" content="text/html charset=utf-8">
-    <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+    <link rel="shortcut icon " type="image/ico" href="./favicon.ico">
     <meta name="Description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +20,8 @@
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
     <link href="css/workshoptrial.css" rel="stylesheet">
-    <script src="js/workshops.js" defer></script>
     <script src="js/site.js" defer>
+    <script src="js/workshops.js" defer></script>
     </script>
 </head>
 <body>

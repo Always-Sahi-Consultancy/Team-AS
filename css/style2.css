@@ -258,7 +258,7 @@ body {
 .workshop-para {
   height: 0px;
   overflow: hidden;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .workshop-section {
   width: 240px;
