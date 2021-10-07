@@ -606,11 +606,12 @@
   transition: transform 0.5s ease-in-out;
 }
 .front.flip {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(-360deg);
 }
 .back.flip {
   transform: perspective(600px) rotateY(0deg);
 }
+
 .slider {
   display: none;
   height: 20px;

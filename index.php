@@ -16,13 +16,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="css/style2.css" rel="stylesheet">
     <link href="css/style2Header.css" rel="stylesheet">
-    <link href="css/style2-res.css" rel="stylesheet">
-    <link href="css/style2Color.css" rel="stylesheet">
     <link href="css/style2Footer.css" rel="stylesheet">
-    <link href="css/workshoptrial.css" rel="stylesheet">
     <script src="js/site.js" defer>
     <script src="js/workshops.js" defer></script>
-    console.log('Hello');
+    <link href="css/style2-res.css" rel="stylesheet">
+    <link href="css/style2Color.css" rel="stylesheet">
+    <link href="css/workshoptrial.css" rel="stylesheet">
     </script>
 </head>
 <body>
@@ -33,14 +32,14 @@
         <div class="box-size-left intro-text" id="box-size-new">
             <h1 class="as-title">Always Sahi</h1>
             <p class="box-size-desc" id="box-size-desc">
-                Building&ensp;Young&ensp;Entrepreneurs&ensp;&&ensp;a&ensp;Team&ensp;of&ensp;Visionary&ensp;Leaders&ensp;achieving&ensp;"A&ensp;Package&ensp;Escape"
+                Building Young Entrepreneurs & a Team of Visionary Leaders achieving "A Package Escape"
             </p>
             <a href="services.php">
                 <button class="intro-button">Join our "Package Escape Funnel"</button>
             </a>
         </div>
         <div class="box-size box-size-right" id="box-size">
-            <img src="image/1as.svg" alt="main">
+            <img src="image/1as.svg" alt="main" >
         </div>
     </div>
     <div class="about" id="about_us">

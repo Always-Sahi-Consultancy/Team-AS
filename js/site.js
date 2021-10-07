@@ -33,7 +33,18 @@ function aboutUs() {
   var ia = document.getElementById("about-arrow");
   if (state == 0) {
     // at2.style.display = "block";
-    at2.style.height = "170px";
+    if (window.innerWidth < 370 && window.innerWidth > 350) {
+      at2.style.height = "70vh";
+    }
+    else if (window.innerWidth > 370 && window.innerWidth < 500) {
+      at2.style.height = '55vh';
+    }
+    else if (window.innerWidth < 350) {
+      at2.style.height = '81vh';
+    }
+    else {
+      at2.style.height = "40vh";
+    }
     ia.src = "image/arrow-up.png";
     state = 1;
   }

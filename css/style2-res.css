@@ -85,7 +85,11 @@
   }
   #about-text {
     order: 2;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    height: 80vh;
+  }
+  #about-text-2 {
+    height: 80vh;
   }
   #about-image {
     order: 1;
@@ -120,6 +124,9 @@
   .workshop-image {
     height: 42vh;
     width: 80vw;
+  }
+  #about-text-2 {
+    height: 80%;
   }
 }
 
@@ -235,7 +242,10 @@
   .card3 .front {
     font-size: 2rem;
   }
-
+  #about-text-2 {
+    color: red;
+    height: 80vh;
+  }
   .deto span {
     font-size: 2rem;
   }

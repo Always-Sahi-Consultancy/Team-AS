@@ -479,7 +479,7 @@
                         <button class="front-button">Know More</button>
                         <img class="front-img" src="image/Performance.jpg">
                       </div>
-                      <div class="back" onclick="fourth(8)">
+                      <div class="back" onclick="fourth(8)" >
                         <h3 class="back-heading">Covering</h3>
                         <div class="back-content">
                           <ul class="back-content-left">
