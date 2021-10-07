@@ -520,7 +520,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-5vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
   z-index: 1000;
 }
 .tab#t2.target {
@@ -530,7 +530,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-15vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t3.target {
   position: absolute;
@@ -539,7 +539,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-25vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t4.target {
   position: absolute;
@@ -548,7 +548,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-35vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t5.target {
   position: absolute;
@@ -557,7 +557,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-45vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t6.target {
   position: absolute;
@@ -566,7 +566,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-5vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
   z-index: 1000;
 }
 .tab#t7.target {
@@ -576,7 +576,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-15vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t8.target {
   position: absolute;
@@ -585,7 +585,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-25vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t9.target {
   position: absolute;
@@ -594,7 +594,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-35vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .tab#t10.target {
   position: absolute;
@@ -603,7 +603,7 @@
   height: 55vh;
   background: transparent;
   transform: translateX(-100%) translateX(-45vw) rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .front.flip {
   transform: perspective(600px) rotateY(-360deg);

@@ -17,11 +17,11 @@
     <link href="css/style2.css" rel="stylesheet">
     <link href="css/style2Header.css" rel="stylesheet">
     <link href="css/style2Footer.css" rel="stylesheet">
-    <script src="js/site.js" defer>
-    <script src="js/workshops.js" defer></script>
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
     <link href="css/workshoptrial.css" rel="stylesheet">
+    <script src="js/workshops.js" defer></script>
+    <script src="js/site.js" defer>
     </script>
 </head>
 <body>
@@ -105,28 +105,28 @@
             </div>
         </div>
     </div> -->
-    <div class="workshops">
+    <div class="workshops-index">
         <h2 class="as-title">Our Services</h2>
         <div class="workshoplist">
             <div class="workshop" id="ws-1">
                 <img src="image/3as.png" class="ws-img" alt="PackageEscapeFunnel">
                 <div class="description" id="details-1">
                     <h3>Package Escape Funnel</h3>
-                    <p class="workshop-para">A series of training program designed, after years of experience and research, to create a pathway for every individual to achieve "A Package Escape" which indeed is our Motto. Consisting of Modules and Sessions from various fields, based on choice and preference of an ndividual.</p>
+                    <p class="workshop-para" id="workshop-para1">A series of training program designed, after years of experience and research, to create a pathway for every individual to achieve "A Package Escape" which indeed is our Motto. Consisting of Modules and Sessions from various fields, based on choice and preference of an ndividual.</p>
                 </div>
             </div>
             <div class="workshop" id="ws-2">
                 <img src="image/4as.png" class="ws-img" alt="PackageEscapeFunnel">
                 <div class="description" id="details-2">
                     <h3>MStake</h3>
-                    <p class="workshop-para">An Initiative introduced to, bring in more Investors as Well as Traders, into the world of Securities market. Providing them the Financial Freedom, and Future Planning. With Ample knowledge and Practical Exposure, Through our Training Program, and Practical Investment Channel.</p>
+                    <p class="workshop-para" id="workshop-para2">An Initiative introduced to, bring in more Investors as Well as Traders, into the world of Securities market. Providing them the Financial Freedom, and Future Planning. With Ample knowledge and Practical Exposure, Through our Training Program, and Practical Investment Channel.</p>
                 </div>
             </div>
             <div class="workshop" id="ws-3">
                 <img src="image/5as.png" class="ws-img" alt="PackageEscapeFunnel">
                 <div class="description" id="details-3">
                     <h3>Workshops</h3>
-                    <p class="workshop-para">Skill up yourself, with our Short workshops. Short in tenure, Large in Impact. To develop & Nourish skills in your field, we have designed quality based sessions, delivered by Experts.</p>
+                    <p class="workshop-para" id="workshop-para3">Skill up yourself, with our Short workshops. Short in tenure, Large in Impact. To develop & Nourish skills in your field, we have designed quality based sessions, delivered by Experts.</p>
                 </div>
             </div>
         </div>
