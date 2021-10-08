@@ -19,9 +19,9 @@
     <link href="css/style2Footer.css" rel="stylesheet">
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
-    <!-- <script src="js/workshops.js" defer></script> -->
     <link href="css/workshoptrial.css" rel="stylesheet">
     <script src="js/site.js" defer>
+    <script src="js/workshops.js" defer></script>
     </script>
 </head>
 <body>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="description" id="details-1">
                     <h3>Package Escape Funnel </h3>
-                    <p class="workshop-para" id="workshop-para1">A series of training program designed, after years of experience and research, to create a pathway for every individual to achieve "A Package Escape" which indeed is our Motto. Consisting of Modules and Sessions from various fields, based on choice and preference of an ndividual.</p>
+                    <p class="workshop-para" id="workshop-para1">A series of training program designed, after years of experience and research, to create a pathway for every individual to achieve "A Package Escape" which indeed is our Motto. Consisting of Modules and Sessions from various fields, based on choice and preference of an individual.</p>
                 </div>
             </div>
             <div class="workshop" id="ws-2">
@@ -127,8 +127,8 @@
                 </div>
             </div>
             <div class="workshop" id="ws-3">
-                <div class="imgBx">
-                    <img src="image/5as.png" class="ws-img" alt="PackageEscapeFunnel">
+                <div class="imgBx ws-bx3" >
+                    <img src="image/5as.png" id="ws-img3" class="ws-img ws-img3" alt="PackageEscapeFunnel">
                 </div>
                 <div class="description" id="details-3">
                     <h3>Workshops</h3>
@@ -163,7 +163,7 @@
         </div>
     </section>
     <center>
-        <h1 class="as-title">JOIN US</h1>
+        <h1 class="as-title">Join Us </h1>
     </center>
     <div class="container join_us" id="join_us">
         <div class="row">

@@ -10,7 +10,7 @@
   margin-bottom: 1px;
 }
 
-.f-head{
+.f-head {
   color: #2ec4b6;
   padding: 20px;
   font-size: 30px;
@@ -19,7 +19,7 @@
   padding-right: 10px;
 }
 .feed-widget .item p {
-  color: #aeaeae;  
+  color: #aeaeae;
   letter-spacing: -0.1px;
   font-size: 18px;
   margin: 0;
@@ -55,7 +55,7 @@
 .feed-widget .item h5 {
   color: #2ec4b6;
 }
-.feed-widget .item .icon  p {
+.feed-widget .item .icon p {
   font-size: 11px;
   padding-top: 7px;
   color: #2ec4b6;
@@ -181,16 +181,16 @@
   line-height: 15px;
   font-size: 17px;
 }
-.footer-link:hover{
+.footer-link:hover {
   color: #2ec4b6;
 }
-.footer-link{
+.footer-link {
   font-size: 18px;
 }
-.ff{
+.ff {
   font-size: 18px;
 }
-#ff{
+#ff {
   font-size: 30px;
   color: #2ec4b6;
   padding: 20px;
@@ -205,6 +205,11 @@
 .f-social .ft-icon img {
   width: 40px;
   margin: 12px;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+.f-social .ft-icon:hover img {
+  transform: rotate(360deg);
 }
 .copyright {
   background-color: #2ec4b6;
@@ -239,7 +244,7 @@
   text-align: left;
   font-size: 18px;
 }
-.copyFont{
+.copyFont {
   font-size: 18px;
 }
 .rightT {

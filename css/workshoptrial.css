@@ -67,6 +67,9 @@
 
   padding: 30px;
 }
+.as-title {
+  text-align: center;
+}
 .workshop {
   position: relative;
   max-width: 300px;
@@ -79,21 +82,23 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s ease-in-out;
+  border-radius: 30px;
 }
 .workshop:hover {
-  height: 420px;
+  height: 580px;
 }
 .imgBx {
   position: relative;
   height: 260px;
   width: 260px;
-  top: 40px;
+  top: 80px;
 }
 .workshop:hover .imgBx {
   top: -10px;
 }
 .ws-img {
   max-width: 100%;
+  transform: scale(1);
 }
 .description {
   position: relative;
@@ -112,4 +117,11 @@
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.5s;
+}
+.ws-img3 {
+  bottom: 60px;
+  transform: scale(1.2);
+}
+.ws-bx3 {
+  top: 30px;
 }
