@@ -74,9 +74,9 @@
   font-size: 1rem;
   color: #2ec4b6;
 }
-.sahi {
+/* .sahi {
   font-weight: 800;
-}
+} */
 .company img {
   padding: 0px 10px;
 }
@@ -98,13 +98,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 .head{
   width: 100%;
-}
-.nav{
-  width: 80%;
 }
 .nav_first {
   /* list-style:none; */
@@ -115,8 +112,8 @@
 
 .nav_second {
   list-style: none;
-  display: flex;
   right: 0px;
+  width: 15%;
 }
 .nav_items_section_link:hover {
   text-decoration: none;
@@ -161,14 +158,16 @@
   border: 5px solid transparent;
 }
 .nav_first{
-  padding-left: 10vw;
+  /* padding-left: 10vw; */
+  justify-content: center;
+  justify-items: center;
 }
 .login {
-  width: fit-content;
+  width: 10%;
   display: none;
   position: absolute;
   top: 70px;
-  right: 10%;
+  right: 4%;
   /* background: var(--gray-700); */
   color: var(--black);
   margin: 0px 10px 10px;

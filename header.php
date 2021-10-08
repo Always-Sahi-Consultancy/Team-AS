@@ -5,13 +5,13 @@
                     <a href="index.php" class="company">
                         <img class="As_logo_Edited" src="image/As logo Edited.png" alt="logo"></img>
                         <div class="Company_name">
-                            <p class="Com_name">Always <span class="sahi">Sahi</span></p>
-                            <p class="company-tagline">A Package Escape</p>
+                            <div class="Com_name">Always&nbsp;Sahi</div>
+                            <div class="company-tagline">A Package Escape</div>
                         </div>
                     </a>
                 </div>
-                <div class="nav">
-                    <div class="nav_first">
+                <!-- <div class="nav"> -->
+                    <div class="nav_first nav">
                         <span class="nav_items_section" id="company">Company
                             <div class="nav_first_options company-nav-container">
                                 <div class="service_sections company-item item-1">
@@ -122,20 +122,19 @@
                         <a class="nav_items_section_link" href="index.php#join_us"><span class="nav_items_section">Join Us</span></a>
                         <a class="nav_items_section_link" href="comingsoon.php"><span class="nav_items_section">Public Notices</span></a>
                     </div>
-                    <div class="nav_second">
-                        <span onclick="login()" id="login" class="login_second">Login
+                    <div class="nav_second nav">
+                        <div id="login" class="login_second">Login
                             <div class="login">
-                                <!-- <a href="" class="option_link">
-                                    <div class="options_login">Associate Login</div>
-                                </a> -->
                                 <a href="/Education/IAC/dashboard.php" class="option_link">
                                     <div class="options_login">IAC Login</div>
                                 </a>
                             </div>
-                        </span>
-                        <a href="#footer" class="login_second"><span>Contact</span></a>
+                        </div>
+                        <div>
+                            <a href="#footer" class="login_second"><span>Contact</span></a>
+                        </div>
                     </div>
-                </div>
+                <!-- </div> -->
                 <div id="ham_icon" onclick="headerSidelay()">
                     <div class="top"></div>
                     <div class="middle"></div>
