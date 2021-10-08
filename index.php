@@ -19,9 +19,9 @@
     <link href="css/style2Footer.css" rel="stylesheet">
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
-    <!-- <script src="js/workshops.js" defer></script> -->
     <link href="css/workshoptrial.css" rel="stylesheet">
     <script src="js/site.js" defer>
+    <script src="js/workshops.js" defer></script>
     </script>
 </head>
 <body>
