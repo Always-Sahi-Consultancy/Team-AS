@@ -1,4 +1,4 @@
-.workshops{
+/* .workshops{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -27,9 +27,9 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
-    transform: scale(0.9);
-    /* border:2px solid #2ec4b6; */
-}
+    transform: scale(0.9); */
+/* border:2px solid #2ec4b6; */
+/* }
 
 .ws-img:hover{
     transform:scale(1);
@@ -48,12 +48,68 @@
 
 .description p{
     font-weight: 200;
-}
+} */
 
 /* Media Query */
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     .workshoplist{
         flex-direction: column;
     }
+} */
+
+.workshoplist {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+
+  padding: 30px;
+}
+.workshop {
+  position: relative;
+  max-width: 300px;
+  height: 300px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  background: #2ec4b6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.workshop:hover {
+  height: 420px;
+}
+.imgBx {
+  position: relative;
+  height: 260px;
+  width: 260px;
+  top: 40px;
+}
+.workshop:hover .imgBx {
+  top: -10px;
+}
+.ws-img {
+  max-width: 100%;
+}
+.description {
+  position: relative;
+  padding: 10px 15px;
+  margin-top: -140px;
+  text-align: justify;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.description h3 {
+  text-align: center;
+}
+.workshop:hover .description {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.5s;
 }
