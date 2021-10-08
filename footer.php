@@ -146,7 +146,7 @@
                 <a href="mailto:hello@alwayssahi.com" class="ff"><span>Mail: </span>
                     <p class="ff">hello@alwayssahi.com</p>
                 </a>
-                <a href="#" class="ff"><span>Phone:</span>
+                <a href="tel:+91 8857086790" class="ff"><span>Phone:</span>
                     <p class="ff">+91 8857086790</p>
                 </a>
 

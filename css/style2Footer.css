@@ -190,6 +190,9 @@
 .ff {
   font-size: 18px;
 }
+.ff:hover {
+  color: #2ec4b6;
+}
 #ff {
   font-size: 30px;
   color: #2ec4b6;
@@ -205,11 +208,11 @@
 .f-social .ft-icon img {
   width: 40px;
   margin: 12px;
-  transform: scale(1.1);
   transition-duration: 0.5s;
 }
 .f-social .ft-icon:hover img {
-  transform: rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 .copyright {
   background-color: #2ec4b6;
