@@ -20,9 +20,9 @@
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
     <link href="css/workshoptrial.css" rel="stylesheet">
-    <script src="js/site.js" defer>
-    <script src="js/workshops.js" defer></script>
-    </script>
+    <script src="js/site.js" defer></script>
+    <!-- <script src="js/workshops.js" defer></script> -->
+    <script src="js/smoothScroll.js" defer></script>
 </head>
 <body>
     <?php 
