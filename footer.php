@@ -130,7 +130,7 @@
                 <a href="#workshop">
                     <p class="footer-link">Services</p>
                 </a>
-                <a href="#">
+                <a href="#join_us">
                     <p class="footer-link">Join Us</p>
                 </a>
             </div>

@@ -162,10 +162,10 @@
             </div>
         </div>
     </section>
-    <center>
+    <center id="join_us">
         <h1 class="as-title">Join Us </h1>
     </center>
-    <div class="container join_us" id="join_us">
+    <div class="container join_us" >
         <div class="row">
             <div class="col-md-12 col-lg-4 col-sm-12">
                 <!-- <a href="#"> -->
