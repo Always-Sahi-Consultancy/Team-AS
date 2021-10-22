@@ -64,7 +64,7 @@ if ($_SESSION['logged_in'] != 1) {
   <title>IAC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style(TAC).css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.min.js"></script>
@@ -118,11 +118,19 @@ if ($_SESSION['logged_in'] != 1) {
           </div>
         </li>
         <!-- <li class="as">A Package Escape</li> -->
-        <li><a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
-        <li> <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
-        <li> <a href="#" onclick="downline()">Downline</a></li>
-        <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
-        <li> <a href="#dashboard.php?tab=ass_join" onclick="tabs(4)">Registration</a> </li>
+        <li><a class="active" href="#">Dashboard</a> </li>
+        <li> <a href="#" id="mycourses">Courses</a>
+            <ul class="requestList" id="requestList">
+                <li> <a href="#">My courses</a></li>
+                <li> <a href="#">Referrals</a></li>
+                <li> <a href="#">Upgrade</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">Downline</a> 
+            <ul class="requestList" id="requestList">
+                <li><a href="#">Registration</a></li>
+            </ul>
+        </li>
         <li> <a href="#">Business</a> </li>
         <li> <a href="#">Training</a></li>
         <li>
@@ -142,10 +150,10 @@ if ($_SESSION['logged_in'] != 1) {
       <div class="container-fluid1">
         <div class="content" id="content">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-5">
               <div class="heading1"> Team Atharv Creates 16</div>
             </div>
-            <div class="col-md-9 head">
+            <div class="col-md-7 head">
               <p class="associateId head"><?= $id ?></p>
               <a href="logout.php" class="logout head">LOGOUT</a>
             </div>
@@ -157,7 +165,7 @@ if ($_SESSION['logged_in'] != 1) {
               <div class="col-md-3"></div>
               <div class="col-md-5">
                 <p class="Linfo">
-                   <a href="#" onclick="ass()" class="changePassword">Associate</a> <!--/ <a href="#" class="changePassword" onclick="iac()"> IAC</a> / <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a>-->
+                   <a href="#" onclick="ass()" class="changePassword">ASSOCIATE</a> <!--/ <a href="#" class="changePassword" onclick="iac()"> IAC</a> / <a href="#" onclick="tabs(8)" class="changePassword"> KYC</a>-->
                 </p>
               </div>
             </div>
@@ -220,32 +228,31 @@ if ($_SESSION['logged_in'] != 1) {
                   </table>
                   <div class="down row col-md-12">
                     <div class="col-md-10"></div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-2"><button onclick="downline()" class="btn btn-downline">DOWNLINE</button></div>
                   </div>
                 </div>
               </div>
 
-              <!--UPGRADE-->
+            <!--UPGRADE-->
             <div class="row col-md-8"><a class="upgrade">UPGRADE YOUR PLAN</a></div>
 
-              <!--RANDOM SPACE-->
-              <div class="random-space">
-              </div>
+            <!--RANDOM SPACE-->
+            <div class="random-space">
+            </div>
 
-              <!--RIGHTS RESERVED-->
-              <div class="row col-md-7 leftT">
-                      <div>@2021 Always Sahi Solutions Pvt Ltd: All Rights Reserved |
-                          ISO 9001:2015 Certified & MCA Registered
-                      </div>
-              </div>
-
-              <!--IAC BUSINESS
-              <div id="IAC-business">
+            <!--RIGHTS RESERVED-->
+            <div class="row col-md-7 leftT">
+                    <div>@2021 Always Sahi Solutions Pvt Ltd: All Rights Reserved |
+                        ISO 9001:2015 Certified & MCA Registered
+                    </div>
+            </div>
+              <!--IAC BUSINESS-->
+              <!-- <div id="IAC-business">
                 <div class="row">
                   <div class="headings col-md-3">IAC Business</div>
                 </div>
-                ABOUT YOU TABLE
-                <div class="row iac-container">
+                ABOUT YOU TABLE-->
+                <!--<div class="row iac-container">
                   <div class=" col-md-4">
                     <div class="iachead">
                       <p class="commission">Highest commission % - 0</p>
@@ -256,9 +263,9 @@ if ($_SESSION['logged_in'] != 1) {
                     <select id="city" class="iachead" name="city" required>
                       <option value="" disabled selected hidden>Eligibility</option>
                       <?php
-                        // while ($data = $result->fetch_assoc()) {
-                        //   userEligibility($data['course']);
-                        // }
+                        /*while ($data = $result->fetch_assoc()) {
+                          userEligibility($data['course']);
+                        }*/
                       ?>
                     </select>
                   </div>
@@ -267,7 +274,7 @@ if ($_SESSION['logged_in'] != 1) {
                       <p class="target2">Target - <?= $target ?></p>
                     </div>
                   </div>
-                </div>-->
+                </div> -->
 
 
 
@@ -276,14 +283,15 @@ if ($_SESSION['logged_in'] != 1) {
 
 
 
-            <!--UPGRADE OPTION
-            <div class="row col-md-12 ">
+            <!--UPGRADE OPTION-->
+            <!-- <div class="row col-md-12 ">
               <div class="col-md-3 col-sm-10 upgrade">
                 <img class="gift bounce" src="img/giftbox.png">
                 <a class="plan" href="#"><span class="fast-flicker">UP</span>GRADE <span class="flicker">Y</span>OURSELF</a>
               </div>
             </div>
-          </div>-->
+          </div> -->
+          
           <center>
             <!--VERIFICATION LINKS-->
             <div id="verifications">
