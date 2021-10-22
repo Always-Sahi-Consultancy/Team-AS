@@ -11,7 +11,7 @@
                     </a>
                 </div>
                 <!-- <div class="nav"> -->
-                    <div class="nav_first nav_new">
+                    <div class="nav_first nav_new nav">
                         <span class="nav_items_section">Home</span>
                         <span class="nav_items_section">Our Story</span>
                         <span class="nav_items_section">Testimonials</span>

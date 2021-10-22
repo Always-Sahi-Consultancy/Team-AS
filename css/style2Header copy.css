@@ -15,15 +15,15 @@
   src: url("/Team-AS/fonts/BebasAR/BebasAR-Regular.otf");
 }
 /* Header Section Starts */
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
 .head {
   width: 100%;
-  position: fixed;
   z-index: 1000;
   background: linear-gradient(to right ,#ffcdb2, #e5989b);
-
-  top: 0;
-  /* border-bottom: solid 3px var(--white-color); */
-  /* border-radius: 10px; */
 }
 .head .head_nav {
   padding-top: 10px;
@@ -39,9 +39,6 @@
 .head_nav{
   width:100vw;
   display:inline-flexbox;
-}
-.head:hover {
-  /* border-bottom: solid 3px var(--gray-600); */
 }
 .head #As_logo .company {
   display: flex;
@@ -477,7 +474,7 @@
   padding-top: 60px;
   width: 100%;
   transition: 0.3s;
-  background-color: var(--white);
+  background-color: #ffcdb2;
 }
 #sidelay .first a {
   padding: 0.6vh 5vw 0.6vh;
@@ -575,5 +572,10 @@
 
   .nav_second{
     font-size: 1.2rem; 
+  }
+  @media screen and (max-width:1360px){
+    .As_logo_Edited{
+      width:80%;
+    }
   }
 }
