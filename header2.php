@@ -3,15 +3,15 @@
             <div class="head_nav">
                 <div id="As_logo">
                     <a href="index.php" class="company">
-                        <img class="As_logo_Edited" src="image/As logo Edited.png" alt="logo"></img>
-                        <div class="Company_name">
+                        <img class="As_logo_Edited" src="image/AS_Logo_BL.png" alt="logo"></img>
+                        <!-- <div class="Company_name">
                             <div class="Com_name">Always&nbsp;Sahi</div>
-                            <div class="company-tagline">A Package Escape</div>
-                        </div>
+                            <div class="company-tagline">A&nbsp;Package&nbsp;Escape</div>
+                        </div> -->
                     </a>
                 </div>
                 <!-- <div class="nav"> -->
-                    <div class="nav_first nav">
+                    <div class="nav_first nav_new">
                         <span class="nav_items_section">Home</span>
                         <span class="nav_items_section">Our Story</span>
                         <span class="nav_items_section">Testimonials</span>
