@@ -235,8 +235,8 @@ require 'header.php';
   <!-- Perks And Incentives Ends -->
   <!-- footer -->
   <?php
-  require 'footer.php';
-  ?>
+        include 'footer2.php';
+    ?>
   </body>
 </html>
 

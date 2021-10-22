@@ -15,18 +15,19 @@
     <link herf="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="css/style2.css" rel="stylesheet">
-    <link href="css/style2Header.css" rel="stylesheet">
+    <link href="css/style2Header copy.css" rel="stylesheet">
     <link href="css/style2Footer.css" rel="stylesheet">
     <link href="css/style2-res.css" rel="stylesheet">
     <link href="css/style2Color.css" rel="stylesheet">
     <link href="css/workshoptrial.css" rel="stylesheet">
+    <link href="css/root.css" type="stylesheet">
+    <link href="css/index2.css" type="stylesheet">
     <script src="js/site.js" defer></script>
-    <!-- <script src="js/workshops.js" defer></script> -->
-    <script src="js/smoothScroll.js" defer></script>
 </head>
 <body>
-    <?php 
-        include 'header.php';
+    <div class="notice"></div>
+    <?php
+        include 'header2.php';
     ?>
     <div class="on-demand">
         <div class="box-size-left intro-text" id="box-size-new">
