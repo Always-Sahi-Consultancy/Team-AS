@@ -414,7 +414,7 @@ if ($_SESSION['logged_in'] != 1) {
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">IFSC Code</div>
-                  <input type="text" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="10" autocomplete="off" required>
+                  <input type="text" id="IFSCCode" name="ifsc" placeholder="IFSC code" minlength="6" maxlength="20" autocomplete="off" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
                   <div class="titles">Upload Aadhaar</div>
@@ -429,7 +429,7 @@ if ($_SESSION['logged_in'] != 1) {
                   <input type="file" id="<?php echo $_SESSION['filebr'];?>" name="uploadbr" onchange="return fileValidation(this.id)" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
-                    <div class="titles">AS Certificate</div>
+                    <div class="titles">Passport Photo</div>
                     <input type="file" id="<?php echo $_SESSION['filecertificate'];?>" name="uploadcertificate[]" multiple="" required>
                 </div>
                 <div class="row justify-content-center MobileV col-md-6">
