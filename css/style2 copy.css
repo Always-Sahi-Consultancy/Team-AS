@@ -43,6 +43,7 @@ body {
   padding: 2%;
   height: fit-content;
   margin: 3vw;
+  z-index: 0;
 }
 
 .on-demand {
