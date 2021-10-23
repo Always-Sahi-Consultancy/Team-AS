@@ -173,12 +173,10 @@
                         ISO 9001:2015 Certified & MCA Registered
                     </div>
                 </div>
-                <div class="ft-head-right col-md-5">
-                    <div class="row justify-content-right">
-                        <div><a href="Terms.php" class="Terms">Terms of Use </a>|&nbsp</div>
-                        <div ><a href="Privacy.php" class="Privacy">Privacy Policy </a>|&nbsp</div>
-                        <div ><a href="Refund.php" class="Refund">Refund Policy </a></div>
-                    </div>
+                <div class="ft-head-right col-md-5 rightT">
+                        <div><a href="Terms.php" class="linkft">Terms of Use </a>|&nbsp
+                        <a href="Privacy.php" class="linkft">Privacy Policy </a>|&nbsp
+                        <a href="Refund.php" class="linkft">Refund Policy </a></div>
                 </div>
             </div>
         </div>

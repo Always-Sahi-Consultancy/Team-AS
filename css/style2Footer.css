@@ -234,25 +234,23 @@
 .copyright .ft-head-right {
   color: black;
   /* border: 2px solid red; */
+  text-align: right;
 }
-.Terms {
+.linkft{
   color: black;
 }
-.Privacy {
-  color: black;
-}
-.Refund {
-  color: black;
-}
+
 .leftT {
   text-align: left;
-  font-size: 18px;
+  font-size: 1rem;
 }
 .copyFont {
   font-size: 18px;
 }
 .rightT {
   text-align: right;
+  font-size: 1rem;
+
 }
 
 /*Footer ends*/
