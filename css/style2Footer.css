@@ -21,7 +21,7 @@
 .feed-widget .item p {
   color: #aeaeae;
   letter-spacing: -0.1px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.2;
   margin: 0;
   justify-content: space-around;
@@ -37,14 +37,14 @@
 .feed-widget .item .icon i img {
   float: left;
   font-size: 40px;
-  height: 60px;
-  width: 60px;
+  height: 120px;
+  width: 120px;
   margin-right: 19px;
   color: #b0b0b0;
 }
 .feed-widget .item .icon h4 {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.7rem;
 }
 .item .icon h4 a {
   padding-top: 12px;

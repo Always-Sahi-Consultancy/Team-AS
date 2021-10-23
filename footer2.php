@@ -1,7 +1,7 @@
 <!-- footer -->
     <div class="footer container-fluid" id="footer">
         <div class="footer-top row">
-            <div class=" col-xs-12 col-sm-6 col-lg-3">
+            <div class=" col-xs-12 col-sm-6 col-lg-4">
                 <div class="feed-widget">
                                 <h2 class="f-head">OUR SERVICES</h2>
                                 <div class="footercarosule">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
             </div>
-            <div class=" col-xs-12 col-sm-6 col-lg-3">
+            <div class=" col-xs-12 col-sm-6 col-lg-2">
                 <div class="feed-widget">
                                 <h2 class="f-head">JOIN US</h2>
                                 <div class="footercarosule">
@@ -138,8 +138,8 @@
             </div>
             <div class="f-con col-xs-12 col-md-6 col-lg-3">
                 <div class="f-head">CONTACT</div>
-                <a href="mailto:hello@alwayssahi.com"><span>Mail: </span><p>hello@alwayssahi.com</p></a>
-                <a href="tel:8857086790"><span>Phone:</span><p>+91 8857086790</p></a>
+                <span>Mail: </span><a href="mailto:hello@alwayssahi.com"><p>hello@alwayssahi.com</p></a>
+                <span>Phone: </span><a href="tel:8857086790"><p>+91 8857086790</p></a>
                 
             </div>
             <div class="f-social col-xs-12 col-md-6 col-lg-3">
