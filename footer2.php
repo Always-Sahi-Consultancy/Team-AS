@@ -91,19 +91,14 @@
                             <p>Founder & Ceo</p>
                         </center>
                     </div>
-                    </center>
+                    
                     <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
                         <center><img src="image/team/mandy.png" alt="Mandy">
                             <p>Mandeep Dalavi</p>
                             <p>Co founder & Director</p>
                         </center>
                     </div>
-                    <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
-                        <center><img src="image/team/sanika.png" alt="sanika">
-                            <p>Sanika Dewoolkar</p>
-                            <p>Chief Marketing Head</p>
-                        </center>
-                    </div>
+                    
                     <div class="ft-img col-xs-12 col-sm-6 col-lg-4 thumbnail">
                         <center><img src="image/team/akhil.png" alt="Akhil">
                             <p>Akhil A Nair</p>
@@ -144,7 +139,7 @@
             <div class="f-con col-xs-12 col-md-6 col-lg-3">
                 <div class="f-head">CONTACT</div>
                 <a href="mailto:hello@alwayssahi.com"><span>Mail: </span><p>hello@alwayssahi.com</p></a>
-                <a href="#"><span>Phone:</span><p>+91 8857086790</p></a>
+                <a href="tel:8857086790"><span>Phone:</span><p>+91 8857086790</p></a>
                 
             </div>
             <div class="f-social col-xs-12 col-md-6 col-lg-3">
@@ -179,7 +174,7 @@
                     </div>
                 </div>
                 <div class="ft-head-right col-md-5">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-right">
                         <div><a href="Terms.php" class="Terms">Terms of Use </a>|&nbsp</div>
                         <div ><a href="Privacy.php" class="Privacy">Privacy Policy </a>|&nbsp</div>
                         <div ><a href="Refund.php" class="Refund">Refund Policy </a></div>

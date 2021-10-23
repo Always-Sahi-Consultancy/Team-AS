@@ -235,7 +235,7 @@
     </div>
     <br><br>
     <?php
-        include 'footer.php';
+        include 'footer2.php';
     ?>
 </body>
 </html>
