@@ -61,7 +61,7 @@ if ($_SESSION['logged_in'] != 1) {
 <html lang="en">
 
 <head>
-  <title>IAC</title>
+  <title>TAC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -120,7 +120,7 @@ if ($_SESSION['logged_in'] != 1) {
         <!-- <li class="as">A Package Escape</li> -->
         <li><a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
         <li> <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
-        <li> <a href="#" onclick="downline()">Downline</a></li>
+        <li> <a href="#dashboard.php?tab=downline" onclick="downline()">Downline</a></li>
         <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
         <li> <a href="#dashboard.php?tab=ass_join" onclick="tabs(4)">Registration</a> </li>
         <li> <a href="#">Business</a> </li>
