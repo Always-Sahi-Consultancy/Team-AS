@@ -43,6 +43,7 @@ body {
   padding: 2%;
   height: fit-content;
   margin: 3vw;
+  z-index: 0;
 }
 
 .on-demand {
@@ -51,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  top: -6vh;
+  /* top: -6vh; */
 }
 .box-size-desc {
   color: black;
@@ -175,7 +176,7 @@ body {
 }
 
 .about {
-  margin-top: 150px;
+  margin-top: 6vh;
   text-align: center;
   width: 80%;
   margin-left: 10%;
