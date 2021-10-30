@@ -116,6 +116,7 @@ body {
 .logoC {
   text-align: center;
 }
+
 @font-face {
   font-family: bebas;
   src: url("/fonts/Bebas\ Neue\ Cyrillic.ttf");
@@ -128,6 +129,7 @@ body {
   font-family: sauce1;
   src: url("/fonts/Open-Sauce-Sans/TTF/OpenSauceSans-Light.ttf");
 }
+
 .package {
   margin-bottom: 0;
   font-weight: 400;
