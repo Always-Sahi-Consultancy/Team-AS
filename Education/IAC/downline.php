@@ -92,26 +92,28 @@ if ($_SESSION['logged_in'] != 1) {
       <ul class="sidebar-nav">
         <li>
           <div class="logoC justify-content-center">
-            <img class="logoImg" src="img/Background Less.png">
+            <img class="logoImg" src="img/photo6242490229365779702.jpg">
             <p class="logoText">An ISO 9001:2015 Certified & MCA Registered</p>
-            <p class="package">Always Sahi</p>
+            <p class="package">Team Atharv Creates 16</p>
           </div>
         </li>
-        <li class="as">A Package Escape</li>
-        <li><a class="active" href="dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
-        <li> <a href="dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
-        <li> <a href="dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
-        <li> <a href="dashboard.php?tab=ass_join" onclick="tabs(4)">Associate Joining</a> </li>
-        <li> <a href="dashboard.php?tab=month_report" onclick="tabs(5)">Monthly Reports</a></li>
+        <!-- <li class="as">A Package Escape</li> -->
+        <li><a class="active" href="#dashboard.php" onclick="tabs(1)">Dashboard</a> </li>
+        <li> <a href="#dashboard.php?tab=mycourses" id="mycourses" onclick="tabs(2)">My Courses</a> </li>
+        <li> <a href="#dashboard.php?tab=downline" onclick="downline()">Downline</a></li>
+        <li> <a href="#dashboard.php?tab=referal" onclick="tabs(3)">Referal link</a> </li>
+        <li> <a href="#dashboard.php?tab=ass_join" onclick="tabs(4)">Registration</a> </li>
+        <li> <a href="#">Business</a> </li>
+        <li> <a href="#">Training</a></li>
         <li>
-          <a href="dashboard.php?tab=requests" onclick="show()">Requests
+          <a href="#dashboard.php?tab=requests" onclick="show()">Requests
           </a>
           <ul class="requestList" id="requestList">
-            <li> <a href="dashboard.php?tab=mobile_change" onclick="tabs(9)">Mobile change</a></li>
-            <li> <a href="dashboard.php?tab=bank_change" onclick="tabs(10)">Bank change</a></li>
+            <li> <a href="#dashboard.php?tab=mobile_change" onclick="tabs(9)">Mobile change</a></li>
+            <li> <a href="#dashboard.php?tab=bank_change" onclick="tabs(10)">Bank change</a></li>
           </ul>
         </li>
-        <li> <a href="dashboard.php?tab=support" onclick="tabs(7)">Supports</a> </li>
+        <li> <a href="#dashboard.php?tab=support" onclick="tabs(7)">Supports</a> </li>
       </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -121,7 +123,7 @@ if ($_SESSION['logged_in'] != 1) {
         <div class="content" id="content">
           <div class="row">
             <div class="col-md-3">
-              <div class="heading1"> ALWAYS SAHI</div>
+              <div class="heading1">Team Atharv Creates 16 </div>
             </div>
             <div class="col-md-9 head">
               <p class="associateId head">
