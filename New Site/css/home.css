@@ -1,0 +1,41 @@
+.instant_focus{
+    background: var(--dark-blue);
+    margin: 0px;
+    color: var(--yellow);
+    text-align:center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding:2px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro__company_title{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro__company_name{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.intro__company_section{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.intro__paragraphs{
+    width: 75%;
+    text-align: center;
+    line-height: 1rem;
+    text-align: center;
+}

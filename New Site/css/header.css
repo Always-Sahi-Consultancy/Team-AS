@@ -1,0 +1,53 @@
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.brand{
+    width:100%;
+}
+
+.brand__image{
+    width:70%;
+    height: auto;
+}
+
+.hamburger{
+    width: 100%;
+    background: blue;
+    padding: 1%;
+    display: none;
+}
+
+.hamburger__bar{
+    width: 100%;
+    height: 12px;
+    margin: 2px 0;
+    background: black;
+}
+
+.navgation{
+    display:flex;
+}
+
+.navigation_section{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 100%;
+    align-items:center;
+}
+
+.navigation__link{
+    text-align:center;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 380px){
+    .hamburger{
+        display: block;
+    }
+}

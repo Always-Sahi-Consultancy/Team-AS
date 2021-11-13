@@ -1,0 +1,16 @@
+:root{
+    --peach: #eb6a6a;
+    --skin: #ffcdb2;
+    --gray: #6d6875;
+    --dark-blue: #011627;
+    --yellow: #ffde59;
+}
+
+*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    background: var(--skin);
+}
