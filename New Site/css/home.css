@@ -13,6 +13,18 @@
 .intro{
     display: flex;
     flex-direction: row;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    overflow: hidden;
+}
+
+.intro__details{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 60%;
+    font-family: CooperHewitt-Book;
 }
 
 .intro__company_title{
@@ -20,22 +32,92 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10vh;
 }
 
 .intro__company_name{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 
 .intro__company_section{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: CooperHewitt-BoldItalic;
     font-weight: bold;
     text-align: right;
 }
 
 .intro__paragraphs{
-    width: 75%;
+    width: 90%;
     text-align: center;
-    line-height: 1rem;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro__paragraph_1, .intro__paragraph_2 {
+    justify-content: center;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    font-family: CooperHewitt-Light;
+    margin: 1vh 0;
+}
+
+.intro__button{
+    margin-left: 30%;
+    margin-right: auto;
+    padding: 1vh;
+}
+
+.intro__show_how{
+    background-color: var(--light-blue);
+    border-radius: 50vh;
+    height:7vh;
+    padding: 2vh;
+    font-size:1.6rem;
+    box-shadow: 1vh 1vh 2vh black;
+    justify-self: center;
+    width:fit-content;
+}
+
+.intro__image{
+    width: inherit;
+    overflow: hidden;
+}
+
+.intro__Atharv{
+    transform:rotateY(180deg);
+    justify-content: center;
+}
+
+.guest{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 30% auto;
+    background-color: var(--gray-light);
     text-align: center;
+}
+
+.guest__main{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: CooperHewitt-Bold;
+    justify-items: center;
+}
+
+.guest__places{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+}
+
+.guest__place{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size:1.6rem;
+    padding: 0.5vw;
+    font-weight: bold;
 }

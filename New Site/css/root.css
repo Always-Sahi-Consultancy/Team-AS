@@ -4,13 +4,30 @@
     --gray: #6d6875;
     --dark-blue: #011627;
     --yellow: #ffde59;
+    --light-blue: #2ec5b6;
+    --gray-light: #e4ebec;
 }
 
 *{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px;
 }
 
 body{
     background: var(--skin);
+    width: 100%;
+}
+
+@font-face{
+    font-family: CooperHewitt-Light;
+    src: url("font/CooperHewitt-Light.otf");
+}
+
+@font-face{
+    font-family: CooperHewitt-Book;
+    src: url("font/CooperHewitt-Book.otf");
+}
+
+@font-face{
+    font-family: CooperHewitt-Cursive;
+    src: url("font/CooperHewitt-BoldItalic.otf");
 }
