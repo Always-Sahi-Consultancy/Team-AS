@@ -87,9 +87,12 @@
     width: inherit;
     overflow: hidden;
 }
+.middle__image{
+    width: inherit;
+    overflow: hidden; 
+}
 
 .intro__Atharv{
-    transform:rotateY(180deg);
     justify-content: center;
 }
 
@@ -129,6 +132,7 @@
 }
 .bigText{
     font-size: 3rem;
+    z-index: -1;
     font-weight: 700;
     font-family:CooperHewitt-Book;
     color: var(--peach);
@@ -174,5 +178,24 @@
     font-family: CooperHewitt-Book;
 }
 .buttonTrain{
+    font-size: 2rem;
     margin-bottom: 5vh;
+}
+.note2{
+    height: 6vh;
+    background: var(--peach);
+    padding: 2vh 4vh;
+    font-size: 1.6rem;
+    font-family:CooperHewitt-Book ;
+    margin-bottom: 5vh;
+}
+.Clist{
+    padding: 2vh;
+    margin: 3vh 3vh 4vh 3vh;
+}
+.courseList{
+    font-size: 2rem;
+    line-height: 170%;
+    font-family:CooperHewitt-Light ;
+    list-style: none;
 }

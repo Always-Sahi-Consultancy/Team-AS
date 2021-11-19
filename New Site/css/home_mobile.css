@@ -109,7 +109,7 @@
         margin-bottom: 5vh;
     }
     .headingText2{
-        font-size: 0.8rem;
+        font-size: 2rem;
         margin: 0vh 1vh;
     }
     .hitPoints{
@@ -122,6 +122,13 @@
     .bigTextCol{
         font-size: 1rem;
         margin: 3vh 4vh;
+    }
+    .courseList{
+        font-size: 0.8rem;
+        line-height: 170%;
+    }
+    .Clist{
+        margin: 2vh 2vh 2vh 4vh;
     }
 }
 

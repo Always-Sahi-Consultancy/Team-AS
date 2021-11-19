@@ -51,7 +51,9 @@
 
         </div>
     </div>
-
+    <div>
+        <div><img src="image/laptop.png" alt="laptop" class="icon"></div>
+    </div>
     <div class="tagline">
         <div class="bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
     </div>
@@ -84,5 +86,27 @@
     <div class="button2 buttonTrain">
                 <button class="intro__show_how">give me a free training </button>
     </div>
+    <div class="note2">
+    </div>
+    <div class="middle__image">
+            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="intro__Atharv">
+        </div>
+
+    <div class="hit">
+     <div class="headingText2">ASA Courses Checklist  !</div>
+</div>
+<div class="Clist">
+    <ul class="courseList">
+        <li>Free courses, Initiatially to clear your Niche & Set your boundaries to start a Side Hustle. </li>
+        <li>A set of Courses specially designed by the experts, most of them Personally designed by Atharv. </li>
+        <li>Several Monthly Courses, to grow your skills on a Constant basis, with reputed Certifications. </li>
+        <li>Free Internship Programs, & Placement Opportunities for the Job Searching Individuals.</li>
+        <li>Free Startup Consultancies for Individuals to start their Side Hustles. </li>
+        <li>Certifications from an ISO 9001: 2015 certified, & MCA Registered Organization. </li>
+        <li>Weekly Live Group Calls & Meetings to Clear all your queries, and solve your problems.</li>
+        <li>Constant Calls & Support from Experts and Trainers on a Recurring Basis+.</li>
+        <li>Freebies in the form of PDFs, Resource Papers, & Several Free Toolkits, helpful for you to grow in Corporate as well as Build your Side Hustle. </li>
+    </ul>
+</div>
 </body>
 </html>
