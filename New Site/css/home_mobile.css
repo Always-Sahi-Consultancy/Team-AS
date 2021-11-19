@@ -82,6 +82,47 @@
         padding: 1vh;
     }
 
+    /*info section*/
+
+    .bigText{
+        font-size: 1.6rem;
+    }
+    .tagline{
+        margin: 0;
+        padding-left: 5vh;
+    }
+    .line{
+        display: block;
+    }
+    /*note*/
+    .note{
+        font-size: 0.8rem;
+        background: var(--skin);
+        padding: 1vh 2vh;
+        margin-bottom: 3vh;
+    }
+    .intro__button2{
+        margin: 0;
+        margin-bottom: 1.3vh;
+    }
+    .hit{
+        margin-bottom: 5vh;
+    }
+    .headingText2{
+        font-size: 0.8rem;
+        margin: 0vh 1vh;
+    }
+    .hitPoints{
+        margin: 5vh 2vh;
+    }
+    .points{
+        font-size: 0.8rem;
+        line-height: 170%;
+    }
+    .bigTextCol{
+        font-size: 1rem;
+        margin: 3vh 4vh;
+    }
 }
 
 /* Medium Screen */

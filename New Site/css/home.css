@@ -76,8 +76,9 @@
     border-radius: 50vh;
     height:7vh;
     padding: 2vh;
+    font-family:CooperHewitt-Light ;
     font-size:1.6rem;
-    box-shadow: 1vh 1vh 2vh black;
+    box-shadow:  1vh 1vh black;
     justify-self: center;
     width:fit-content;
 }
@@ -120,4 +121,58 @@
     font-size:1.6rem;
     padding: 0.5vw;
     font-weight: bold;
+}
+.tagline{
+    padding: 20px;
+    align-items: right;
+    margin: 10vh 20vh 8vh 100vh;
+}
+.bigText{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family:CooperHewitt-Book;
+    color: var(--peach);
+}
+.note{
+    background: var(--peach);
+    padding: 2vh 4vh;
+    font-size: 1.6rem;
+    font-family:CooperHewitt-Book ;
+    margin-bottom: 5vh;
+}
+.line{
+    height: 2px;
+    background: black;
+    border-radius: 20%;
+    margin:5px 20px 5px 40px;
+}
+.button2{
+    text-align: center;
+    padding: 1vh;
+}
+.headingText2{
+    font-size: 2.3rem;
+    font-family:CooperHewitt-Book;
+}
+.hit{
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.points{
+    font-size: 1.8rem;
+    line-height: 250%;
+    font-family:CooperHewitt-light ;
+}
+.hitPoints{
+    margin: 5vh 26vh;
+}
+.bigTextCol{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10vh 8vh;
+    font-family: CooperHewitt-Book;
+}
+.buttonTrain{
+    margin-bottom: 5vh;
 }

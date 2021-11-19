@@ -51,5 +51,38 @@
 
         </div>
     </div>
+
+    <div class="tagline">
+        <div class="bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
+    </div>
+    <div class="line"></div>
+    <div class="note">
+        <div class="text">Join<b> Always Sahi Academy </b>, where we have designed our courses exactly in the same manner, where you are handheld right from the beginning until you grow & guide you in every aspect of life. </div>
+    </div>
+    <div class="button2">
+                <button class="intro__show_how">Show Me How!</button>
+    </div>
+
+    <div class="hit">
+        <div class="headingText2">Hit a “Free Training” Button if this sounds like to you:-</div>
+    </div>
+
+    <div class="hitPoints">
+    <ul class="points">
+        <li>   You see people making good financial Source of Income. </li>
+        <li>  *You see People having the Freedom to Travel around, manage Finances & Explore their Life</li>
+        <li>  You want to make an effort, with some guidance & Support.</li>
+        <li>  You see people at different stages of life. </li>
+    </ul>
+    </div>
+    <div class="bigTextCol">
+    Then, you are nowhere far from them, you are just one step away from exploring the life of your Freedom. Freedom of Travelling to your Favourite places, freedom to make your own Identity, freedom to build your own empire. 
+    </div>
+    <div class="bigTextCol">
+    We at <b>Always Sahi Academy</b> aim to build a community, with the people like you & help you with proper training & guidance, becoming the pillar to support you with your dream & growing your Side hustle, with Step by Step training modules, handheld by the experts.
+    </div>
+    <div class="button2 buttonTrain">
+                <button class="intro__show_how">give me a free training </button>
+    </div>
 </body>
 </html>
