@@ -19,15 +19,20 @@ body{
 
 @font-face{
     font-family: CooperHewitt-Light;
-    src: url("font/CooperHewitt-Light.otf");
+    src: url("../font/CooperHewitt-Light.otf");
 }
 
 @font-face{
     font-family: CooperHewitt-Book;
-    src: url("font/CooperHewitt-Book.otf");
+    src: url("../font/CooperHewitt-Book.otf");
 }
 
 @font-face{
-    font-family: CooperHewitt-Cursive;
-    src: url("font/CooperHewitt-BoldItalic.otf");
+    font-family: Nickainley-Normal;
+    src: url("../font/Nickainley-Normal.otf");
+}
+
+@font-face{
+    font-family: Bebas-Neue-Cyrillic;
+    src: url("../font/Bebas\ Neue\ Cyrillic.ttf");
 }

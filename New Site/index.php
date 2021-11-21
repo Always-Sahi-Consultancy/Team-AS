@@ -29,11 +29,11 @@
                 <div class="intro__company_section">Academy</div>
             </div>
             <div class="intro__paragraphs">
-                <div class="intro__paragraph_1">A Platform that believes in creating new Leaders, that make the world a beautiful place to Live.</div>
-                <div class="intro__paragraph_2">Be a Member of the “ASA Family” now from anywhere, just with a Laptop & a SmartPhone, & be the next leader in your field.</div>
+                <div class="intro__paragraph_1">Our Courses create a baseline for your growth, we build tomorrow's leaders.</div>
+                <div class="intro__paragraph_2">Be a Member of the “ASA Family” now from anywhere, just with a Laptop & a SmartPhone, & be the next leader in your field. </div>
             </div>
             <div class="intro__button">
-                <button class="intro__show_how">Show Me How!</button>
+                <button class="intro__show_how">Explore now!</button>
             </div>
         </div>
         <div class="intro__image">
@@ -89,7 +89,7 @@
     <div class="note2">
     </div>
     <div class="middle__image">
-            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="intro__Atharv">
+            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="middle__Atharv">
         </div>
 
     <div class="hit">

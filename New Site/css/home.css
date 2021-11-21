@@ -5,7 +5,7 @@
     text-align:center;
     justify-content: center;
     font-size: 1.5rem;
-    padding:2px;
+    padding:1.5vh;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -13,8 +13,8 @@
 .intro{
     display: flex;
     flex-direction: row;
-    margin-left: 6vw;
-    margin-right: 6vw;
+    /* margin-left: 6vw; */
+    /* margin-right: 6vw; */
     overflow: hidden;
 }
 
@@ -22,9 +22,10 @@
     justify-items: center;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     width: 60%;
     font-family: CooperHewitt-Book;
+    padding: 0 2.8vw;
 }
 
 .intro__company_title{
@@ -36,15 +37,17 @@
 }
 
 .intro__company_name{
-    font-size: 3.5rem;
-    font-weight: bolder;
+    font-size: 4.5rem;
+    /* font-weight: bolder; */
+    font-family: Bebas-Neue-Cyrillic;
 }
 
 .intro__company_section{
     font-size: 2.5rem;
-    font-family: CooperHewitt-BoldItalic;
+    font-family: Nickainley-Normal;
     font-weight: bold;
     text-align: right;
+    width: 90%;
 }
 
 .intro__paragraphs{
@@ -60,7 +63,7 @@
 .intro__paragraph_1, .intro__paragraph_2 {
     justify-content: center;
     line-height: 2.2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: CooperHewitt-Light;
     margin: 1vh 0;
 }
@@ -75,17 +78,28 @@
     background-color: var(--light-blue);
     border-radius: 50vh;
     height:7vh;
-    padding: 2vh;
-    font-family:CooperHewitt-Light ;
+    padding: 1vh 2vw;
+    font-family:CooperHewitt-Book ;
     font-size:1.6rem;
-    box-shadow:  1vh 1vh black;
+    box-shadow: 2px 2px 1px black;
     justify-self: center;
     width:fit-content;
+    align-content: center;
+    font-weight: bolder;
+    transition:all;
+    transition-duration: 0.5s;
+}
+
+.intro__show_how:hover{
+    box-shadow: 4px 4px 2px black;
 }
 
 .intro__image{
-    width: inherit;
+    width: 40%;
     overflow: hidden;
+    background: url("../image/Landing\ Page\ 2.png");
+    background-size: cover;
+    height: fit-content;
 }
 .middle__image{
     width: inherit;
@@ -93,7 +107,7 @@
 }
 
 .intro__Atharv{
-    justify-content: center;
+    justify-content: end;
 }
 
 .guest{

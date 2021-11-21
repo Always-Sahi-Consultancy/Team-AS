@@ -17,11 +17,13 @@
             </button>
             <div class="navigate__link">Home</div>
             <div class="navigate__link">ASA Story</div>
+            <div class="navigate__link">Freebies</div>
             <div class="navigate__link">Testimonials</div>
-            <div class="navigate__link">ENroll Now</div>
-            <div class="navigate__link">Blogs</div>
-            <div class="navigate__link">Contact Us</div>
-            <div class="navigate__link">STudent Login</div>
+            <div class="navigate__link">Contact us</div>
         </div>
+    </div>
+    <div class="login">
+        <div class="login__button">Student&nbsp;Login</div>
+        <div class="login__button">Enroll&nbsp;Now</div>
     </div>
 </header>
