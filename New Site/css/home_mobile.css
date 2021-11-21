@@ -83,7 +83,12 @@
     }
 
     /*info section*/
-
+    .join{
+        grid-template-columns: auto;
+    }
+    .join__images{
+        width: 100%;
+    }
     .bigText{
         font-size: 1.6rem;
     }

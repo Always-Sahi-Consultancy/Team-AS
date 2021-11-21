@@ -139,17 +139,29 @@
     padding: 0.5vw;
     font-weight: bold;
 }
-.tagline{
+
+/* Join us section */
+.join{
+    padding: 0 6vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.join__images{
+    width:auto;
+    overflow-y: hidden;
+}
+.join__tagline{
     padding: 20px;
     align-items: right;
-    margin: 10vh 20vh 8vh 100vh;
+    align-content: center;
 }
-.bigText{
+.join__bigText{
     font-size: 3rem;
     z-index: -1;
     font-weight: 700;
     font-family:CooperHewitt-Book;
     color: var(--peach);
+    align-content: center;
 }
 .note{
     background: var(--peach);

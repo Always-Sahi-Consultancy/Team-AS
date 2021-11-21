@@ -1,5 +1,5 @@
 const navigator = function() {
-    const nav_bar = document.getElementById("navigation");
+    const nav_bar = document.getElementById("options");
     nav_bar.classList.toggle('open');
 };
 

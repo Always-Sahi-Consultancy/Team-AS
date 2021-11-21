@@ -51,11 +51,15 @@
 
         </div>
     </div>
-    <div>
-        <div><img src="image/laptop.png" alt="laptop" class="icon"></div>
-    </div>
-    <div class="tagline">
-        <div class="bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
+
+    <!-- Join us section -->
+    <div class="join">
+        <div>
+            <img src="image/laptop.png" alt="laptop" class="join__images">
+        </div>
+        <div class="join__tagline">
+            <div class="join__bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
+        </div>
     </div>
     <div class="line"></div>
     <div class="note">
