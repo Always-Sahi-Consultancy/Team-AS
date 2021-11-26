@@ -98,8 +98,8 @@
 
     <div class="hit">
      <div class="headingText2">ASA Courses Checklist  !</div>
-</div>
-<div class="Clist">
+    </div>
+    <div class="Clist">
     <ul class="courseList">
         <li>Free courses, Initiatially to clear your Niche & Set your boundaries to start a Side Hustle. </li>
         <li>A set of Courses specially designed by the experts, most of them Personally designed by Atharv. </li>

@@ -66,6 +66,7 @@
     .guest{
         grid-template-columns: auto;
         height: fit-content;
+        margin-top: 1rem;
     }
 
     .guest__main{
@@ -115,25 +116,34 @@
     }
     .headingText2{
         font-size: 2rem;
-        margin: 0vh 1vh;
+        margin: 3vh 2vh;
     }
     .hitPoints{
         margin: 5vh 2vh;
     }
     .points{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 170%;
     }
     .bigTextCol{
         font-size: 1rem;
         margin: 3vh 4vh;
     }
+    .hit{
+        margin: 2vh 2vh;
+    }
     .courseList{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 170%;
     }
     .Clist{
         margin: 2vh 2vh 2vh 4vh;
+    }
+    .line{
+        display: block;
+    }
+    .join__bigText{
+        font-size:1.5rem;
     }
 }
 
