@@ -3,6 +3,7 @@ header{
     grid-template-columns: 20% auto;
     margin-left: 0px;
     margin-right: 0px;
+    font-family: Bebas-Neue;
 }
 
 .brand{
@@ -62,6 +63,15 @@ header{
     font-family: CooperHewitt-Light;
 }
 
+.navigate__link a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigate__link a:hover{
+    color: var(--peach);
+}
+
 .login{
     justify-content: right;
     display: grid;
@@ -71,6 +81,7 @@ header{
 .login__button{
     background-color: var(--peach);
     padding: 6px;
+    font-size: 1.3rem;
     box-shadow:2px 2px 1px black;
     border-radius: 12px;
     height: fit-content;
@@ -118,7 +129,7 @@ header{
         right:100%;
         transition:cubic-bezier(0.25, 0.46, 0.45, 0.94);
         transition-duration: 1s;
-        background: var(--skin);
+        /* background: var(--skin); */
         height: 100vh;
     }
 
@@ -145,6 +156,14 @@ header{
     .navigate__link{
         margin: 2vh;
         text-align:left;
+    }
+
+    .navigate__link a{
+        text-decoration: none;
+    }
+
+    .navigate__link a:hover{
+        color:var(--skin);
     }
 
     .close{

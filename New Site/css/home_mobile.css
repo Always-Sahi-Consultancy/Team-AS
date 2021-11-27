@@ -8,6 +8,7 @@
     .intro{
         flex-direction:column-reverse;
         height: auto;
+        margin: 1vw 3vw;
     }
 
     .intro__paragraphs{
@@ -37,7 +38,9 @@
         width: 100%;
         font-size:2.5rem;
     }
-
+    .intro__show_how{
+        font-size: 1.6rem;
+    }
     .intro__company_title{
         margin-bottom:6vh;
         width: 100%;
@@ -103,7 +106,7 @@
     /*note*/
     .note{
         font-size: 0.8rem;
-        background: var(--skin);
+        background: white;
         padding: 1vh 2vh;
         margin-bottom: 3vh;
     }
@@ -111,11 +114,14 @@
         margin: 0;
         margin-bottom: 1.3vh;
     }
+    .page2__main{
+        margin: 1vh 3vh;
+    }
     .hit{
         margin-bottom: 5vh;
     }
     .headingText2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 3vh 2vh;
     }
     .hitPoints{
@@ -124,10 +130,12 @@
     .points{
         font-size: 1rem;
         line-height: 170%;
+        font-weight: 600;
     }
     .bigTextCol{
         font-size: 1rem;
         margin: 3vh 4vh;
+        text-align: justify;
     }
     .hit{
         margin: 2vh 2vh;

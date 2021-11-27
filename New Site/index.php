@@ -41,14 +41,13 @@
         </div>
     </div>
     <div class="guest">
-        <div class="guest__main">Guest Speaker at:-</div>
+        <div class="guest__main">GUEST SPEAKER @</div>
         <div class="guest__places">
-            <div class="guest__place">Modern College</div>
-            <div class="guest__place">AISSMS COE</div>
-            <div class="guest__place">MIT ALANDI</div>
-            <div class="guest__place">The Light House</div>
-            <div class="guest__place">USDC</div>
-
+            <img src="image/guest_aissms_b.png" alt="Aissms COE" class="guest__place">
+            <img src="image/guest_mit_b.png" alt="MIT" class="guest__place">
+            <img src="image/guest_modern_b.png" alt="Modern" class="guest__place">
+            <img src="image/guest_usdc_b.png" alt="USDC" class="guest__place">
+            <img src="image/guest_lh_b.png" alt="Lighthouse" class="guest__place">
         </div>
     </div>
 
@@ -59,16 +58,17 @@
         </div>
         <div class="join__tagline">
             <div class="join__bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
-        </div>
+            </div>
     </div>
     <div class="line"></div>
     <div class="note">
-        <div class="text">Join<b> Always Sahi Academy </b>, where we have designed our courses exactly in the same manner, where you are handheld right from the beginning until you grow & guide you in every aspect of life. </div>
+        <div class="text">Join <b>Always Sahi Academy</b>, where we have designed our courses exactly in the same manner, where you are handheld right from the beginning until you grow & guide you in every aspect of life. </div>
     </div>
     <div class="button2">
                 <button class="intro__show_how">Show Me How!</button>
     </div>
 
+    <div class="page2__main">
     <div class="hit">
         <div class="headingText2">Hit a “Free Training” Button if this sounds like to you:-</div>
     </div>
@@ -88,7 +88,8 @@
     We at <b>Always Sahi Academy</b> aim to build a community, with the people like you & help you with proper training & guidance, becoming the pillar to support you with your dream & growing your Side hustle, with Step by Step training modules, handheld by the experts.
     </div>
     <div class="button2 buttonTrain">
-                <button class="intro__show_how">give me a free training </button>
+                <button class="intro__show_how">give me a free training ! </button>
+    </div>
     </div>
     <div class="note2">
     </div>
@@ -96,21 +97,6 @@
             <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="middle__Atharv">
         </div>
 
-    <div class="hit">
-     <div class="headingText2">ASA Courses Checklist  !</div>
-    </div>
-    <div class="Clist">
-    <ul class="courseList">
-        <li>Free courses, Initiatially to clear your Niche & Set your boundaries to start a Side Hustle. </li>
-        <li>A set of Courses specially designed by the experts, most of them Personally designed by Atharv. </li>
-        <li>Several Monthly Courses, to grow your skills on a Constant basis, with reputed Certifications. </li>
-        <li>Free Internship Programs, & Placement Opportunities for the Job Searching Individuals.</li>
-        <li>Free Startup Consultancies for Individuals to start their Side Hustles. </li>
-        <li>Certifications from an ISO 9001: 2015 certified, & MCA Registered Organization. </li>
-        <li>Weekly Live Group Calls & Meetings to Clear all your queries, and solve your problems.</li>
-        <li>Constant Calls & Support from Experts and Trainers on a Recurring Basis+.</li>
-        <li>Freebies in the form of PDFs, Resource Papers, & Several Free Toolkits, helpful for you to grow in Corporate as well as Build your Side Hustle. </li>
-    </ul>
-</div>
+    
 </body>
 </html>

@@ -16,11 +16,11 @@
                     <div class="close__bar" id="item-1"></div>
                     <div class="close__bar" id="item-2"></div>
                 </button>
-                <div class="navigate__link">Home</div>
-                <div class="navigate__link">ASA Story</div>
-                <div class="navigate__link">Freebies</div>
-                <div class="navigate__link">Testimonials</div>
-                <div class="navigate__link">Contact us</div>
+                <div class="navigate__link"><a href="#">Home</a></div>
+                <div class="navigate__link"><a href="#">ASA Story</a></div>
+                <div class="navigate__link"><a href="#">Freebies</a></div>
+                <div class="navigate__link"><a href="#">Testimonials</a></div>
+                <div class="navigate__link"><a href="#">Contact us</a></div>
             </div>
         </div>
         <div class="login">
