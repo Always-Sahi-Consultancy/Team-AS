@@ -91,12 +91,8 @@
                 <button class="intro__show_how">give me a free training ! </button>
     </div>
     </div>
-    <div class="note2">
-    </div>
-    <div class="middle__image">
-            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="middle__Atharv">
-        </div>
-
+    
+    
     
 </body>
 </html>
