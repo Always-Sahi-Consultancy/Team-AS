@@ -8,5 +8,5 @@
         <div class="documentation__option"><a href="#" class="documentation__link">Privacy Policy</a></div>
         <div class="documentation__option"><a href="#" class="documentation__link">Refund Policy</a></div>
     </div>
-    <div class="copyright">&copy; Always Sahi Solution Pvt. Ltd. <script>document.getClassName('copyright').innerElement+=getFullYear();</script> - All Rights Reserved | &copy; ALL RIGHTS RESERVED</div>
+    <div class="copyright">&copy; Always Sahi Solution Pvt. Ltd. <script>document.write(getFullYear())</script> - All Rights Reserved | &copy; ALL RIGHTS RESERVED</div>
 </footer>
