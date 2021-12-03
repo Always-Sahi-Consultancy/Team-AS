@@ -1,0 +1,17 @@
+.footer{
+    background:var(--skin);
+}
+
+.disclaimer{
+    margin: 2vh 20vw;
+    text-align: justify;
+}
+
+.documentation{
+    display: inline;
+    justify-items:center;
+}
+
+.copyright{
+    text-align:center;
+}

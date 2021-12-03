@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/home_mobile.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="javascript/header.js" defer></script>
     <title>Always Sahi Academy</title>
 </head>
@@ -91,6 +92,7 @@
                 <button class="intro__show_how">give me a free training ! </button>
     </div>
     </div>
+<<<<<<< HEAD
     <!--page 2 starts-->
     <div class="page2__tagline">
             <div class="page2__bigText align__center">So What exactly do you get at Always Sahi Academy:- </div>
@@ -108,7 +110,22 @@
         </div>
     </div>
 
+=======
+<<<<<<< HEAD
+    <div class="note2">
+    </div>
+    <div class="middle__image">
+            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="middle__Atharv">
+        </div>
+
+    <?php 
+        include('public/footer.php')
+    ?>
+=======
+    
+>>>>>>> 0d274d6d7502cb8b257796645ba2069d5ee23626
     
     
+>>>>>>> 59119542307d8e7546c60199dfd1312749d43a00
 </body>
 </html>
