@@ -92,6 +92,7 @@
                 <button class="intro__show_how">give me a free training ! </button>
     </div>
     </div>
+<<<<<<< HEAD
     <div class="note2">
     </div>
     <div class="middle__image">
@@ -101,5 +102,10 @@
     <?php 
         include('public/footer.php')
     ?>
+=======
+    
+    
+    
+>>>>>>> 59119542307d8e7546c60199dfd1312749d43a00
 </body>
 </html>
