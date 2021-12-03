@@ -4,14 +4,18 @@
 }
 
 .disclaimer{
-    margin: 5vh 10vw;
+    padding: 5vh 10vw;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .documentation{
     display: inline;
     justify-items:center;
+    text-align: center;
+}
+
+.documentation__option{
     text-align: center;
 }
 
