@@ -54,11 +54,11 @@
     <!-- Join us section -->
     <div class="join">
         <div>
-            <img src="image/laptop.png" alt="laptop" class="join__images">
+            <img src="image/2nd Page Image 1.png" alt="laptop" class="join__images">
         </div>
         <div class="join__tagline">
             <div class="join__bigText">Identifying & Exploring your specific Skills is what turns your Idea Into a Great Side Hustle. Where upskilling yourself plays a Very Important role. </div>
-            </div>
+        </div>
     </div>
     <div class="line"></div>
     <div class="note">
@@ -91,7 +91,23 @@
                 <button class="intro__show_how">give me a free training ! </button>
     </div>
     </div>
-    
+    <!--page 2 starts-->
+    <div class="page2__tagline">
+            <div class="page2__bigText align__center">So What exactly do you get at Always Sahi Academy:- </div>
+    </div>
+    <div class="features">
+        <div class="features__points">
+            <img src="image/Point 1.png" alt="Point 1" class="feature__content">
+</div>
+<div>
+            <img src="image/Point 2.png" alt="Point 1" class="feature__content">
+</div>
+<div>
+            <img src="image/Point 3.png" alt="Point 1" class="feature__content">
+</div>
+        </div>
+    </div>
+
     
     
 </body>
