@@ -17,9 +17,21 @@
     ?>
     <div class="contact">
         <form action="post" class="contact__form">
-            <input type="text" placeholder="Name" require>
-            <input type="email" placeh>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="text" class="message" required>
+            <input type="button" value="submit">
         </form>
+        <div class="contact__info">
+            <div class="contact__mail"><a href="mailto:hello.alwayssahi@gmail.com">hello.alwayssahi@gmail.com</a></div>
+            <div class="contact_phone"><a href="tel:"></a></div>
+            <div class="contact_social">
+                <div class="contact_instagram">
+                    <img src="images/" alt="instagram" class="contact__instagram_image">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

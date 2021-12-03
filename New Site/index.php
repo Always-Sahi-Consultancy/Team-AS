@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/home_mobile.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="javascript/header.js" defer></script>
     <title>Always Sahi Academy</title>
 </head>
@@ -97,6 +98,8 @@
             <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="middle__Atharv">
         </div>
 
-    
+    <?php 
+        include('public/footer.php')
+    ?>
 </body>
 </html>
