@@ -1,15 +1,23 @@
 .footer{
     background:var(--skin);
+    font-family: CooperHewitt-Light;
 }
 
 .disclaimer{
-    margin: 2vh 20vw;
+    margin: 5vh 10vw;
     text-align: justify;
+    font-size: 1.5rem;
 }
 
 .documentation{
     display: inline;
     justify-items:center;
+    text-align: center;
+}
+
+.documentation__link{
+    text-decoration: none;
+    color: black;
 }
 
 .copyright{

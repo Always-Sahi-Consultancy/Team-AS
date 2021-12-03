@@ -92,10 +92,6 @@
                 <button class="intro__show_how">give me a free training ! </button>
     </div>
     </div>
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
     <!--page 2 starts-->
     <div class="page2__tagline">
             <div class="page2__bigText align__center">So What exactly do you get at Always Sahi Academy:- </div>
@@ -112,10 +108,6 @@
 </div>
         </div>
     </div>
-
-=======
-<<<<<<< HEAD
->>>>>>> 69f8f03ec3760aa37fc7a57cf2c403e17c8a9752
     <div class="note2">
     </div>
     <div class="middle__image">
@@ -125,14 +117,5 @@
     <?php 
         include('public/footer.php')
     ?>
-<<<<<<< HEAD
-=======
-=======
-    
->>>>>>> 0d274d6d7502cb8b257796645ba2069d5ee23626
-    
-    
->>>>>>> 59119542307d8e7546c60199dfd1312749d43a00
->>>>>>> 69f8f03ec3760aa37fc7a57cf2c403e17c8a9752
 </body>
 </html>
