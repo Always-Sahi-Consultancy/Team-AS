@@ -18,7 +18,7 @@
     <div class="contact">
         <form action="post" class="contact__form">
             <input type="text" placeholder="Name" require>
-            <input type="email" >
+            <input type="email" placeh>
         </form>
     </div>
 </body>
