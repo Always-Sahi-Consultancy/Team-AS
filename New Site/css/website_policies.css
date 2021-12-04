@@ -1,0 +1,25 @@
+.details{
+    width:80vw;
+    margin: 0 auto;
+}
+
+.details__title{
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: CooperHewitt-Book;
+}
+
+.details__info{
+    text-align: justify;
+    font-family: CooperHewitt-Light;
+}
+
+.details__subtitles{
+    font-family:CooperHewitt-Book;
+    font-size:1.4rem;
+}
+
+.details__subtitle{
+    font-family: CooperHewitt-Book;
+    font-size:1.2rem;
+}

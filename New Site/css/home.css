@@ -94,11 +94,14 @@
     box-shadow: 4px 4px 2px black;
 }
 
+#intro__video{
+    height: 80vh;
+    scale: 0.2;
+}
+
 .intro__image{
     width: 40%;
     overflow: hidden;
-    background: url("../image/Landing\ Page\ 2.png");
-    background-size: cover;
     height: fit-content;
 }
 .middle__image{

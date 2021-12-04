@@ -1,0 +1,102 @@
+.contact{
+    width: 76vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 12vh 12vw;
+    height: 60vh;
+}
+
+.contact__form{
+    background-color: var(--gray-light);
+    margin: 1px;
+    border-radius: 12px;    
+    height: fit-content;
+    align-self: center;
+    padding: 6% 2%;
+}
+
+.contact__title{
+    font-size: 2rem;
+    padding: 2%;
+    font-family: CooperHewitt-Book;
+}
+
+.contact__input{
+    width: 40%;
+    border-radius: 2px;
+    margin: 2% 1%;
+    height: 20px;
+    box-shadow: 1px 1px 2px var(--gray);
+    border: 0px;
+}
+
+.contact__message{
+    width:90%;
+    margin: 2% 2%;
+    height: 45px;
+}
+
+.contact__submit{
+    background:var(--peach);
+    font-family: CooperHewitt-Book;
+    font-size: 1.5rem;
+    border: 0px;
+    border-radius: 6px;
+}
+
+.contact__info{
+    background-color: var(--gray-light);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 38% 0;
+    margin: 0 2px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.contact__mail, .contact__phone, .contact__social{
+    margin: 6% 0;
+}
+
+.contact__link{
+    text-decoration: none;
+}
+
+.faq{
+    margin: 0 10%;
+}
+
+.faq__title{
+    font-family: CooperHewitt-Book;
+    font-size: 2rem;
+}
+
+.faq__questions{
+    padding:6% 1%;
+    display: inline;
+}
+
+.faq__question{
+    background: var(--peach);
+    font-size: 1.4rem;
+    padding: 2%;
+}
+
+.faq__show{
+    background: var(--skin);
+    border-radius: 50%;
+    height:30px;
+    width: 30px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq__answer{
+    background: var(--gray-light);
+    font-size: 1.4rem;
+    padding: 2% 1%;
+}
