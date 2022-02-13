@@ -34,7 +34,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
         $mail->Host = 'smtp.hostinger.com';                   // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'hello@alwayssahi.com';             // SMTP username
-        $mail->Password = 'noPasswordSorry';                  // SMTP password
+        $mail->Password = 'hello@AS@sol#17';                  // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465;                                    // TCP port to connect to
 

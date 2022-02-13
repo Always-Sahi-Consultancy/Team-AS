@@ -112,7 +112,7 @@ if ($_SESSION['logged_in'] != 1) {
       <ul class="sidebar-nav">
         <li>
           <div class="logoC justify-content-center">
-            <img class="logoImg" src="img/photo6242490229365779702.jpg">
+            <img class="logoImg" src="img/tac logo.svg">
             <p class="logoText">An ISO 9001:2015 Certified & MCA Registered</p>
             <p class="package">Team Atharv Creates 16</p>
           </div>

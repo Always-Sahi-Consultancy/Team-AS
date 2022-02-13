@@ -39,7 +39,7 @@ else { // User exists
         $_SESSION['logged_in'] = true;
         $_SESSION['login_time'] = time();
 
-        header("location: dashboard.php");
+        header("location: dashboard(TAC).php");
     }
     else {
         $_SESSION['message'] = "You have entered wrong password, try again!";
